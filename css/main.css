@@ -1,0 +1,371 @@
+body{
+    background-color: #eff3f5;
+}
+.b-navibar{
+    background-color: #584B4F;
+}
+.b-navibar-main{
+    margin: 0 auto;
+}
+
+.nav_scroll{
+    position:fixed;
+    width:100%;
+    margin:0;
+    left:0;
+    top:0;
+}
+
+/***********导航栏左边样式开始*****************/
+.b-navibar-left{
+    width: 500px;
+    float: left;
+}
+.b-navibar-ll{
+    float: left;
+    margin-right: 20px;
+}
+.b-navibar-ll a{
+    color: #eff3f5;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-size: large;
+    border-bottom: 2px solid #eff3f5;
+    
+    /*Mozilla内核*/
+    -moz-transition:color 0.3s ease-in-out;
+    /*Webkit内核*/
+    -webkit-transition:color 0.3s ease-in-out;
+    /*Opera*/
+    -o-transition:color 0.3s ease-in-out;
+    /*W3C 标准*/
+    transition:color 0.3s ease-in-out;
+}
+.b-navibar-ll a:hover{
+    color: cornflowerblue;
+    text-decoration: none;
+    cursor: pointer;
+}
+.b-navibar-lr{
+    text-align: center;
+    width: 250px;
+    float: left;
+}
+.b-navibar-lr a{
+    font-size: 14px;
+    color: #eff3f5;
+	font-family: "Arial","YouYuan","黑体","宋体",sans-serif;
+    
+    /*Mozilla内核*/
+    -moz-transition:color 0.3s ease-in-out;
+    /*Webkit内核*/
+    -webkit-transition:color 0.3s ease-in-out;
+    /*Opera*/
+    -o-transition:color 0.3s ease-in-out;
+    /*W3C 标准*/
+    transition:color 0.3s ease-in-out;
+}
+.b-navibar-lr a:hover{
+    color: deepskyblue;
+    text-decoration: none;
+    cursor: pointer;
+}
+.b-navibar-index{
+    float: left;
+    line-height: 33px;
+    margin-right: 10px;
+    border: 2px solid #584B4F;
+    
+    /*Mozilla内核*/
+    -moz-transition:border 0.3s ease-in-out;
+    /*Webkit内核*/
+    -webkit-transition:border 0.3s ease-in-out;
+    /*Opera*/
+    -o-transition:border 0.3s ease-in-out;
+    /*W3C 标准*/
+    transition:border 0.3s ease-in-out;
+}
+.b-navibar-index:hover{
+    border-top: 2px solid deepskyblue;
+    border-bottom: 2px solid deepskyblue;
+    color: deepskyblue;
+    cursor: pointer;
+}
+.b-navibar-system{
+    float: left;
+    line-height: 33px;
+    border: 2px solid #584B4F;
+    
+    /*Mozilla内核*/
+    -moz-transition:border 0.3s ease-in-out;
+    /*Webkit内核*/
+    -webkit-transition:border 0.3s ease-in-out;
+    /*Opera*/
+    -o-transition:border 0.3s ease-in-out;
+    /*W3C 标准*/
+    transition:border 0.3s ease-in-out;
+}
+.b-navibar-system:hover{
+    color: deepskyblue;
+    border-top: 2px solid deepskyblue;
+    border-bottom: 2px solid deepskyblue;
+    cursor: pointer;
+}
+/***********导航栏左边样式结束*****************/
+
+
+/***********导航栏右边样式开始*****************/
+
+.b-navibar-right{
+    width: 500px;
+    float: left;
+}
+
+.b-navibar-r-form{
+    float: right;
+}
+.b-navibar-r-sousuo{
+    float: right;
+}
+.b-navibar-r-sousuo p:hover{
+    
+}
+
+.b-navibar-r-input{
+    width: 200px;
+    height: auto;
+    border:solid 1px #ddd;  
+    border-radius: 20px;  
+    -webkit-border-radius: 20px;  
+    -moz-border-radius: 20px;  
+    -khtml-border-radius: 20px;
+    float: right;
+    background-color: white;
+    margin-top: 3px;
+    margin-right: 60px;
+}
+
+.span_icon i{
+    font-size: 12px;
+}
+      
+.b-navibar-r-input span{
+    margin: 1px auto;
+    margin-left: 10px;
+    float: left;  
+}
+.b-navibar-r-input span i{
+    margin-left: 0px; 
+}
+.b-navibar-r-input i{
+    color:darkgrey;
+}
+.b-navibar-r-input i:hover{
+    color:deepskyblue;
+    cursor: pointer;
+}
+.searchText{
+	font-family: "Arial","YouYuan","黑体","宋体",sans-serif;
+    border: none;
+    width: 140px;
+    margin: 3px 6px;
+    outline: 0 none;
+    float: left;
+}
+
+.b-navibar-r-blog{
+    margin-right: 5px;
+    float: right;
+    border: 2px solid #584B4F;
+    
+    /*Mozilla内核*/
+    -moz-transition:border 0.3s ease-in-out;
+    /*Webkit内核*/
+    -webkit-transition:border 0.3s ease-in-out;
+    /*Opera*/
+    -o-transition:border 0.3s ease-in-out;
+    /*W3C 标准*/
+    transition:border 0.3s ease-in-out;
+}
+.b-navibar-r-blog:hover{
+    border-bottom: 2px solid deepskyblue;
+    border-top: 2px solid deepskyblue;
+    cursor: pointer;
+}
+.b-navibar-r-share{
+    margin-right: 5px;
+    float: right;
+    border: 2px solid #584B4F;
+    
+    /*Mozilla内核*/
+    -moz-transition:border 0.3s ease-in-out;
+    /*Webkit内核*/
+    -webkit-transition:border 0.3s ease-in-out;
+    /*Opera*/
+    -o-transition:border 0.3s ease-in-out;
+    /*W3C 标准*/
+    transition:border 0.3s ease-in-out;
+}
+.b-navibar-r-share:hover{
+    border-bottom: 2px solid deepskyblue;
+    border-top: 2px solid deepskyblue;
+    cursor: pointer;
+}
+.b-navibar-r-leftmessage{
+    float: right;
+    border: 2px solid #584B4F;
+    
+    /*Mozilla内核*/
+    -moz-transition:border 0.3s ease-in-out;
+    /*Webkit内核*/
+    -webkit-transition:border 0.3s ease-in-out;
+    /*Opera*/
+    -o-transition:border 0.3s ease-in-out;
+    /*W3C 标准*/
+    transition:border 0.3s ease-in-out;
+}
+.b-navibar-r-leftmessage:hover{
+    border-bottom: 2px solid deepskyblue;
+    border-top: 2px solid deepskyblue;
+    cursor: pointer;
+}
+
+.b-navibar-right a{
+    line-height: 33px;
+    font-size: 14px;
+    color: #eff3f5;
+	font-family: "Arial","YouYuan","黑体","宋体",sans-serif;
+   
+    
+    /*Mozilla内核*/
+    -moz-transition:color 0.3s ease-in-out;
+    /*Webkit内核*/
+    -webkit-transition:color 0.3s ease-in-out;
+    /*Opera*/
+    -o-transition:color 0.3s ease-in-out;
+    /*W3C 标准*/
+    transition:color 0.3s ease-in-out;
+}
+.b-navibar-right a:hover{
+    color: deepskyblue;
+    text-decoration: none;
+    cursor: pointer;
+}
+.b-navibar-right p{
+    line-height: 35px;
+    float: left;
+    color: #eff3f5;
+	font-family: "Arial","YouYuan","黑体","宋体",sans-serif;
+}
+
+
+
+/***********导航栏右边样式结束*****************/
+.b-content{
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+.b-header{
+    background-color: #eef;
+    height: 550px;
+}
+
+
+.b-blog{
+    background-color: #eee;
+    height: 550px;
+}
+
+
+.b-share{
+    background-color: #ddd;
+    height: 550px;
+}
+
+
+.b-leftword{
+    background-color: #ccc;
+    height: 550px;
+}
+
+
+.b-introduce{
+    background-color: #bbb;
+    height: 550px;
+}
+
+
+.b-friendlink{
+    background-color: #ccc;
+    height: 550px;
+}
+
+
+.b-contact{
+    background-color: #ddd;
+    height: 550px;
+}
+
+
+.b-bottom{
+    background-color: #584B4a;
+    width: 100%;
+}
+
+.b-inner{
+    float: left;
+}
+.b-inner .b-i-l{
+    margin-left: 100px;
+    margin-top: 75px;
+    float: left;
+    line-height: 400px;
+    text-align: center;
+}
+.b-inner .b-i-l span{
+    font-size: 23px;
+	font-family: "Arial","YouYuan","黑体","宋体",sans-serif;
+    display:inline-block;
+    line-height:1.4em;
+    vertical-align:middle;
+}
+.b-inner .b-i-r span{
+    font-size: 20px;
+	font-family: "Arial","YouYuan","黑体","宋体",sans-serif;
+    display:inline-block;
+    line-height:1.4em;
+    vertical-align:middle;
+}
+
+.b-inner .b-i-r{
+    margin-top: 75px;
+    line-height: 400px;
+    float: left;
+    text-align: center;
+}
+.b-inner .b-i-l i{
+    font-weight: 100;
+    font-size: 250px;
+}
+.b-inner .b-i-r i{
+    font-size: 250px;
+}
+
+.bb-inner{
+    
+}
+
+.bb-inner .bb-i-l{
+    margin: 0 auto;
+    line-height: 150px;
+    text-align: center;
+    
+}
+.bb-inner .bb-i-l span{
+    font-weight: bolder;
+    color: #eff3f5;
+    font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+    display:inline-block;
+    line-height:1.4em;
+    vertical-align:middle;
+}

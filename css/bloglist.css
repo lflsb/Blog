@@ -1,0 +1,494 @@
+body{
+    height: 100%;
+    position: absolute;
+    top:0;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.b-blog-list{
+    margin:0 auto;
+    height: auto;
+    overflow:visible;
+    height: 100%;
+}
+
+/****************左边栏开始********************/
+.b-blog-ll{
+    margin-left: 100px;
+    float: left;
+    margin-bottom: 50px;
+}
+
+.b-blog-ll-single{
+    margin: 0 auto;
+    overflow:
+}
+
+.b-blog-ll-sp{
+    width: 100px;
+    height : 100px;
+    margin: 0 auto;
+    margin-right: 20px;
+    background-color: #584b4f;
+    border-radius: 10px;
+}
+
+.b-blog-ll-sh{
+    width: 670px;
+    float: left;
+    padding-left: 30px;
+    margin-top: 40px;
+    
+}
+
+.b-blog-ll-shtag{
+    width: auto;
+    float: left;
+    margin-left: 10px;
+    line-height: 17px;
+    border-radius: 40px;
+    padding: 0px 10px;
+    background-color:#6CB33E;
+    /*Mozilla内核*/
+    -moz-transition:box-shadow 0.2s linear;
+    /*Webkit内核*/
+    -webkit-transition:box-shadow 0.2s linear;
+    /*Opera*/
+    -o-transition:box-shadow 0.2s linear;
+    /*W3C 标准*/
+    transition:box-shadow 0.2s linear;
+}
+.b-blog-ll-shtag:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 6px #888;
+    
+}
+.b-blog-ll-shtag li{
+    color: white; 
+}
+
+.b-blog-ll-middle{
+    margin-top: 10px;
+    background-color: white;
+    float: left;
+    /*Mozilla内核*/
+    -moz-transition:box-shadow 0.3s linear;
+    /*Webkit内核*/
+    -webkit-transition:box-shadow 0.3s linear;
+    /*Opera*/
+    -o-transition:box-shadow 0.3s linear;
+    /*W3C 标准*/
+    transition:box-shadow 0.3s linear;
+    box-shadow: 0px 0px 10px #ddd;
+}
+.b-blog-ll-middle:hover{
+    cursor: pointer;
+    box-shadow: 0px 15px 50px #ddd;
+}
+.b-blog-ll-minner{
+    float: left;
+}
+
+.b-blog-ll-smheader{
+    margin-left: 40px;
+    height: 70px;
+    width: 400px;
+}
+
+.b-blog-ll-smtitle{
+	font-family: "Arial","YouYuan","黑体","宋体",sans-serif;
+    line-height: 70px;
+    font-size: 20px;
+    height: 70px;
+    width: 150px;
+    float: left;
+    font-weight: 600;
+}
+
+.b-blog-ll-smtitle span{
+    /*Mozilla内核*/
+    -moz-transition:color 0.2s linear;
+    /*Webkit内核*/
+    -webkit-transition:color 0.2s linear;
+    /*Opera*/
+    -o-transition:color 0.2s linear;
+    /*W3C 标准*/
+    transition:color 0.2s linear;
+}
+.b-blog-ll-smtitle span:hover{
+    color: burlywood;
+}
+.b-blog-ll-smgrade{
+    height: 70px;
+    width: 150px;
+    float: right;
+    line-height: 70px;
+}
+.b-blog-ll-smgrade i{
+    /*Mozilla内核*/
+    -moz-transition:color 0.2s linear;
+    /*Webkit内核*/
+    -webkit-transition:color 0.2s linear;
+    /*Opera*/
+    -o-transition:color 0.2s linear;
+    /*W3C 标准*/
+    transition:color 0.2s linear;
+    color: #8E8E8E;
+}
+.b-blog-ll-smgrade i:hover{
+    color:coral;
+}
+
+.b-blog-ll-smcontent{
+    font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+    line-height: 1.3em;
+    margin-left: 40px;
+    color: #8E8E8E;
+    font-size: 12px;
+    /*Mozilla内核*/
+    -moz-transition:color 0.2s linear;
+    /*Webkit内核*/
+    -webkit-transition:color 0.2s linear;
+    /*Opera*/
+    -o-transition:color 0.2s linear;
+    /*W3C 标准*/
+    transition:color 0.2s linear;
+}
+.b-blog-ll-smcontent:hover{
+    color: black;
+}
+.b-blog-ll-time{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    height: 20px;
+    font-size: 12px;
+    font-family: "Helvetica Neue", Helvetica,"幼圆", sans-serif;
+}
+
+.b-blog-ll-smbottom{
+    height: 50px;
+    margin-left: 40px;
+    border-top:1px solid #eee;
+    font-family: "Helvetica Neue", Helvetica,"幼圆", sans-serif;
+}
+
+.b-blog-ll-smbottom span{
+    
+    line-height: 65px;
+    font-size: 12px;
+    /*Mozilla内核*/
+    -moz-transition:color 0.2s linear;
+    /*Webkit内核*/
+    -webkit-transition:color 0.2s linear;
+    /*Opera*/
+    -o-transition:color 0.2s linear;
+    /*W3C 标准*/
+    transition:color 0.2s linear;
+}
+
+.b-blog-ll-smbottom span:hover{
+    color: burlywood;
+}
+.b-blog-ll-smbottom i{
+    font-size: 13px;
+    /*Mozilla内核*/
+    -moz-transition:color 0.2s linear;
+    /*Webkit内核*/
+    -webkit-transition:color 0.2s linear;
+    /*Opera*/
+    -o-transition:color 0.2s linear;
+    /*W3C 标准*/
+    transition:color 0.2s linear;
+}
+.b-blog-ll-smbottom i:hover{
+    color:burlywood;
+}
+.b-blog-ll-sb{
+    float: left;
+    display: none;
+}
+.b-blog-ll-sb_click{
+    float: left;
+    display: block;
+}
+
+.b-blog-ll-sbsingle{
+    margin-left: 40px;
+    overflow: hidden;
+    padding: 5px 0;
+    
+    /*Mozilla内核*/
+    -moz-transition:background-color 0.5s linear;
+    /*Webkit内核*/
+    -webkit-transition:background-color 0.5s linear;
+    /*Opera*/
+    -o-transition:background-color 0.5s linear;
+    /*W3C 标准*/
+    transition:background-color 0.35s linear;
+}
+.b-blog-ll-sbsingle:hover{
+    background-color: #F5F5DC;
+}
+.b-blog-ll-sbsingle-pic{
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;  
+    -webkit-border-radius: 25px;  
+    -moz-border-radius: 25px;  
+    -khtml-border-radius: 25px;
+    margin-left: 20px;
+    float: left;
+    border: 1px solid #DEDEDE;
+    margin-top: 8px;
+    
+    
+    font-family: "Helvetica Neue", Helvetica,"幼圆", sans-serif; 
+    font-size: 10px;
+    line-height: 25px;
+    text-align: center;
+}
+.b-blog-ll-sbsingle-introduce{
+    height: 25px;
+    width: 530px;
+    float: right;
+    font-family: "Helvetica Neue", Helvetica,"幼圆", sans-serif;
+}
+.b-blog-ll-sbsingle-review{
+    width: 530px;
+    float: right;
+    font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 12px;
+}
+.b-blog-ll-sbsingle-ro{
+    margin-top: 10px;
+    background-color:#eee;
+}
+.b-blog-ll-sbsingle-readmore{
+    width: 530px;
+    margin-left: 40px;
+    font-family: "Helvetica Neue", Helvetica,"幼圆", sans-serif;
+    padding: 10px 0px;
+    
+}
+.b-blog-ll-sbsingle-readmore span{
+    /*Mozilla内核*/
+    -moz-transition:color 0.2s linear;
+    /*Webkit内核*/
+    -webkit-transition:color 0.2s linear;
+    /*Opera*/
+    -o-transition:color 0.2s linear;
+    /*W3C 标准*/
+    transition:color 0.2s linear;
+}
+.b-blog-ll-sbsingle-readmore span:hover{
+    color:chocolate;
+}
+
+/****************左边栏结束********************/
+
+
+
+
+
+
+/****************右边栏开始********************/
+.b-blog-lr{
+    margin-top: 70px;
+    float: right;
+    margin-right: 100px;
+    /*Mozilla内核*/
+    -moz-transition:box-shadow 0.3s linear;
+    /*Webkit内核*/
+    -webkit-transition:box-shadow 0.3s linear;
+    /*Opera*/
+    -o-transition:box-shadow 0.3s linear;
+    /*W3C 标准*/
+    transition:box-shadow 0.3s linear;
+    box-shadow: 0px 0px 10px #ddd;
+}
+.b-blog-lr:hover{
+    cursor: pointer;
+}
+
+.b-blog-lr-header{
+    margin: 0 auto;
+}
+
+.b-blog-lr-hinner{
+    margin-top: 30px;
+    
+}
+
+.b-blog-lr-hi-pic{
+    width: 80px;
+    margin: 0 auto;
+    background-color: beige;
+    font-size: 30px;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 50px;
+    font-family: "Helvetica Neue", Helvetica,"幼圆", sans-serif;
+    color: darkgrey;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px;
+    
+    
+    /*Mozilla内核*/
+    -moz-transition:box-shadow 0.2s linear;
+    /*Webkit内核*/
+    -webkit-transition:box-shadow 0.2s linear;
+    /*Opera*/
+    -o-transition:box-shadow 0.2s linear;
+    /*W3C 标准*/
+    transition:box-shadow 0.2s linear;
+}
+.b-blog-lr-hi-pic:hover{
+    cursor: pointer;
+    box-shadow: 0 0 20px;
+}
+.b-blog-lr-hi-introduce{
+    margin-top: 30px;
+    padding: 20px 0;
+    border-top:1px solid #eee;
+    border-bottom:1px solid #eee;
+    /*Mozilla内核*/
+    -moz-transition:background-color 0.3s linear;
+    /*Webkit内核*/
+    -webkit-transition:background-color 0.3s linear;
+    /*Opera*/
+    -o-transition:background-color 0.3s linear;
+    /*W3C 标准*/
+    transition:background-color 0.3s linear;
+}
+.b-blog-lr-hi-introduce:hover{
+    background-color: beige;
+}
+.b-blog-lr-hii-name i{
+    font-size: 14px;
+    margin-right: 10px;
+}
+.b-blog-lr-hii-name{
+    font-family: "Helvetica Neue", Helvetica,"幼圆", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #584B4F;
+}
+.b-blog-lr-hii-email{
+    font-family: "Helvetica Neue", Helvetica,"幼圆", sans-serif;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+    color: #584B4F;
+}
+.b-blog-lr-hii-email i{
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.b-blog-lr-hii-createtime{
+    font-family: "Helvetica Neue", Helvetica,"微软雅黑", sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color:#584B4F;
+}
+
+
+.b-blog-lr-content{
+    margin: 0 auto;
+    font-family: "Helvetica Neue", Helvetica,"幼圆", sans-serif;
+    font-size: 12px;
+    line-height: 1.5em;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /*Mozilla内核*/
+    -moz-transition:background-color 0.3s linear;
+    /*Webkit内核*/
+    -webkit-transition:background-color 0.3s linear;
+    /*Opera*/
+    -o-transition:background-color 0.3s linear;
+    /*W3C 标准*/
+    transition:background-color 0.3s linear;
+}
+.b-blog-lr-content:hover{
+    background-color: beige;
+}
+.b-blog-lr-count{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-top: 1px solid #eee;
+    float: left;
+}
+.b-blog-lr-cblogs{
+    font-family: "Helvetica Neue", Helvetica,"微软雅黑", sans-serif;
+    text-align: center;
+    width: 80px;
+    float: left;
+    height: 50px;
+    line-height: 25px;
+    font-size: 12px;
+    color: #666;
+    /*Mozilla内核*/
+    -moz-transition:background-color 0.3s linear;
+    /*Webkit内核*/
+    -webkit-transition:background-color 0.3s linear;
+    /*Opera*/
+    -o-transition:background-color 0.3s linear;
+    /*W3C 标准*/
+    transition:background-color 0.3s linear;
+}
+.b-blog-lr-cblogs:hover{
+    background-color: beige;
+}
+.b-blog-lr-creviews{
+    font-family: "Helvetica Neue", Helvetica,"微软雅黑", sans-serif;
+    text-align: center;
+    width: 88px;
+    float: left;
+    float: left;
+    height: 50px;
+    line-height: 25px;
+    color: #666;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    /*Mozilla内核*/
+    -moz-transition:background-color 0.3s linear;
+    /*Webkit内核*/
+    -webkit-transition:background-color 0.3s linear;
+    /*Opera*/
+    -o-transition:background-color 0.3s linear;
+    /*W3C 标准*/
+    transition:background-color 0.3s linear;
+}
+.b-blog-lr-creviews:hover{
+    background-color: beige;
+}
+.b-blog-lr-cviews{
+    font-family: "Helvetica Neue", Helvetica,"微软雅黑", sans-serif;
+    text-align: center;
+    width: 80px;
+    float: left;
+    float: left;
+    height: 50px;
+    line-height: 25px;
+    color: #666;
+    /*Mozilla内核*/
+    -moz-transition:background-color 0.3s linear;
+    /*Webkit内核*/
+    -webkit-transition:background-color 0.3s linear;
+    /*Opera*/
+    -o-transition:background-color 0.3s linear;
+    /*W3C 标准*/
+    transition:background-color 0.3s linear;
+}
+.b-blog-lr-cviews:hover{
+    background-color: beige;
+}
+
+/****************右边栏结束********************/
+
+

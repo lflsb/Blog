@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> 自制search搜索框组件 </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <style>
+	.searchBlock{
+		width: 110px;
+		border:solid 1px #ddd;
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-khtml-border-radius: 5px;
+	}
+	
+	.searchBlock span{
+		float: left;
+	}
+	.searchText{
+		border: none;
+		width: 80px;
+		margin: 2px 5px;
+		outline: 0 none;
+	}
+	.searchBtn{
+		border: none;
+		width: 16px;
+		height: 16px;
+		cursor: pointer;
+		background-image: url("../images/ico_sear.gif");
+		background-repeat: no-repeat;
+		display: inline;
+		margin: 2px 0px;
+	}
+  </style>
+ </head>
+
+ <body>
+  <div class="searchBlock">
+	<span>
+		<input type="text" id="search" name="search" class="searchText">
+	</span>
+	
+	<input type="button" class="searchBtn">
+  </div>
+ </body>
+</html>
