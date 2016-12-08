@@ -85,8 +85,8 @@
         color: white; 
     }
     .blog_content_main{
-        height: 700px;
         padding: 20px 30px;
+        font-size: 14px;
     }
     .blog_content_main span{
     }
