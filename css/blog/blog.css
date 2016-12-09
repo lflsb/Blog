@@ -104,21 +104,20 @@
         margin: 30px auto;
         box-shadow: 0px 0px 9px #ddd; 
         overflow: auto;
+        background-color: #f8f8f8;
     }
     .blog_review_write{
-        margin: 30px 20px;
-        border: 1px solid #ccc;
+        margin: 0px 20px;
+        margin-top: 20px;
+        border: 1px solid #f8f8f8;
         height: 100px;
-        border-radius: 10px;
-        background-color: #fefefe;
+        background-color: #f8f8f8;
     }
     .review_w_header{
         height: 80px;
-        border-right: 1px solid #ccc;
         width: 80px;
         margin: 0 0;
         padding: 10px;
-        background-color: #eee;
         float: left;
     }
     .review_w_hpic{
@@ -127,7 +126,7 @@
         border-radius: 30px;
         margin: 0px 10px;
         margin-bottom: 6px;
-        box-shadow: 0px 0px 9px #aaa; 
+        box-shadow: 0px 0px 3px #aaa; 
         text-align: center;
         line-height: 60px;
         font-family: "幼圆", sans-serif;
@@ -142,7 +141,7 @@
     }
     .review_w_hpic:hover{
         cursor: pointer;
-        box-shadow: 0px 0px 20px #aaa; 
+        box-shadow: 0px 0px 10px #aaa; 
     }
     .review_w_hpic span{
         color: #888;
@@ -177,11 +176,12 @@
         background: #fff;
         -webkit-transform: rotate(45deg);
         -moz-transform: rotate(45deg);
-        transform: rotate(45deg)
+        transform: rotate(45deg);
+        background-color: #f8f8f8;
     }
 
     .review_w_main textarea {
-        background-color: #fcfcfc;
+        background-color: #f8f8f8;
         font-size: 12px;
         position: relative;
         display: block;
@@ -206,8 +206,132 @@
     .review_w_main textarea:focus {
         outline: 0;
         line-height: normal;
-        font-size: 12px;
         
+    }
+    .review_w_button{
+        margin-top: 5px;
+        margin-left: 120px;
+        margin-right: 35px;
+        text-align:right;
+    }
+    .review_w_button span{
+        font-family: "Helvetica Neue", Helvetica, Arial,'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+    }
+    .review_w_button span:hover{
+        color: darkred;
+        cursor: pointer;
+    }
+    
+    .blog_review_readers{
+        margin: 20px 0px 0px; 
+        padding : 30px 20px 30px 20px;
+        border-top: 1px solid #eee;
+        background-color: #fff;
+        float: left;
+    }
+    .blog_review_reader{
+        width: 100%;
+        float: left;
+    }
+    .blog_review_reader_out{
+        background-color: #fefefe;
+        box-shadow: 0px 0px 1px #aaa;
+        /*Mozilla内核*/
+        -moz-transition:box-shadow 0.2s linear;
+        /*Webkit内核*/
+        -webkit-transition:box-shadow 0.2s linear;
+        /*Opera*/
+        -o-transition:box-shadow 0.2s linear;
+        /*W3C 标准*/
+        transition:box-shadow 0.2s linear;
+        overflow: auto;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .blog_review_reader_out:hover{
+        cursor: pointer;
+        box-shadow: 0px 0px 10px #aaa; 
+    }
+    
+    .review_r_header{
+        height: 80px;
+        width: 80px;
+        margin: 0 0;
+        padding: 10px;
+        float: left;
+    }
+    .review_r_main{
+        margin-top: 10px;
+        margin-left: 120px;
+        margin-right: 30px;
+        position: relative;
+        font-family: "Helvetica Neue", Helvetica, Arial,'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+        font-size: 12px;
+        overflow: auto;
+    }
+    
+    .review_r_content{
+        font-size: 12px;
+        position: relative;
+        display: block;
+        float: left;
+        width: 100%;
+        font-family: inherit;
+        color: #111;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        padding-bottom: 5px;
+        margin-bottom: 50px;
+        
+    }
+    .review_r_time_{
+        margin-left: 120px;
+        font-family: "Helvetica Neue", Helvetica, Arial,'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+        font-size: 12px;
+        overflow: auto;
+        position: absolute;
+        bottom: 0px;
+        width: 84%;
+        
+    }
+    .review_r_time{
+        padding: 10px 0px;
+        border-top:1px solid #eee;
+        height: 20px;
+        width: 33.3%;
+        float: left;
+        color: #666;
+    }
+    .review_r_time span{
+        /*Mozilla内核*/
+        -moz-transition:color 0.2s linear;
+        /*Webkit内核*/
+        -webkit-transition:color 0.2s linear;
+        /*Opera*/
+        -o-transition:color 0.2s linear;
+        /*W3C 标准*/
+        transition:color 0.2s linear;
+        
+    }
+    .review_r_time i{
+        /*Mozilla内核*/
+        -moz-transition:color 0.2s linear;
+        /*Webkit内核*/
+        -webkit-transition:color 0.2s linear;
+        /*Opera*/
+        -o-transition:color 0.2s linear;
+        /*W3C 标准*/
+        transition:color 0.2s linear;
+        font-size: 13px;
+    }
+    
+    .review_r_time span:hover{
+        color: coral;
+    }
+    .review_r_time i:hover{
+        color: coral;
+        font-size: 13px;
     }
     
 }
