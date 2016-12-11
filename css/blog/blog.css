@@ -91,14 +91,6 @@
     .blog_content_main span{
     }
     
-    .blog_right{
-        margin-top: 10px;
-        height: 100px;
-        width: 250px;
-        float: right;
-        margin-right: 20px;
-        background-color: #eee;
-    }
     .blog_review{
         width: 1000px;
         margin: 30px auto;
@@ -193,19 +185,17 @@
         resize: none;
         font-family: inherit;
         color: #111;
-        transition: line-height 0.2s ease;
-        -moz-transition: line-height 0.2s ease;
-        -webkit-transition: line-height 0.2s ease;
-        -o-transition: line-height 0.2s ease;
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
-        line-height: 55px;
+        transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -webkit-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
     }
 
     .review_w_main textarea:focus {
         outline: 0;
-        line-height: normal;
         
     }
     .review_w_button{
@@ -250,7 +240,7 @@
     }
     .blog_review_reader_out:hover{
         cursor: pointer;
-        box-shadow: 0px 0px 10px #aaa; 
+        box-shadow: 0px 0px 5px #aaa; 
     }
     
     .review_r_header{
@@ -334,6 +324,117 @@
         font-size: 13px;
     }
     
+    
+    .blog_right:hover{
+        
+        box-shadow: 0px 0px 20px #aaa; 
+    }
+    .blog_right{
+        margin-top: 10px;
+        width: 250px;
+        float: right;
+        margin-right: 20px;
+        box-shadow: 0px 0px 9px #ddd; 
+        /*Mozilla内核*/
+        -moz-transition:box-shadow 0.2s linear;
+        /*Webkit内核*/
+        -webkit-transition:box-shadow 0.2s linear;
+        /*Opera*/
+        -o-transition:box-shadow 0.2s linear;
+        /*W3C 标准*/
+        transition:box-shadow 0.2s linear;
+    }
+    .blog_right_currenttags{
+        padding-bottom: 15px;
+        
+    }
+    
+    
+    .currentname{
+        font-size: 16px;
+        font-family: "Helvetica Neue", Helvetica, Arial,'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+        text-align: center;
+        padding: 10px 0px 3px;
+        color: #666;
+        background-color: #f6f6f6;
+    }
+    .currenttags{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .currenttags span{
+        padding: 0px 15px 2px 15px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        color: #666;
+        line-height: 25px;
+        /*Mozilla内核*/
+        -moz-transition:color 0.2s linear;
+        /*Webkit内核*/
+        -webkit-transition:color 0.2s linear;
+        /*Opera*/
+        -o-transition:color 0.2s linear;
+        /*W3C 标准*/
+        transition:color 0.2s linear;
+    }
+    .currenttags span:hover{
+        background-color:lightblue;
+        cursor: pointer;
+        color: #fff;
+        border-color: lightblue;
+        box-shadow: 0px 0px 200px #ddd;
+        
+    }
+    .blog_right_alltags{
+        padding-bottom: 15px;
+        margin: 0 auto;
+        
+    }
+    
+    
+    .blog_right_allgroupby{
+        margin: 0 auto;
+        
+    }
+    .blog_right_allgroupby .currenttags_{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .blog_right_allgroupby .currenttag{
+        font-family: "Helvetica Neue", Helvetica, Arial,'Lato',"黑体", sans-serif;
+        padding: 0px 10px;
+        border-radius: 15px;
+        margin-bottom: 5px;
+        text-align: center;
+        border: 1px solid #fff;
+        /*Mozilla内核*/
+        -moz-transition:color 0.2s;
+        /*Webkit内核*/
+        -webkit-transition:color 0.2s linear;
+        /*Opera*/
+        -o-transition:color 0.2s linear;
+        /*W3C 标准*/
+        transition:color 0.2s linear;
+    }
+    .blog_right_allgroupby .currenttag span{
+        margin-left: 6px;
+        color: #777;
+    }
+    
+    
+    .blog_right_allgroupby a{
+        width: 100%;
+    }
+    .blog_right_allgroupby .currenttag:hover{
+        background-color:#666;
+        cursor: pointer;
+        color: #fff;
+        border-color: #ddd;
+    }
 }
 
 @media screen and (min-width:980px) and (max-width:1199px){
