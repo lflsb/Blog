@@ -40,7 +40,7 @@
     }
     .tags_single:hover{
         cursor: pointer;
-        box-shadow: 0px 0px 9px #ccc;
+        box-shadow: 0px 0px 3px #ccc;
     }
 
     .tags_single a{
@@ -85,7 +85,7 @@
         font-size: 25px;
         padding-left: 35px;
         padding-top: 30px;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
     .tags_singlename span{
         margin-left: 10px;
