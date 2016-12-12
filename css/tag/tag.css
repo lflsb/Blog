@@ -23,6 +23,7 @@
         margin: 0 auto;
         margin-top: 30px;
         text-align: center;
+        margin-bottom: 60px;
     }
 
 
@@ -70,8 +71,58 @@
 
 
     .tags_single_content{
-        
+        margin-top: 20px;
+        padding-left: 40px;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        text-align: left;
+        padding-bottom: 20px;
     }
+    
+    .tags_singlename{
+        color: #333;
+        font-family: "Helvetica Neue", Helvetica, Arial,'Lato', "PingFang SC", "黑体", sans-serif;
+        font-size: 25px;
+        padding-left: 35px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .tags_singlename span{
+        margin-left: 10px;
+        font-size: 20px;
+        color: #555;
+    }
+    .tags_single_content li{
+        font-family: "Helvetica Neue", Helvetica, Arial,'Lato', "PingFang SC", "黑体", sans-serif;
+        font-size: 16px;
+        margin: 20px 0px;
+        color: #888;
+        border-bottom: 1px solid #fff;
+        -moz-transition:color 0.3s linear;
+        /*Webkit内核*/
+        -webkit-transition:color 0.3s linear;
+        /*Opera*/
+        -o-transition:color 0.3s linear;
+        /*W3C 标准*/
+        transition:color 0.3s linear;
+    }
+    .tags_single_content li:hover{
+        cursor: pointer;
+        color: blueviolet;
+    }
+    
+    .exammple {
+    transition: linear 0.5s;
+    background: linear-gradient(0, #108b96 2px, #108b96 2px) no-repeat, 
+                linear-gradient(-90deg, #108b96 2px, #108b96 2px) no-repeat, 
+                linear-gradient(-180deg, #108b96 2px, #108b96 2px) no-repeat, 
+                linear-gradient(-270deg, #108b96 2px, #108b96 2px) no-repeat;
+    background-size: 0 2px, 2px 0, 0 2px, 2px 0;
+    background-position: left top, right top, right bottom, left bottom;
+}
+.exammple:hover {
+    background-size: 100% 2px,  2px 100%, 100% 2px, 2px 100%;
+}
 }
 
 @media screen and (min-width:980px) and (max-width:1199px){
