@@ -4,10 +4,24 @@
     }
 
     .tags_top{
-        margin-top: 50px;
         text-align: center;
         font-family: "Helvetica Neue", Helvetica, Arial,'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
         font-size: 40px;
+        width: 200px;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        
+        transition: linear 0.5s;
+        background: linear-gradient(0, #108b96 2px, #108b96 2px) no-repeat, 
+                    linear-gradient(-90deg, #108b96 2px, #108b96 2px) no-repeat, 
+                    linear-gradient(-180deg, #108b96 2px, #108b96 2px) no-repeat, 
+                    linear-gradient(-270deg, #108b96 2px, #108b96 2px) no-repeat;
+        background-size: 0 2px, 2px 0, 0 2px, 2px 0;
+        background-position: left top, right top, right bottom, left bottom;
+    }
+    .tags_top:hover{
+        background-size: 100% 2px,  2px 100%, 100% 2px, 2px 100%;
     }
 
     .tags_top_number{
@@ -17,7 +31,6 @@
         color: #555;
     }
 
-
     .tags_content{
         width: 60%;
         margin: 0 auto;
@@ -25,7 +38,30 @@
         text-align: center;
         margin-bottom: 60px;
     }
-
+    
+    .tags_single_click{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 20%;
+        height: 500px;
+        font-size: 12px;
+        /*Mozilla内核*/
+        -moz-transition:box-shadow 0.2s linear;
+        /*Webkit内核*/
+        -webkit-transition:box-shadow 0.2s linear;
+        /*Opera*/
+        -o-transition:box-shadow 0.2s linear;
+        /*W3C 标准*/
+        transition:box-shadow 0.2s linear;
+        overflow: hidden;
+    }
+    
+    .tags_single_click:hover{
+        cursor: pointer;
+        box-shadow: 0px 0px 3px #ccc;
+        overflow-y:auto;
+        overflow-x:hidden;
+    }
 
     .tags_single{
         font-size: 16px;
@@ -38,18 +74,19 @@
         /*W3C 标准*/
         transition:box-shadow 0.2s linear;
     }
+    
     .tags_single:hover{
         cursor: pointer;
         box-shadow: 0px 0px 3px #ccc;
     }
 
-    .tags_single a{
+    .tags_single a,.tags_single_click a{
         white-space:nowrap;
         color: #888;
         font-family: "Helvetica Neue", Helvetica, Arial,'Lato', "PingFang SC", "黑体", sans-serif;
         margin-left: 13px;
         margin-right: 13px;
-        line-height: 50px;
+        line-height: 20px;
         /*Mozilla内核*/
         -moz-transition:color 0.3s linear,border-color 0.5s linear;
         /*Webkit内核*/
@@ -61,12 +98,14 @@
         padding: 0px 25px;
         border-radius: 10px;
         border: 1px solid #fff;
+        
     }
-    .tags_single a:hover{
+    .tags_single a:hover,.tags_single_click a:hover{
         cursor: pointer;
         text-decoration: none;
         color: blueviolet;
         border-color: blueviolet;
+        
     }
 
 
@@ -77,6 +116,7 @@
         border-bottom: 1px solid #eee;
         text-align: left;
         padding-bottom: 20px;
+        display: none;
     }
     
     .tags_singlename{
@@ -112,17 +152,17 @@
     }
     
     .exammple {
-    transition: linear 0.5s;
-    background: linear-gradient(0, #108b96 2px, #108b96 2px) no-repeat, 
-                linear-gradient(-90deg, #108b96 2px, #108b96 2px) no-repeat, 
-                linear-gradient(-180deg, #108b96 2px, #108b96 2px) no-repeat, 
-                linear-gradient(-270deg, #108b96 2px, #108b96 2px) no-repeat;
-    background-size: 0 2px, 2px 0, 0 2px, 2px 0;
-    background-position: left top, right top, right bottom, left bottom;
+        transition: linear 0.5s;
+        background: linear-gradient(0, #108b96 2px, #108b96 2px) no-repeat, 
+                    linear-gradient(-90deg, #108b96 2px, #108b96 2px) no-repeat, 
+                    linear-gradient(-180deg, #108b96 2px, #108b96 2px) no-repeat, 
+                    linear-gradient(-270deg, #108b96 2px, #108b96 2px) no-repeat;
+        background-size: 0 2px, 2px 0, 0 2px, 2px 0;
+        background-position: left top, right top, right bottom, left bottom;
 }
-.exammple:hover {
-    background-size: 100% 2px,  2px 100%, 100% 2px, 2px 100%;
-}
+    .exammple:hover {
+        background-size: 100% 2px,  2px 100%, 100% 2px, 2px 100%;
+    }
 }
 
 @media screen and (min-width:980px) and (max-width:1199px){
