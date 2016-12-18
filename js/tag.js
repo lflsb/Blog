@@ -9,10 +9,35 @@ $(function(){
 //        arr[i].after($(".tags_single_content")[0]);
 //    }
     
+        
+    var close = $(".closed");
+    var closespan = $(".closed span");
+    
+    closespan.click(function(){
+        
+       var tags_single = $($("[class^='tags_single']")[0]);
+        var tags_single_content = $($("[class^='tags_single_content']")[0]);
+        var main_content = $(".tags_content");
+        main_content.fadeOut(0);
+        tags_single.removeClass("tags_single_click",0,"linear" );
+        tags_single_content.removeClass("tags_single_content_click",0,"linear" );
+        close.removeClass("closed_click");
+        main_content.fadeIn(1000);
+        
+        
+    });
     
     
     tagsingle.click(function(){
-        $(this).next().slideToggle(600);
+        var tags_single = $($("[class^='tags_single']")[0]);
+        var tags_single_content = $($("[class^='tags_single_content']")[0]);
+        var main_content = $(".tags_content");
+        main_content.fadeOut(0);
+        tags_single.addClass("tags_single_click",0,"linear" );
+        tags_single_content.addClass("tags_single_content_click",0,"linear" );
+        close.addClass("closed_click");
+        main_content.fadeIn(1000);
+        
         
     });
     

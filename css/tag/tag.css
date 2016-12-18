@@ -5,14 +5,13 @@
 
     .tags_top{
         text-align: center;
-        font-family: "Helvetica Neue", Helvetica, Arial,'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+        font-family: "Helvetica Neue", Helvetica, Arial,'Lato', "PingFang SC", "楷体", sans-serif;
         font-size: 40px;
-        width: 200px;
+        width: 250px;
         margin: 0 auto;
-        margin-top: 50px;
-        margin-bottom: 20px;
-        
-        transition: linear 0.5s;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        transition: 0.3s linear;
         background: linear-gradient(0, #108b96 2px, #108b96 2px) no-repeat, 
                     linear-gradient(-90deg, #108b96 2px, #108b96 2px) no-repeat, 
                     linear-gradient(-180deg, #108b96 2px, #108b96 2px) no-repeat, 
@@ -20,70 +19,91 @@
         background-size: 0 2px, 2px 0, 0 2px, 2px 0;
         background-position: left top, right top, right bottom, left bottom;
     }
+    .tags_top span{
+        text-align: center;
+        font-family: "Helvetica Neue", Helvetica, Arial,'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+        font-size: 18px;
+        color: #555;
+        margin-left: 10px;
+    }
     .tags_top:hover{
+        cursor: pointer;
         background-size: 100% 2px,  2px 100%, 100% 2px, 2px 100%;
     }
 
     .tags_top_number{
         text-align: center;
         font-family: "Helvetica Neue", Helvetica, Arial,'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-        font-size: 20px;
+        font-size: 18px;
         color: #555;
+        margin: 0 auto;
+        padding: 2px 0px;
     }
 
     .tags_content{
+        padding-top: 25px;
+        padding-bottom: 50px;
         width: 60%;
         margin: 0 auto;
-        margin-top: 30px;
         text-align: center;
         margin-bottom: 60px;
+        overflow: auto;
     }
     
-    .tags_single_click{
-        padding-top: 20px;
-        padding-bottom: 20px;
-        width: 20%;
-        height: 500px;
-        font-size: 12px;
-        /*Mozilla内核*/
-        -moz-transition:box-shadow 0.2s linear;
-        /*Webkit内核*/
-        -webkit-transition:box-shadow 0.2s linear;
-        /*Opera*/
-        -o-transition:box-shadow 0.2s linear;
-        /*W3C 标准*/
-        transition:box-shadow 0.2s linear;
-        overflow: hidden;
+    .closed{
+        margin-bottom: 25px;
+        display: none;
     }
     
-    .tags_single_click:hover{
+    
+    .closed_click{
+        display: block;
+        text-align: center;
+    }
+    
+    .closed_click span:hover{
+        color: #bbb;
         cursor: pointer;
-        box-shadow: 0px 0px 3px #ccc;
-        overflow-y:auto;
-        overflow-x:hidden;
     }
+    
 
     .tags_single{
         font-size: 16px;
-        /*Mozilla内核*/
-        -moz-transition:box-shadow 0.2s linear;
-        /*Webkit内核*/
-        -webkit-transition:box-shadow 0.2s linear;
-        /*Opera*/
-        -o-transition:box-shadow 0.2s linear;
-        /*W3C 标准*/
-        transition:box-shadow 0.2s linear;
+        
+        padding: 50px 0px;
+        margin: 0 20px;
+        line-height: 60px;
     }
     
     .tags_single:hover{
         cursor: pointer;
-        box-shadow: 0px 0px 3px #ccc;
     }
 
-    .tags_single a,.tags_single_click a{
+    
+    .tags_single_click{
+        display: none;
+        
+    }
+    /* 设置滚动条的样式 */
+    ::-webkit-scrollbar {
+        width:0px;
+    }
+    /* 滚动槽 */
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow:inset006pxrgba(0,0,0,0.3);
+    }
+    /* 滚动条滑块 */
+    ::-webkit-scrollbar-thumb {
+        background:rgba(0,0,0,0.1);
+        -webkit-box-shadow:inset006pxrgba(0,0,0,0.5);
+    }
+    ::-webkit-scrollbar-thumb:window-inactive {
+        background:rgba(150,0,0,0.1);
+    }
+    .tags_single a{
         white-space:nowrap;
         color: #888;
-        font-family: "Helvetica Neue", Helvetica, Arial,'Lato', "PingFang SC", "黑体", sans-serif;
+        font-family: "Helvetica Neue", Helvetica, Arial,'Lato', "PingFang SC", "楷体", sans-serif;
         margin-left: 13px;
         margin-right: 13px;
         line-height: 20px;
@@ -94,13 +114,13 @@
         /*Opera*/
         -o-transition:color 0.3s linear,border-color 0.3s linear;
         /*W3C 标准*/
-        transition:color 0.6s linear,border-color 0.6s linear;
+        transition:color 0.3s linear,border-color 0.6s linear;
         padding: 0px 25px;
         border-radius: 10px;
-        border: 1px solid #fff;
+        border: 1px solid #ddd;
         
     }
-    .tags_single a:hover,.tags_single_click a:hover{
+    .tags_single a:hover{
         cursor: pointer;
         text-decoration: none;
         color: blueviolet;
@@ -108,32 +128,31 @@
         
     }
 
-
     .tags_single_content{
-        margin-top: 20px;
-        padding-left: 40px;
+        display: none;
+    }
+    .tags_single_content_click{
         border-top: 1px solid #eee;
         border-bottom: 1px solid #eee;
         text-align: left;
         padding-bottom: 20px;
-        display: none;
+        border: 0px;
+        display: block;
     }
     
     .tags_singlename{
         color: #333;
-        font-family: "Helvetica Neue", Helvetica, Arial,'Lato', "PingFang SC", "黑体", sans-serif;
+        font-family: "Helvetica Neue", Helvetica, Arial,'Lato', "PingFang SC", "楷体", sans-serif;
         font-size: 25px;
-        padding-left: 35px;
-        padding-top: 30px;
-        padding-bottom: 10px;
+        padding-bottom: 30px;
+        text-align: center;
     }
     .tags_singlename span{
-        margin-left: 10px;
-        font-size: 20px;
+        font-size: 30px;
         color: #555;
     }
     .tags_single_content li{
-        font-family: "Helvetica Neue", Helvetica, Arial,'Lato', "PingFang SC", "黑体", sans-serif;
+        font-family: "Helvetica Neue", Helvetica, Arial,'Lato', "PingFang SC", "楷体", sans-serif;
         font-size: 16px;
         margin: 20px 0px;
         color: #888;
@@ -145,11 +164,48 @@
         -o-transition:color 0.3s linear;
         /*W3C 标准*/
         transition:color 0.3s linear;
+        text-align: center;
     }
     .tags_single_content li:hover{
         cursor: pointer;
         color: blueviolet;
     }
+    
+    .tags_single1_content1_control{
+        padding-top: 50px;
+        text-align: center;
+    }
+    .tags_single1_content1_control span{
+        font-size: 18px;
+        font-family: "Helvetica Neue", Helvetica, Arial,'Lato', "PingFang SC", "楷体", sans-serif;
+        color: #aaa;
+        padding: 2px 0px;
+    }
+    .tags_single1_content1_control a{
+        font-size: 20px;
+        font-family: "Helvetica Neue", Helvetica, Arial,'Lato', "PingFang SC", "楷体", sans-serif;
+        color: #aaa;
+        padding: 2px 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-bottom: 1px solid #fff;
+        -moz-transition:color 0.3s linear,border 0.3s linear;
+        /*Webkit内核*/
+        -webkit-transition:color 0.3s linear,border 0.3s linear;
+        /*Opera*/
+        -o-transition:color 0.3s linear,border 0.3s linear;
+        /*W3C 标准*/
+        transition:color 0.2s linear,border 0.3s linear;
+        border-radius: 30px;
+        border: 1px solid #fff;
+    }
+    .tags_single1_content1_control a:hover{
+        text-decoration: none;
+        border: 1px solid #ddd;
+        color: #ccc;
+        cursor: pointer;
+    }
+        
     
     .exammple {
         transition: linear 0.5s;
