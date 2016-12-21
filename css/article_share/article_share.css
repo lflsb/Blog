@@ -1,7 +1,7 @@
 .article_main{
     width: 60%;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .article_main a{
@@ -14,6 +14,33 @@
     cursor: pointer;
     
 }
+.article_main_directory{
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial,'Lato', "PingFang SC", "黑体", sans-serif;
+    padding: 20px 0px;
+    line-height: 40px;
+    
+}
+.article_main_directorytop{
+    
+    border-top: 1px dashed #ddd;
+}
+.article_main_directorybottom{
+    
+    border-bottom: 1px dashed #ddd;
+}
+.article_main_directory a{
+    border: 1px dashed #fff;
+    transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    
+}
+.article_main_directory a:hover{
+    border: 1px dashed #aaa;
+    color:purple;
+}
 
 .article_name{
     
@@ -22,6 +49,8 @@
     line-height: 100px;
     text-align: center;
     font-family: "Helvetica Neue", Helvetica, Arial,'Lato', "PingFang SC", "楷体", sans-serif;
+    padding-bottom: 10px;
+    padding-top: 30px;
     
 }
 
@@ -31,7 +60,6 @@
     margin: 10px auto;
     padding: 10px 0px;
     font-family: "Helvetica Neue", Helvetica, Arial,'Lato', "PingFang SC", "楷体", sans-serif;
-    border: 1px solid #aaa;
 }
 
 .article_author{
@@ -45,5 +73,12 @@
     font-family: "Helvetica Neue", Helvetica, Arial,'Lato', "PingFang SC", "楷体", sans-serif;
     font-size: 16px;
     line-height: 1.0em;
-    padding: 30px 0px;
+    padding: 60px 0px;
+}
+
+.article_review_content{
+    border-top: 1px solid #aaa;
+    margin-top: 50px;
+    padding: 50px 0;
+    margin-bottom: 50px;
 }
