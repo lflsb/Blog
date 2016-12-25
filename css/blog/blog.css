@@ -8,27 +8,50 @@
     .blog_content{
         margin-top: 10px;
         margin-bottom: 10px;
-        width: 700px;
         margin-left: 20px;
         float: left;
         font-family: "Helvetica Neue", Helvetica, Arial,'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
         box-shadow: 0px 0px 1px #ddd; 
     }
+    .blog_rightmenu i{
+        color: #ddd;
+        padding: 2px 2px;
+        position: relative;
+        top: 10px;
+        left: 95%;
+        border: 1px solid #ddd;
+        /*Mozilla内核*/
+        -moz-transition:all 0.2s ease;
+        /*Webkit内核*/
+        -webkit-transition:all 0.2s linear;
+        /*Opera*/
+        -o-transition:all 0.2s linear;
+        /*W3C 标准*/
+        transition:all 0.5s ease;
+    }
+    .blog_rightmenu i:hover{
+        
+        border-color:blueviolet;
+        cursor: pointer;
+        color: blueviolet;
+        
+    }
     
     .blog_content_header{
+        font-family: "Helvetica Neue", Helvetica, Arial,'Lato', "PingFang SC","幼圆",sans-serif;
         text-align: center;
         margin: 10px auto;
         width:  400px;
     }
     .blog_content_header span{
         font-size: 25px;
-        font-weight: 600;
     }
     .blog_content_mid1{
         border-top: 1px solid #ddd;
         padding: 2px 0px 0px;
         width: 260px;
         margin: 0 auto;
+        margin-top: 30px;
         font-size: 12px;
     }
     .time{
@@ -85,8 +108,10 @@
         color: white; 
     }
     .blog_content_main{
-        padding: 20px 30px 50px 30px;
+        padding: 20px 80px 50px 80px;
         font-size: 14px;
+        line-height: 2.5em;
+        Letter-spacing:0.2em;
     }
     .blog_content_main span{
     }
@@ -289,6 +314,7 @@
         font-family: "Helvetica Neue", Helvetica, Arial,'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
         font-size: 12px;
         overflow: auto;
+        letter-spacing: 0.1em;
     }
     
     .review_r_content{
@@ -355,17 +381,18 @@
         font-size: 13px;
     }
     
-    
     .blog_right:hover{
         
-        box-shadow: 0px 0px 1px #aaa; 
+        box-shadow: 0px 0px 30px #ccc; 
     }
     .blog_right{
+        background-color: #fff;
+        position: absolute;
+        z-index: 2px;
         margin-top: 10px;
         width: 250px;
-        float: right;
         margin-right: 20px;
-        box-shadow: 0px 0px 1px #ddd; 
+        box-shadow: 0px 0px 30px #ddd; 
         /*Mozilla内核*/
         -moz-transition:box-shadow 0.2s linear;
         /*Webkit内核*/
@@ -374,73 +401,123 @@
         -o-transition:box-shadow 0.2s linear;
         /*W3C 标准*/
         transition:box-shadow 0.2s linear;
+        display: none;
     }
     .blog_right_currenttags{
         padding-bottom: 15px;
+        padding-top: 20px;
+        /*Mozilla内核*/
+        -moz-transition:all 0.2s linear;
+        /*Webkit内核*/
+        -webkit-transition:all 0.2s linear;
+        /*Opera*/
+        -o-transition:all 0.2s linear;
+        /*W3C 标准*/
+        transition:all 0.2s linear;
         
+    }
+    .blog_right_currenttags:hover{
+        box-shadow: 0 0 20px #eaeaea inset;
+        background-color: #fff;
     }
     
     
     .currentname{
-        font-size: 16px;
-        font-family: "Helvetica Neue", Helvetica, Arial,'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+        font-family: "Helvetica Neue", Helvetica, Arial,'Lato', "PingFang SC", "黑体", sans-serif;
         text-align: center;
-        padding: 10px 0px 3px;
+        padding: 5px 0px 5px;
         color: #666;
-        background-color: #f6f6f6;
+        border-bottom: 2px dotted #eee;
+    }
+    .currentname:hover{
+        color: chocolate;
+        cursor: pointer;
     }
     .currenttags{
         width: 90%;
         margin: 0 auto;
-        margin-top: 10px;
+        margin-top: 5px;
         margin-bottom: 10px;
+        text-align: center;
     }
-    .currenttags span{
-        padding: 0px 15px 2px 15px;
+    .currenttags a{
+        padding: 0px 25px 2px 25px;
         border-radius: 10px;
         border: 1px solid #ccc;
-        color: #666;
+        color: #aaa;
         line-height: 25px;
+        
         /*Mozilla内核*/
-        -moz-transition:color 0.2s linear;
+        -moz-transition:all 0.3s linear;
         /*Webkit内核*/
-        -webkit-transition:color 0.2s linear;
+        -webkit-transition:all 0.3s linear;
         /*Opera*/
-        -o-transition:color 0.2s linear;
+        -o-transition:all 0.3s linear;
         /*W3C 标准*/
-        transition:color 0.2s linear;
+        transition:all 0.3s linear;
     }
-    .currenttags span:hover{
-        background-color:lightblue;
+    .currenttags a:hover{
         cursor: pointer;
-        color: #fff;
-        border-color: lightblue;
-        box-shadow: 0px 0px 200px #ddd;
+        color: blueviolet;
+        border-color:blueviolet;
+        text-decoration: none;
         
     }
     .blog_right_alltags{
-        padding-bottom: 15px;
+        padding-bottom: 20px;
+        padding-top: 20px;
         margin: 0 auto;
+        border-bottom: 1px solid #eeeeee;
+        border-top:  1px solid #eeeeee;
         
+        
+        /*Mozilla内核*/
+        -moz-transition:all 0.2s linear;
+        /*Webkit内核*/
+        -webkit-transition:all 0.2s linear;
+        /*Opera*/
+        -o-transition:all 0.2s linear;
+        /*W3C 标准*/
+        transition:all 0.2s linear;
+    }
+    .blog_right_alltags:hover{
+        box-shadow: 0 0 50px #eaeaea inset;
+        background-color: #fff;
     }
     
     
     .blog_right_allgroupby{
-        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin: 0px auto;
+        /*Mozilla内核*/
+        -moz-transition:all 0.2s linear;
+        /*Webkit内核*/
+        -webkit-transition:all 0.2s linear;
+        /*Opera*/
+        -o-transition:all 0.2s linear;
+        /*W3C 标准*/
+        transition:all 0.2s linear;
         
+        
+    }
+    .blog_right_allgroupby:hover{
+        box-shadow: 0 0 50px #eaeaea inset;
+        background-color: #fff;
     }
     .blog_right_allgroupby .currenttags_{
         width: 90%;
         margin: 0 auto;
         margin-top: 10px;
-        margin-bottom: 10px;
+        padding-bottom: 5px;
     }
     .blog_right_allgroupby .currenttag{
+        text-align: center;
+        color: #aaa;
         font-family: "Helvetica Neue", Helvetica, Arial,'Lato',"黑体", sans-serif;
         padding: 0px 10px;
         border-radius: 15px;
         margin-bottom: 5px;
-        text-align: center;
         border: 1px solid #fff;
         /*Mozilla内核*/
         -moz-transition:color 0.2s;
@@ -453,7 +530,6 @@
     }
     .blog_right_allgroupby .currenttag span{
         margin-left: 6px;
-        color: #777;
     }
     
     
@@ -461,10 +537,9 @@
         width: 100%;
     }
     .blog_right_allgroupby .currenttag:hover{
-        background-color:#666;
         cursor: pointer;
-        color: #fff;
-        border-color: #ddd;
+        color:blueviolet;
+        border-color: blueviolet;
     }
 }
 

@@ -14,11 +14,13 @@ body{
     margin:0;
     left:0;
     top:0;
+    height: 60px;
 }
 
 /***********导航栏左边样式开始*****************/
 .b-navibar-left{
     width: 500px;
+    line-height: 56px;
     float: left;
 }
 .b-navibar-ll{
@@ -52,6 +54,7 @@ body{
 }
 .b-navibar-lr a{
     font-size: 14px;
+    line-height: 56px;
     color: #eff3f5;
 	font-family: "Arial","YouYuan","黑体","宋体",sans-serif;
     
@@ -71,7 +74,6 @@ body{
 }
 .b-navibar-index{
     float: left;
-    line-height: 33px;
     margin-right: 10px;
     border: 2px solid #584B4F;
     
@@ -92,7 +94,7 @@ body{
 }
 .b-navibar-system{
     float: left;
-    line-height: 33px;
+    line-height: 56px;
     border: 2px solid #584B4F;
     
     /*Mozilla内核*/
@@ -140,7 +142,7 @@ body{
     -khtml-border-radius: 20px;
     float: right;
     background-color: white;
-    margin-top: 3px;
+    margin-top: 16px;
     margin-right: 60px;
 }
 
@@ -176,7 +178,7 @@ body{
     margin-right: 5px;
     float: right;
     border: 2px solid #584B4F;
-    
+    line-height: 56px;
     /*Mozilla内核*/
     -moz-transition:border 0.3s ease-in-out;
     /*Webkit内核*/
@@ -195,6 +197,7 @@ body{
     margin-right: 5px;
     float: right;
     border: 2px solid #584B4F;
+    line-height: 56px;
     
     /*Mozilla内核*/
     -moz-transition:border 0.3s ease-in-out;
@@ -213,6 +216,7 @@ body{
 .b-navibar-r-leftmessage{
     float: right;
     border: 2px solid #584B4F;
+    line-height: 56px;
     
     /*Mozilla内核*/
     -moz-transition:border 0.3s ease-in-out;

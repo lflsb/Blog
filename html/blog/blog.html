@@ -5,6 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <title>GETTING STARTED WITH BRACKETS</title>
+        <script type="text/javascript" src="../../js/jquery.min.js"></script>
+        <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../../js/blog.js"></script>
         <link rel="stylesheet" href="../../css/base.css">
         <link rel="stylesheet" href="../../css/width_height.css">
         <link rel="stylesheet" href="../../icons/iconfont.css">
@@ -28,6 +31,9 @@
                 </div>
             
             <div class="blog_content">
+                <div class="blog_rightmenu">
+                    <i class="iconfont icon-xitongcaidan1 menu"></i>
+                </div>
                 <div class="blog_content_header">
                     <span>阿里中间件（Aliware）双十一专题——“分布式事务中间件</span>
                 </div>
@@ -52,25 +58,35 @@
                 </div>
                 <div class="blog_content_main">
                     <span>
-                        一、 前言<br><br>
+                        一、 前言<br>
 
-                        什么是事务？大家最熟悉的莫过于数据库事务，一大堆SQL操作一个DB，要么同时成功、要么同时失败。（GTS支持ACID，特此公告，不再解释）<br>
-                        什么是分布式事务？一大堆SQL操作N个DB，或者一大堆服务操作1个或多个DB，要么同时成功、要么同时失败。<br>
-                        怎么保证事务？有一个解决办法是“两阶段提交”，一阶段大家先把该做的做了但是不提交，二阶段再一起提交或都不提交。<br>
-                        单机事务到分布式事务的变化？在分布式环境下，所有的状态同步都需要走网络，成本变得非常高。因此做好分布式事务容易，难点在于怎样做的又快又好。<br>
-                        现状？分布式事务是性能杀手，千万不要使用，可以异步做最终一致，既保证性能又保证功能，完美！我们是程序员，不怕实现幂等、不怕实现补偿、不怕逻辑复杂、不怕工作量、不怕人肉、不怕加班。。。<br>
-                        楼主想说：niubility！然而事实的真相是，过度使用事务造成的性能下降的恶果，应该由应用的开发者承担；应用开发者在使用事务的时候，必须考虑到性能问题。然而，作为中间件，必须提供事务机制，而不是因为性能问题，就干脆不提供事务。我们有义务把通用的问题从复杂业务中抽丝剥茧，做成稳定的工具，避免重复造轮子。更何况，我们只是牺牲了那么一丢丢性能，换来的是不用加班、不用承担故障风险、可以更好的关注业务本身。<br><br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp什么是事务？大家最熟悉的莫过于数据库事务，一大堆SQL操作一个DB，要么同时成功、要么同时失败。（GTS支持ACID，特此公告，不再解释）<br>
+                        
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp什么是分布式事务？一大堆SQL操作N个DB，或者一大堆服务操作1个或多个DB，要么同时成功、要么同时失败。<br>
+                        
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp怎么保证事务？有一个解决办法是“两阶段提交”，一阶段大家先把该做的做了但是不提交，二阶段再一起提交或都不提交。<br>
+                        
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp单机事务到分布式事务的变化？在分布式环境下，所有的状态同步都需要走网络，成本变得非常高。因此做好分布式事务容易，难点在于怎样做的又快又好。<br>
+                        
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp现状？分布式事务是性能杀手，千万不要使用，可以异步做最终一致，既保证性能又保证功能，完美！我们是程序员，不怕实现幂等、不怕实现补偿、不怕逻辑复杂、不怕工作量、不怕人肉、不怕加班。。。<br>
+                        
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp楼主想说：niubility！然而事实的真相是，过度使用事务造成的性能下降的恶果，应该由应用的开发者承担；应用开发者在使用事务的时候，必须考虑到性能问题。然而，作为中间件，必须提供事务机制，而不是因为性能问题，就干脆不提供事务。我们有义务把通用的问题从复杂业务中抽丝剥茧，做成稳定的工具，避免重复造轮子。更何况，我们只是牺牲了那么一丢丢性能，换来的是不用加班、不用承担故障风险、可以更好的关注业务本身。<br><br>
 
-                        二、 GTS来了<br><br>
+                        二、 GTS来了<br>
 
-                        进入正题，什么是GTS？GTS是一款高性能、高可靠、接入简单的分布式事务中间件，用于解决分布式环境下的事务一致性问题。该产品支持 DRDS(TDDL)、RDS、Oracle、MySQL、PostgreSQL、H2 等多种数据源，并可以配合使用 EDAS(HSF)、Dubbo 及多种私有 RPC 框架，同时还兼容 MetaQ(MQ) 消息队列等中间件产品，能够轻松实现分布式数据库事务、多库事务、消息事务、服务链路级事务及其各种组合，策略丰富，易用性和性能兼顾。<br>
-                        我们专注于提供易使用、高性能、稳定、可靠的完整的分布式事务解决方案体系。<br><br>
+                        
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp进入正题，什么是GTS？GTS是一款高性能、高可靠、接入简单的分布式事务中间件，用于解决分布式环境下的事务一致性问题。该产品支持 DRDS(TDDL)、RDS、Oracle、MySQL、PostgreSQL、H2 等多种数据源，并可以配合使用 EDAS(HSF)、Dubbo 及多种私有 RPC 框架，同时还兼容 MetaQ(MQ) 消息队列等中间件产品，能够轻松实现分布式数据库事务、多库事务、消息事务、服务链路级事务及其各种组合，策略丰富，易用性和性能兼顾。<br>
+                        
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp我们专注于提供易使用、高性能、稳定、可靠的完整的分布式事务解决方案体系。<br><br>
 
-                        三、 双11解决了哪些问题<br><br>
+                        三、 双11解决了哪些问题<br>
 
-                        作为双11战场的新兵，我们承担了阿里影业、村淘、菜鸟结算等业务线，以及公有云波司登、慧银等外部用户的双11大促。<br>
-                        GTS承担了保证业务数据一致的责任，并且一般在业务出现异常的时候才发挥作用，把不完整的业务数据回滚到操作之前的状态。这种异常，在业务压力不大的情况下，是低概率事件，而到了双11大促这种业务流量突发的情况下，变成了频发事件。从11.11零点到10分这段时间里，后端通用服务系统均存在不同程度限流的状况，前端业务出现了大量的不完整事务。我相信，使用GTS的产品线都可以爽歪歪、早早洗洗碎了，完全不用担心那些不完整的事务怎么处理。<br>
-                        事实说明，菜鸟结算、阿里影业、村淘的三个业务场景，在双11的前30分钟内，业务回滚超过5%，全天平均回滚超过2%。其他业务线普遍回滚事务超过总量的1%。无一数据不一致！！！<br>
+                        
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp作为双11战场的新兵，我们承担了阿里影业、村淘、菜鸟结算等业务线，以及公有云波司登、慧银等外部用户的双11大促。<br>
+                        
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspGTS承担了保证业务数据一致的责任，并且一般在业务出现异常的时候才发挥作用，把不完整的业务数据回滚到操作之前的状态。这种异常，在业务压力不大的情况下，是低概率事件，而到了双11大促这种业务流量突发的情况下，变成了频发事件。从11.11零点到10分这段时间里，后端通用服务系统均存在不同程度限流的状况，前端业务出现了大量的不完整事务。我相信，使用GTS的产品线都可以爽歪歪、早早洗洗碎了，完全不用担心那些不完整的事务怎么处理。<br>
+                        
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp事实说明，菜鸟结算、阿里影业、村淘的三个业务场景，在双11的前30分钟内，业务回滚超过5%，全天平均回滚超过2%。其他业务线普遍回滚事务超过总量的1%。无一数据不一致！！！<br>
                     </span>
                 </div>
                 
@@ -89,25 +105,25 @@
                 <div class="blog_right_currenttags">
                     <div class="currentname">当前标签</div>
                     <div class="currenttags">
-                        <span>JAVA</span>
-                        <span>PHP</span>
+                        <a>JAVA</a>
+                        <a>PHP</a>
                     </div>
                 </div>
                 <div class="blog_right_alltags">
                     <div class="currentname">所有标签</div>
                     <div class="currenttags">
-                        <span>java</span>
-                        <span>java</span>
-                        <span>java</span>
-                        <span>PHP+java</span>
-                        <span>java</span>
-                        <span>PHP</span>
-                        <span>java</span>
-                        <span>PHP+java</span>
-                        <span>java</span>
-                        <span>PHP</span>
-                        <span>java</span>
-                        <span>PHP+java</span>
+                        <a>java</a>
+                        <a>java</a>
+                        <a>java</a>
+                        <a>PHP+java</a>
+                        <a>java</a>
+                        <a>PHP</a>
+                        <a>java</a>
+                        <a>PHP+java</a>
+                        <a>java</a>
+                        <a>PHP</a>
+                        <a>java</a>
+                        <a>PHP+java</a>
                     
                     </div>
                     
