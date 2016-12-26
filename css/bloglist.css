@@ -8,22 +8,72 @@ body{
 }
 
 .b-blog-list{
-    margin:0 auto;
+    margin:80px auto;
     height: auto;
     overflow:visible;
     height: 100%;
 }
+    
+.b-blog-list_directory{
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial,'Lato', "PingFang SC", "黑体", sans-serif;
+    padding: 20px 30px;
+    line-height: 40px;
+
+}
+.b-blog-list_directorytop{
+    line-height: 0px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #f7f7f7;
+}
+.b-blog-list_directorybottom{
+    background-color: #f7f7f7;
+    border-radius: 10px 10px 0px 0px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    text-align: left;
+    border-bottom: 1px solid #bbb;
+}
+.b-blog-list_directory a{
+    border: 1px dashed #fff;
+    transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+
+}
+.b-blog-list_directory a:hover{
+    border: 1px dashed #aaa;
+    color:purple;
+    cursor: pointer;
+    text-decoration: none;
+}
 
 /****************左边栏开始********************/
 .b-blog-ll{
-    margin-left: 100px;
+    margin-left: 85px;
     float: left;
     margin-bottom: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #bbb;
 }
 
 .b-blog-ll-single{
-    margin: 0 auto;
-    overflow:
+    overflow:auto;
+    border-bottom: 1px solid #bbb;
+    /*Mozilla内核*/
+    -moz-transition:box-shadow 0.2s linear;
+    /*Webkit内核*/
+    -webkit-transition:box-shadow 0.2s linear;
+    /*Opera*/
+    -o-transition:box-shadow 0.2s linear;
+    /*W3C 标准*/
+    transition:box-shadow 0.2s linear;
+}
+.b-blog-ll-single:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 35px #e1e1e1 inset;
 }
 
 .b-blog-ll-sp{
@@ -36,21 +86,19 @@ body{
 }
 
 .b-blog-ll-sh{
-    width: 670px;
-    float: left;
-    padding-left: 30px;
-    margin-top: 40px;
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-bottom: 35px;
+    border-bottom: 1px dashed #ccc;
     
 }
 
 .b-blog-ll-shtag{
-    width: auto;
     float: left;
-    margin-left: 10px;
-    line-height: 17px;
+    margin-right: 10px;
     border-radius: 40px;
-    padding: 0px 10px;
-    background-color:#6CB33E;
+    padding: 0px 30px;
+    border: 1px solid #666;
     /*Mozilla内核*/
     -moz-transition:box-shadow 0.2s linear;
     /*Webkit内核*/
@@ -62,30 +110,21 @@ body{
 }
 .b-blog-ll-shtag:hover{
     cursor: pointer;
-    box-shadow: 0px 0px 6px #888;
+    box-shadow: 0px 0px 2px #888;
+    color: blueviolet;
+    border: 1px solid blueviolet;
     
 }
-.b-blog-ll-shtag li{
-    color: white; 
+.b-blog-ll-shtag a{
+    color: #666;
+}
+.b-blog-ll-shtag a:hover{
+    color: blueviolet;
+    text-decoration: none;
 }
 
 .b-blog-ll-middle{
-    margin-top: 10px;
-    background-color: white;
     float: left;
-    /*Mozilla内核*/
-    -moz-transition:box-shadow 0.3s linear;
-    /*Webkit内核*/
-    -webkit-transition:box-shadow 0.3s linear;
-    /*Opera*/
-    -o-transition:box-shadow 0.3s linear;
-    /*W3C 标准*/
-    transition:box-shadow 0.3s linear;
-    box-shadow: 0px 0px 10px #ddd;
-}
-.b-blog-ll-middle:hover{
-    cursor: pointer;
-    box-shadow: 0px 15px 50px #ddd;
 }
 .b-blog-ll-minner{
     float: left;
@@ -93,18 +132,17 @@ body{
 
 .b-blog-ll-smheader{
     margin-left: 40px;
-    height: 70px;
-    width: 400px;
+    margin-right: 40px;
+    overflow: auto;
 }
 
 .b-blog-ll-smtitle{
-	font-family: "Arial","YouYuan","黑体","宋体",sans-serif;
+    font-family: Helvetica,Arial,"Hiragino Sans GB","Microsoft Yahei","微软雅黑",STHeiti,"华文细黑",sans-serif;
     line-height: 70px;
     font-size: 20px;
     height: 70px;
     width: 150px;
     float: left;
-    font-weight: 600;
 }
 
 .b-blog-ll-smtitle span{
@@ -143,8 +181,10 @@ body{
 
 .b-blog-ll-smcontent{
     font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-    line-height: 1.5em;
+    line-height: 1.8em;
     margin-left: 40px;
+    margin-right: 40px;
+    letter-spacing: 0.01em;
     color: #8E8E8E;
     font-size: 12px;
     /*Mozilla内核*/
@@ -160,24 +200,28 @@ body{
     color: black;
 }
 .b-blog-ll-time{
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 40px;
+    margin-right: 40px;
     height: 20px;
     font-size: 12px;
+    color: mediumpurple;
     font-family: "Helvetica Neue", Helvetica,"幼圆", sans-serif;
 }
 
 .b-blog-ll-smbottom{
-    height: 50px;
+    height: 40px;
     margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
     border-top:1px solid #eee;
     font-family: "Helvetica Neue", Helvetica,"幼圆", sans-serif;
 }
 
 .b-blog-ll-smbottom span{
     
-    line-height: 65px;
+    line-height: 40px;
     font-size: 12px;
     /*Mozilla内核*/
     -moz-transition:color 0.2s linear;
@@ -217,6 +261,7 @@ body{
 
 .b-blog-ll-sbsingle{
     margin-left: 40px;
+    margin-right: 40px;
     overflow: hidden;
     padding: 5px 0;
     
@@ -264,13 +309,13 @@ body{
 }
 .b-blog-ll-sbsingle-ro{
     margin-top: 10px;
-    background-color:#eee;
 }
 .b-blog-ll-sbsingle-readmore{
     width: 530px;
     margin-left: 40px;
     font-family: "Helvetica Neue", Helvetica,"幼圆", sans-serif;
     padding: 10px 0px;
+    margin-bottom: 30px;
     
 }
 .b-blog-ll-sbsingle-readmore span{
@@ -296,36 +341,32 @@ body{
 
 /****************右边栏开始********************/
 .b-blog-lr{
-    margin-top: 70px;
+    margin-top: 20px;
     float: right;
-    margin-right: 100px;
-    /*Mozilla内核*/
-    -moz-transition:box-shadow 0.3s linear;
-    /*Webkit内核*/
-    -webkit-transition:box-shadow 0.3s linear;
-    /*Opera*/
-    -o-transition:box-shadow 0.3s linear;
-    /*W3C 标准*/
-    transition:box-shadow 0.3s linear;
-    box-shadow: 0px 0px 10px #ddd;
+    margin-right: 85px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px #ccc;
+    border: 1px solid #bbb;
+    background-color: #f7f7f7;
 }
 .b-blog-lr:hover{
     cursor: pointer;
 }
 
 .b-blog-lr-header{
+    border-radius: 10px 10px 0px 0px;
     margin: 0 auto;
+    background-color: #f7f7f7;
 }
 
 .b-blog-lr-hinner{
-    margin-top: 30px;
-    
+    border-radius: 10px 10px 0px 0px;
+    padding-top: 30px;
 }
 
 .b-blog-lr-hi-pic{
     width: 80px;
     margin: 0 auto;
-    background-color: beige;
     font-size: 30px;
     text-align: center;
     line-height: 80px;
@@ -350,21 +391,23 @@ body{
     box-shadow: 0 0 20px;
 }
 .b-blog-lr-hi-introduce{
+    background-color: white;
     margin-top: 30px;
     padding: 20px 0;
-    border-top:1px solid #eee;
-    border-bottom:1px solid #eee;
+    border-top:1px solid #bbb;
+    border-bottom:1px solid #bbb;
+    
     /*Mozilla内核*/
-    -moz-transition:background-color 0.3s linear;
+    -moz-transition:box-shadow 0.2s linear;
     /*Webkit内核*/
-    -webkit-transition:background-color 0.3s linear;
+    -webkit-transition:box-shadow 0.2s linear;
     /*Opera*/
-    -o-transition:background-color 0.3s linear;
+    -o-transition:box-shadow 0.2s linear;
     /*W3C 标准*/
-    transition:background-color 0.3s linear;
+    transition:box-shadow 0.2s linear;
 }
 .b-blog-lr-hi-introduce:hover{
-    background-color: beige;
+    box-shadow: 0px 0px 20px #e6e6e6 inset;
 }
 .b-blog-lr-hii-name i{
     font-size: 14px;
@@ -398,6 +441,7 @@ body{
 
 
 .b-blog-lr-content{
+    background-color: white;
     margin: 0 auto;
     font-family: "Helvetica Neue", Helvetica,"幼圆", sans-serif;
     font-size: 12px;
@@ -406,22 +450,36 @@ body{
     padding-top: 30px;
     padding-bottom: 30px;
     /*Mozilla内核*/
-    -moz-transition:background-color 0.3s linear;
+    -moz-transition:box-shadow 0.2s linear;
     /*Webkit内核*/
-    -webkit-transition:background-color 0.3s linear;
+    -webkit-transition:box-shadow 0.2s linear;
     /*Opera*/
-    -o-transition:background-color 0.3s linear;
+    -o-transition:box-shadow 0.2s linear;
     /*W3C 标准*/
-    transition:background-color 0.3s linear;
+    transition:box-shadow 0.2s linear;
 }
 .b-blog-lr-content:hover{
-    background-color: beige;
+    box-shadow: 0px 0px 20px #e6e6e6 inset;
 }
 .b-blog-lr-count{
+    background-color: white;
+    /*Mozilla内核*/
+    -moz-transition:box-shadow 0.2s linear;
+    /*Webkit内核*/
+    -webkit-transition:box-shadow 0.2s linear;
+    /*Opera*/
+    -o-transition:box-shadow 0.2s linear;
+    /*W3C 标准*/
+    transition:box-shadow 0.2s linear;
     padding-top: 30px;
     padding-bottom: 20px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #bbb;
     float: left;
+    border-bottom: 1px solid #bbb;
+    margin-bottom: 45px;
+}
+.b-blog-lr-count:hover{
+    box-shadow: 0px 0px 20px #e6e6e6 inset;
 }
 .b-blog-lr-cblogs{
     font-family: "Helvetica Neue", Helvetica,"微软雅黑", sans-serif;
@@ -442,13 +500,12 @@ body{
     transition:background-color 0.3s linear;
 }
 .b-blog-lr-cblogs:hover{
-    background-color: beige;
+    background-color: #f9f9f9;
 }
 .b-blog-lr-creviews{
     font-family: "Helvetica Neue", Helvetica,"微软雅黑", sans-serif;
     text-align: center;
     width: 88px;
-    float: left;
     float: left;
     height: 50px;
     line-height: 25px;
@@ -465,7 +522,7 @@ body{
     transition:background-color 0.3s linear;
 }
 .b-blog-lr-creviews:hover{
-    background-color: beige;
+    background-color: #f9f9f9;
 }
 .b-blog-lr-cviews{
     font-family: "Helvetica Neue", Helvetica,"微软雅黑", sans-serif;
@@ -486,7 +543,7 @@ body{
     transition:background-color 0.3s linear;
 }
 .b-blog-lr-cviews:hover{
-    background-color: beige;
+    background-color: #f9f9f9;
 }
 
 /****************右边栏结束********************/
