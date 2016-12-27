@@ -1,9 +1,8 @@
 body{
-    background-color: #eff3f5;
+    background-color: #f7f7f7 ;
 }
 .b-navibar{
-    background-color: #f7f7f7;
-    box-shadow: 0px 0px 30px #e2e2e2 inset;
+    box-shadow: 0px 0px 30px #e3e3e3 inset;
 }
 .b-navibar-main{
     margin: 0 auto;
@@ -150,11 +149,11 @@ body{
 /***********导航栏右边样式结束*****************/
 .b-content{
     margin: 0 auto;
-    margin-top: 35px;
+    margin-top: 60px;
 }
 
 .b-header{
-    background-color: #eef;
+    background-color: #f1f1f1;
     height: 550px;
 }
 
@@ -196,7 +195,8 @@ body{
 
 
 .b-bottom{
-    background-color: #584B4a;
+    border-top: 1px solid #ddd;
+    background-color: #f9f9f9;
     width: 100%;
 }
 
@@ -250,8 +250,6 @@ body{
     
 }
 .bb-inner .bb-i-l span{
-    font-weight: bolder;
-    color: #eff3f5;
     font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
     display:inline-block;
     line-height:1.4em;

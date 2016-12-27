@@ -1,0 +1,897 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Button Widget | jQuery UI API ä¸­æ–‡æ–‡æ¡£ | jQuery APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery 1.0 - jQuery 2.0)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="jQuery,API,ä¸­æ–‡ç‰ˆ,ä¸­æ–‡æ–‡æ¡£,ä¸­æ–‡æ‰‹å†Œ,chm" />
+<meta name="description" content="jQuery APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery 1.0 - jQuery 2.0)" />
+<link rel="shortcut icon" type="image/x-icon" href="http://www.css88.com/jquery-ui-api/favicon.ico" />
+
+<!--<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />-->
+<link rel="stylesheet" type="text/css" media="screen" href="../cssstyle/main.min.css" tppabs="http://www.css88.com/jquery-ui-api/cssstyle/main.min.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="../cssstyle/style.css" tppabs="http://www.css88.com/jquery-ui-api/cssstyle/style.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="../cssstyle/jquery.css" tppabs="http://www.css88.com/jquery-ui-api/cssstyle/jquery.css" />
+<script type="text/javascript" src="../js/jquery.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/highlight.js" tppabs="http://www.css88.com/jquery-ui-api/js/highlight.js"></script>
+<script type="text/javascript" src="../js/jquery.ba-bbq.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/jquery.ba-bbq.min.js"></script>
+<script type="text/javascript" src="../js/jquery.ba-dotimeout.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/jquery.ba-dotimeout.min.js"></script>
+<script type="text/javascript" src="../js/main.js" tppabs="http://www.css88.com/jquery-ui-api/js/main.js"></script>
+<!--<script type="text/javascript" src="js/main.min.js"></script>-->
+</head>
+
+<body>
+<div id="header_warp">
+    <div class="header-box">
+            <div class="logo">
+                <h1><a href="../index.htm" tppabs="http://www.css88.com/jquery-ui-api/"
+                       title="jQuery UI APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery UI 1.10)">jQuery UI APIä¸­æ–‡æ–‡æ¡£</a></h1>
+            </div>
+            <ul class="header-nav">
+                <!--<li><a href="http://www.css88.com/jquery-ui-api/old.html" class="nav-link" title="jQuery UI APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery UI 1.10)">æ—§ç‰ˆ</a>
+                </li>-->
+                <li><a href="javascript:if(confirm('http://www.css88.com/jqapi-1.9/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/jqapi-1.9/'" tppabs="http://www.css88.com/jqapi-1.9/" class="nav-link" title="é€‚ç”¨jQuery 1.0 â€“ jQuery 1.10.2,jQuery 2.0 â€“ jQuery 2.0.3">jQuery APIä¸­æ–‡æ–‡æ¡£</a>
+                <li><a href="javascript:if(confirm('http://www.css88.com/archives/4737  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/archives/4737'" tppabs="http://www.css88.com/archives/4737" class="nav-link" title="jQuery UI APIä¸­æ–‡æ–‡æ¡£æ›´æ–°ä¿¡æ¯">æ›´æ–°ä¿¡æ¯</a></li>
+
+                <li><a href="javascript:if(confirm('http://www.css88.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/'" tppabs="http://www.css88.com/" class="nav-link">å‰ç«¯å¼€å‘</a></li>
+            </ul>
+            <!--<input type="search" placeholder="æœç´¢API" autosave="searchdoc" results="10" id="search-field" autocomplete="off">-->
+        </div>
+</div>
+<div id="navigation">
+	
+<aside id="categories" class="widget">
+    <h3 class="widget-title">jQuery UI 1.10</h3>
+    <ul>
+    				<li class="cat-item cat-item-2 current-cat"><a href="../category/effects/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/effects/" title="View all posts filed under Effects">Effects</a>
+    </li>
+    	<li class="cat-item cat-item-10"><a href="../category/effects-core/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/effects-core/" title="View all posts filed under Effects Core">Effects Core</a>
+    </li>
+    	<li class="cat-item cat-item-4"><a href="../category/interactions/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/interactions/" title="View all posts filed under Interactions">Interactions</a>
+    </li>
+    	<li class="cat-item cat-item-8"><a href="../category/overrides/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/overrides/" title="View all posts filed under Method Overrides">Method Overrides</a>
+    </li>
+    	<li class="cat-item cat-item-6"><a href="../category/methods/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/methods/" title="View all posts filed under Methods">Methods</a>
+    </li>
+    	<li class="cat-item cat-item-7"><a href="../category/selectors/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/selectors/" title="View all posts filed under Selectors">Selectors</a>
+    </li>
+    	<li class="cat-item cat-item-12"><a href="../category/theming/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/theming/" title="View all posts filed under Theming">Theming</a>
+    </li>
+    	<li class="cat-item cat-item-9"><a href="../category/ui-core/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/ui-core/" title="View all posts filed under UI Core">UI Core</a>
+    </li>
+    	<li class="cat-item cat-item-5"><a href="../category/utilities/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/utilities/" title="View all posts filed under Utilities">Utilities</a>
+    </li>
+    	<li class="cat-item cat-item-3"><a href="../category/widgets/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/widgets/" title="View all posts filed under Widgets">Widgets</a>
+    </li>
+    		</ul>
+  </aside>
+
+
+    <div style=" height:60px;margin-left:20px"><p
+                        style="font-size:12px; line-height:1.5; margin:8px 0">æ‹ç –çº é”™ è¯·å¾®åšä¸Š <a href="javascript:if(confirm('http://weibo.com/148246293  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://weibo.com/148246293'" tppabs="http://weibo.com/148246293"
+                                                                                           target="_blank">@æ„šäººç å¤´</a>ï¼š</p>
+                    <iframe style="vertical-align: middle;" width="163" height="24" frameborder="0"
+                            allowtransparency="true" marginwidth="0" marginheight="0" scrolling="no" border="0"
+                            src="../../../widget.weibo.com/relationship/followbutton.php-language=zh_cn&width=63&height=24            &uid=1477178352&style=2&btn=red&dpc=1" tppabs="http://widget.weibo.com/relationship/followbutton.php?language=zh_cn&width=63&height=24            &uid=1477178352&style=2&btn=red&dpc=1"></iframe>
+                </div>
+        <div id="googleguanggao" style=" margin-top:20px; margin-left:10px">
+            <script type="text/javascript">
+                        /*jquery-ui-left*/
+                        var cpro_id = "u1731043";
+                    </script>
+                    <script src="../../../cpro.baidustatic.com/cpro/ui/c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+        </div></div>
+<div id="content_box">
+  <div id="content">
+	
+<div class="inner" role="main">
+<article id="post-15" class="post-15 post type-post status-publish format-standard hentry category-widgets">
+	<header class="entry-header">
+		<h1 class="entry-title">Button Widget</h1>
+		<hr>
+<div id="baidu-banner">
+<script type="text/javascript">
+    /*jquery-ui-banner*/
+    var cpro_id = "u1731052";
+</script>
+<script src="../../../cpro.baidustatic.com/cpro/ui/c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+</div>
+<div class="entry-meta">
+			Categories: <span class="category"><a href="../category/widgets/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/widgets/" title="View all posts in Widgets">Widgets</a></span>		</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<article id="button1" class="entry widget"><h2 class="section-title">
+<span>Button Widget</span><span class="version-details">version added: 1.8</span>
+</h2>
+<div class="entry-wrapper">
+<p class="desc"><strong>Description: </strong>å¯ä¸»é¢˜åŒ–çš„æŒ‰é’®å’ŒæŒ‰é’®é›†åˆã€‚</p>
+<section id="quick-nav"><header><h2>QuickNav<a href="#entry-examples">Examples</a>
+</h2></header><div class="quick-nav-section">
+<h3>Options</h3>
+<div><a href="#option-disabled">disabled</a></div>
+<div><a href="#option-icons">icons</a></div>
+<div><a href="#option-label">label</a></div>
+<div><a href="#option-text">text</a></div>
+</div>
+<div class="quick-nav-section">
+<h3>Methods</h3>
+<div><a href="#method-destroy">destroy</a></div>
+<div><a href="#method-disable">disable</a></div>
+<div><a href="#method-enable">enable</a></div>
+<div><a href="#method-option">option</a></div>
+<div><a href="#method-refresh">refresh</a></div>
+<div><a href="#method-widget">widget</a></div>
+</div>
+<div class="quick-nav-section">
+<h3>Events</h3>
+<div><a href="#event-create">create</a></div>
+</div></section><div class="longdesc" id="entry-longdesc">
+    <p>æŒ‰é’®éƒ¨ä»¶ï¼ˆButton Widgetï¼‰åŠ å¼ºäº†æ ‡å‡†è¡¨å•å…ƒç´ çš„åŠŸèƒ½ï¼Œæ¯”å¦‚æŒ‰é’®ï¼ˆbuttonï¼‰ã€è¾“å…¥ï¼ˆinputï¼‰ã€é”šï¼ˆanchorï¼‰ï¼Œç”¨é€‚å½“çš„æ‚¬åœï¼ˆhoverï¼‰å’Œæ¿€æ´»ï¼ˆactiveï¼‰æ ·å¼æ¥ä¸»é¢˜åŒ–æŒ‰é’®ã€‚</p>
+    <p>é™¤äº†åŸºæœ¬çš„æŒ‰é’®ï¼Œå•é€‰æŒ‰é’®å’Œå¤é€‰æ¡†ï¼ˆinput ç±»å‹ä¸º radio å’Œ checkboxï¼‰ä¹Ÿå¯ä»¥è½¬æ¢ä¸ºæŒ‰é’®ã€‚ç›¸å…³çš„æ ‡ç­¾ï¼ˆlabelï¼‰è®¾è®¡æˆæŒ‰é’®çš„æ ·å¼ï¼Œç‚¹å‡»æ—¶æ›´æ–°åº•å±‚çš„è¾“å…¥ã€‚ä¸ºäº†èƒ½æ­£å¸¸å·¥ä½œï¼Œéœ€è¦ç»™ input ä¸€ä¸ª <code>id</code> å±æ€§ï¼Œå¹¶æŒ‡å‘æ ‡ç­¾ï¼ˆlabelï¼‰çš„ <code>for</code> å±æ€§ã€‚ä¸è¦æŠŠ input æ”¾åœ¨æ ‡ç­¾ï¼ˆlabelï¼‰å†…ï¼Œå¦åˆ™ä¼š<a href="javascript:if(confirm('http://www.paciellogroup.com/blog/2011/07/html5-accessibility-chops-form-control-labeling/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.paciellogroup.com/blog/2011/07/html5-accessibility-chops-form-control-labeling/'" tppabs="http://www.paciellogroup.com/blog/2011/07/html5-accessibility-chops-form-control-labeling/" target="_blank">å¼•èµ·å¯è®¿é—®æ€§é—®é¢˜</a>ã€‚</p>
+    <p>ä¸ºäº†åˆ†ç»„å•é€‰æŒ‰é’®ï¼ŒButton ä¹Ÿæä¾›äº†ä¸€ä¸ªé¢å¤–çš„å°éƒ¨ä»¶ï¼Œåä¸º Buttonsetã€‚Buttonset é€šè¿‡é€‰æ‹©ä¸€ä¸ªå®¹å™¨å…ƒç´ ï¼ˆåŒ…å«å•é€‰æŒ‰é’®ï¼‰å¹¶è°ƒç”¨ <code>.buttonset()</code> æ¥ä½¿ç”¨ã€‚Buttonset ä¹Ÿæä¾›äº†å¯è§†åŒ–åˆ†ç»„ï¼Œå› æ­¤å½“æœ‰ä¸€ç»„æŒ‰é’®æ—¶éƒ½å¯è€ƒè™‘ä½¿ç”¨å®ƒã€‚å®ƒä¼šé€‰æ‹©æ‰€æœ‰çš„åä»£ï¼Œå¹¶å¯¹å®ƒä»¬åº”ç”¨ <code>.button()</code>ã€‚æ‚¨å¯ä»¥å¯ç”¨å’Œç¦ç”¨ä¸€ä¸ªæŒ‰é’®é›†ï¼Œè¿™å°†ä¼šå¯ç”¨å’Œç¦ç”¨æ‰€æœ‰åŒ…å«çš„æŒ‰é’®ã€‚é”€æ¯æŒ‰é’®é›†ä¼šè°ƒç”¨æ¯ä¸ªæŒ‰é’®çš„ <code>destroy</code> æ–¹æ³•ã€‚å¯¹äºåˆ†ç»„çš„å•é€‰æŒ‰é’®å’Œå¤é€‰æ¡†æŒ‰é’®ï¼Œæ¨èä½¿ç”¨å¸¦æœ‰ <code>legend</code> çš„ <code>fieldset</code> æ¥æä¾›ä¸€ä¸ªå¯è®¿é—®çš„åˆ†ç»„æ ‡ç­¾ã€‚</p>
+
+
+    <p>å½“ä½¿ç”¨ä¸€ä¸ªç±»å‹ä¸º buttonã€submit æˆ– reset çš„ input æ—¶ï¼Œä»…é™äºæ”¯æŒçº¯æ–‡æœ¬æ— å›¾æ ‡æ ‡ç­¾ã€‚</p>
+
+		<div>
+	<h3 id="theming">ä¸»é¢˜</h3>
+    <p>æŒ‰é’®éƒ¨ä»¶ï¼ˆButton Widgetï¼‰ä½¿ç”¨ <a href="javascript:if(confirm('http://www.css88.com/theming/css-framework/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/theming/css-framework/'" tppabs="http://www.css88.com/theming/css-framework/">jQuery UI CSS æ¡†æ¶</a> æ¥å®šä¹‰å®ƒçš„å¤–è§‚å’Œæ„Ÿè§‚çš„æ ·å¼ã€‚å¦‚æœéœ€è¦ä½¿ç”¨æŒ‰é’®æŒ‡å®šçš„æ ·å¼ï¼Œåˆ™å¯ä»¥ä½¿ç”¨ä¸‹é¢çš„ CSS class åç§°ï¼š</p>
+</div>
+    <ul>
+        <li><code>ui-button</code>ï¼šè¡¨ç¤ºæŒ‰é’®çš„ DOM å…ƒç´ ã€‚è¯¥å…ƒç´ ä¼šæ ¹æ® <a href="#option-text">text</a> å’Œ <a
+                href="#option-icons">icons</a> é€‰é¡¹æ·»åŠ ä¸‹åˆ— class ä¹‹ä¸€ï¼š<code>ui-button-text-only</code>ã€<code>ui-button-icon-only</code>ã€<code>ui-button-icons-only</code>ã€<code>ui-button-text-icons</code>ã€‚
+            <ul>
+                <li><code>ui-button-icon-primary</code>ï¼šç”¨äºæ˜¾ç¤ºæŒ‰é’®ä¸»è¦å›¾æ ‡çš„å…ƒç´ ã€‚åªæœ‰å½“ä¸»è¦å›¾æ ‡åœ¨ <a href="#option-icons">icons</a>
+                    é€‰é¡¹ä¸­æä¾›æ—¶æ‰å‘ˆç°ã€‚
+                </li>
+                <li><code>ui-button-text</code>ï¼šåœ¨æŒ‰é’®çš„æ–‡æœ¬å†…å®¹å‘¨å›´çš„å®¹å™¨ã€‚</li>
+                <li><code>ui-button-icon-secondary</code>ï¼šç”¨äºæ˜¾ç¤ºæŒ‰é’®çš„æ¬¡è¦å›¾æ ‡ã€‚åªæœ‰å½“æ¬¡è¦å›¾æ ‡åœ¨ <a href="#option-icons">icons</a>
+                    é€‰é¡¹ä¸­æä¾›æ—¶æ‰å‘ˆç°ã€‚
+                </li>
+            </ul>
+        </li>
+        <li><code>ui-buttonset</code>ï¼šButtonset çš„å¤–å±‚å®¹å™¨ã€‚</li>
+    </ul>
+
+
+		<h3>ä¾èµ–</h3>
+		<ul>
+			<li><a href="javascript:if(confirm('http://www.css88.com/category/ui-core/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/category/ui-core/'" tppabs="http://www.css88.com/category/ui-core/">UI æ ¸å¿ƒï¼ˆUI Coreï¼‰</a></li>
+			<li><a href="javascript:if(confirm('http://www.css88.com/jQuery.widget/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/jQuery.widget/'" tppabs="http://www.css88.com/jQuery.widget/">éƒ¨ä»¶åº“ï¼ˆWidget Factoryï¼‰</a></li>
+		</ul>
+	</div>
+<h3>å…¶ä»–æ³¨æ„äº‹é¡¹ï¼š</h3>
+<div class="longdesc"><ul><li>
+			è¯¥éƒ¨ä»¶è¦æ±‚ä¸€äº›åŠŸèƒ½æ€§çš„ CSSï¼Œå¦åˆ™å°†æ— æ³•å·¥ä½œã€‚å¦‚æœæ‚¨åˆ›å»ºäº†ä¸€ä¸ªè‡ªå®šä¹‰çš„ä¸»é¢˜ï¼Œè¯·ä½¿ç”¨å°éƒ¨ä»¶æŒ‡å®šçš„ CSS æ–‡ä»¶ä½œä¸ºèµ·ç‚¹ã€‚
+		</li></ul></div>
+<section id="options"><header><h2>Options</h2></header><div id="option-disabled" class="api-item first-item">
+<h3>disabled<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>å¦‚æœè®¾ç½®ä¸º <code>true</code>ï¼Œåˆ™ç¦ç”¨è¯¥ buttonã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>disabled</code> é€‰é¡¹çš„ buttonï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).button({ disabled: <span class="literal">true</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>disabled</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> disabled = $( <span class="string">".selector"</span> ).button( <span class="string">"option"</span>, <span class="string">"disabled"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).button( <span class="string">"option"</span>, <span class="string">"disabled"</span>, <span class="literal">true</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-icons" class="api-item">
+<h3>icons<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>{ primary: null, secondary: null }</code>
+</div>
+<div>
+
+
+    <p>
+        è¦æ˜¾ç¤ºçš„å›¾æ ‡ï¼ŒåŒ…æ‹¬å¸¦æœ‰æ–‡æœ¬çš„å›¾æ ‡å’Œä¸å¸¦æœ‰æ–‡æœ¬çš„å›¾æ ‡ï¼ˆæŸ¥çœ‹ <a href="#option-text"><code>text</code></a> é€‰é¡¹ï¼‰ã€‚é»˜è®¤æƒ…å†µä¸‹ ï¼Œä¸»å›¾æ ‡æ˜¾ç¤ºåœ¨æ ‡ç­¾æ–‡æœ¬çš„å·¦è¾¹ï¼Œå‰¯å›¾æ ‡æ˜¾ç¤ºåœ¨å³è¾¹ã€‚æ˜¾ç¤ºä½ç½®å¯é€šè¿‡ CSS è¿›è¡Œæ§åˆ¶ã€‚</p>
+
+    <p><code>primary</code> å’Œ <code>secondary</code> å±æ€§å€¼å¿…é¡»æ˜¯ <a href="javascript:if(confirm('http://www.css88.com/theming/icons/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/theming/icons/'" tppabs="http://www.css88.com/theming/icons/">å›¾æ ‡ class åç§°</a>ï¼Œä¾‹å¦‚ï¼Œ<code>"ui-icon-gear"</code>ã€‚å¦‚æœåªä½¿ç”¨ä¸€ä¸ªå›¾æ ‡ï¼Œåˆ™ <code>icons: { primary: "ui-icon-locked" }</code>ã€‚å¦‚æœä½¿ç”¨ä¸¤ä¸ªå›¾æ ‡ï¼Œåˆ™ <code>icons: { primary: "ui-icon-gear", secondary: "ui-icon-triangle-1-s" }</code>ã€‚</p>
+
+			</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>icons</code> é€‰é¡¹çš„ buttonï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).button({ icons: { primary: <span class="string">"ui-icon-gear"</span>, secondary: <span class="string">"ui-icon-triangle-1-s"</span> } });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>icons</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> icons = $( <span class="string">".selector"</span> ).button( <span class="string">"option"</span>, <span class="string">"icons"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).button( <span class="string">"option"</span>, <span class="string">"icons"</span>, { primary: <span class="string">"ui-icon-gear"</span>, secondary: <span class="string">"ui-icon-triangle-1-s"</span> } );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-label" class="api-item">
+<h3>label<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>null</code>
+</div>
+<div>è¦æ˜¾ç¤ºåœ¨æŒ‰é’®ä¸­çš„æ–‡æœ¬ã€‚å½“æœªæŒ‡å®šæ—¶ï¼ˆ<code>null</code>ï¼‰ï¼Œåˆ™ä½¿ç”¨å…ƒç´ çš„ HTML å†…å®¹ï¼Œæˆ–è€…å¦‚æœå…ƒç´ æ˜¯ä¸€ä¸ª submit æˆ– reset ç±»å‹çš„ input å…ƒç´ ï¼Œåˆ™ä½¿ç”¨å®ƒçš„ <code>value</code> å±æ€§ï¼Œæˆ–è€…å¦‚æœå…ƒç´ æ˜¯ä¸€ä¸ª radio æˆ– checkbox ç±»å‹çš„ input å…ƒç´ ï¼Œåˆ™ä½¿ç”¨ç›¸å…³çš„ label å…ƒç´ çš„ HTML å†…å®¹ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>label</code> é€‰é¡¹çš„ buttonï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).button({ label: <span class="string">"custom label"</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>label</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> label = $( <span class="string">".selector"</span> ).button( <span class="string">"option"</span>, <span class="string">"label"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).button( <span class="string">"option"</span>, <span class="string">"label"</span>, <span class="string">"custom label"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-text" class="api-item">
+<h3>text<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>true</code>
+</div>
+<div>æ˜¯å¦æ˜¾ç¤ºæ ‡ç­¾ã€‚å½“è®¾ç½®ä¸º <code>false</code> æ—¶ï¼Œä¸æ˜¾ç¤ºæ–‡æœ¬ï¼Œä½†æ˜¯æ­¤æ—¶å¿…é¡»å¯ç”¨ <a href="#option-icons"><code>icons</code></a> é€‰é¡¹ï¼Œå¦åˆ™ <code>text</code> é€‰é¡¹å°†è¢«å¿½ç•¥ã€‚
+
+   </div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>text</code> é€‰é¡¹çš„ buttonï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).button({ text: <span class="literal">false</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>text</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> text = $( <span class="string">".selector"</span> ).button( <span class="string">"option"</span>, <span class="string">"text"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).button( <span class="string">"option"</span>, <span class="string">"text"</span>, <span class="literal">false</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div></section><section id="methods"><header><h2>Methods</h2></header><div id="method-destroy"><div class="api-item first-item">
+<h3>destroy()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>
+    å®Œå…¨ç§»é™¤ button åŠŸèƒ½ã€‚è¿™ä¼šæŠŠå…ƒç´ è¿”å›åˆ°å®ƒçš„é¢„åˆå§‹åŒ–çŠ¶æ€ã€‚
+	</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ destroy æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).button( <span class="string">"destroy"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div>
+<div id="method-disable"><div class="api-item">
+<h3>disable()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>
+    ç¦ç”¨ buttonã€‚
+	</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ disable æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).button( <span class="string">"disable"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div>
+<div id="method-enable"><div class="api-item">
+<h3>enable()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>
+    å¯ç”¨ buttonã€‚
+	</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ enable æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).button( <span class="string">"enable"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div>
+<div id="method-option">
+<div class="api-item">
+<h3>option( optionName )<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a></span>
+</h3>
+<div>è·å–å½“å‰ä¸æŒ‡å®šçš„ <code>optionName</code> å…³è”çš„å€¼ã€‚</div>
+<ul><li>
+<div><strong>optionName</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a>
+</div>
+<div>è¦è·å–å€¼çš„é€‰é¡¹çš„åç§°ã€‚</div>
+</li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨è¯¥æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="keyword">var</span> isDisabled = $( <span class="string">".selector"</span> ).button( <span class="string">"option"</span>, <span class="string">"disabled"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div class="api-item">
+<h3>option()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#PlainObject'" tppabs="http://api.jquery.com/Types/#PlainObject">PlainObject</a></span>
+</h3>
+<div>è·å–ä¸€ä¸ªåŒ…å«é”®/å€¼å¯¹çš„å¯¹è±¡ï¼Œé”®/å€¼å¯¹è¡¨ç¤ºå½“å‰ button é€‰é¡¹å“ˆå¸Œã€‚</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨è¯¥æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="keyword">var</span> options = $( <span class="string">".selector"</span> ).button( <span class="string">"option"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div class="api-item">
+<h3>option( optionName, value )<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>è®¾ç½®ä¸æŒ‡å®šçš„ <code>optionName</code> å…³è”çš„ button é€‰é¡¹çš„å€¼ã€‚</div>
+<ul>
+<li>
+<div><strong>optionName</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a>
+</div>
+<div>è¦è®¾ç½®çš„é€‰é¡¹çš„åç§°ã€‚</div>
+</li>
+<li>
+<div><strong>value</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>è¦ä¸ºé€‰é¡¹è®¾ç½®çš„å€¼ã€‚</div>
+</li>
+</ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨è¯¥æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).button( <span class="string">"option"</span>, <span class="string">"disabled"</span>, <span class="literal">true</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div class="api-item">
+<h3>option( options )<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>ä¸º button è®¾ç½®ä¸€ä¸ªæˆ–å¤šä¸ªé€‰é¡¹ã€‚</div>
+<ul><li>
+<div><strong>options</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>è¦è®¾ç½®çš„ option-value å¯¹ã€‚</div>
+</li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨è¯¥æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).button( <span class="string">"option"</span>, { disabled: <span class="literal">true</span> } );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+</div>
+<div id="method-refresh"><div class="api-item">
+<h3>refresh()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>åˆ·æ–°æŒ‰é’®çš„è§†è§‰çŠ¶æ€ã€‚ç”¨äºåœ¨ä»¥ç¼–ç¨‹æ–¹å¼æ”¹å˜åŸç”Ÿå…ƒç´ çš„é€‰ä¸­çŠ¶æ€æˆ–ç¦ç”¨çŠ¶æ€åæ›´æ–°æŒ‰é’®çŠ¶æ€ã€‚</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ refresh æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).button( <span class="string">"refresh"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div>
+<div id="method-widget"><div class="api-item">
+<h3>widget()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a></span>
+</h3>
+<div>   è¿”å›ä¸€ä¸ªåŒ…å« button çš„ <code>jQuery</code> å¯¹è±¡ã€‚
+	</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ widget æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="keyword">var</span> widget = $( <span class="string">".selector"</span> ).button( <span class="string">"widget"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div></section><section id="events"><header><h2>Events</h2></header><div id="event-create" class="api-item first-item">
+<h3>create( event, ui )<span class="returns">Type: <code>buttoncreate</code></span>
+</h3>
+<div>
+    å½“åˆ›å»ºæŒ‰é’® button æ—¶è§¦å‘ã€‚
+	</div>
+<ul>
+<li>
+<div><strong>event</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Event'" tppabs="http://api.jquery.com/Types/#Event">Event</a>
+</div>
+<div></div>
+</li>
+<li>
+<div><strong>ui</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div></div>
+</li>
+</ul>
+<p><em>æ³¨æ„ï¼š<code>ui</code> å¯¹è±¡æ˜¯ç©ºçš„ï¼Œè¿™é‡ŒåŒ…å«å®ƒæ˜¯ä¸ºäº†ä¸å…¶ä»–äº‹ä»¶ä¿æŒä¸€è‡´æ€§ã€‚</em></p>
+<div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š create å›è°ƒçš„button</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).button({</code></div></div><div class="container"><div class="line"><code>  create: <span class="keyword">function</span>( event, ui ) {}</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>ç»‘å®šä¸€ä¸ªäº‹ä»¶ç›‘å¬å™¨åˆ°  buttoncreate äº‹ä»¶ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).on( <span class="string">"buttoncreate"</span>, <span class="keyword">function</span>( event, ui ) {} );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></section><section class="entry-examples" id="entry-examples"><header><h2>Examples:</h2></header><div class="entry-example" id="example-0">
+<h4>Example: <span class="desc">ä¸€ä¸ªç®€å•çš„ jQuery UI æŒ‰é’®ï¼ˆButtonï¼‰ã€‚</span>
+</h4>
+<div class="syntaxhighlighter xml ">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+						<div class="line n6">6</div>
+
+						<div class="line n7">7</div>
+
+						<div class="line n8">8</div>
+
+						<div class="line n9">9</div>
+
+						<div class="line n10">10</div>
+
+						<div class="line n11">11</div>
+
+						<div class="line n12">12</div>
+
+						<div class="line n13">13</div>
+
+						<div class="line n14">14</div>
+
+						<div class="line n15">15</div>
+
+						<div class="line n16">16</div>
+
+						<div class="line n17">17</div>
+
+						<div class="line n18">18</div>
+
+						<div class="line n19">19</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="doctype">&lt;!doctype html&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">html</span> <span class="attribute">lang</span>=<span class="value">"en"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">head</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">title</span>&gt;</span>button demo<span class="tag">&lt;/<span class="title">title</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">href</span>=<span class="value">"//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"//code.jquery.com/jquery-1.10.2.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"//code.jquery.com/ui/1.10.4/jquery-ui.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">head</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">body</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">button</span>&gt;</span>Button label<span class="tag">&lt;/<span class="title">button</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"></span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">"button"</span> ).button();</code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">body</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">html</span>&gt;</span></code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<h4>Demo:</h4>
+<div class="demo code-demo" data-height="100"></div>
+</div>
+<div class="entry-example" id="example-1">
+<h4>Example: <span class="desc">ä¸€ä¸ªç®€å•çš„ jQuery UI æŒ‰é’®é›†ï¼ˆButtonsetï¼‰ã€‚</span>
+</h4>
+<div class="syntaxhighlighter xml ">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+						<div class="line n6">6</div>
+
+						<div class="line n7">7</div>
+
+						<div class="line n8">8</div>
+
+						<div class="line n9">9</div>
+
+						<div class="line n10">10</div>
+
+						<div class="line n11">11</div>
+
+						<div class="line n12">12</div>
+
+						<div class="line n13">13</div>
+
+						<div class="line n14">14</div>
+
+						<div class="line n15">15</div>
+
+						<div class="line n16">16</div>
+
+						<div class="line n17">17</div>
+
+						<div class="line n18">18</div>
+
+						<div class="line n19">19</div>
+
+						<div class="line n20">20</div>
+
+						<div class="line n21">21</div>
+
+						<div class="line n22">22</div>
+
+						<div class="line n23">23</div>
+
+						<div class="line n24">24</div>
+
+						<div class="line n25">25</div>
+
+						<div class="line n26">26</div>
+
+						<div class="line n27">27</div>
+
+						<div class="line n28">28</div>
+
+						<div class="line n29">29</div>
+
+						<div class="line n30">30</div>
+
+						<div class="line n31">31</div>
+
+						<div class="line n32">32</div>
+
+						<div class="line n33">33</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="doctype">&lt;!doctype html&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">html</span> <span class="attribute">lang</span>=<span class="value">"en"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">head</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">title</span>&gt;</span>button demo<span class="tag">&lt;/<span class="title">title</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">href</span>=<span class="value">"//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"//code.jquery.com/jquery-1.10.2.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"//code.jquery.com/ui/1.10.4/jquery-ui.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">head</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">body</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">form</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">fieldset</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>    <span class="tag">&lt;<span class="title">legend</span>&gt;</span>Favorite jQuery Project<span class="tag">&lt;/<span class="title">legend</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"radio"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>      <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"radio"</span> <span class="attribute">id</span>=<span class="value">"sizzle"</span> <span class="attribute">name</span>=<span class="value">"project"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>      <span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">"sizzle"</span>&gt;</span>Sizzle<span class="tag">&lt;/<span class="title">label</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code>      <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"radio"</span> <span class="attribute">id</span>=<span class="value">"qunit"</span> <span class="attribute">name</span>=<span class="value">"project"</span> <span class="attribute">checked</span>=<span class="value">"checked"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>      <span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">"qunit"</span>&gt;</span>QUnit<span class="tag">&lt;/<span class="title">label</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code>      <span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"radio"</span> <span class="attribute">id</span>=<span class="value">"color"</span> <span class="attribute">name</span>=<span class="value">"project"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>      <span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">"color"</span>&gt;</span>Color<span class="tag">&lt;/<span class="title">label</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;/<span class="title">fieldset</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">form</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"></span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">"#radio"</span> ).buttonset();</code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">body</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">html</span>&gt;</span></code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<h4>Demo:</h4>
+<div class="demo code-demo" data-height="100"></div>
+</div></section>
+</div></article>	</div><!-- .entry-content -->
+
+</article>
+</div>
+
+
+  </div>
+</div>
+<script type="text/javascript" src="../js/search.js" tppabs="http://www.css88.com/jquery-ui-api/js/search.js"></script>
+<script type="text/javascript" src="../js/gotop.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/gotop.min.js"></script>
+<script type="text/javascript">
+	goToTop.init();
+</script>
+<style>
+    #googlead{position:fixed;bottom:-250px;right:10px;width: 250px}
+.hidden{display: none;}
+</style>
+<div id="googlead">
+    <script type="text/javascript">
+        /*jquery-ui-fixed*/
+        var cpro_id = "u1731049";
+    </script>
+    <script src="../../../cpro.baidustatic.com/cpro/ui/c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+</div>
+<script type="text/javascript">setTimeout(function(){
+  $("#googlead").removeClass("hidden").animate({bottom:10})
+},3000)</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../www.google-analytics.com/analytics.js'/*tpa=http://www.google-analytics.com/analytics.js*/,'ga');
+
+  ga('create', 'UA-3448069-12', 'http://www.css88.com/jquery-ui-api/button/css88.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

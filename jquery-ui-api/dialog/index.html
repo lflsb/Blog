@@ -1,0 +1,2680 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Dialog Widget | jQuery UI API ä¸­æ–‡æ–‡æ¡£ | jQuery APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery 1.0 - jQuery 2.0)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="jQuery,API,ä¸­æ–‡ç‰ˆ,ä¸­æ–‡æ–‡æ¡£,ä¸­æ–‡æ‰‹å†Œ,chm" />
+<meta name="description" content="jQuery APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery 1.0 - jQuery 2.0)" />
+<link rel="shortcut icon" type="image/x-icon" href="http://www.css88.com/jquery-ui-api/favicon.ico" />
+
+<!--<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />-->
+<link rel="stylesheet" type="text/css" media="screen" href="../cssstyle/main.min.css" tppabs="http://www.css88.com/jquery-ui-api/cssstyle/main.min.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="../cssstyle/style.css" tppabs="http://www.css88.com/jquery-ui-api/cssstyle/style.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="../cssstyle/jquery.css" tppabs="http://www.css88.com/jquery-ui-api/cssstyle/jquery.css" />
+<script type="text/javascript" src="../js/jquery.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/highlight.js" tppabs="http://www.css88.com/jquery-ui-api/js/highlight.js"></script>
+<script type="text/javascript" src="../js/jquery.ba-bbq.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/jquery.ba-bbq.min.js"></script>
+<script type="text/javascript" src="../js/jquery.ba-dotimeout.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/jquery.ba-dotimeout.min.js"></script>
+<script type="text/javascript" src="../js/main.js" tppabs="http://www.css88.com/jquery-ui-api/js/main.js"></script>
+<!--<script type="text/javascript" src="js/main.min.js"></script>-->
+</head>
+
+<body>
+<div id="header_warp">
+    <div class="header-box">
+            <div class="logo">
+                <h1><a href="../index.htm" tppabs="http://www.css88.com/jquery-ui-api/"
+                       title="jQuery UI APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery UI 1.10)">jQuery UI APIä¸­æ–‡æ–‡æ¡£</a></h1>
+            </div>
+            <ul class="header-nav">
+                <!--<li><a href="http://www.css88.com/jquery-ui-api/old.html" class="nav-link" title="jQuery UI APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery UI 1.10)">æ—§ç‰ˆ</a>
+                </li>-->
+                <li><a href="javascript:if(confirm('http://www.css88.com/jqapi-1.9/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/jqapi-1.9/'" tppabs="http://www.css88.com/jqapi-1.9/" class="nav-link" title="é€‚ç”¨jQuery 1.0 â€“ jQuery 1.10.2,jQuery 2.0 â€“ jQuery 2.0.3">jQuery APIä¸­æ–‡æ–‡æ¡£</a>
+                <li><a href="javascript:if(confirm('http://www.css88.com/archives/4737  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/archives/4737'" tppabs="http://www.css88.com/archives/4737" class="nav-link" title="jQuery UI APIä¸­æ–‡æ–‡æ¡£æ›´æ–°ä¿¡æ¯">æ›´æ–°ä¿¡æ¯</a></li>
+
+                <li><a href="javascript:if(confirm('http://www.css88.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/'" tppabs="http://www.css88.com/" class="nav-link">å‰ç«¯å¼€å‘</a></li>
+            </ul>
+            <!--<input type="search" placeholder="æœç´¢API" autosave="searchdoc" results="10" id="search-field" autocomplete="off">-->
+        </div>
+</div>
+<div id="navigation">
+	
+<aside id="categories" class="widget">
+    <h3 class="widget-title">jQuery UI 1.10</h3>
+    <ul>
+    				<li class="cat-item cat-item-2 current-cat"><a href="../category/effects/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/effects/" title="View all posts filed under Effects">Effects</a>
+    </li>
+    	<li class="cat-item cat-item-10"><a href="../category/effects-core/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/effects-core/" title="View all posts filed under Effects Core">Effects Core</a>
+    </li>
+    	<li class="cat-item cat-item-4"><a href="../category/interactions/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/interactions/" title="View all posts filed under Interactions">Interactions</a>
+    </li>
+    	<li class="cat-item cat-item-8"><a href="../category/overrides/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/overrides/" title="View all posts filed under Method Overrides">Method Overrides</a>
+    </li>
+    	<li class="cat-item cat-item-6"><a href="../category/methods/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/methods/" title="View all posts filed under Methods">Methods</a>
+    </li>
+    	<li class="cat-item cat-item-7"><a href="../category/selectors/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/selectors/" title="View all posts filed under Selectors">Selectors</a>
+    </li>
+    	<li class="cat-item cat-item-12"><a href="../category/theming/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/theming/" title="View all posts filed under Theming">Theming</a>
+    </li>
+    	<li class="cat-item cat-item-9"><a href="../category/ui-core/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/ui-core/" title="View all posts filed under UI Core">UI Core</a>
+    </li>
+    	<li class="cat-item cat-item-5"><a href="../category/utilities/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/utilities/" title="View all posts filed under Utilities">Utilities</a>
+    </li>
+    	<li class="cat-item cat-item-3"><a href="../category/widgets/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/widgets/" title="View all posts filed under Widgets">Widgets</a>
+    </li>
+    		</ul>
+  </aside>
+
+
+    <div style=" height:60px;margin-left:20px"><p
+                        style="font-size:12px; line-height:1.5; margin:8px 0">æ‹ç –çº é”™ è¯·å¾®åšä¸Š <a href="javascript:if(confirm('http://weibo.com/148246293  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://weibo.com/148246293'" tppabs="http://weibo.com/148246293"
+                                                                                           target="_blank">@æ„šäººç å¤´</a>ï¼š</p>
+                    <iframe style="vertical-align: middle;" width="163" height="24" frameborder="0"
+                            allowtransparency="true" marginwidth="0" marginheight="0" scrolling="no" border="0"
+                            src="../../../widget.weibo.com/relationship/followbutton.php-language=zh_cn&width=63&height=24            &uid=1477178352&style=2&btn=red&dpc=1" tppabs="http://widget.weibo.com/relationship/followbutton.php?language=zh_cn&width=63&height=24            &uid=1477178352&style=2&btn=red&dpc=1"></iframe>
+                </div>
+        <div id="googleguanggao" style=" margin-top:20px; margin-left:10px">
+            <script type="text/javascript">
+                        /*jquery-ui-left*/
+                        var cpro_id = "u1731043";
+                    </script>
+                    <script src="../../../cpro.baidustatic.com/cpro/ui/c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+        </div></div>
+<div id="content_box">
+  <div id="content">
+	
+<div class="inner" role="main">
+<article id="post-23" class="post-23 post type-post status-publish format-standard hentry category-widgets">
+	<header class="entry-header">
+		<h1 class="entry-title">Dialog Widget</h1>
+		<hr>
+<div id="baidu-banner">
+<script type="text/javascript">
+    /*jquery-ui-banner*/
+    var cpro_id = "u1731052";
+</script>
+<script src="../../../cpro.baidustatic.com/cpro/ui/c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+</div>
+<div class="entry-meta">
+			Categories: <span class="category"><a href="../category/widgets/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/widgets/" title="View all posts in Widgets">Widgets</a></span>		</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<article id="dialog1" class="entry widget"><h2 class="section-title">
+<span>Dialog Widget</span><span class="version-details">version added: 1.0</span>
+</h2>
+<div class="entry-wrapper">
+<p class="desc"><strong>Description: </strong>åœ¨ä¸€ä¸ªäº¤äº’è¦†ç›–å±‚ä¸­æ‰“å¼€å†…å®¹ã€‚</p>
+<section id="quick-nav"><header><h2>QuickNav<a href="#entry-examples">Examples</a>
+</h2></header><div class="quick-nav-section">
+<h3>Options</h3>
+<div><a href="#option-appendTo">appendTo</a></div>
+<div><a href="#option-autoOpen">autoOpen</a></div>
+<div><a href="#option-buttons">buttons</a></div>
+<div><a href="#option-closeOnEscape">closeOnEscape</a></div>
+<div><a href="#option-closeText">closeText</a></div>
+<div><a href="#option-dialogClass">dialogClass</a></div>
+<div><a href="#option-draggable">draggable</a></div>
+<div><a href="#option-height">height</a></div>
+<div><a href="#option-hide">hide</a></div>
+<div><a href="#option-maxHeight">maxHeight</a></div>
+<div><a href="#option-maxWidth">maxWidth</a></div>
+<div><a href="#option-minHeight">minHeight</a></div>
+<div><a href="#option-minWidth">minWidth</a></div>
+<div><a href="#option-modal">modal</a></div>
+<div><a href="#option-position">position</a></div>
+<div><a href="#option-resizable">resizable</a></div>
+<div><a href="#option-show">show</a></div>
+<div><a href="#option-title">title</a></div>
+<div><a href="#option-width">width</a></div>
+</div>
+<div class="quick-nav-section">
+<h3>Methods</h3>
+<div><a href="#method-close">close</a></div>
+<div><a href="#method-destroy">destroy</a></div>
+<div><a href="#method-isOpen">isOpen</a></div>
+<div><a href="#method-moveToTop">moveToTop</a></div>
+<div><a href="#method-open">open</a></div>
+<div><a href="#method-option">option</a></div>
+<div><a href="#method-widget">widget</a></div>
+<br><h3>Extension Points</h3>
+<div><a href="#method-_allowInteraction">_allowInteraction</a></div>
+</div>
+<div class="quick-nav-section">
+<h3>Events</h3>
+<div><a href="#event-beforeClose">beforeClose</a></div>
+<div><a href="#event-close">close</a></div>
+<div><a href="#event-create">create</a></div>
+<div><a href="#event-drag">drag</a></div>
+<div><a href="#event-dragStart">dragStart</a></div>
+<div><a href="#event-dragStop">dragStop</a></div>
+<div><a href="#event-focus">focus</a></div>
+<div><a href="#event-open">open</a></div>
+<div><a href="#event-resize">resize</a></div>
+<div><a href="#event-resizeStart">resizeStart</a></div>
+<div><a href="#event-resizeStop">resizeStop</a></div>
+</div></section><div class="longdesc" id="entry-longdesc">
+    <p>å¯¹è¯æ¡†æ˜¯ä¸€ä¸ªæ‚¬æµ®çª—å£ï¼ŒåŒ…æ‹¬ä¸€ä¸ªæ ‡é¢˜æ å’Œä¸€ä¸ªå†…å®¹åŒºåŸŸã€‚å¯¹è¯æ¡†çª—å£å¯ä»¥ç§»åŠ¨ï¼Œé‡æ–°è°ƒæ•´å¤§å°ï¼Œé»˜è®¤æƒ…å†µä¸‹é€šè¿‡ 'x' å›¾æ ‡å…³é—­ã€‚</p>
+    <p>å¦‚æœå†…å®¹é•¿åº¦è¶…è¿‡æœ€å¤§é«˜åº¦ï¼Œä¸€ä¸ªæ»šåŠ¨æ¡ä¼šè‡ªåŠ¨å‡ºç°ã€‚</p>
+    <p>ä¸€ä¸ªåº•éƒ¨æŒ‰é’®æ å’Œä¸€ä¸ªåŠé€æ˜çš„æ¨¡å¼è¦†ç›–å±‚æ˜¯å¸¸è§çš„æ·»åŠ é€‰é¡¹ã€‚</p>
+
+    <h3>ç„¦ç‚¹</h3>
+
+    <p>å½“æ‰“å¼€ä¸€ä¸ªå¯¹è¯æ¡†æ—¶ï¼Œç„¦ç‚¹ä¼šè‡ªåŠ¨ç§»åŠ¨åˆ°æ»¡è¶³ä¸‹é¢æ¡ä»¶çš„ç¬¬ä¸€ä¸ªé¡¹ç›®ï¼š</p>
+    <ol>
+        <li>å¸¦æœ‰ <code>autofocus</code> å±æ€§çš„å¯¹è¯æ¡†å†…çš„ç¬¬ä¸€ä¸ªå…ƒç´ </li>
+        <li>å¯¹è¯æ¡†å†…å®¹å†…çš„ç¬¬ä¸€ä¸ª <a href="javascript:if(confirm('http://www.css88.com/tabbable-selector/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/tabbable-selector/'" tppabs="http://www.css88.com/tabbable-selector/"><code>:tabbable</code></a> å…ƒç´ </li>
+        <li>å¯¹è¯æ¡†æŒ‰é’®é¢æ¿å†…çš„ç¬¬ä¸€ä¸ª <a href="javascript:if(confirm('http://www.css88.com/tabbable-selector/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/tabbable-selector/'" tppabs="http://www.css88.com/tabbable-selector/"><code>:tabbable</code></a> å…ƒç´ </li>
+        <li>å¯¹è¯æ¡†çš„å…³é—­æŒ‰é’®</li>
+        <li>å¯¹è¯æ¡†æœ¬èº«</li>
+    </ol>
+    <p>å½“æ‰“å¼€æ—¶ï¼Œå¯¹è¯æ¡†éƒ¨ä»¶ï¼ˆDialog Widgetï¼‰ç¡®ä¿é€šè¿‡ tab åˆ‡æ¢å¯¹è¯æ¡†å†…å…ƒç´ é—´çš„ç„¦ç‚¹ï¼Œä¸åŒ…æ‹¬å¯¹è¯æ¡†å¤–çš„å…ƒç´ ã€‚æ¨¡æ€å¯¹è¯æ¡†é˜²æ­¢é¼ æ ‡ç”¨æˆ·ç‚¹å‡»å¯¹è¯æ¡†å¤–çš„å…ƒç´ ã€‚</p>
+    <p>å½“å…³é—­å¯¹è¯æ¡†æ—¶ï¼Œç„¦ç‚¹è‡ªåŠ¨è¿”å›åˆ°ä¹‹å‰å¯¹è¯æ¡†æ‰“å¼€æ—¶è·å¾—ç„¦ç‚¹çš„å…ƒç´ ä¸Šã€‚</p>
+    <h3>éšè—å…³é—­æŒ‰é’®</h3>
+    <p>åœ¨ä¸€äº›æƒ…å†µä¸‹ï¼Œæ‚¨å¯èƒ½æƒ³è¦éšè—å…³é—­æŒ‰é’®ï¼Œä¾‹å¦‚ï¼Œåœ¨æŒ‰é’®é¢æ¿ä¸­å·²ç»æœ‰ä¸€ä¸ªå…³é—­æŒ‰é’®çš„æƒ…å†µã€‚æœ€å¥½çš„è§£å†³æ–¹æ³•æ˜¯é€šè¿‡ CSSã€‚ä½œä¸ºå®ä¾‹ï¼Œæ‚¨å¯ä»¥å®šä¹‰ä¸€ä¸ªç®€å•çš„è§„åˆ™ï¼Œæ¯”å¦‚ï¼š</p>
+
+		<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>.no-close .ui-dialog-titlebar-close {</code></div></div><div class="container"><div class="line"><code>  display: none;</code></div></div><div class="container"><div class="line"><code>}</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+    <p>ç„¶åï¼Œæ‚¨å¯ä»¥æ·»åŠ  <code>no-close</code> class åˆ°ä»»æ„çš„å¯¹è¯æ¡†ï¼Œç”¨æ¥éšè—å…³é—­æŒ‰é’®ï¼š</p>
+
+		<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+						<div class="line n6">6</div>
+
+						<div class="line n7">7</div>
+
+						<div class="line n8">8</div>
+
+						<div class="line n9">9</div>
+
+						<div class="line n10">10</div>
+
+						<div class="line n11">11</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">"#dialog"</span> ).dialog({</code></div></div><div class="container"><div class="line"><code>  dialogClass: <span class="string">"no-close"</span>,</code></div></div><div class="container"><div class="line"><code>  buttons: [</code></div></div><div class="container"><div class="line"><code>    {</code></div></div><div class="container"><div class="line"><code>      text: <span class="string">"OK"</span>,</code></div></div><div class="container"><div class="line"><code>      click: <span class="keyword">function</span>() {</code></div></div><div class="container"><div class="line"><code>        $( <span class="keyword">this</span> ).dialog( <span class="string">"close"</span> );</code></div></div><div class="container"><div class="line"><code>      }</code></div></div><div class="container"><div class="line"><code>    }</code></div></div><div class="container"><div class="line"><code>  ]</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+    <div>
+        <h3 id="theming">ä¸»é¢˜</h3>
+
+        <p>å¯¹è¯æ¡†éƒ¨ä»¶ï¼ˆDialog Widgetï¼‰ä½¿ç”¨ <a href="javascript:if(confirm('http://www.css88.com/theming/css-framework/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/theming/css-framework/'" tppabs="http://www.css88.com/theming/css-framework/">jQuery UI CSS æ¡†æ¶</a>
+            æ¥å®šä¹‰å®ƒçš„å¤–è§‚å’Œæ„Ÿè§‚çš„æ ·å¼ã€‚å¦‚æœéœ€è¦ä½¿ç”¨å¯¹è¯æ¡†æŒ‡å®šçš„æ ·å¼ï¼Œåˆ™å¯ä»¥ä½¿ç”¨ä¸‹é¢çš„ CSS class åç§°ï¼š</p>
+    </div>
+    <ul>
+        <li><code>ui-dialog</code>ï¼šå¯¹è¯æ¡†çš„å¤–å±‚å®¹å™¨ã€‚
+            <ul>
+                <li><code>ui-dialog-titlebar</code>ï¼šåŒ…å«å¯¹è¯æ¡†æ ‡é¢˜å’Œå…³é—­æŒ‰é’®çš„æ ‡é¢˜æ ã€‚
+                    <ul>
+                        <li><code>ui-dialog-title</code>ï¼šå¯¹è¯æ¡†æ–‡æœ¬æ ‡é¢˜å‘¨å›´çš„å®¹å™¨ã€‚</li>
+                        <li><code>ui-dialog-titlebar-close</code>ï¼šå¯¹è¯æ¡†çš„å…³é—­æŒ‰é’®ã€‚</li>
+                    </ul>
+                </li>
+                <li><code>ui-dialog-content</code>ï¼šå¯¹è¯æ¡†å†…å®¹å‘¨å›´çš„å®¹å™¨ã€‚è¿™ä¹Ÿæ˜¯éƒ¨ä»¶è¢«å®ä¾‹åŒ–çš„å…ƒç´ ã€‚</li>
+                <li><code>ui-dialog-buttonpane</code>ï¼šåŒ…å«å¯¹è¯æŒ‰é’®çš„é¢æ¿ã€‚åªæœ‰å½“è®¾ç½®äº† <a
+                        href="#option-buttons"><code>buttons</code></a> é€‰é¡¹æ—¶æ‰å‘ˆç°ã€‚
+                    <ul>
+                        <li><code>ui-dialog-buttonset</code>ï¼šæŒ‰é’®å‘¨å›´çš„å®¹å™¨ã€‚</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+
+
+    <p>æ­¤å¤–ï¼Œå½“è®¾ç½®äº† <a href="#option-modal"><code>modal</code></a> é€‰é¡¹æ—¶ï¼Œä¸€ä¸ªå¸¦æœ‰ <code>ui-widget-overlay</code> class åç§°çš„å…ƒç´ è¢«è¿½åŠ åˆ° <code>&lt;body&gt;</code>ã€‚</p>
+
+		<h3>ä¾èµ–</h3>
+    <ul>
+        <li><a href="javascript:if(confirm('http://www.css88.com/category/ui-core/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/category/ui-core/'" tppabs="http://www.css88.com/category/ui-core/">UI æ ¸å¿ƒï¼ˆUI Coreï¼‰</a></li>
+        <li><a href="javascript:if(confirm('http://www.css88.com/jQuery.widget/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/jQuery.widget/'" tppabs="http://www.css88.com/jQuery.widget/">éƒ¨ä»¶åº“ï¼ˆWidget Factoryï¼‰</a></li>
+        <li><a href="javascript:if(confirm('http://www.css88.com/position/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/position/'" tppabs="http://www.css88.com/position/">å®šä½ï¼ˆPositionï¼‰</a></li>
+        <li><a href="javascript:if(confirm('http://www.css88.com/button/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/button/'" tppabs="http://www.css88.com/button/">æŒ‰é’®éƒ¨ä»¶ï¼ˆButton Widgetï¼‰</a></li>
+        <li><a href="javascript:if(confirm('http://www.css88.com/draggable/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/draggable/'" tppabs="http://www.css88.com/draggable/">å¯æ‹–æ‹½å°éƒ¨ä»¶ï¼ˆDraggable Widgetï¼‰</a> ï¼ˆå¯é€‰çš„ï¼›å½“ä¸ <a href="#option-draggable"><code>draggable</code></a>
+            é€‰é¡¹ä¸€èµ·ä½¿ç”¨æ—¶ï¼‰
+        </li>
+        <li><a href="javascript:if(confirm('http://www.css88.com/resizable/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/resizable/'" tppabs="http://www.css88.com/resizable/">å¯è°ƒæ•´å°ºå¯¸å°éƒ¨ä»¶ï¼ˆResizable Widgetï¼‰</a> ï¼ˆå¯é€‰çš„ï¼›å½“ä¸ <a href="#option-resizable"><code>resizable</code></a>
+            é€‰é¡¹ä¸€èµ·ä½¿ç”¨æ—¶ï¼‰
+        </li>
+        <li><a href="javascript:if(confirm('http://www.css88.com/category/effects-core/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/category/effects-core/'" tppabs="http://www.css88.com/category/effects-core/">ç‰¹æ•ˆæ ¸å¿ƒï¼ˆEffects Coreï¼‰</a>ï¼ˆå¯é€‰çš„ï¼›å½“ä¸ <a href="#option-show"><code>show</code></a> å’Œ
+            <a href="#option-hide"><code>hide</code></a> é€‰é¡¹ä¸€èµ·ä½¿ç”¨æ—¶ï¼‰
+        </li>
+    </ul>
+
+	</div>
+<h3>å…¶ä»–æ³¨æ„äº‹é¡¹ï¼š</h3>
+
+<div class="longdesc">
+    <ul>
+        <li>
+            è¯¥éƒ¨ä»¶è¦æ±‚ä¸€äº›åŠŸèƒ½æ€§çš„ CSSï¼Œå¦åˆ™å°†æ— æ³•å·¥ä½œã€‚å¦‚æœæ‚¨åˆ›å»ºäº†ä¸€ä¸ªè‡ªå®šä¹‰çš„ä¸»é¢˜ï¼Œè¯·ä½¿ç”¨å°éƒ¨ä»¶æŒ‡å®šçš„ CSS æ–‡ä»¶ä½œä¸ºèµ·ç‚¹ã€‚
+        </li>
+    </ul>
+</div>
+<section id="options"><header><h2>Options</h2></header><div id="option-appendTo" class="api-item first-item">
+<h3>appendTo<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Selector'" tppabs="http://api.jquery.com/Types/#Selector">Selector</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>"body"</code>
+</div>
+<div>
+<p>
+                    dialogï¼ˆå’Œé®ç½©å±‚ï¼Œå¦‚æœ<a href="#option-modal">modal</a>å­˜åœ¨ï¼‰åº”è¯¥è¢«è¿½åŠ åˆ°å“ªä¸ªå…ƒç´ ã€‚</p>
+				<div class="warning">
+<strong>æ³¨æ„:</strong>å½“dialogå¤„äºæ‰“å¼€çŠ¶æ€çš„æ—¶å€™<code>appendTo</code>é€‰é¡¹ä¸åº”è¯¥è¢«æ”¹å˜ã€‚</div>
+			<span class="version-details"> (version added: 1.10.0)</span>
+</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>appendTo</code>é€‰é¡¹çš„ dialogï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog({ appendTo: <span class="string">"#someElem"</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>appendTo</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> appendTo = $( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"appendTo"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"appendTo"</span>, <span class="string">"#someElem"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-autoOpen" class="api-item">
+<h3>autoOpen<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>true</code>
+</div>
+<div>
+    å½“è®¾ç½®ä¸º <code>true</code> æ—¶ï¼Œ dialog ä¼šåœ¨åˆå§‹åŒ–æ—¶è‡ªåŠ¨æ‰“å¼€. å¦‚æœä¸º <code>false</code> dialog å°†ä¼šç»§ç»­éšè—ç›´åˆ°è°ƒç”¨<a href="#method-open"><code>open()</code></a>æ–¹æ³• ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>autoOpen</code>é€‰é¡¹çš„ dialogï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog({ autoOpen: <span class="literal">false</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>autoOpen</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> autoOpen = $( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"autoOpen"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"autoOpen"</span>, <span class="literal">false</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-buttons" class="api-item">
+<h3>buttons<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Array'" tppabs="http://api.jquery.com/Types/#Array">Array</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>{}</code>
+</div>
+<div>
+    æŒ‡å®šå“ªäº›æŒ‰é’®åº”è¯¥åœ¨dialogä¸Šæ˜¾ç¤ºã€‚
+    å›è°ƒçš„ä¸Šä¸‹æ–‡æ˜¯dialogå…ƒç´ ï¼ˆæ„šäººç å¤´æ³¨ï¼š<code>this</code>æŒ‡å‘ï¼‰;
+    å¦‚æœä½ éœ€è¦è®¿é—®æŒ‰é’®ï¼Œ
+    å¯ä»¥åˆ©ç”¨äº‹ä»¶å¯¹è±¡çš„ç›®æ ‡å…ƒç´ ã€‚</div>
+<strong>æ”¯æŒå¤šä¸ªç±»å‹ï¼š</strong><ul>
+<li>
+<strong>Object</strong>: é”®æ˜¯æŒ‰é’®æ ‡ç­¾ï¼Œå€¼æ˜¯ç‚¹å‡»ç›¸å…³æŒ‰é’®æ—¶æ‰§è¡Œçš„å›è°ƒå‡½æ•°ã€‚</li>
+<li>
+<strong>Array</strong>: è¯¥æ•°ç»„çš„æ¯ä¸ªå…ƒç´ å¿…é¡»æ˜¯ ä¸€ä¸ªå®šä¹‰ç‰¹æ€§ï¼Œå±æ€§ï¼Œå’ŒæŒ‰é’®ä¸Šè®¾ç½®çš„äº‹ä»¶å¤„ç†ç¨‹åºçš„å¯¹è±¡ã€‚</li>
+</ul>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>buttons</code>é€‰é¡¹çš„ dialogï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog({ buttons: [ { text: <span class="string">"Ok"</span>, click: <span class="keyword">function</span>() { $( <span class="keyword">this</span> ).dialog( <span class="string">"close"</span> ); } } ] });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>buttons</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> buttons = $( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"buttons"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"buttons"</span>, [ { text: <span class="string">"Ok"</span>, click: <span class="keyword">function</span>() { $( <span class="keyword">this</span> ).dialog( <span class="string">"close"</span> ); } } ] );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-closeOnEscape" class="api-item">
+<h3>closeOnEscape<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>true</code>
+</div>
+<div>
+    æŒ‡å®šå…·æœ‰ç„¦ç‚¹çš„dialogï¼Œåœ¨ç”¨æˆ·æŒ‰ä¸‹é€€å‡ºï¼ˆESCï¼‰é”®æ—¶ï¼Œæ˜¯å¦åº”è¯¥å…³é—­ ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>closeOnEscape</code>é€‰é¡¹çš„ dialogï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog({ closeOnEscape: <span class="literal">false</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>closeOnEscape</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> closeOnEscape = $( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"closeOnEscape"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"closeOnEscape"</span>, <span class="literal">false</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-closeText" class="api-item">
+<h3>closeText<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>"close"</code>
+</div>
+<div>
+    æŒ‡å®šå…³é—­æŒ‰é’®çš„æ–‡æœ¬ã€‚
+    æ³¨æ„ï¼Œå…³é—­æ–‡æœ¬åœ¨ä½¿ç”¨æ ‡å‡†çš„ä¸»é¢˜æ—¶ï¼Œæ˜¯éšè—çš„ï¼ˆvisiblyï¼šhiddenï¼‰ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>closeText</code>é€‰é¡¹çš„ dialogï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog({ closeText: <span class="string">"hide"</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>closeText</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> closeText = $( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"closeText"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"closeText"</span>, <span class="string">"hide"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-dialogClass" class="api-item">
+<h3>dialogClass<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>""</code>
+</div>
+<div>
+    åœ¨ä½¿ç”¨é¢å¤–é™„åŠ çš„ä¸»é¢˜æ—¶ï¼ŒæŒ‡å®šdialogçš„ç±»åç§°ï¼Œè¿™äº›æ ·å¼æ·»åŠ åˆ°dialogä¸Šã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>dialogClass</code>é€‰é¡¹çš„ dialogï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog({ dialogClass: <span class="string">"alert"</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>dialogClass</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> dialogClass = $( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"dialogClass"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"dialogClass"</span>, <span class="string">"alert"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-draggable" class="api-item">
+<h3>draggable<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>true</code>
+</div>
+<div>
+    å¦‚æœè®¾ç½®ä¸º<code>true</code>, dialogå°†å¯ä»¥ä½¿ç”¨æ ‡é¢˜æ å®ç°æ‹–åŠ¨ã€‚éœ€è¦åŒ…å« <a href="javascript:if(confirm('http://www.css88.com/draggable/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/draggable/'" tppabs="http://www.css88.com/draggable/">jQuery UI Draggable éƒ¨ä»¶</a>ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>draggable</code>é€‰é¡¹çš„ dialogï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog({ draggable: <span class="literal">false</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>draggable</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> draggable = $( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"draggable"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"draggable"</span>, <span class="literal">false</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-height" class="api-item">
+<h3>height<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>"auto"</code>
+</div>
+<div>è®¾ç½®å¯¹è¯æ¡†çš„é«˜åº¦ï¼ˆå•ä½ï¼šåƒç´ ï¼‰ã€‚  </div>
+<strong>æ”¯æŒå¤šä¸ªç±»å‹ï¼š</strong><ul>
+<li>
+<strong>Number</strong>: é«˜åº¦ï¼Œå•ä½ï¼šåƒç´ ã€‚</li>
+<li>
+<strong>String</strong>:
+    å”¯ä¸€æ”¯æŒçš„å­—ç¬¦ä¸²å€¼ä¸º<code>"auto"</code>ï¼Œè¿™å°†ä½¿å¯¹è¯æ¡†é«˜åº¦æ ¹æ®å…¶å†…å®¹è¿›è¡Œè‡ªåŠ¨è°ƒæ•´ã€‚</li>
+</ul>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>height</code>é€‰é¡¹çš„ dialogï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog({ height: <span class="number">400</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>height</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> height = $( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"height"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"height"</span>, <span class="number">400</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-hide" class="api-item">
+<h3>hide<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>null</code>
+</div>
+<div>dialogå…³é—­ï¼ˆéšè—ï¼‰æ—¶çš„åŠ¨ç”»æ•ˆæœã€‚ </div>
+<strong>æ”¯æŒå¤šä¸ªç±»å‹ï¼š</strong>
+    <ul>
+        <li>
+            <strong>Boolean</strong>:
+            å½“è®¾ç½®ä¸º<code>false</code>ï¼Œ
+            å°†ä¸ä½¿ç”¨åŠ¨ç”»æ•ˆæœï¼Œè¯¥dialogä¼šç«‹å³è¢«éšè—ã€‚
+            å¦‚æœè®¾ç½®ä¸º<code>true</code>ï¼Œ
+            è¯¥dialogå°†ä¼šä»¥é»˜è®¤çš„æŒç»­æ—¶é—´å’Œé»˜è®¤çš„æ•ˆæœæ·¡å‡ºã€‚
+        </li>
+        <li>
+            <strong>Number</strong>:
+            è¯¥dialogå°†ä»¥æŒ‡å®šçš„æ—¶é—´å’Œé»˜è®¤çš„æ•ˆæœæ·¡å‡ºã€‚
+        </li>
+        <li>
+            <strong>String</strong>:
+            è¯¥dialogå°†ä½¿ç”¨æŒ‡å®šçš„æ•ˆæœè¢«éšè—ã€‚
+            è¯¥å€¼å¯ä»¥æ˜¯ä¸€ä¸ªjQueryå†…ç½®çš„åŠ¨ç”»æ–¹æ³•çš„åç§°ï¼Œ
+            å¦‚<code>"slideUp"</code>ï¼Œ
+            æˆ–ä¸€ä¸ª <a href="javascript:if(confirm('http://www.css88.com/category/effects/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/category/effects/'" tppabs="http://www.css88.com/category/effects/">jQuery UI æ•ˆæœ</a>çš„åç§°ï¼Œ
+            å¦‚<code>"fold"</code>ã€‚
+            åœ¨è¿™ä¸¤ç§æƒ…å†µä¸‹ï¼Œå°†ä½¿ç”¨é»˜è®¤æŒç»­æ—¶é—´å’Œé»˜è®¤çš„åŠ¨ç”»æ•ˆæœã€‚
+        </li>
+        <li>
+            <strong>Object</strong>: å¦‚æœè¯¥å€¼æ˜¯ä¸€ä¸ªå¯¹è±¡ï¼Œ
+            é‚£ä¹ˆ <code>effect</code>, <code>delay</code>, <code>duration</code>, å’Œ<code>easing</code>å¯èƒ½è¦æä¾›ã€‚
+            Â å¦‚æœ <code>effect</code> å±æ€§åŒ…å«ä¸€ä¸ªjQueryæ–¹æ³•çš„åç§°ï¼Œ
+            é‚£ä¹ˆè¯¥æ–¹æ³•å°†è¢«ä½¿ç”¨;
+
+            å¦åˆ™å®ƒè¢«å‡å®šä¸ºæ˜¯ä¸€ä¸ªjQuery UIçš„æ•ˆæœçš„åç§°ã€‚
+            å½“ä½¿ç”¨jQuery UI æ”¯æŒé¢å¤–è®¾ç½® çš„æ•ˆæœ
+            ï¼Œ
+            ä½ å¯ä»¥åœ¨å¯¹è±¡ä¸­åŒ…å«é‚£äº›è®¾ç½®
+            å¹¶ä¸”å®ƒä»¬å°†è¢«ä¼ é€’åˆ°çš„æ•ˆæœã€‚å¦‚æœ<code>duration</code>æŒç»­æ—¶é—´æˆ–<code>easing</code>å±æ€§è¢«çœç•¥ï¼Œ
+            é‚£ä¹ˆé»˜è®¤å€¼å°†è¢«ä½¿ç”¨ã€‚
+            å¦‚æœ<code>effect</code>è¢«çœç•¥ï¼Œ
+            é‚£ä¹ˆ<code>"fadeOut"</code> å°†è¢«ä½¿ç”¨ã€‚å¦‚æœ<code>delay</code>è¢«çœç•¥ï¼Œ
+            é‚£ä¹ˆå°†ä¸ä½¿ç”¨å»¶è¿Ÿã€‚
+        </li>
+    </ul>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>hide</code>é€‰é¡¹çš„ dialogï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog({ hide: { effect: <span class="string">"explode"</span>, duration: <span class="number">1000</span> } });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>hide</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> hide = $( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"hide"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"hide"</span>, { effect: <span class="string">"explode"</span>, duration: <span class="number">1000</span> } );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-maxHeight" class="api-item">
+<h3>maxHeight<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>
+    dialogå¯ä»¥è°ƒæ•´çš„æœ€å¤§é«˜åº¦ï¼Œä»¥åƒç´ ä¸ºå•ä½ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>maxHeight</code>é€‰é¡¹çš„ dialogï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog({ maxHeight: <span class="number">600</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>maxHeight</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> maxHeight = $( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"maxHeight"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"maxHeight"</span>, <span class="number">600</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-maxWidth" class="api-item">
+<h3>maxWidth<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>dialogå¯ä»¥è°ƒæ•´çš„æœ€å¤§å®½åº¦ï¼Œä»¥åƒç´ ä¸ºå•ä½ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>maxWidth</code>é€‰é¡¹çš„ dialogï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog({ maxWidth: <span class="number">600</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>maxWidth</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> maxWidth = $( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"maxWidth"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"maxWidth"</span>, <span class="number">600</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-minHeight" class="api-item">
+<h3>minHeight<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>150</code>
+</div>
+<div>dialogå¯ä»¥è°ƒæ•´çš„æœ€å°é«˜åº¦ï¼Œä»¥åƒç´ ä¸ºå•ä½ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>minHeight</code>é€‰é¡¹çš„ dialogï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog({ minHeight: <span class="number">200</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>minHeight</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> minHeight = $( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"minHeight"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"minHeight"</span>, <span class="number">200</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-minWidth" class="api-item">
+<h3>minWidth<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>150</code>
+</div>
+<div>dialogå¯ä»¥è°ƒæ•´çš„æœ€å°å®½åº¦ï¼Œä»¥åƒç´ ä¸ºå•ä½ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>minWidth</code>é€‰é¡¹çš„ dialogï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog({ minWidth: <span class="number">200</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>minWidth</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> minWidth = $( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"minWidth"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"minWidth"</span>, <span class="number">200</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-modal" class="api-item">
+<h3>modal<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>
+
+    å¦‚æœè®¾ç½®ä¸º<code>true</code>ï¼Œè¯¥dialogå°†ä¼šæœ‰é®ç½©å±‚;
+    é¡µé¢ä¸Šçš„å…¶ä»–é¡¹ç›®å°†è¢«ç¦ç”¨ï¼Œ
+    å³ï¼Œä¸èƒ½äº¤äº’ã€‚
+    é®ç½©å±‚åˆ›å»ºå¯¹è¯æ¡†ä¸‹æ–¹ï¼Œä½†é«˜äºå…¶å®ƒé¡µé¢å…ƒç´ ã€‚
+</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>modal</code>é€‰é¡¹çš„ dialogï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog({ modal: <span class="literal">true</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>modal</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> modal = $( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"modal"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"modal"</span>, <span class="literal">true</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-position" class="api-item">
+<h3>position<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Array'" tppabs="http://api.jquery.com/Types/#Array">Array</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>{ my: "center", at: "center", of: window }</code>
+</div>
+<div>
+				<p>æŒ‡å®šdialogæ˜¾ç¤ºçš„ä½ç½®ã€‚è¯¥dialogå°†ä¼šå¤„ç†å†²çª
+				Â ï¼Œä½¿å¾—å°½å¯èƒ½å¤šçš„dialogå°½å¯èƒ½åœ°å¯è§ã€‚</p>
+				<p><em>æ³¨æ„: ä¸èµæˆä½¿ç”¨ <code>String</code> å’Œ <code>Array</code> æ ¼å¼ã€‚</em></p>
+			</div>
+<strong>æ”¯æŒå¤šä¸ªç±»å‹ï¼š</strong><ul>
+<li>
+<strong>Object</strong>:
+    ç¡®å®šdialogæ‰“å¼€æ—¶çš„ä½ç½®ã€‚
+    Â <code>of</code>é€‰é¡¹é»˜è®¤ä¸ºçª—å£ï¼Œ
+    ä½†æ‚¨å¯ä»¥æŒ‡å®šå…¶ä»–å…ƒç´ å®šä½ã€‚
+    ä½ å¯ä»¥å‚è€ƒ<a href="javascript:if(confirm('http://www.css88.com/position/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/position/'" tppabs="http://www.css88.com/position/">jQuery UI Position</a>å®ç”¨å·¥å…·ï¼Œäº†è§£å„ç§é€‰é¡¹çš„æ›´å¤šç»†èŠ‚ã€‚
+
+    </li>
+<li>
+<strong>String</strong>:ä¸€ä¸ªå­—ç¬¦ä¸²ï¼Œè¡¨ç¤ºå¯è§†åŒºå†…çš„ä½ç½®ã€‚å¯èƒ½çš„å€¼ï¼š<code>"center"</code>, <code>"left"</code>, <code>"right"</code>, <code>"top"</code>, <code>"bottom"</code>.</li>
+<li>
+<strong>Array</strong>:
+    ä¸€ä¸ªåŒ…å«ç›¸å¯¹äºå¯è§åŒºåŸŸå·¦ä¸Šè§’<em>x, y</em>åç§»åæ ‡ï¼ˆå•ä½ä¸ºåƒç´ ï¼‰ çš„æ•°ç»„ï¼Œ
+    æˆ–
+    ä¸€ä¸ªå¯èƒ½å€¼çš„å­—ç¬¦ä¸²åç§°ã€‚</li>
+</ul>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>position</code>é€‰é¡¹çš„ dialogï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog({ position: { my: <span class="string">"left top"</span>, at: <span class="string">"left bottom"</span>, of: button } });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>position</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> position = $( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"position"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"position"</span>, { my: <span class="string">"left top"</span>, at: <span class="string">"left bottom"</span>, of: button } );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-resizable" class="api-item">
+<h3>resizable<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>true</code>
+</div>
+<div>å¦‚æœè®¾ç½®ä¸º<code>true</code>ï¼Œ
+    é‚£ä¹ˆdialogå…è®¸è°ƒæ•´å¤§å°ã€‚éœ€è¦åŒ…å«<a href="javascript:if(confirm('http://www.css88.com/resizable/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/resizable/'" tppabs="http://www.css88.com/resizable/">jQuery UI Resizable widget</a>ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>resizable</code>é€‰é¡¹çš„ dialogï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog({ resizable: <span class="literal">false</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>resizable</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> resizable = $( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"resizable"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"resizable"</span>, <span class="literal">false</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-show" class="api-item">
+<h3>show<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>null</code>
+</div>
+<div>dialogæ‰“å¼€ï¼ˆæ˜¾ç¤ºï¼‰æ—¶çš„åŠ¨ç”»æ•ˆæœã€‚</div>
+<strong>æ”¯æŒå¤šä¸ªç±»å‹ï¼š</strong>
+    <ul>
+            <li>
+                <strong>Boolean</strong>:
+                å½“è®¾ç½®ä¸º<code>false</code>ï¼Œ
+                å°†ä¸ä½¿ç”¨åŠ¨ç”»æ•ˆæœï¼Œè¯¥dialogä¼šç«‹å³è¢«éšè—ã€‚
+                å¦‚æœè®¾ç½®ä¸º<code>true</code>ï¼Œ
+                è¯¥dialogå°†ä¼šä»¥é»˜è®¤çš„æŒç»­æ—¶é—´å’Œé»˜è®¤çš„æ•ˆæœæ·¡å‡ºã€‚
+            </li>
+            <li>
+                <strong>Number</strong>:
+                è¯¥dialogå°†ä»¥æŒ‡å®šçš„æ—¶é—´å’Œé»˜è®¤çš„æ•ˆæœæ·¡å‡ºã€‚
+            </li>
+            <li>
+                <strong>String</strong>:
+                è¯¥dialogå°†ä½¿ç”¨æŒ‡å®šçš„æ•ˆæœè¢«éšè—ã€‚
+                è¯¥å€¼å¯ä»¥æ˜¯ä¸€ä¸ªjQueryå†…ç½®çš„åŠ¨ç”»æ–¹æ³•çš„åç§°ï¼Œ
+                å¦‚<code>"slideUp"</code>ï¼Œ
+                æˆ–ä¸€ä¸ª <a href="javascript:if(confirm('http://www.css88.com/category/effects/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/category/effects/'" tppabs="http://www.css88.com/category/effects/">jQuery UI æ•ˆæœ</a>çš„åç§°ï¼Œ
+                å¦‚<code>"fold"</code>ã€‚
+                åœ¨è¿™ä¸¤ç§æƒ…å†µä¸‹ï¼Œå°†ä½¿ç”¨é»˜è®¤æŒç»­æ—¶é—´å’Œé»˜è®¤çš„åŠ¨ç”»æ•ˆæœã€‚
+            </li>
+            <li>
+                <strong>Object</strong>: å¦‚æœè¯¥å€¼æ˜¯ä¸€ä¸ªå¯¹è±¡ï¼Œ
+                é‚£ä¹ˆ <code>effect</code>, <code>delay</code>, <code>duration</code>, å’Œ<code>easing</code>å¯èƒ½è¦æä¾›ã€‚
+                Â å¦‚æœ <code>effect</code> å±æ€§åŒ…å«ä¸€ä¸ªjQueryæ–¹æ³•çš„åç§°ï¼Œ
+                é‚£ä¹ˆè¯¥æ–¹æ³•å°†è¢«ä½¿ç”¨;
+
+                å¦åˆ™å®ƒè¢«å‡å®šä¸ºæ˜¯ä¸€ä¸ªjQuery UIçš„æ•ˆæœçš„åç§°ã€‚
+                å½“ä½¿ç”¨jQuery UI æ”¯æŒé¢å¤–è®¾ç½® çš„æ•ˆæœ
+                ï¼Œ
+                ä½ å¯ä»¥åœ¨å¯¹è±¡ä¸­åŒ…å«é‚£äº›è®¾ç½®
+                å¹¶ä¸”å®ƒä»¬å°†è¢«ä¼ é€’åˆ°çš„æ•ˆæœã€‚å¦‚æœ<code>duration</code>æŒç»­æ—¶é—´æˆ–<code>easing</code>å±æ€§è¢«çœç•¥ï¼Œ
+                é‚£ä¹ˆé»˜è®¤å€¼å°†è¢«ä½¿ç”¨ã€‚
+                å¦‚æœ<code>effect</code>è¢«çœç•¥ï¼Œ
+                é‚£ä¹ˆ<code>"fadeOut"</code> å°†è¢«ä½¿ç”¨ã€‚å¦‚æœ<code>delay</code>è¢«çœç•¥ï¼Œ
+                é‚£ä¹ˆå°†ä¸ä½¿ç”¨å»¶è¿Ÿã€‚
+            </li>
+        </ul>
+
+
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>show</code>é€‰é¡¹çš„ dialogï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog({ show: { effect: <span class="string">"blind"</span>, duration: <span class="number">800</span> } });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>show</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> show = $( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"show"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"show"</span>, { effect: <span class="string">"blind"</span>, duration: <span class="number">800</span> } );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-title" class="api-item">
+<h3>title<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>null</code>
+</div>
+<div>
+    æŒ‡å®šdialogçš„æ ‡é¢˜æ–‡å­—ã€‚ å¦‚æœå€¼ä¸º<code>null</code>,é‚£ä¹ˆè¯¥dialog å…ƒç´ ä¸Šçš„<code>title</code>å±æ€§å°†è¢«ä½¿ç”¨ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>title</code>é€‰é¡¹çš„ dialogï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog({ title: <span class="string">"Dialog Title"</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>title</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> title = $( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"title"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"title"</span>, <span class="string">"Dialog Title"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-width" class="api-item">
+<h3>width<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>300</code>
+</div>
+<div>è®¾ç½®dialogçš„å®½åº¦ï¼ˆå•ä½ï¼šåƒç´ ï¼‰ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>width</code>é€‰é¡¹çš„ dialogï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog({ width: <span class="number">500</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>width</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> width = $( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"width"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"width"</span>, <span class="number">500</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div></section><section id="methods"><header><h2>Methods</h2></header><div id="method-close"><div class="api-item first-item">
+<h3>close()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>å…³é—­dialog.</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ close æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog( <span class="string">"close"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div>
+<div id="method-destroy"><div class="api-item">
+<h3>destroy()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>
+    å®Œå…¨ç§»é™¤ dialog åŠŸèƒ½. è¿™å°†ä½¿å…ƒç´ è¿”å›åˆ°ä¹‹å‰çš„åˆå§‹åŒ–çŠ¶æ€.
+	</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ destroy æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog( <span class="string">"destroy"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div>
+<div id="method-isOpen"><div class="api-item">
+<h3>isOpen()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div>ç¡®å®š dialog å½“å‰æ˜¯å¦æ‰“å¼€çŠ¶æ€ã€‚</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ isOpen æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="keyword">var</span> isOpen = $( <span class="string">".selector"</span> ).dialog( <span class="string">"isOpen"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div>
+<div id="method-moveToTop"><div class="api-item">
+<h3>moveToTop()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>ç§»åŠ¨dialogåˆ°æ‰€æœ‰dialogå †æ ˆçš„é¡¶éƒ¨ã€‚ï¼ˆæ„šäººç å¤´æ³¨ï¼šç†è§£ä¸º z-indexå±‚çº§æœ€é«˜ï¼‰</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ moveToTop æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog( <span class="string">"moveToTop"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div>
+<div id="method-open"><div class="api-item">
+<h3>open()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>æ‰“å¼€ dialogã€‚</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ open æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog( <span class="string">"open"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div>
+<div id="method-option">
+<div class="api-item">
+<h3>option( optionName )<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a></span>
+</h3>
+<div>è·å–å½“å‰ä¸æŒ‡å®šçš„ <code>optionName</code> å…³è”çš„å€¼ã€‚</div>
+<ul><li>
+<div><strong>optionName</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a>
+</div>
+<div>è¦è·å–å€¼çš„é€‰é¡¹çš„åç§°ã€‚</div>
+</li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨è¯¥æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="keyword">var</span> isDisabled = $( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"disabled"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div class="api-item">
+<h3>option()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#PlainObject'" tppabs="http://api.jquery.com/Types/#PlainObject">PlainObject</a></span>
+</h3>
+<div>è·å–ä¸€ä¸ªåŒ…å«é”®/å€¼å¯¹çš„å¯¹è±¡ï¼Œé”®/å€¼å¯¹è¡¨ç¤ºå½“å‰ dialog é€‰é¡¹å“ˆå¸Œã€‚</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨è¯¥æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="keyword">var</span> options = $( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div class="api-item">
+<h3>option( optionName, value )<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>è®¾ç½®ä¸æŒ‡å®šçš„ <code>optionName</code> å…³è”çš„ dialog é€‰é¡¹çš„å€¼ã€‚</div>
+<ul>
+<li>
+<div><strong>optionName</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a>
+</div>
+<div>è¦è®¾ç½®çš„é€‰é¡¹çš„åç§°ã€‚</div>
+</li>
+<li>
+<div><strong>value</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>è¦ä¸ºé€‰é¡¹è®¾ç½®çš„å€¼ã€‚</div>
+</li>
+</ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨è¯¥æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, <span class="string">"disabled"</span>, <span class="literal">true</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div class="api-item">
+<h3>option( options )<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>ä¸º dialog è®¾ç½®ä¸€ä¸ªæˆ–å¤šä¸ªé€‰é¡¹ã€‚</div>
+<ul><li>
+<div><strong>options</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>è¦è®¾ç½®çš„ option-value å¯¹ã€‚</div>
+</li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨è¯¥æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog( <span class="string">"option"</span>, { disabled: <span class="literal">true</span> } );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+</div>
+<div id="method-widget"><div class="api-item">
+<h3>widget()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a></span>
+</h3>
+<div>   è¿”å›ä¸€ä¸ªåŒ…å« ç”ŸæˆåŒ…è£¹å…ƒç´  çš„  <code>jQuery</code> å¯¹è±¡ã€‚
+	</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ widget æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="keyword">var</span> widget = $( <span class="string">".selector"</span> ).dialog( <span class="string">"widget"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div></section><section id="extension-points"><header><h2>æ‰©å±•ç‚¹ï¼ˆExtension Pointsï¼‰</h2></header><p>
+    dialogå°éƒ¨ä»¶æ˜¯<a href="../jQuery.widget/index.htm" tppabs="http://www.css88.com/jquery-ui-api/jQuery.widget/">widget factory</a>æ„å»ºçš„ï¼Œå¹¶ä¸”å¯ä»¥æ‰©å±•ã€‚
+    å½“æ‰©å±•éƒ¨ä»¶æ—¶ï¼Œ
+    ä½ å¿…é¡»è¦†ç›–æˆ–æ·»åŠ æ–°çš„è¡Œä¸ºåˆ°ç°æœ‰çš„æ–¹æ³•ã€‚
+
+    ä¸‹åˆ—æ–¹æ³•è¢«æä¾›ä½œä¸ºæ‰©å±•ç‚¹
+    ç”¨ç›¸åŒçš„APIç¨³å®šæ€§å¦‚ä¸Šæ‰€åˆ—çš„<a href="#methods">plugin methods</a>ã€‚
+
+
+    æœ‰å…³å°éƒ¨ä»¶æ‰©å±•çš„æ›´å¤šä¿¡æ¯ï¼Œ
+    è¯·å‚é˜…<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/extending-widgets/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/extending-widgets/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/extending-widgets/">ä½¿ç”¨Widget Factory æ‰©å±•å°éƒ¨ä»¶</a>ã€‚
+			</p>
+<hr>
+<div id="method-_allowInteraction"><div class="api-item first-item">
+<h3>_allowInteraction( event )<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div>    å¸¦é®ç½©çš„å¯¹è¯æ¡†ä¸å…è®¸ç”¨æˆ·ä¸å¯¹è¯æ¡†ä¸‹é¢å…ƒç´ è¿›è¡Œäº¤äº’ã€‚
+    è¿™å¯èƒ½ä¼šå¯¹
+    ä¸å±äºè¯¥dialogçš„å­å…ƒç´ é‚£äº›ç»å¯¹å®šä½çš„å…¶ä»–å…ƒç´ äº§ç”Ÿé—®é¢˜ã€‚
+    <code>_allowInteraction()</code>æ–¹æ³•ç¡®å®šç”¨æˆ·æ˜¯å¦åº”è¢«å…è®¸ä¸ç»™å®šçš„ç›®æ ‡å…ƒç´ è¿›è¡Œäº¤äº’;    å› æ­¤ï¼Œ
+    å®ƒå¯ç”¨äºä¸å±äºè¯¥dialogçš„å­å…ƒç´ ç™½åå•ä¸­çš„å…ƒç´ 
+    ä½†ä½ å¸Œæœ›ç”¨æˆ·èƒ½å¤Ÿä½¿ç”¨ã€‚
+			</div>
+<ul><li>
+<div><strong>event</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Event'" tppabs="http://api.jquery.com/Types/#Event">Event</a>
+</div>
+<div></div>
+</li></ul>
+<div>
+<strong>Code examples:</strong><p>
+    å…è®¸Select2æ’ä»¶åœ¨é®ç½©å¯¹è¯æ¡†ä¸­ä½¿ç”¨ã€‚
+    <a href="javascript:if(confirm('http://www.css88.com/jquery.widget/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/jquery.widget/#method-_super'" tppabs="http://www.css88.com/jquery.widget/#method-_super"><code>_super()</code></a>è°ƒç”¨ç¡®ä¿è¯¥å¯¹è¯æ¡†ä¸­çš„å…ƒç´ ä»ç„¶å¯ä»¥äº¤äº’ã€‚</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>_allowInteraction: <span class="keyword">function</span>( event ) {</code></div></div><div class="container"><div class="line"><code>  <span class="keyword">return</span> !!$( event.target ).is( <span class="string">".select2-input"</span> ) || <span class="keyword">this</span>._super( event );</code></div></div><div class="container"><div class="line"><code>}</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div></section><section id="events"><header><h2>Events</h2></header><div id="event-beforeClose" class="api-item first-item">
+<h3>beforeClose( event, ui )<span class="returns">Type: <code>dialogbeforeclose</code></span>
+</h3>
+<div>
+    å½“dialogå³å°†å…³é—­æ—¶è§¦å‘ã€‚
+    å¦‚æœå–æ¶ˆï¼Œdialogå°†ä¸ä¼šå…³é—­ã€‚</div>
+<ul>
+<li>
+<div><strong>event</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Event'" tppabs="http://api.jquery.com/Types/#Event">Event</a>
+</div>
+<div></div>
+</li>
+<li>
+<div><strong>ui</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div></div>
+</li>
+</ul>
+<p><em>æ³¨æ„ï¼š<code>ui</code> å¯¹è±¡æ˜¯ç©ºçš„ï¼Œè¿™é‡ŒåŒ…å«å®ƒæ˜¯ä¸ºäº†ä¸å…¶ä»–äº‹ä»¶ä¿æŒä¸€è‡´æ€§ã€‚</em></p>
+<div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š beforeClose å›è°ƒçš„ dialogï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog({</code></div></div><div class="container"><div class="line"><code>  beforeClose: <span class="keyword">function</span>( event, ui ) {}</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>ç»‘å®šä¸€ä¸ªäº‹ä»¶ç›‘å¬å™¨åˆ°  dialogbeforeclose äº‹ä»¶ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).on( <span class="string">"dialogbeforeclose"</span>, <span class="keyword">function</span>( event, ui ) {} );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div id="event-close" class="api-item">
+<h3>close( event, ui )<span class="returns">Type: <code>dialogclose</code></span>
+</h3>
+<div>å½“dialogå…³é—­æ—¶è§¦å‘ã€‚</div>
+<ul>
+<li>
+<div><strong>event</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Event'" tppabs="http://api.jquery.com/Types/#Event">Event</a>
+</div>
+<div></div>
+</li>
+<li>
+<div><strong>ui</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div></div>
+</li>
+</ul>
+<p><em>æ³¨æ„ï¼š<code>ui</code> å¯¹è±¡æ˜¯ç©ºçš„ï¼Œè¿™é‡ŒåŒ…å«å®ƒæ˜¯ä¸ºäº†ä¸å…¶ä»–äº‹ä»¶ä¿æŒä¸€è‡´æ€§ã€‚</em></p>
+<div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š close å›è°ƒçš„ dialogï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog({</code></div></div><div class="container"><div class="line"><code>  close: <span class="keyword">function</span>( event, ui ) {}</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>ç»‘å®šä¸€ä¸ªäº‹ä»¶ç›‘å¬å™¨åˆ°  dialogclose äº‹ä»¶ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).on( <span class="string">"dialogclose"</span>, <span class="keyword">function</span>( event, ui ) {} );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div id="event-create" class="api-item">
+<h3>create( event, ui )<span class="returns">Type: <code>dialogcreate</code></span>
+</h3>
+<div>
+    åœ¨åˆ›å»ºdialogæ—¶è§¦å‘ã€‚
+	</div>
+<ul>
+<li>
+<div><strong>event</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Event'" tppabs="http://api.jquery.com/Types/#Event">Event</a>
+</div>
+<div></div>
+</li>
+<li>
+<div><strong>ui</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div></div>
+</li>
+</ul>
+<p><em>æ³¨æ„ï¼š<code>ui</code> å¯¹è±¡æ˜¯ç©ºçš„ï¼Œè¿™é‡ŒåŒ…å«å®ƒæ˜¯ä¸ºäº†ä¸å…¶ä»–äº‹ä»¶ä¿æŒä¸€è‡´æ€§ã€‚</em></p>
+<div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š create å›è°ƒçš„ dialogï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog({</code></div></div><div class="container"><div class="line"><code>  create: <span class="keyword">function</span>( event, ui ) {}</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>ç»‘å®šä¸€ä¸ªäº‹ä»¶ç›‘å¬å™¨åˆ°  dialogcreate äº‹ä»¶ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).on( <span class="string">"dialogcreate"</span>, <span class="keyword">function</span>( event, ui ) {} );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div id="event-drag" class="api-item">
+<h3>drag( event, ui )<span class="returns">Type: <code>dialogdrag</code></span>
+</h3>
+<div>
+    åœ¨dialogæ­£åœ¨è¢«æ‹–åŠ¨æ—¶è§¦å‘ã€‚</div>
+<ul>
+<li>
+<div><strong>event</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Event'" tppabs="http://api.jquery.com/Types/#Event">Event</a>
+</div>
+<div></div>
+</li>
+<li>
+<div><strong>ui</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div></div>
+    <ul>
+        <li>
+            <div><strong>position</strong></div>
+            <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+            </div>
+            <div>dialogå½“å‰çš„CSS positionï¼ˆä½ç½®ï¼‰å¯¹è±¡ã€‚</div>
+        </li>
+        <li>
+            <div><strong>offset</strong></div>
+            <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+            </div>
+            <div>dialogå½“å‰çš„offset positionï¼ˆåç§»ä½ç½®ï¼‰å¯¹è±¡ã€‚</div>
+        </li>
+    </ul>
+</li>
+</ul>
+<div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š drag å›è°ƒçš„ dialogï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog({</code></div></div><div class="container"><div class="line"><code>  drag: <span class="keyword">function</span>( event, ui ) {}</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>ç»‘å®šä¸€ä¸ªäº‹ä»¶ç›‘å¬å™¨åˆ°  dialogdrag äº‹ä»¶ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).on( <span class="string">"dialogdrag"</span>, <span class="keyword">function</span>( event, ui ) {} );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div id="event-dragStart" class="api-item">
+<h3>dragStart( event, ui )<span class="returns">Type: <code>dialogdragstart</code></span>
+</h3>
+<div>å½“ç”¨æˆ·å¼€å§‹æ‹–åŠ¨dialogæ—¶è§¦å‘ã€‚</div>
+<ul>
+<li>
+<div><strong>event</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Event'" tppabs="http://api.jquery.com/Types/#Event">Event</a>
+</div>
+<div></div>
+</li>
+<li>
+<div><strong>ui</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div></div>
+    <ul>
+            <li>
+                <div><strong>position</strong></div>
+                <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+                </div>
+                <div>dialogå½“å‰çš„CSS positionï¼ˆä½ç½®ï¼‰å¯¹è±¡ã€‚</div>
+            </li>
+            <li>
+                <div><strong>offset</strong></div>
+                <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+                </div>
+                <div>dialogå½“å‰çš„offset positionï¼ˆåç§»ä½ç½®ï¼‰å¯¹è±¡ã€‚</div>
+            </li>
+        </ul>
+</li>
+</ul>
+<div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š dragStart å›è°ƒçš„ dialogï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog({</code></div></div><div class="container"><div class="line"><code>  dragStart: <span class="keyword">function</span>( event, ui ) {}</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>ç»‘å®šä¸€ä¸ªäº‹ä»¶ç›‘å¬å™¨åˆ°  dialogdragstart äº‹ä»¶ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).on( <span class="string">"dialogdragstart"</span>, <span class="keyword">function</span>( event, ui ) {} );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div id="event-dragStop" class="api-item">
+<h3>dragStop( event, ui )<span class="returns">Type: <code>dialogdragstop</code></span>
+</h3>
+    <div>å½“dialog åœæ­¢æ‹–åŠ¨æ—¶è§¦å‘ã€‚</div>
+<ul>
+<li>
+<div><strong>event</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Event'" tppabs="http://api.jquery.com/Types/#Event">Event</a>
+</div>
+<div></div>
+</li>
+<li>
+<div><strong>ui</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div></div>
+    <ul>
+            <li>
+                <div><strong>position</strong></div>
+                <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+                </div>
+                <div>dialogå½“å‰çš„CSS positionï¼ˆä½ç½®ï¼‰å¯¹è±¡ã€‚</div>
+            </li>
+            <li>
+                <div><strong>offset</strong></div>
+                <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+                </div>
+                <div>dialogå½“å‰çš„offset positionï¼ˆåç§»ä½ç½®ï¼‰å¯¹è±¡ã€‚</div>
+            </li>
+        </ul>
+</li>
+</ul>
+<div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š dragStop å›è°ƒçš„ dialogï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog({</code></div></div><div class="container"><div class="line"><code>  dragStop: <span class="keyword">function</span>( event, ui ) {}</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>ç»‘å®šä¸€ä¸ªäº‹ä»¶ç›‘å¬å™¨åˆ°  dialogdragstop äº‹ä»¶ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).on( <span class="string">"dialogdragstop"</span>, <span class="keyword">function</span>( event, ui ) {} );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div id="event-focus" class="api-item">
+<h3>focus( event, ui )<span class="returns">Type: <code>dialogfocus</code></span>
+</h3>
+<div>å½“å¯¹è¯æ¡†è·å–ç„¦ç‚¹æ—¶è§¦å‘æ­¤äº‹ä»¶ã€‚</div>
+<ul>
+<li>
+<div><strong>event</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Event'" tppabs="http://api.jquery.com/Types/#Event">Event</a>
+</div>
+<div></div>
+</li>
+<li>
+<div><strong>ui</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div></div>
+</li>
+</ul>
+<p><em>æ³¨æ„ï¼š<code>ui</code> å¯¹è±¡æ˜¯ç©ºçš„ï¼Œè¿™é‡ŒåŒ…å«å®ƒæ˜¯ä¸ºäº†ä¸å…¶ä»–äº‹ä»¶ä¿æŒä¸€è‡´æ€§ã€‚</em></p>
+<div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š focus å›è°ƒçš„ dialogï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog({</code></div></div><div class="container"><div class="line"><code>  focus: <span class="keyword">function</span>( event, ui ) {}</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>ç»‘å®šä¸€ä¸ªäº‹ä»¶ç›‘å¬å™¨åˆ°  dialogfocus äº‹ä»¶ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).on( <span class="string">"dialogfocus"</span>, <span class="keyword">function</span>( event, ui ) {} );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div id="event-open" class="api-item">
+<h3>open( event, ui )<span class="returns">Type: <code>dialogopen</code></span>
+</h3>
+<div>å½“å¯¹è¯æ¡†æ‰“å¼€åï¼Œè§¦å‘æ­¤äº‹ä»¶ã€‚  </div>
+<ul>
+<li>
+<div><strong>event</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Event'" tppabs="http://api.jquery.com/Types/#Event">Event</a>
+</div>
+<div></div>
+</li>
+<li>
+<div><strong>ui</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div></div>
+</li>
+</ul>
+<p><em>æ³¨æ„ï¼š<code>ui</code> å¯¹è±¡æ˜¯ç©ºçš„ï¼Œè¿™é‡ŒåŒ…å«å®ƒæ˜¯ä¸ºäº†ä¸å…¶ä»–äº‹ä»¶ä¿æŒä¸€è‡´æ€§ã€‚</em></p>
+<div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š open å›è°ƒçš„ dialogï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog({</code></div></div><div class="container"><div class="line"><code>  open: <span class="keyword">function</span>( event, ui ) {}</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>ç»‘å®šä¸€ä¸ªäº‹ä»¶ç›‘å¬å™¨åˆ°  dialogopen äº‹ä»¶ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).on( <span class="string">"dialogopen"</span>, <span class="keyword">function</span>( event, ui ) {} );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div id="event-resize" class="api-item">
+<h3>resize( event, ui )<span class="returns">Type: <code>dialogresize</code></span>
+</h3>
+<div>å½“å¯¹è¯æ¡†å¤§å°æ”¹å˜æ—¶ï¼Œè§¦å‘æ­¤äº‹ä»¶ã€‚   </div>
+<ul>
+<li>
+<div><strong>event</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Event'" tppabs="http://api.jquery.com/Types/#Event">Event</a>
+</div>
+<div></div>
+</li>
+<li>
+<div><strong>ui</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div></div>
+    <ul>
+        <li>
+            <div><strong>originalPosition</strong></div>
+            <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+            </div>
+            <div>
+                å¯¹è¯æ¡†è¢«è°ƒæ•´å¤§å° ä¹‹å‰çš„CSS positionï¼ˆä½ç½®ï¼‰å¯¹è±¡
+               ã€‚
+                </div>
+        </li>
+        <li>
+            <div><strong>position</strong></div>
+            <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+            </div>
+            <div>å¯¹è¯æ¡†å½“å‰çš„CSS positionï¼ˆä½ç½®ï¼‰å¯¹è±¡ã€‚</div>
+        </li>
+        <li>
+            <div><strong>originalSize</strong></div>
+            <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+            </div>
+            <div> å¯¹è¯æ¡†è¢«è°ƒæ•´å¤§å° ä¹‹å‰çš„sizeï¼ˆå°ºå¯¸ï¼‰å¯¹è±¡
+                           ã€‚</div>
+        </li>
+        <li>
+            <div><strong>size</strong></div>
+            <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+            </div>
+            <div>å¯¹è¯æ¡†å½“å‰çš„sizeï¼ˆå°ºå¯¸ï¼‰å¯¹è±¡ã€‚</div>
+        </li>
+    </ul>
+</li>
+</ul>
+<div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š resize å›è°ƒçš„ dialogï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog({</code></div></div><div class="container"><div class="line"><code>  resize: <span class="keyword">function</span>( event, ui ) {}</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>ç»‘å®šä¸€ä¸ªäº‹ä»¶ç›‘å¬å™¨åˆ°  dialogresize äº‹ä»¶ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).on( <span class="string">"dialogresize"</span>, <span class="keyword">function</span>( event, ui ) {} );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div id="event-resizeStart" class="api-item">
+<h3>resizeStart( event, ui )<span class="returns">Type: <code>dialogresizestart</code></span>
+</h3>
+<div>å½“å¼€å§‹æ”¹å˜å¯¹è¯æ¡†å¤§å°æ—¶ï¼Œè§¦å‘æ­¤äº‹ä»¶ã€‚ </div>
+    <ul>
+        <li>
+            <div><strong>event</strong></div>
+            <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Event'" tppabs="http://api.jquery.com/Types/#Event">Event</a>
+            </div>
+            <div></div>
+        </li>
+        <li>
+            <div><strong>ui</strong></div>
+            <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+            </div>
+            <div></div>
+            <ul>
+                <li>
+                    <div><strong>originalPosition</strong></div>
+                    <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+                    </div>
+                    <div>
+                        å¯¹è¯æ¡†è¢«è°ƒæ•´å¤§å° ä¹‹å‰çš„CSS positionï¼ˆä½ç½®ï¼‰å¯¹è±¡
+                        ã€‚
+                    </div>
+                </li>
+                <li>
+                    <div><strong>position</strong></div>
+                    <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+                    </div>
+                    <div>å¯¹è¯æ¡†å½“å‰çš„CSS positionï¼ˆä½ç½®ï¼‰å¯¹è±¡ã€‚</div>
+                </li>
+                <li>
+                    <div><strong>originalSize</strong></div>
+                    <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+                    </div>
+                    <div> å¯¹è¯æ¡†è¢«è°ƒæ•´å¤§å° ä¹‹å‰çš„sizeï¼ˆå°ºå¯¸ï¼‰å¯¹è±¡
+                        ã€‚
+                    </div>
+                </li>
+                <li>
+                    <div><strong>size</strong></div>
+                    <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+                    </div>
+                    <div>å¯¹è¯æ¡†å½“å‰çš„sizeï¼ˆå°ºå¯¸ï¼‰å¯¹è±¡ã€‚</div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+<div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š resizeStart å›è°ƒçš„ dialogï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog({</code></div></div><div class="container"><div class="line"><code>  resizeStart: <span class="keyword">function</span>( event, ui ) {}</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>ç»‘å®šä¸€ä¸ªäº‹ä»¶ç›‘å¬å™¨åˆ°  dialogresizestart äº‹ä»¶ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).on( <span class="string">"dialogresizestart"</span>, <span class="keyword">function</span>( event, ui ) {} );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div id="event-resizeStop" class="api-item">
+<h3>resizeStop( event, ui )<span class="returns">Type: <code>dialogresizestop</code></span>
+</h3>
+<div>å½“å¯¹è¯æ¡†æ”¹å˜å¤§å°åï¼Œè§¦å‘æ­¤äº‹ä»¶ã€‚</div>
+    <ul>
+        <li>
+            <div><strong>event</strong></div>
+            <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Event'" tppabs="http://api.jquery.com/Types/#Event">Event</a>
+            </div>
+            <div></div>
+        </li>
+        <li>
+            <div><strong>ui</strong></div>
+            <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+            </div>
+            <div></div>
+            <ul>
+                    <li>
+                        <div><strong>originalPosition</strong></div>
+                        <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+                        </div>
+                        <div>
+                            å¯¹è¯æ¡†è¢«è°ƒæ•´å¤§å° ä¹‹å‰çš„CSS positionï¼ˆä½ç½®ï¼‰å¯¹è±¡
+                           ã€‚
+                            </div>
+                    </li>
+                    <li>
+                        <div><strong>position</strong></div>
+                        <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+                        </div>
+                        <div>å¯¹è¯æ¡†å½“å‰çš„CSS positionï¼ˆä½ç½®ï¼‰å¯¹è±¡ã€‚</div>
+                    </li>
+                    <li>
+                        <div><strong>originalSize</strong></div>
+                        <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+                        </div>
+                        <div> å¯¹è¯æ¡†è¢«è°ƒæ•´å¤§å° ä¹‹å‰çš„sizeï¼ˆå°ºå¯¸ï¼‰å¯¹è±¡
+                                       ã€‚</div>
+                    </li>
+                    <li>
+                        <div><strong>size</strong></div>
+                        <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+                        </div>
+                        <div>å¯¹è¯æ¡†å½“å‰çš„sizeï¼ˆå°ºå¯¸ï¼‰å¯¹è±¡ã€‚</div>
+                    </li>
+                </ul>
+        </li>
+    </ul>
+<div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š resizeStop å›è°ƒçš„ dialogï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).dialog({</code></div></div><div class="container"><div class="line"><code>  resizeStop: <span class="keyword">function</span>( event, ui ) {}</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>ç»‘å®šä¸€ä¸ªäº‹ä»¶ç›‘å¬å™¨åˆ°  dialogresizestop äº‹ä»¶ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).on( <span class="string">"dialogresizestop"</span>, <span class="keyword">function</span>( event, ui ) {} );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></section><section class="entry-examples" id="entry-examples"><header><h2>Example:</h2></header><div class="entry-example" id="example-0">
+<h4><span class="desc">ä¸€ä¸ªç®€å•çš„ jQuery UI å¯¹è¯æ¡†ï¼ˆDialogï¼‰ã€‚</span></h4>
+<div class="syntaxhighlighter xml ">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+						<div class="line n6">6</div>
+
+						<div class="line n7">7</div>
+
+						<div class="line n8">8</div>
+
+						<div class="line n9">9</div>
+
+						<div class="line n10">10</div>
+
+						<div class="line n11">11</div>
+
+						<div class="line n12">12</div>
+
+						<div class="line n13">13</div>
+
+						<div class="line n14">14</div>
+
+						<div class="line n15">15</div>
+
+						<div class="line n16">16</div>
+
+						<div class="line n17">17</div>
+
+						<div class="line n18">18</div>
+
+						<div class="line n19">19</div>
+
+						<div class="line n20">20</div>
+
+						<div class="line n21">21</div>
+
+						<div class="line n22">22</div>
+
+						<div class="line n23">23</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="doctype">&lt;!doctype html&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">html</span> <span class="attribute">lang</span>=<span class="value">"en"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">head</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">title</span>&gt;</span>dialog demo<span class="tag">&lt;/<span class="title">title</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">href</span>=<span class="value">"//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"//code.jquery.com/jquery-1.10.2.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"//code.jquery.com/ui/1.10.4/jquery-ui.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">head</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">body</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">button</span> <span class="attribute">id</span>=<span class="value">"opener"</span>&gt;</span>open the dialog<span class="tag">&lt;/<span class="title">button</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"dialog"</span> <span class="attribute">title</span>=<span class="value">"Dialog Title"</span>&gt;</span>I'm a dialog<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"></span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">"#dialog"</span> ).dialog({ autoOpen: <span class="literal">false</span> });</code></div></div><div class="container"><div class="line"><code>$( <span class="string">"#opener"</span> ).click(<span class="keyword">function</span>() {</code></div></div><div class="container"><div class="line"><code>  $( <span class="string">"#dialog"</span> ).dialog( <span class="string">"open"</span> );</code></div></div><div class="container"><div class="line"><code>});</code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">body</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">html</span>&gt;</span></code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<h4>Demo:</h4>
+<div class="demo code-demo"></div>
+</div></section>
+</div></article>	</div><!-- .entry-content -->
+
+</article>
+</div>
+
+
+  </div>
+</div>
+<script type="text/javascript" src="../js/search.js" tppabs="http://www.css88.com/jquery-ui-api/js/search.js"></script>
+<script type="text/javascript" src="../js/gotop.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/gotop.min.js"></script>
+<script type="text/javascript">
+	goToTop.init();
+</script>
+<style>
+    #googlead{position:fixed;bottom:-250px;right:10px;width: 250px}
+.hidden{display: none;}
+</style>
+<div id="googlead">
+    <script type="text/javascript">
+        /*jquery-ui-fixed*/
+        var cpro_id = "u1731049";
+    </script>
+    <script src="../../../cpro.baidustatic.com/cpro/ui/c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+</div>
+<script type="text/javascript">setTimeout(function(){
+  $("#googlead").removeClass("hidden").animate({bottom:10})
+},3000)</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../www.google-analytics.com/analytics.js'/*tpa=http://www.google-analytics.com/analytics.js*/,'ga');
+
+  ga('create', 'UA-3448069-12', 'http://www.css88.com/jquery-ui-api/dialog/css88.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

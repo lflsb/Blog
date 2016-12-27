@@ -1,0 +1,2419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Draggable Widget | jQuery UI API ä¸­æ–‡æ–‡æ¡£ | jQuery APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery 1.0 - jQuery 2.0)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="jQuery,API,ä¸­æ–‡ç‰ˆ,ä¸­æ–‡æ–‡æ¡£,ä¸­æ–‡æ‰‹å†Œ,chm" />
+<meta name="description" content="jQuery APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery 1.0 - jQuery 2.0)" />
+<link rel="shortcut icon" type="image/x-icon" href="http://www.css88.com/jquery-ui-api/favicon.ico" />
+
+<!--<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />-->
+<link rel="stylesheet" type="text/css" media="screen" href="../cssstyle/main.min.css" tppabs="http://www.css88.com/jquery-ui-api/cssstyle/main.min.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="../cssstyle/style.css" tppabs="http://www.css88.com/jquery-ui-api/cssstyle/style.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="../cssstyle/jquery.css" tppabs="http://www.css88.com/jquery-ui-api/cssstyle/jquery.css" />
+<script type="text/javascript" src="../js/jquery.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/highlight.js" tppabs="http://www.css88.com/jquery-ui-api/js/highlight.js"></script>
+<script type="text/javascript" src="../js/jquery.ba-bbq.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/jquery.ba-bbq.min.js"></script>
+<script type="text/javascript" src="../js/jquery.ba-dotimeout.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/jquery.ba-dotimeout.min.js"></script>
+<script type="text/javascript" src="../js/main.js" tppabs="http://www.css88.com/jquery-ui-api/js/main.js"></script>
+<!--<script type="text/javascript" src="js/main.min.js"></script>-->
+</head>
+
+<body>
+<div id="header_warp">
+    <div class="header-box">
+            <div class="logo">
+                <h1><a href="../index.htm" tppabs="http://www.css88.com/jquery-ui-api/"
+                       title="jQuery UI APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery UI 1.10)">jQuery UI APIä¸­æ–‡æ–‡æ¡£</a></h1>
+            </div>
+            <ul class="header-nav">
+                <!--<li><a href="http://www.css88.com/jquery-ui-api/old.html" class="nav-link" title="jQuery UI APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery UI 1.10)">æ—§ç‰ˆ</a>
+                </li>-->
+                <li><a href="javascript:if(confirm('http://www.css88.com/jqapi-1.9/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/jqapi-1.9/'" tppabs="http://www.css88.com/jqapi-1.9/" class="nav-link" title="é€‚ç”¨jQuery 1.0 â€“ jQuery 1.10.2,jQuery 2.0 â€“ jQuery 2.0.3">jQuery APIä¸­æ–‡æ–‡æ¡£</a>
+                <li><a href="javascript:if(confirm('http://www.css88.com/archives/4737  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/archives/4737'" tppabs="http://www.css88.com/archives/4737" class="nav-link" title="jQuery UI APIä¸­æ–‡æ–‡æ¡£æ›´æ–°ä¿¡æ¯">æ›´æ–°ä¿¡æ¯</a></li>
+
+                <li><a href="javascript:if(confirm('http://www.css88.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/'" tppabs="http://www.css88.com/" class="nav-link">å‰ç«¯å¼€å‘</a></li>
+            </ul>
+            <!--<input type="search" placeholder="æœç´¢API" autosave="searchdoc" results="10" id="search-field" autocomplete="off">-->
+        </div>
+</div>
+<div id="navigation">
+	
+<aside id="categories" class="widget">
+    <h3 class="widget-title">jQuery UI 1.10</h3>
+    <ul>
+    				<li class="cat-item cat-item-2 current-cat"><a href="../category/effects/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/effects/" title="View all posts filed under Effects">Effects</a>
+    </li>
+    	<li class="cat-item cat-item-10"><a href="../category/effects-core/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/effects-core/" title="View all posts filed under Effects Core">Effects Core</a>
+    </li>
+    	<li class="cat-item cat-item-4"><a href="../category/interactions/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/interactions/" title="View all posts filed under Interactions">Interactions</a>
+    </li>
+    	<li class="cat-item cat-item-8"><a href="../category/overrides/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/overrides/" title="View all posts filed under Method Overrides">Method Overrides</a>
+    </li>
+    	<li class="cat-item cat-item-6"><a href="../category/methods/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/methods/" title="View all posts filed under Methods">Methods</a>
+    </li>
+    	<li class="cat-item cat-item-7"><a href="../category/selectors/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/selectors/" title="View all posts filed under Selectors">Selectors</a>
+    </li>
+    	<li class="cat-item cat-item-12"><a href="../category/theming/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/theming/" title="View all posts filed under Theming">Theming</a>
+    </li>
+    	<li class="cat-item cat-item-9"><a href="../category/ui-core/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/ui-core/" title="View all posts filed under UI Core">UI Core</a>
+    </li>
+    	<li class="cat-item cat-item-5"><a href="../category/utilities/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/utilities/" title="View all posts filed under Utilities">Utilities</a>
+    </li>
+    	<li class="cat-item cat-item-3"><a href="../category/widgets/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/widgets/" title="View all posts filed under Widgets">Widgets</a>
+    </li>
+    		</ul>
+  </aside>
+
+
+    <div style=" height:60px;margin-left:20px"><p
+                        style="font-size:12px; line-height:1.5; margin:8px 0">æ‹ç –çº é”™ è¯·å¾®åšä¸Š <a href="javascript:if(confirm('http://weibo.com/148246293  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://weibo.com/148246293'" tppabs="http://weibo.com/148246293"
+                                                                                           target="_blank">@æ„šäººç å¤´</a>ï¼š</p>
+                    <iframe style="vertical-align: middle;" width="163" height="24" frameborder="0"
+                            allowtransparency="true" marginwidth="0" marginheight="0" scrolling="no" border="0"
+                            src="../../../widget.weibo.com/relationship/followbutton.php-language=zh_cn&width=63&height=24            &uid=1477178352&style=2&btn=red&dpc=1" tppabs="http://widget.weibo.com/relationship/followbutton.php?language=zh_cn&width=63&height=24            &uid=1477178352&style=2&btn=red&dpc=1"></iframe>
+                </div>
+        <div id="googleguanggao" style=" margin-top:20px; margin-left:10px">
+            <script type="text/javascript">
+                        /*jquery-ui-left*/
+                        var cpro_id = "u1731043";
+                    </script>
+                    <script src="../../../cpro.baidustatic.com/cpro/ui/c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+        </div></div>
+<div id="content_box">
+  <div id="content">
+	
+<div class="inner" role="main">
+    <article id="post-27" class="post-27 post type-post status-publish format-standard hentry category-interactions">
+    <header class="entry-header">
+        <h1 class="entry-title">Draggable Widget</h1>
+        <hr>
+<div id="baidu-banner">
+<script type="text/javascript">
+    /*jquery-ui-banner*/
+    var cpro_id = "u1731052";
+</script>
+<script src="../../../cpro.baidustatic.com/cpro/ui/c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+</div>
+<div class="entry-meta">
+            Categories: <span class="category"><a href="../category/interactions/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/interactions/" title="View all posts in Interactions">Interactions</a></span>      </div><!-- .entry-meta -->
+            </header><!-- .entry-header -->
+
+    <div class="entry-content">
+        <article id="draggable1" class="entry widget"><h2 class="section-title">
+<span>Draggable Widget</span><span class="version-details">version added: 1.0</span>
+</h2>
+<div class="entry-wrapper">
+<p class="desc"><strong>Description: </strong>è¯¥ç»„ä»¶å¯ä»¥è®©ä½ ä½¿ç”¨é¼ æ ‡æ‹–åŠ¨æ‰€æœ‰å…ƒç´ ã€‚</p>
+<section id="quick-nav"><header><h2>QuickNav<a href="#entry-examples">Examples</a>
+</h2></header><div class="quick-nav-section">
+<h3>Options</h3>
+<div><a href="#option-addClasses">addClasses</a></div>
+<div><a href="#option-appendTo">appendTo</a></div>
+<div><a href="#option-axis">axis</a></div>
+<div><a href="#option-cancel">cancel</a></div>
+<div><a href="#option-connectToSortable">connectToSortable</a></div>
+<div><a href="#option-containment">containment</a></div>
+<div><a href="#option-cursor">cursor</a></div>
+<div><a href="#option-cursorAt">cursorAt</a></div>
+<div><a href="#option-delay">delay</a></div>
+<div><a href="#option-disabled">disabled</a></div>
+<div><a href="#option-distance">distance</a></div>
+<div><a href="#option-grid">grid</a></div>
+<div><a href="#option-handle">handle</a></div>
+<div><a href="#option-helper">helper</a></div>
+<div><a href="#option-iframeFix">iframeFix</a></div>
+<div><a href="#option-opacity">opacity</a></div>
+<div><a href="#option-refreshPositions">refreshPositions</a></div>
+<div><a href="#option-revert">revert</a></div>
+<div><a href="#option-revertDuration">revertDuration</a></div>
+<div><a href="#option-scope">scope</a></div>
+<div><a href="#option-scroll">scroll</a></div>
+<div><a href="#option-scrollSensitivity">scrollSensitivity</a></div>
+<div><a href="#option-scrollSpeed">scrollSpeed</a></div>
+<div><a href="#option-snap">snap</a></div>
+<div><a href="#option-snapMode">snapMode</a></div>
+<div><a href="#option-snapTolerance">snapTolerance</a></div>
+<div><a href="#option-stack">stack</a></div>
+<div><a href="#option-zIndex">zIndex</a></div>
+</div>
+<div class="quick-nav-section">
+<h3>Methods</h3>
+<div><a href="#method-destroy">destroy</a></div>
+<div><a href="#method-disable">disable</a></div>
+<div><a href="#method-enable">enable</a></div>
+<div><a href="#method-option">option</a></div>
+<div><a href="#method-widget">widget</a></div>
+</div>
+<div class="quick-nav-section">
+<h3>Events</h3>
+<div><a href="#event-create">create</a></div>
+<div><a href="#event-drag">drag</a></div>
+<div><a href="#event-start">start</a></div>
+<div><a href="#event-stop">stop</a></div>
+</div></section><div class="longdesc" id="entry-longdesc">
+        <p>è®©è¢«é€‰æ‹©å…ƒç´ å¯ä»¥è¢«é¼ æ ‡æ‹–åŠ¨ã€‚å¦‚æœä½ æƒ³æŠŠå…ƒç´ æ‹–æ”¾åˆ°å¦ä¸€ä¸ªå…ƒç´ å†…éƒ¨ï¼ŒæŸ¥çœ‹<a href="javascript:if(confirm('http://www.css88.com/droppable/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/droppable/'" tppabs="http://www.css88.com/droppable/">jQuery UI Droppable plugin</a>,è¯¥ç»„ä»¶ä¸ºè¢«æ‹–åŠ¨å…ƒç´ æä¾›äº†ä¸€ä¸ªç›®æ ‡å®¹å™¨ã€‚</p>
+
+
+        <h3>Dependenciesï¼ˆä¾èµ–æ€§ï¼‰</h3>
+        <ul>
+            <li><a href="javascript:if(confirm('http://www.css88.com/category/ui-core/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/category/ui-core/'" tppabs="http://www.css88.com/category/ui-core/">UI Core</a></li>
+            <li><a href="javascript:if(confirm('http://www.css88.com/jQuery.widget/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/jQuery.widget/'" tppabs="http://www.css88.com/jQuery.widget/">Widget Factory</a></li>
+            <li><a href="javascript:if(confirm('http://www.css88.com/mouse/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/mouse/'" tppabs="http://www.css88.com/mouse/">Mouse Interaction</a></li>
+        </ul>
+    </div>
+<section id="options"><header><h2 class="underline">Options</h2></header><div id="option-addClasses" class="api-item first-item">
+<h3>addClasses<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>true</code>
+</div>
+
+<div>å¦‚æœå€¼è®¾ç½®ä¸º<code>false</code>, <code>ui-draggable</code>æ ·å¼ç±»å°†ä¸èƒ½è¢«æ·»åŠ å¼•ç”¨ã€‚å½“åœ¨å¤§é‡å…ƒç´ ä¸Šè°ƒç”¨<code>.draggable()</code>æ—¶ï¼Œä½ å¯èƒ½ä¼šæƒ³è¦è¿™æ ·è®¾ç½®ï¼Œä½œä¸ºä¸€ä¸ªæ€§èƒ½ä¼˜åŒ–ã€‚</div>
+
+<strong>Code examples:</strong>
+<p>
+ä½¿ç”¨<code>addClasses</code>é€‰é¡¹åˆå§‹åŒ–Draggable Widgetï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({ addClasses: <span class="literal">false</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨ç»„ä»¶åˆå§‹åŒ–ä¹‹åï¼Œè¯»å–æˆ–è®¾ç½®<code>addClasses</code>é€‰é¡¹</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> addClasses = $( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"addClasses"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"addClasses"</span>, <span class="literal">false</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-appendTo" class="api-item">
+<h3>appendTo<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Element'" tppabs="http://api.jquery.com/Types/#Element">Element</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Selector'" tppabs="http://api.jquery.com/Types/#Selector">Selector</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>"parent"</code>
+</div>
+<div>å½“è¿›è¡Œæ‹–åŠ¨æ—¶ï¼Œæ‹–åŠ¨ç»„ä»¶åŠ©æ‰‹åº”è¯¥è¢«æ·»åŠ åˆ°çš„å…ƒç´ ã€‚</div>
+<strong>æ”¯æŒå¤šç§ç±»å‹:</strong>
+
+<ul>
+<li>
+<strong>jQuery</strong>: ä¸€ä¸ªå«æœ‰è¦è¢«æ·»åŠ æ‹–åŠ¨ç»„ä»¶åŠ©æ‰‹çš„å…ƒç´ çš„Jqueryå¯¹è±¡ã€‚</li>
+<li>
+<strong>Element</strong>: è¦è¢«æ·»åŠ æ‹–åŠ¨ç»„ä»¶åŠ©æ‰‹çš„å…ƒç´ ã€‚</li>
+<li>
+<strong>Selector</strong>: ä¸€ä¸ªç”¨æ¥è¯†åˆ«è¦è¢«æ·»åŠ æ‹–åŠ¨ç»„ä»¶åŠ©æ‰‹çš„å…ƒç´ çš„é€‰æ‹©å™¨ã€‚</li>
+<li>
+<strong>String</strong>: å­—ç¬¦ä¸²<code>"parent"</code>å°†ä¼šä½¿æ‹–åŠ¨ç»„ä»¶åŠ©æ‰‹æˆä¸ºç»„ä»¶çš„åŒçº§å…ƒç´ ã€‚</li>
+</ul>
+
+<strong>Code examples:</strong>
+<p>
+ä½¿ç”¨<code>appendTo</code>é€‰é¡¹åˆå§‹åŒ–Draggable Widgetï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({ appendTo: <span class="string">"body"</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨ç»„ä»¶åˆå§‹åŒ–ä¹‹åï¼Œè¯»å–æˆ–è®¾ç½®<code>appendTo</code>é€‰é¡¹</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> appendTo = $( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"appendTo"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"appendTo"</span>, <span class="string">"body"</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-axis" class="api-item">
+<h3>axis<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+
+<div>çº¦æŸæ‹–åŠ¨çš„åŠ¨ä½œåªèƒ½åœ¨æ°´å¹³(xè½´)æˆ–å‚ç›´(yè½´)ä¸Šæ‰§è¡Œã€‚å¯é€‰å€¼: <code>"x"</code>, <code>"y"</code>ã€‚</div>
+
+<strong>Code examples:</strong>
+<p>
+ä½¿ç”¨<code>axis</code>é€‰é¡¹åˆå§‹åŒ–Draggable Widgetï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({ axis: <span class="string">"x"</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨ç»„ä»¶åˆå§‹åŒ–ä¹‹åï¼Œè¯»å–æˆ–è®¾ç½®<code>axis</code>é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> axis = $( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"axis"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"axis"</span>, <span class="string">"x"</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-cancel" class="api-item">
+<h3>cancel<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Selector'" tppabs="http://api.jquery.com/Types/#Selector">Selector</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>"input,textarea,button,select,option"</code>
+</div>
+<div>é˜²æ­¢åœ¨æŒ‡å®šå…ƒç´ ä¸Šå¼€å§‹æ‹–åŠ¨ã€‚</div>
+<strong>Code examples:</strong>
+<p>
+ä½¿ç”¨<code>cancel</code>é€‰é¡¹åˆå§‹åŒ–Draggable Widgetï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({ cancel: <span class="string">".title"</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨ç»„ä»¶åˆå§‹åŒ–ä¹‹åï¼Œè¯»å–æˆ–è®¾ç½®<code>cancel</code>é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> cancel = $( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"cancel"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"cancel"</span>, <span class="string">".title"</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-connectToSortable" class="api-item">
+<h3>connectToSortable<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Selector'" tppabs="http://api.jquery.com/Types/#Selector">Selector</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+
+<div>å…è®¸draggableè¢«æ‹–æ‹½åˆ°æŒ‡å®šçš„sortablesä¸­ã€‚å¦‚æœä½¿ç”¨äº†è¯¥é€‰é¡¹ï¼Œè¢«æ‹–åŠ¨çš„å…ƒç´ å¯ä»¥è¢«æ”¾ç½®äºä¸€ä¸ªåº”ç”¨äº†æ’åºç»„ä»¶çš„å…ƒç´ åˆ—è¡¨ä¸­å¹¶æˆä¸ºè¯¥åˆ—è¡¨çš„ä¸€éƒ¨åˆ†ã€‚æ³¨æ„: ä¸ºäº†å®Œç¾çš„ä½¿ç”¨è¯¥ç‰¹æ€§ï¼Œ<a href="#option-helper"><code>helper</code></a>é€‰é¡¹å¿…é¡»è¢«è®¾ç½®ä¸º<code>"clone"</code>ã€‚ å¿…é¡»åŒ…å«<a href="javascript:if(confirm('http://www.css88.com/sortable/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/sortable/'" tppabs="http://www.css88.com/sortable/">jQuery UI æ’åºç»„ä»¶</a>ã€‚</div>
+
+
+<strong>Code examples:</strong><p>ä½¿ç”¨<code>connectToSortable</code>é€‰é¡¹åˆå§‹åŒ–Draggable Widgetï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({ connectToSortable: <span class="string">"#my-sortable"</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<p>åœ¨ç»„ä»¶åˆå§‹åŒ–ä¹‹åï¼Œè¯»å–æˆ–è®¾ç½®<code>connectToSortable</code>é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> connectToSortable = $( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"connectToSortable"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"connectToSortable"</span>, <span class="string">"#my-sortable"</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-containment" class="api-item">
+<h3>containment<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Selector'" tppabs="http://api.jquery.com/Types/#Selector">Selector</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Element'" tppabs="http://api.jquery.com/Types/#Element">Element</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Array'" tppabs="http://api.jquery.com/Types/#Array">Array</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>
+å¯ä»¥é™åˆ¶draggableåªèƒ½åœ¨æŒ‡å®šçš„å…ƒç´ æˆ–åŒºåŸŸçš„è¾¹ç•Œä»¥å†…è¿›è¡Œæ‹–åŠ¨ã€‚
+</div>
+<strong>æ”¯æŒå¤šç§ç±»å‹:</strong><ul>
+<li>
+<strong>Selector</strong>: å¯æ‹–åŠ¨å…ƒç´ å°†è¢«ç½®äºç”±é€‰æ‹©å™¨æŒ‡å®šçš„ç¬¬ä¸€ä¸ªå…ƒç´ çš„èµ·ç•Œé™ä½œç”¨çš„ç›’æ¨¡å‹ä¸­ã€‚å¦‚æœæ²¡æœ‰æ‰¾åˆ°ä»»ä½•å…ƒç´ ï¼Œåˆ™ä¸ä¼šè®¾ç½®ç•Œé™ã€‚</li>
+<li>
+<strong>Element</strong>: å¯æ‹–åŠ¨çš„å…ƒç´ å°†åŒ…å«è¯¥å…ƒç´ çš„è¾¹ç•Œæ¡†ã€‚</li>
+<li>
+<strong>String</strong>:å¯é€‰å€¼:  <code>"parent"</code>, <code>"document"</code>, <code>"window"</code>.</li>
+<li>
+<strong>Array</strong>: ä»¥ <code>[ x1, y1, x2, y2 ]</code> æ•°ç»„å½¢å¼å®šä¹‰ä¸€ä¸ªé™åˆ¶åŒºåŸŸ.</li>
+</ul>
+<strong>Code examples:</strong><p>ä½¿ç”¨<code>containment</code>é€‰é¡¹åˆå§‹åŒ–Draggable Widgetï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({ containment: <span class="string">"parent"</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<p>åœ¨ç»„ä»¶åˆå§‹åŒ–ä¹‹åï¼Œè¯»å–æˆ–è®¾ç½®<code>containment</code>é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> containment = $( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"containment"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"containment"</span>, <span class="string">"parent"</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-cursor" class="api-item">
+<h3>cursor<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>"auto"</code>
+</div>
+<div>æŒ‡å®šåœ¨åšæ‹–æ‹½åŠ¨ä½œæ—¶ï¼Œé¼ æ ‡çš„CSSæ ·å¼ã€‚</div>
+<strong>Code examples:</strong><p>ä½¿ç”¨<code>cursor</code>é€‰é¡¹åˆå§‹åŒ–Draggable Widgetï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({ cursor: <span class="string">"crosshair"</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<p>åœ¨ç»„ä»¶åˆå§‹åŒ–ä¹‹åï¼Œè¯»å–æˆ–è®¾ç½®<code>cursor</code>é€‰é¡¹ï¼š</p>
+
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> cursor = $( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"cursor"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"cursor"</span>, <span class="string">"crosshair"</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-cursorAt" class="api-item">
+<h3>cursorAt<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>
+
+è®¾ç½®æ‹–åŠ¨å¸®æ‰‹ç›¸å¯¹äºé¼ æ ‡å…‰æ ‡çš„åç§»é‡ã€‚åæ ‡å¯è¢«æŒ‡å®šä¸ºä¸€ä¸ªæ•£åˆ—
+ä½¿ç”¨çš„ç»„åˆä¸­çš„ä¸€ä¸ªæˆ–ä¸¤ä¸ªé”®ï¼š<code>{ top, left, right, bottom }</code>
+ã€‚</div>
+<strong>Code examples:</strong><p>ä½¿ç”¨<code>cursorAt</code>é€‰é¡¹åˆå§‹åŒ–Draggable Widgetï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({ cursorAt: { left: <span class="number">5</span> } });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<p>åœ¨ç»„ä»¶åˆå§‹åŒ–ä¹‹åï¼Œè¯»å–æˆ–è®¾ç½®<code>cursorAt</code>é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> cursorAt = $( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"cursorAt"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"cursorAt"</span>, { left: <span class="number">5</span> } );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-delay" class="api-item">
+<h3>delay<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>0</code>
+</div>
+<div>
+å½“é¼ æ ‡æŒ‰ä¸‹åï¼ŒæŒ‡å®šæ—¶å»¶è¿Ÿé—´åæ‰å¼€å§‹æ¿€æ´»æ‹–æ‹½åŠ¨ä½œï¼ˆå•ä½ï¼šæ¯«ç§’ï¼‰ã€‚æ­¤é€‰é¡¹å¯ç”¨æ¥é˜»æ­¢å½“ç‚¹å‡»ä¸€ä¸ªå…ƒç´ æ—¶å¯èƒ½å‘ç”Ÿçš„éæœŸæœ›æ‹–åŠ¨è¡Œä¸ºã€‚</div>
+<strong>Code examples:</strong><p>ä½¿ç”¨<code>delay</code>é€‰é¡¹åˆå§‹åŒ–Draggable Widgetï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({ delay: <span class="number">300</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<p>åœ¨ç»„ä»¶åˆå§‹åŒ–ä¹‹åï¼Œè¯»å–æˆ–è®¾ç½®<code>delay</code>é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> delay = $( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"delay"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"delay"</span>, <span class="number">300</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-disabled" class="api-item">
+<h3>disabled<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>å¦‚æœè¯¥å€¼è®¾ç½®ä¸º<code>true</code>ï¼Œæ‹–åŠ¨ç‰¹æ•ˆå°†è¢«ç¦ç”¨ã€‚</div>
+<strong>Code examples:</strong><p>ä½¿ç”¨<code>disabled</code>é€‰é¡¹åˆå§‹åŒ–Draggable Widgetï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({ disabled: <span class="literal">true</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<p>åœ¨ç»„ä»¶åˆå§‹åŒ–ä¹‹åï¼Œè¯»å–æˆ–è®¾ç½®<code>disabled</code>é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> disabled = $( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"disabled"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"disabled"</span>, <span class="literal">true</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-distance" class="api-item">
+<h3>distance<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>1</code>
+</div>
+<div>
+å½“é¼ æ ‡ç‚¹ä¸‹åï¼Œåªæœ‰ç§»åŠ¨æŒ‡å®šåƒç´ åæ‰å¼€å§‹æ¿€æ´»æ‹–æ‹½åŠ¨ä½œï¼Œå•ä½ä¸ºåƒç´ ã€‚æ­¤é€‰é¡¹å¯ç”¨æ¥é˜»æ­¢å½“ç‚¹å‡»ä¸€ä¸ªå…ƒç´ æ—¶å¯èƒ½å‘ç”Ÿçš„éæœŸæœ›æ‹–åŠ¨è¡Œä¸ºã€‚
+ </div>
+<strong>Code examples:</strong><p>ä½¿ç”¨<code>distance</code>é€‰é¡¹åˆå§‹åŒ–Draggable Widgetï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({ distance: <span class="number">10</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<p>åœ¨ç»„ä»¶åˆå§‹åŒ–ä¹‹åï¼Œè¯»å–æˆ–è®¾ç½®<code>distance</code>é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> distance = $( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"distance"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"distance"</span>, <span class="number">10</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-grid" class="api-item">
+<h3>grid<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Array'" tppabs="http://api.jquery.com/Types/#Array">Array</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>æ‹–æ‹½å…ƒç´ æ—¶ï¼Œåªèƒ½ä»¥æŒ‡å®šå¤§å°çš„æ–¹æ ¼è¿›è¡Œæ‹–åŠ¨ã€‚æ•°ç»„å½¢å¼ä¸º<code>[ x, y ]</code>ã€‚
+
+</div>
+<strong>Code examples:</strong><p>ä½¿ç”¨<code>grid</code>é€‰é¡¹åˆå§‹åŒ–Draggable Widgetï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({ grid: [ <span class="number">50</span>, <span class="number">20</span> ] });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨ç»„ä»¶åˆå§‹åŒ–ä¹‹åï¼Œè¯»å–æˆ–è®¾ç½®<code>grid</code> é€‰é¡¹:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> grid = $( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"grid"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"grid"</span>, [ <span class="number">50</span>, <span class="number">20</span> ] );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-handle" class="api-item">
+<h3>handle<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Selector'" tppabs="http://api.jquery.com/Types/#Selector">Selector</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Element'" tppabs="http://api.jquery.com/Types/#Element">Element</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>
+å½“å‚æ•°å€¼ä¸ºtrueæ—¶,åªæœ‰åœ¨ç‰¹å®šçš„å…ƒç´ ä¸Šè§¦å‘é¼ æ ‡æŒ‰ä¸‹äº‹ä»¶æ—¶ï¼Œæ‰å¯ä»¥æ‹–åŠ¨ã€‚ åªæœ‰è¢«æ‹–åˆ°å…ƒç´ çš„å­å…ƒç´ æ‰å¯ä»¥åº”ç”¨è¯¥å‚æ•°ã€‚</div>
+<strong>Code examples:</strong><p>ä½¿ç”¨<code>handle</code>é€‰é¡¹åˆå§‹åŒ–Draggable Widgetï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({ handle: <span class="string">"h2"</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨ç»„ä»¶åˆå§‹åŒ–ä¹‹åï¼Œè¯»å–æˆ–è®¾ç½®<code>handle</code> é€‰é¡¹:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> handle = $( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"handle"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"handle"</span>, <span class="string">"h2"</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-helper" class="api-item">
+<h3>helper<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Function'" tppabs="http://api.jquery.com/Types/#Function">Function</a>()</span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>"original"</code>
+</div>
+<div>å…è®¸ä¸€ä¸ªå…ƒç´ è¢«ç”¨æ¥è¿›è¡Œæ‹–åŠ¨ã€‚</div>
+<strong>æ”¯æŒå¤šç§ç±»å‹:</strong><ul>
+<li>
+<strong>String</strong>:å¦‚æœå€¼è®¾ç½®ä¸º<code>"clone"</code>, é‚£ä¹ˆè¯¥å…ƒç´ å°†ä¼šè¢«å¤åˆ¶ï¼Œå¹¶ä¸”è¢«å¤åˆ¶çš„å…ƒç´ å°†è¢«æ‹–åŠ¨ã€‚ </li>
+<li>
+<strong>Function</strong>: å½“æ‹–åŠ¨æ—¶ï¼Œå‡½æ•°å°†è¿”å›ä¸€ä¸ªDOMå…ƒç´ ä»¥ä¾›ä½¿ç”¨ã€‚</li>
+</ul>
+<strong>Code examples:</strong><p>ä½¿ç”¨<code>helper</code>é€‰é¡¹åˆå§‹åŒ–Draggable Widgetï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({ helper: <span class="string">"clone"</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨ç»„ä»¶åˆå§‹åŒ–ä¹‹åï¼Œè¯»å–æˆ–è®¾ç½®<code>helper</code> é€‰é¡¹:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> helper = $( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"helper"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"helper"</span>, <span class="string">"clone"</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-iframeFix" class="api-item">
+<h3>iframeFix<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Selector'" tppabs="http://api.jquery.com/Types/#Selector">Selector</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>
+åœ¨æ‹–åŠ¨æœŸé—´é˜»æ­¢iframeæ•æ‰é¼ æ ‡ç§»è¿‡äº‹ä»¶ã€‚ä¸<a href="#option-cursorAt"><code>cursorAt</code></a>é€‰é¡¹æ­é…ä½¿ç”¨æ—¶æˆ–è€…å½“é¼ æ ‡æŒ‡é’ˆå¯èƒ½ä¸åœ¨æ‹–åŠ¨åŠ©æ‰‹å…ƒç´ ä¹‹ä¸Šæ—¶ï¼Œè¯¥å‚æ•°éå¸¸æœ‰ç”¨ã€‚</div>
+<strong>æ”¯æŒå¤šç§ç±»å‹:</strong><ul>
+<li>
+<strong>Boolean</strong>: å½“è®¾ç½®ä¸º<code>true</code>, é€æ˜å±‚å°†è¢«æ”¾ç½®äºé¡µé¢ä¸Šçš„æ‰€æœ‰iframeä¹‹ä¸Šã€‚/li>
+<li>
+<strong>Selector</strong>: ä»»ä½•ç”±é€‰æ‹©å™¨åŒ¹é…çš„iframeå°†è¢«é€æ˜å±‚è¦†ç›–ã€‚</li>
+</ul>
+<strong>Code examples:</strong><p>ä½¿ç”¨<code>iframeFix</code>é€‰é¡¹åˆå§‹åŒ–Draggable Widgetï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({ iframeFix: <span class="literal">true</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨ç»„ä»¶åˆå§‹åŒ–ä¹‹åï¼Œè¯»å–æˆ–è®¾ç½®<code>iframeFix</code> é€‰é¡¹:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> iframeFix = $( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"iframeFix"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"iframeFix"</span>, <span class="literal">true</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-opacity" class="api-item">
+<h3>opacity<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>å½“æ‹–åŠ¨æ—¶ï¼Œæ‹–åŠ¨åŠ©æ‰‹å…ƒç´ çš„ä¸é€æ˜åº¦ã€‚</div>
+<strong>Code examples:</strong><p>ä½¿ç”¨<code>opacity</code>é€‰é¡¹åˆå§‹åŒ–Draggable Widgetï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({ opacity: <span class="number">0.35</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨ç»„ä»¶åˆå§‹åŒ–ä¹‹åï¼Œè¯»å–æˆ–è®¾ç½®<code>opacity</code> é€‰é¡¹:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> opacity = $( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"opacity"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"opacity"</span>, <span class="number">0.35</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-refreshPositions" class="api-item">
+<h3>refreshPositions<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>å¦‚æœè®¾ç½®ä¸º<code>true</code>ï¼Œ æ‰€æœ‰çš„å¯æ‹–åŠ¨ä½ç½®åœ¨æ¯æ¬¡é¼ æ ‡ç§»åŠ¨æ—¶éƒ½ä¼šè¢«è®¡ç®—ã€‚ <em>æ³¨æ„: è¿™è§£å†³äº†å…·æœ‰é«˜åº¦åŠ¨æ€å†…å®¹é¡µé¢çš„é—®é¢˜ï¼Œä½†æ˜¯å´é™ä½äº†æ€§èƒ½ã€‚</em>
+            </div>
+<strong>Code examples:</strong><p>ä½¿ç”¨<code>refreshPositions</code>é€‰é¡¹åˆå§‹åŒ–Draggable Widgetï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({ refreshPositions: <span class="literal">true</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨ç»„ä»¶åˆå§‹åŒ–ä¹‹åï¼Œè¯»å–æˆ–è®¾ç½®<code>refreshPositions</code> é€‰é¡¹:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> refreshPositions = $( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"refreshPositions"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"refreshPositions"</span>, <span class="literal">true</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-revert" class="api-item">
+<h3>revert<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>å½“æ‹–åŠ¨åœæ­¢æ—¶ï¼Œå…ƒç´ æ˜¯å¦è¦è¢«é‡ç½®åˆ°å®ƒçš„åˆå§‹ä½ç½®ã€‚</div>
+<strong>æ”¯æŒå¤šç§ç±»å‹:</strong><ul>
+<li>
+<strong>Boolean</strong>: å¦‚æœè®¾ç½®ä¸º<code>true</code>ï¼Œå½“æ‹–åŠ¨åœæ­¢æ—¶ï¼Œå…ƒç´ ä½ç½®å°†è¢«é‡ç½®ã€‚</li>
+<li>
+<strong>String</strong>: å¦‚æœè®¾ç½®ä¸º<code>"invalid"</code>, é‡ç½®ä»…å½“æ‹–åŠ¨æ²¡æœ‰è¢«æ”¾ç½®äºä¸€ä¸ªå¯æ”¾ç½®çš„å¯¹è±¡æ—¶æ‰ä¼šå‘ç”Ÿã€‚å¦‚æœè®¾ç½®ä¸º<code>"valid"</code>, æƒ…å†µåˆ™ç›¸åã€‚</li>
+</ul>
+<strong>Code examples:</strong><p>ä½¿ç”¨<code>revert</code>é€‰é¡¹åˆå§‹åŒ–Draggable Widgetï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({ revert: <span class="literal">true</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨ç»„ä»¶åˆå§‹åŒ–ä¹‹åï¼Œè¯»å–æˆ–è®¾ç½®<code>revert</code> é€‰é¡¹:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> revert = $( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"revert"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"revert"</span>, <span class="literal">true</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-revertDuration" class="api-item">
+<h3>revertDuration<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>500</code>
+</div>
+<div>
+åŠ¨ç”»é‡ç½®æ—¶é—´, å•ä½ä¸ºå¾®ç§’ã€‚å¦‚æœ<a href="#option-revert"><code>revert</code></a>é€‰é¡¹è®¾ç½®ä¸º<code>false</code>ï¼Œåˆ™å¿½ç•¥ï¼ˆè¯‘è€…æ³¨ï¼šå³è¢«æ‹–åˆ°å…ƒç´ ä¸ä¼šè¢«é‡ç½®ã€‚ï¼‰ã€‚</div>
+<strong>Code examples:</strong><p>ä½¿ç”¨<code>revertDuration</code>é€‰é¡¹åˆå§‹åŒ–Draggable Widgetï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({ revertDuration: <span class="number">200</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨ç»„ä»¶åˆå§‹åŒ–ä¹‹åï¼Œè¯»å–æˆ–è®¾ç½®<code>revertDuration</code> é€‰é¡¹:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> revertDuration = $( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"revertDuration"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"revertDuration"</span>, <span class="number">200</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-scope" class="api-item">
+<h3>scope<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>"default"</code>
+</div>
+<div>
+è¢«ç”¨æ¥å°†æ‹–åŠ¨ç»„ä»¶å’Œæ‹–åŠ¨è‡³å®¹å™¨ç»„ä»¶çš„å‚æ•°è¿›è¡Œåˆ†ç»„, é™¤äº†æ‹–åŠ¨è‡³å®¹å™¨ç»„ä»¶çš„<a href="javascript:if(confirm('http://www.css88.com/droppable  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/droppable#option-accept'" tppabs="http://www.css88.com/droppable#option-accept"><code>accept</code></a>é€‰é¡¹ã€‚å¦‚æœä¸€ä¸ªä¸€èˆ¬æ‹–åŠ¨ç»„ä»¶çš„<code>scope</code>å‚æ•°å€¼å’Œä¸€ä¸ªæ‹–åŠ¨è‡³å®¹å™¨ç»„ä»¶çš„<code>scope</code>å‚æ•°å€¼ä¸€æ ·ï¼Œé‚£ä¹ˆè¿™ä¸ªä¸€èˆ¬æ‹–åŠ¨ç»„ä»¶å°†è¢«æ¥å—ä¸ºæ‹–åŠ¨è‡³å®¹å™¨ç»„ä»¶ã€‚</div>
+<strong>Code examples:</strong><p>ä½¿ç”¨<code>scope</code>é€‰é¡¹åˆå§‹åŒ–Draggable Widgetï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({ scope: <span class="string">"tasks"</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨ç»„ä»¶åˆå§‹åŒ–ä¹‹åï¼Œè¯»å–æˆ–è®¾ç½®<code>scope</code> é€‰é¡¹:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> scope = $( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"scope"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"scope"</span>, <span class="string">"tasks"</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-scroll" class="api-item">
+<h3>scroll<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>true</code>
+</div>
+<div>å¦‚æœè®¾ç½®ä¸º<code>true</code>, å½“æ‹–åŠ¨æ—¶ï¼Œdivç›’æ¨¡å‹å°†è‡ªåŠ¨ç¿»æ»šã€‚</div>
+<strong>Code examples:</strong><p>ä½¿ç”¨<code>scroll</code>é€‰é¡¹åˆå§‹åŒ–Draggable Widgetï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({ scroll: <span class="literal">false</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨ç»„ä»¶åˆå§‹åŒ–ä¹‹åï¼Œè¯»å–æˆ–è®¾ç½®<code>scroll</code> é€‰é¡¹:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> scroll = $( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"scroll"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"scroll"</span>, <span class="literal">false</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-scrollSensitivity" class="api-item">
+<h3>scrollSensitivity<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>20</code>
+</div>
+<div>
+ç¦»å¼€å¯è§†åŒºåŸŸè¾¹ç¼˜å¤šå°‘è·ç¦»å¼€å§‹æ»šåŠ¨ã€‚è·ç¦»æ˜¯ç›¸å¯¹æŒ‡é’ˆè¿›è¡Œè®¡ç®—çš„ï¼Œè€Œä¸æ˜¯è¢«æ‹–åˆ°å…ƒç´ æœ¬èº«ã€‚å¦‚æœ<a href="#option-scroll"><code>scroll</code></a> é€‰é¡¹è®¾ç½®ä¸º<code>false</code>ï¼Œåˆ™ä¸æ»šåŠ¨ã€‚</div>
+<strong>Code examples:</strong><p>ä½¿ç”¨<code>scrollSensitivity</code>é€‰é¡¹åˆå§‹åŒ–Draggable Widgetï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({ scrollSensitivity: <span class="number">100</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨ç»„ä»¶åˆå§‹åŒ–ä¹‹åï¼Œè¯»å–æˆ–è®¾ç½®<code>scrollSensitivity</code> é€‰é¡¹:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> scrollSensitivity = $( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"scrollSensitivity"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"scrollSensitivity"</span>, <span class="number">100</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-scrollSpeed" class="api-item">
+<h3>scrollSpeed<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>20</code>
+</div>
+<div>å½“é¼ æ ‡æŒ‡é’ˆçš„å€¼å°äº<a href="#option-scrollSensitivity"><code>scrollSensitivity</code></a>çš„å€¼æ—¶ï¼Œçª—å£æ»šåŠ¨çš„é€Ÿåº¦ã€‚å¦‚æœ<a href="#option-scroll"><code>scroll</code></a>é€‰é¡¹è®¾ç½®ä¸º<code>false</code>ï¼Œåˆ™è¯¥å‚æ•°æ— æ•ˆã€‚</div>
+<strong>Code examples:</strong><p>ä½¿ç”¨<code>scrollSpeed</code>é€‰é¡¹åˆå§‹åŒ–Draggable Widgetï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({ scrollSpeed: <span class="number">100</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨ç»„ä»¶åˆå§‹åŒ–ä¹‹åï¼Œè¯»å–æˆ–è®¾ç½®<code>scrollSpeed</code> é€‰é¡¹:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> scrollSpeed = $( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"scrollSpeed"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"scrollSpeed"</span>, <span class="number">100</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-snap" class="api-item">
+<h3>snap<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Selector'" tppabs="http://api.jquery.com/Types/#Selector">Selector</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>å†³å®šä¸€ä¸ªå…ƒç´ æ˜¯å¦åº”è¯¥å¸é™„åˆ°å…¶å®ƒå…ƒç´ ä¸Šã€‚</div>
+<strong>æ”¯æŒå¤šç§ç±»å‹:</strong><ul>
+<li>
+<strong>Boolean</strong>: å½“è®¾ç½®ä¸º <code>true</code>æ—¶, å…ƒç´ å°†å¯ä»¥å¸é™„åˆ°æ‰€æœ‰å…¶å®ƒå¯æ‹–åŠ¨å…ƒç´ ä¸Šã€‚</li>
+<li>
+<strong>Selector</strong>: ç¡®å®šè¢«å¸é™„å…ƒç´ ã€‚</li>
+</ul>
+<strong>Code examples:</strong><p>ä½¿ç”¨<code>snap</code>é€‰é¡¹åˆå§‹åŒ–Draggable Widgetï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({ snap: <span class="literal">true</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨ç»„ä»¶åˆå§‹åŒ–ä¹‹åï¼Œè¯»å–æˆ–è®¾ç½®<code>snap</code> é€‰é¡¹:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> snap = $( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"snap"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"snap"</span>, <span class="literal">true</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-snapMode" class="api-item">
+<h3>snapMode<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>"both"</code>
+</div>
+<div>
+
+å†³å®šå¯æ‹–åŠ¨å…ƒç´ å°†è¦å¸é™„åˆ°å“ªä¸ªå…ƒç´ çš„è¾¹ç¼˜ã€‚å¦‚æœ<a href="#option-snap"><code>snap</code></a>é€‰é¡¹è®¾ç½®ä¸º<code>false</code>ï¼Œåˆ™å¿½ç•¥è¯¥å‚æ•°ã€‚ å¯é€‰å€¼:  <code>"inner"</code>, <code>"outer"</code>, <code>"both"</code>.</div>
+<strong>Code examples:</strong><p>ä½¿ç”¨<code>snapMode</code>é€‰é¡¹åˆå§‹åŒ–Draggable Widgetï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({ snapMode: <span class="string">"inner"</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨ç»„ä»¶åˆå§‹åŒ–ä¹‹åï¼Œè¯»å–æˆ–è®¾ç½®<code>snapMode</code> é€‰é¡¹:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> snapMode = $( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"snapMode"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"snapMode"</span>, <span class="string">"inner"</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-snapTolerance" class="api-item">
+<h3>snapTolerance<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>20</code>
+</div>
+<div>å½“è·ç¦»å¯å¸é™„å…ƒç´ å¤šè¿œæ—¶ï¼Œè§¦å‘å¸é™„äº‹ä»¶ã€‚å¦‚æœ<a href="#option-snap"><code>snap</code></a>é€‰é¡¹è®¾ç½®ä¸º<code>false</code>ï¼Œåˆ™å¿½ç•¥è¯¥å‚æ•°ã€‚</div>
+<strong>Code examples:</strong><p>ä½¿ç”¨<code>snapTolerance</code>é€‰é¡¹åˆå§‹åŒ–Draggable Widgetï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({ snapTolerance: <span class="number">30</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨ç»„ä»¶åˆå§‹åŒ–ä¹‹åï¼Œè¯»å–æˆ–è®¾ç½®<code>snapTolerance</code> é€‰é¡¹:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> snapTolerance = $( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"snapTolerance"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"snapTolerance"</span>, <span class="number">30</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-stack" class="api-item">
+<h3>stack<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Selector'" tppabs="http://api.jquery.com/Types/#Selector">Selector</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>æ§åˆ¶ç”±é€‰æ‹©å™¨æ‰€è§¦å‘çš„ä¸€ç³»åˆ—å…ƒç´ çš„z-indexå€¼, æ€»æ˜¯å°†å½“å‰è¢«æ‹–åŠ¨å¯¹è±¡è‡³äºæœ€å‰ã€‚å¯¹äºåƒçª—å£ç®¡ç†è¿™æ ·çš„åº”ç”¨æ¥è¯´ï¼Œéå¸¸æœ‰ç”¨ã€‚</div>
+<strong>Code examples:</strong><p>ä½¿ç”¨<code>stack</code>é€‰é¡¹åˆå§‹åŒ–Draggable Widgetï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({ stack: <span class="string">".products"</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨ç»„ä»¶åˆå§‹åŒ–ä¹‹åï¼Œè¯»å–æˆ–è®¾ç½®<code>stack</code> é€‰é¡¹:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> stack = $( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"stack"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"stack"</span>, <span class="string">".products"</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-zIndex" class="api-item">
+<h3>zIndex<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>å½“è¢«æ‹–åŠ¨æ—¶ï¼Œæ‹–åŠ¨åŠ©æ‰‹çš„Z-indexå€¼ã€‚</div>
+<strong>Code examples:</strong><p>ä½¿ç”¨<code>zIndex</code>é€‰é¡¹åˆå§‹åŒ–Draggable Widgetï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({ zIndex: <span class="number">100</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨ç»„ä»¶åˆå§‹åŒ–ä¹‹åï¼Œè¯»å–æˆ–è®¾ç½®<code>zIndex</code> é€‰é¡¹:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> zIndex = $( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"zIndex"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"zIndex"</span>, <span class="number">100</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div></section><section id="methods"><header><h2 class="underline">Methods</h2></header><div id="method-destroy"><div class="api-item first-item">
+<h3>destroy()</h3>
+<div>
+       å®Œå…¨é”€æ¯ä¸€èˆ¬æ‹–åŠ¨ç»„ä»¶çš„åŠŸèƒ½ï¼Œè¿™å°†ä½¿å…ƒç´ è¿”å›å®ƒçš„åˆå§‹çŠ¶æ€ã€‚
+    </div>
+<ul><li><div class="null-signature">è¿™ä¸ªæ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è¯·æ±‚destroyæ–¹æ³•:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"destroy"</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+</div></div>
+<div id="method-disable"><div class="api-item">
+<h3>disable()</h3>
+<div>
+        ç¦ç”¨ä¸€èˆ¬æ‹–åŠ¨ç»„ä»¶ã€‚
+    </div>
+<ul><li><div class="null-signature">è¿™ä¸ªæ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è¯·æ±‚disableæ–¹æ³•:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"disable"</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+</div></div>
+<div id="method-enable"><div class="api-item">
+<h3>enable()</h3>
+<div>
+        å¯ç”¨ä¸€èˆ¬æ‹–åŠ¨ç»„ä»¶ã€‚
+    </div>
+<ul><li><div class="null-signature">è¿™ä¸ªæ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è¯·æ±‚enableæ–¹æ³•:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"enable"</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+</div></div>
+<div id="method-option">
+<div class="api-item">
+<h3>option( optionName )<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a></span>
+</h3>
+<div>
+è·å–ä¸<code>optionName</code>å¯¹åº”çš„å‚æ•°å€¼ã€‚</div>
+<ul><li>
+<div><strong>optionName</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a>
+</div>
+<div>è¦è·å–çš„å€¼æ‰€å¯¹åº”çš„é€‰é¡¹çš„åç§°ã€‚</div>
+</li></ul>
+<div>
+<strong>Code examples:</strong><p>è¯·æ±‚æ–¹æ³•:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="keyword">var</span> isDisabled = $( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"disabled"</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+</div>
+<div class="api-item">
+<h3>option()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#PlainObject'" tppabs="http://api.jquery.com/Types/#PlainObject">PlainObject</a></span>
+</h3>
+<div>è·å–ä¸€ä¸ªåŒ…å«æœ‰æè¿°å½“å‰ä¸€èˆ¬æ‹–åŠ¨ç»„ä»¶é€‰é¡¹å“ˆå¸Œå€¼çš„é”®/å€¼å¯¹ã€‚</div>
+<ul><li><div class="null-signature">è¿™ä¸ªæ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è¯·æ±‚æ–¹æ³•:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="keyword">var</span> options = $( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+</div>
+<div class="api-item">
+<h3>option( optionName, value )</h3>
+<div>è®¾ç½®ä¸€èˆ¬æ‹–åŠ¨ç»„ä»¶é€‰é¡¹çš„å€¼ï¼Œé€‰é¡¹åç§°ç”±<code>optionName</code>æŒ‡å®šã€‚</div>
+<ul>
+<li>
+<div><strong>optionName</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a>
+</div>
+<div>è¦è®¾ç½®çš„é€‰é¡¹çš„åç§°ã€‚</div>
+</li>
+<li>
+<div><strong>value</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>è¦ä¸ºé€‰é¡¹è®¾ç½®çš„å‚æ•°å€¼ã€‚</div>
+</li>
+</ul>
+<div>
+<strong>Code examples:</strong><p>è¯·æ±‚æ–¹æ³•:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, <span class="string">"disabled"</span>, <span class="literal">true</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+</div>
+<div class="api-item">
+<h3>option( options )</h3>
+<div>ä¸ºä¸€èˆ¬æ‹–åŠ¨ç»„ä»¶è®¾ç½®ä¸€ä¸ªæˆ–å¤šä¸ªé€‰é¡¹å€¼ã€‚</div>
+<ul><li>
+<div><strong>options</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>è¦è®¾ç½®çš„é€‰é¡¹ä¸å€¼ä¹‹é—´çš„æ˜ å°„å…³ç³»ã€‚</div>
+</li></ul>
+<div>
+<strong>Code examples:</strong><p>è¯·æ±‚æ–¹æ³•:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable( <span class="string">"option"</span>, { disabled: <span class="literal">true</span> } );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+</div>
+</div>
+<div id="method-widget"><div class="api-item">
+<h3>widget()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a></span>
+</h3>
+<div>è¿”å›ä¸€ä¸ªåŒ…å«æœ‰å¯æ‹–åŠ¨å…ƒç´ çš„<code>jQuery</code>å¯¹è±¡ã€‚
+    </div>
+<ul><li><div class="null-signature">è¿™ä¸ªæ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è¯·æ±‚widgetæ–¹æ³•:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="keyword">var</span> widget = $( <span class="string">".selector"</span> ).draggable( <span class="string">"widget"</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+</div></div></section><section id="events"><header><h2 class="underline">Events</h2></header><div id="event-create" class="api-item first-item">
+<h3>create( event, ui )<span class="returns">Type: <code>dragcreate</code></span>
+</h3>
+<div>
+        å½“ä¸€èˆ¬æ‹–åŠ¨ç»„ä»¶è¢«åˆ›å»ºæ—¶è§¦å‘ã€‚
+    </div>
+<ul>
+<li>
+<div><strong>event</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Event'" tppabs="http://api.jquery.com/Types/#Event">Event</a>
+</div>
+<div></div>
+</li>
+<li>
+<div><strong>ui</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div></div>
+</li>
+</ul>
+<p><em>æ³¨æ„: <code>ui</code>å¯¹è±¡æ˜¯ç©ºçš„ï¼Œä½†æ˜¯ä¸ºäº†ä¸å…¶å®ƒå…ƒç´ ä¿æŒä¸€ç›´ï¼Œå®ƒæ€»æ˜¯è¢«åŒ…å«ã€‚</em>
+
+<div>
+<strong>Code examples:</strong><p>ä½¿ç”¨createå›è°ƒå‡½æ•°æŒ‡å®šäº‹ä»¶:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({</code></div></div><div class="container"><div class="line"><code>  create: <span class="keyword">function</span>( event, ui ) {}</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>ç»‘å®šä¸€ä¸ªäº‹ä»¶ç›‘å¬å™¨åˆ°dragcreateäº‹ä»¶:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).on( <span class="string">"dragcreate"</span>, <span class="keyword">function</span>( event, ui ) {} );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+</div>
+<div id="event-drag" class="api-item">
+<h3>drag( event, ui )<span class="returns">Type: <code>drag</code></span>
+</h3>
+<div>å½“é¼ æ ‡åœ¨æ‹–åŠ¨è¿‡ç¨‹ä¸­ç§»åŠ¨æ—¶è§¦å‘ã€‚</div>
+<ul>
+<li>
+<div><strong>event</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Event'" tppabs="http://api.jquery.com/Types/#Event">Event</a>
+</div>
+<div></div>
+</li>
+<li>
+<div><strong>ui</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div></div>
+<ul>
+<li>
+<div><strong>helper</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a>
+</div>
+<div>ä»£è¡¨è¢«æ‹–åŠ¨çš„å…ƒç´ ã€‚</div>
+</li>
+<li>
+<div><strong>position</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>å½“å‰å…ƒç´ çš„CSSä½ç½®ï¼Œä»¥<code>{ top, left }</code>å½¢å¼ç»™å‡ºã€‚</div>
+</li>
+<li>
+<div><strong>offset</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>å½“å‰å…ƒç´ çš„åç§»ä½ç½®ï¼Œä»¥<code>{ top, left }</code>å½¢å¼ç»™å‡ºã€‚</div>
+</li>
+</ul>
+</li>
+</ul>
+<div>
+<strong>Code examples:</strong><p>ä½¿ç”¨dragå›è°ƒå‡½æ•°æŒ‡å®šäº‹ä»¶:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({</code></div></div><div class="container"><div class="line"><code>  drag: <span class="keyword">function</span>( event, ui ) {}</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>ç»‘å®šä¸€ä¸ªäº‹ä»¶ç›‘å¬è€…åˆ°dragäº‹ä»¶:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).on( <span class="string">"drag"</span>, <span class="keyword">function</span>( event, ui ) {} );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+</div>
+<div id="event-start" class="api-item">
+<h3>start( event, ui )<span class="returns">Type: <code>dragstart</code></span>
+</h3>
+<div>å½“æ‹–åŠ¨å¼€å§‹æ—¶è§¦å‘ã€‚</div>
+<ul>
+<li>
+<div><strong>event</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Event'" tppabs="http://api.jquery.com/Types/#Event">Event</a>
+</div>
+<div></div>
+</li>
+<li>
+<div><strong>ui</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div></div>
+<ul>
+<li>
+<div><strong>helper</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a>
+</div>
+<div>ä»£è¡¨è¢«æ‹–åŠ¨çš„å…ƒç´ ã€‚</div>
+</li>
+<li>
+<div><strong>position</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>å½“å‰å…ƒç´ çš„CSSä½ç½®ï¼Œä»¥<code>{ top, left }</code>å½¢å¼ç»™å‡ºã€‚</div>
+</li>
+<li>
+<div><strong>offset</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>å½“å‰å…ƒç´ çš„åç§»ä½ç½®ï¼Œä»¥<code>{ top, left }</code>å½¢å¼ç»™å‡ºã€‚</div>
+</li>
+</ul>
+</li>
+</ul>
+<div>
+<strong>Code examples:</strong><p>ä½¿ç”¨start callback specified:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({</code></div></div><div class="container"><div class="line"><code>  start: <span class="keyword">function</span>( event, ui ) {}</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>
+æ‹–åŠ¨äº‹ä»¶ç»‘å®šä¸€ä¸ªäº‹ä»¶ç›‘å¬å™¨ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).on( <span class="string">"dragstart"</span>, <span class="keyword">function</span>( event, ui ) {} );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+</div>
+<div id="event-stop" class="api-item">
+<h3>stop( event, ui )<span class="returns">Type: <code>dragstop</code></span>
+</h3>
+<div>å½“æ‹–åŠ¨åœæ­¢æ—¶è§¦å‘ã€‚</div>
+<ul>
+<li>
+<div><strong>event</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Event'" tppabs="http://api.jquery.com/Types/#Event">Event</a>
+</div>
+<div></div>
+</li>
+<li>
+<div><strong>ui</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div></div>
+<ul>
+<li>
+<div><strong>helper</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a>
+</div>
+<div>ä»£è¡¨è¢«æ‹–åŠ¨çš„å…ƒç´ ã€‚</div>
+</li>
+<li>
+<div><strong>position</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>å½“å‰å…ƒç´ çš„CSSä½ç½®ï¼Œä»¥<code>{ top, left }</code>å½¢å¼ç»™å‡ºã€‚</div>
+</li>
+<li>
+<div><strong>offset</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>å½“å‰å…ƒç´ çš„åç§»ä½ç½®ï¼Œä»¥<code>{ top, left }</code>å½¢å¼ç»™å‡ºã€‚</div>
+</li>
+</ul>
+</li>
+</ul>
+<div>
+<strong>Code examples:</strong><p>ä½¿ç”¨startå›è°ƒå‡½æ•°æŒ‡å®šäº‹ä»¶:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).draggable({</code></div></div><div class="container"><div class="line"><code>  stop: <span class="keyword">function</span>( event, ui ) {}</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>ç»‘å®šä¸€ä¸ªäº‹ä»¶ç›‘å¬è€…åˆ°dragstartäº‹ä»¶:</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).on( <span class="string">"dragstop"</span>, <span class="keyword">function</span>( event, ui ) {} );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+</div></section><section class="entry-examples" id="entry-examples"><header><h2 class="underline">Example:</h2></header><div class="entry-example" id="example-0">
+<h4><span class="desc">ä¸€ä¸ªç®€å•çš„jQuery UIä¸€èˆ¬æ‹–åŠ¨</span></h4>
+<div class="syntaxhighlighter xml ">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                        <div class="line n7">7</div>
+                    
+                        <div class="line n8">8</div>
+                    
+                        <div class="line n9">9</div>
+                    
+                        <div class="line n10">10</div>
+                    
+                        <div class="line n11">11</div>
+                    
+                        <div class="line n12">12</div>
+                    
+                        <div class="line n13">13</div>
+                    
+                        <div class="line n14">14</div>
+                    
+                        <div class="line n15">15</div>
+                    
+                        <div class="line n16">16</div>
+                    
+                        <div class="line n17">17</div>
+                    
+                        <div class="line n18">18</div>
+                    
+                        <div class="line n19">19</div>
+                    
+                        <div class="line n20">20</div>
+                    
+                        <div class="line n21">21</div>
+                    
+                        <div class="line n22">22</div>
+                    
+                        <div class="line n23">23</div>
+                    
+                        <div class="line n24">24</div>
+                    
+                        <div class="line n25">25</div>
+                    
+                        <div class="line n26">26</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="doctype">&lt;!doctype html&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">html</span> <span class="attribute">lang</span>=<span class="value">"en"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">head</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">title</span>&gt;</span>draggable demo<span class="tag">&lt;/<span class="title">title</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">href</span>=<span class="value">"http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span></code></div></div><div class="container"><div class="line"><code>  <span class="id">#draggable</span> <span class="rules">{</span></code></div></div><div class="container"><div class="line"><code>    <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">100</span>px;</span></span></code></div></div><div class="container"><div class="line"><code>    <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">100</span>px;</span></span></code></div></div><div class="container"><div class="line"><code>    <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="hexcolor">#ccc</span>;</span></span></code></div></div><div class="container"><div class="line"><code>  <span class="rule">}</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;/<span class="title">style</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"http://code.jquery.com/jquery-1.9.1.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"http://code.jquery.com/ui/1.10.3/jquery-ui.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">head</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">body</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"draggable"</span>&gt;</span>Drag me<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"></span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">"#draggable"</span> ).draggable();</code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">body</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">html</span>&gt;</span></code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h4>Demo:</h4>
+<div class="demo code-demo"></div>
+</div></section>
+</div></article>    </div><!-- .entry-content -->
+
+</article>
+</div>
+
+
+  </div>
+</div>
+<script type="text/javascript" src="../js/search.js" tppabs="http://www.css88.com/jquery-ui-api/js/search.js"></script>
+<script type="text/javascript" src="../js/gotop.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/gotop.min.js"></script>
+<script type="text/javascript">
+	goToTop.init();
+</script>
+<style>
+    #googlead{position:fixed;bottom:-250px;right:10px;width: 250px}
+.hidden{display: none;}
+</style>
+<div id="googlead">
+    <script type="text/javascript">
+        /*jquery-ui-fixed*/
+        var cpro_id = "u1731049";
+    </script>
+    <script src="../../../cpro.baidustatic.com/cpro/ui/c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+</div>
+<script type="text/javascript">setTimeout(function(){
+  $("#googlead").removeClass("hidden").animate({bottom:10})
+},3000)</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../www.google-analytics.com/analytics.js'/*tpa=http://www.google-analytics.com/analytics.js*/,'ga');
+
+  ga('create', 'UA-3448069-12', 'http://www.css88.com/jquery-ui-api/draggable/css88.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

@@ -1,0 +1,1989 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Resizable Widget | jQuery UI API ä¸­æ–‡æ–‡æ¡£ | jQuery APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery 1.0 - jQuery 2.0)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="jQuery,API,ä¸­æ–‡ç‰ˆ,ä¸­æ–‡æ–‡æ¡£,ä¸­æ–‡æ‰‹å†Œ,chm" />
+<meta name="description" content="jQuery APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery 1.0 - jQuery 2.0)" />
+<link rel="shortcut icon" type="image/x-icon" href="http://www.css88.com/jquery-ui-api/favicon.ico" />
+
+<!--<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />-->
+<link rel="stylesheet" type="text/css" media="screen" href="../cssstyle/main.min.css" tppabs="http://www.css88.com/jquery-ui-api/cssstyle/main.min.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="../cssstyle/style.css" tppabs="http://www.css88.com/jquery-ui-api/cssstyle/style.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="../cssstyle/jquery.css" tppabs="http://www.css88.com/jquery-ui-api/cssstyle/jquery.css" />
+<script type="text/javascript" src="../js/jquery.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/highlight.js" tppabs="http://www.css88.com/jquery-ui-api/js/highlight.js"></script>
+<script type="text/javascript" src="../js/jquery.ba-bbq.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/jquery.ba-bbq.min.js"></script>
+<script type="text/javascript" src="../js/jquery.ba-dotimeout.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/jquery.ba-dotimeout.min.js"></script>
+<script type="text/javascript" src="../js/main.js" tppabs="http://www.css88.com/jquery-ui-api/js/main.js"></script>
+<!--<script type="text/javascript" src="js/main.min.js"></script>-->
+</head>
+
+<body>
+<div id="header_warp">
+    <div class="header-box">
+            <div class="logo">
+                <h1><a href="../index.htm" tppabs="http://www.css88.com/jquery-ui-api/"
+                       title="jQuery UI APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery UI 1.10)">jQuery UI APIä¸­æ–‡æ–‡æ¡£</a></h1>
+            </div>
+            <ul class="header-nav">
+                <!--<li><a href="http://www.css88.com/jquery-ui-api/old.html" class="nav-link" title="jQuery UI APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery UI 1.10)">æ—§ç‰ˆ</a>
+                </li>-->
+                <li><a href="javascript:if(confirm('http://www.css88.com/jqapi-1.9/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/jqapi-1.9/'" tppabs="http://www.css88.com/jqapi-1.9/" class="nav-link" title="é€‚ç”¨jQuery 1.0 â€“ jQuery 1.10.2,jQuery 2.0 â€“ jQuery 2.0.3">jQuery APIä¸­æ–‡æ–‡æ¡£</a>
+                <li><a href="javascript:if(confirm('http://www.css88.com/archives/4737  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/archives/4737'" tppabs="http://www.css88.com/archives/4737" class="nav-link" title="jQuery UI APIä¸­æ–‡æ–‡æ¡£æ›´æ–°ä¿¡æ¯">æ›´æ–°ä¿¡æ¯</a></li>
+
+                <li><a href="javascript:if(confirm('http://www.css88.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/'" tppabs="http://www.css88.com/" class="nav-link">å‰ç«¯å¼€å‘</a></li>
+            </ul>
+            <!--<input type="search" placeholder="æœç´¢API" autosave="searchdoc" results="10" id="search-field" autocomplete="off">-->
+        </div>
+</div>
+<div id="navigation">
+	
+<aside id="categories" class="widget">
+    <h3 class="widget-title">jQuery UI 1.10</h3>
+    <ul>
+    				<li class="cat-item cat-item-2 current-cat"><a href="../category/effects/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/effects/" title="View all posts filed under Effects">Effects</a>
+    </li>
+    	<li class="cat-item cat-item-10"><a href="../category/effects-core/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/effects-core/" title="View all posts filed under Effects Core">Effects Core</a>
+    </li>
+    	<li class="cat-item cat-item-4"><a href="../category/interactions/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/interactions/" title="View all posts filed under Interactions">Interactions</a>
+    </li>
+    	<li class="cat-item cat-item-8"><a href="../category/overrides/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/overrides/" title="View all posts filed under Method Overrides">Method Overrides</a>
+    </li>
+    	<li class="cat-item cat-item-6"><a href="../category/methods/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/methods/" title="View all posts filed under Methods">Methods</a>
+    </li>
+    	<li class="cat-item cat-item-7"><a href="../category/selectors/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/selectors/" title="View all posts filed under Selectors">Selectors</a>
+    </li>
+    	<li class="cat-item cat-item-12"><a href="../category/theming/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/theming/" title="View all posts filed under Theming">Theming</a>
+    </li>
+    	<li class="cat-item cat-item-9"><a href="../category/ui-core/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/ui-core/" title="View all posts filed under UI Core">UI Core</a>
+    </li>
+    	<li class="cat-item cat-item-5"><a href="../category/utilities/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/utilities/" title="View all posts filed under Utilities">Utilities</a>
+    </li>
+    	<li class="cat-item cat-item-3"><a href="../category/widgets/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/widgets/" title="View all posts filed under Widgets">Widgets</a>
+    </li>
+    		</ul>
+  </aside>
+
+
+    <div style=" height:60px;margin-left:20px"><p
+                        style="font-size:12px; line-height:1.5; margin:8px 0">æ‹ç –çº é”™ è¯·å¾®åšä¸Š <a href="javascript:if(confirm('http://weibo.com/148246293  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://weibo.com/148246293'" tppabs="http://weibo.com/148246293"
+                                                                                           target="_blank">@æ„šäººç å¤´</a>ï¼š</p>
+                    <iframe style="vertical-align: middle;" width="163" height="24" frameborder="0"
+                            allowtransparency="true" marginwidth="0" marginheight="0" scrolling="no" border="0"
+                            src="../../../widget.weibo.com/relationship/followbutton.php-language=zh_cn&width=63&height=24            &uid=1477178352&style=2&btn=red&dpc=1" tppabs="http://widget.weibo.com/relationship/followbutton.php?language=zh_cn&width=63&height=24            &uid=1477178352&style=2&btn=red&dpc=1"></iframe>
+                </div>
+        <div id="googleguanggao" style=" margin-top:20px; margin-left:10px">
+            <script type="text/javascript">
+                        /*jquery-ui-left*/
+                        var cpro_id = "u1731043";
+                    </script>
+                    <script src="../../../cpro.baidustatic.com/cpro/ui/c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+        </div></div>
+<div id="content_box">
+  <div id="content">
+	
+<div class="inner" role="main">
+    <article id="post-67" class="post-67 post type-post status-publish format-standard hentry category-interactions">
+    <header class="entry-header">
+        <h1 class="entry-title">Resizable Widget</h1>
+        <hr>
+<div id="baidu-banner">
+<script type="text/javascript">
+    /*jquery-ui-banner*/
+    var cpro_id = "u1731052";
+</script>
+<script src="../../../cpro.baidustatic.com/cpro/ui/c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+</div>
+<div class="entry-meta">
+            Categories: <span class="category"><a href="../category/interactions/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/interactions/" title="View all posts in Interactions">Interactions</a></span>      </div><!-- .entry-meta -->
+            </header><!-- .entry-header -->
+
+    <div class="entry-content">
+        <article id="resizable1" class="entry widget"><h2 class="section-title">
+<span>Resizable Widget</span><span class="version-details">version added: 1.0</span>
+</h2>
+<div class="entry-wrapper">
+<p class="desc"><strong>Description: </strong>ä½¿ç”¨é¼ æ ‡æ”¹å˜ä¸€ä¸ªå…ƒç´ çš„å°ºå¯¸ã€‚</p>
+<section id="quick-nav"><header><h2>QuickNav<a href="#entry-examples">Examples</a>
+</h2></header><div class="quick-nav-section">
+<h3>Options</h3>
+<div><a href="#option-alsoResize">alsoResize</a></div>
+<div><a href="#option-animate">animate</a></div>
+<div><a href="#option-animateDuration">animateDuration</a></div>
+<div><a href="#option-animateEasing">animateEasing</a></div>
+<div><a href="#option-aspectRatio">aspectRatio</a></div>
+<div><a href="#option-autoHide">autoHide</a></div>
+<div><a href="#option-cancel">cancel</a></div>
+<div><a href="#option-containment">containment</a></div>
+<div><a href="#option-delay">delay</a></div>
+<div><a href="#option-disabled">disabled</a></div>
+<div><a href="#option-distance">distance</a></div>
+<div><a href="#option-ghost">ghost</a></div>
+<div><a href="#option-grid">grid</a></div>
+<div><a href="#option-handles">handles</a></div>
+<div><a href="#option-helper">helper</a></div>
+<div><a href="#option-maxHeight">maxHeight</a></div>
+<div><a href="#option-maxWidth">maxWidth</a></div>
+<div><a href="#option-minHeight">minHeight</a></div>
+<div><a href="#option-minWidth">minWidth</a></div>
+</div>
+<div class="quick-nav-section">
+<h3>Methods</h3>
+<div><a href="#method-destroy">destroy</a></div>
+<div><a href="#method-disable">disable</a></div>
+<div><a href="#method-enable">enable</a></div>
+<div><a href="#method-option">option</a></div>
+<div><a href="#method-widget">widget</a></div>
+</div>
+<div class="quick-nav-section">
+<h3>Events</h3>
+<div><a href="#event-create">create</a></div>
+<div><a href="#event-resize">resize</a></div>
+<div><a href="#event-start">start</a></div>
+<div><a href="#event-stop">stop</a></div>
+</div></section><div class="longdesc" id="entry-longdesc">
+        <p>
+
+        jQuery UI Resizable æ’ä»¶ä½¿é€‰å®šçš„å†…å®¹å¯ä»¥è°ƒæ•´å¤§å°(è¿™ä»¥ä¸ºç€é‚£ä¹ˆæ‹¥æœ‰ä¸€äº›å¯ä»¥æ‹–åŠ¨çš„æ‰‹æŸ„). ä½ å¯ä»¥æŒ‡å®šä¸€ä¸ªæˆ–è€…å¤šä¸ªæ“ä½œæ‰‹æŸ„ä»¥åŠæŒ‡å®šæœ€å°å’Œæœ€å¤§å®½åº¦ä¸é«˜åº¦.
+
+        </p>
+
+        <h3>Dependencies</h3>
+        <ul>
+            <li><a href="javascript:if(confirm('http://www.css88.com/category/ui-core/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/category/ui-core/'" tppabs="http://www.css88.com/category/ui-core/">UI Core</a></li>
+            <li><a href="javascript:if(confirm('http://www.css88.com/jQuery.widget/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/jQuery.widget/'" tppabs="http://www.css88.com/jQuery.widget/">Widget Factory</a></li>
+            <li><a href="javascript:if(confirm('http://www.css88.com/mouse/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/mouse/'" tppabs="http://www.css88.com/mouse/">Mouse Interaction</a></li>
+        </ul>
+    </div>
+<h3>å…¶ä»–æ³¨æ„äº‹é¡¹ï¼š</h3>
+<div class="longdesc"><ul><li>
+è¿™ä¸ªwidgetéœ€è¦ä¸€äº›åŠŸèƒ½æ€§çš„CSSï¼Œå¦åˆ™å°†æ— æ³•æ­£å¸¸å·¥ä½œã€‚
+å¦‚æœä½ å»ºç«‹ä¸€ä¸ªè‡ªå®šä¹‰çš„ä¸»é¢˜ï¼Œä½¿ç”¨widgetæŒ‡å®šçš„CSSæ–‡ä»¶ä½œä¸ºä¸€ä¸ªæ¿€æ´»ç‚¹ã€‚
+        </li></ul></div>
+<section id="options"><header><h2 class="underline">Options</h2></header><div id="option-alsoResize" class="api-item first-item">
+<h3>alsoResize<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Selector'" tppabs="http://api.jquery.com/Types/#Selector">Selector</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Element'" tppabs="http://api.jquery.com/Types/#Element">Element</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>
+åœ¨é‡ç½®å…ƒç´ å°ºå¯¸å¤§å°çš„åŒæ—¶é‡ç½®æŒ‡å®šçš„ä¸€ä¸ªæˆ–å¤šä¸ªå…ƒç´ çš„å°ºå¯¸å¤§å°ã€‚</div>
+<strong>Code examples:</strong><p>ä½¿ç”¨æŒ‡å®šçš„ <code>alsoResize</code> å‚æ•°åˆå§‹åŒ–resizable :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable({ alsoResize: <span class="string">"#mirror"</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åè®¾ç½®æˆ–è€…è·å– <code>alsoResize</code> å‚æ•° :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> alsoResize = $( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"alsoResize"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"alsoResize"</span>, <span class="string">"#mirror"</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-animate" class="api-item">
+<h3>animate<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>
+åœ¨è°ƒæ•´å¤§å°åä½¿ç”¨ä¸€æ®µåŠ¨ç”»å®Œæˆè°ƒæ•´.
+</div>
+<strong>Code examples:</strong><p>ä½¿ç”¨æŒ‡å®šçš„ <code>animate</code> å‚æ•°åˆå§‹åŒ–resizable :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable({ animate: <span class="literal">true</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åè®¾ç½®æˆ–è€…è·å– <code>animate</code> å‚æ•° :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> animate = $( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"animate"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"animate"</span>, <span class="literal">true</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-animateDuration" class="api-item">
+<h3>animateDuration<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>"slow"</code>
+</div>
+<div>
+å½“ä½¿ç”¨<a href="#option-animate"><code>animate</code></a>é€‰é¡¹æ—¶ï¼ŒåŠ¨ç”»æŒç»­çš„æ—¶é—´ã€‚å•ä½æ¯«ç§’ã€‚</div>
+<strong>å…è®¸ä½¿ç”¨çš„å€¼:</strong><ul>
+<li>
+<strong>Number</strong>: æ¯«ç§’æ•°ã€‚</li>
+<li>
+<strong>String</strong>: ä¸€ä¸ªè¡¨ç¤ºæŒç»­æ—¶é—´çš„å­—ç¬¦ä¸²ï¼Œæ¯”å¦‚ <code>"slow"</code> or <code>"fast"</code>ã€‚</li>
+</ul>
+<strong>Code examples:</strong><p>ä½¿ç”¨æŒ‡å®šçš„ <code>animateDuration</code> å‚æ•°åˆå§‹åŒ–resizable :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable({ animateDuration: <span class="string">"fast"</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åè®¾ç½®æˆ–è€…è·å– <code>animateDuration</code> å‚æ•° :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> animateDuration = $( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"animateDuration"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"animateDuration"</span>, <span class="string">"fast"</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-animateEasing" class="api-item">
+<h3>animateEasing<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>"swing"</code>
+</div>
+<div>åŠ¨ç”»æ‰§è¡Œæ—¶çš„ç¼“å†²æ•ˆæœã€‚å½“ä½¿ç”¨<a href="#option-animate"><code>animate</code></a>é€‰é¡¹æ—¶ï¼Œå“ªä¸ª<a href="javascript:if(confirm('http://www.css88.com/easings/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/easings/'" tppabs="http://www.css88.com/easings/">easing</a> ï¼ˆç¼“å†²å‡½æ•°ï¼‰è¢«åº”ç”¨ã€‚</div>
+<strong>Code examples:</strong><p>ä½¿ç”¨æŒ‡å®šçš„ <code>animateEasing</code> å‚æ•°åˆå§‹åŒ–resizable :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable({ animateEasing: <span class="string">"easeOutBounce"</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åè®¾ç½®æˆ–è€…è·å– <code>animateEasing</code> å‚æ•° :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> animateEasing = $( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"animateEasing"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"animateEasing"</span>, <span class="string">"easeOutBounce"</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-aspectRatio" class="api-item">
+<h3>aspectRatio<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>
+è¯¥å…ƒç´ æ˜¯å¦åº”é™åˆ¶åœ¨ä¸€ä¸ªç‰¹å®šçš„æ¯”ä¾‹è¿›è¡Œç¼©æ”¾ã€‚</div>
+<strong>å…è®¸ä½¿ç”¨çš„å€¼:</strong><ul>
+<li>
+<strong>Boolean</strong>: å¦‚æœè®¾ç½®ä¸º<code>true</code>, å¤§å°å°†æŒ‰ç…§åŸå…ˆçš„å®½é«˜æ¯”è¿›è¡Œè°ƒæ•´ã€‚</li>
+<li>
+<strong>Number</strong>: å¼ºåˆ¶å…ƒç´ è°ƒæ•´å¤§å°æ—¶ä¿æŒä¸€ä¸ªç‰¹å®šçš„å®½é«˜æ¯”ã€‚</li>
+</ul>
+<strong>Code examples:</strong><p>ä½¿ç”¨æŒ‡å®šçš„ <code>aspectRatio</code> å‚æ•°åˆå§‹åŒ–resizable :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable({ aspectRatio: <span class="literal">true</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åè®¾ç½®æˆ–è€…è·å– <code>aspectRatio</code> å‚æ•° :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> aspectRatio = $( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"aspectRatio"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"aspectRatio"</span>, <span class="literal">true</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-autoHide" class="api-item">
+<h3>autoHide<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>
+
+å¦‚æœè®¾ç½®ä¸ºçœŸ, å°†ä¼šè‡ªåŠ¨éšè—è°ƒæ•´æ‰‹æŸ„å›¾æ ‡,é™¤éé¼ æ ‡ç§»åŠ¨åˆ°è¯¥å…ƒç´ ä¸Š.</div>
+<strong>Code examples:</strong><p>ä½¿ç”¨æŒ‡å®šçš„ <code>autoHide</code> å‚æ•°åˆå§‹åŒ–resizable :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable({ autoHide: <span class="literal">true</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åè®¾ç½®æˆ–è€…è·å– <code>autoHide</code> å‚æ•° :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> autoHide = $( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"autoHide"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"autoHide"</span>, <span class="literal">true</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-cancel" class="api-item">
+<h3>cancel<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Selector'" tppabs="http://api.jquery.com/Types/#Selector">Selector</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>"input,textarea,button,select,option"</code>
+</div>
+<div>å¦‚æœè®¾ç½®äº†é€‰æ‹©å™¨åŒ¹é…,å°†æ‹’ç»å¯¹åŒ¹é…å…ƒç´ çš„å¤§å°è°ƒæ•´.</div>
+<strong>Code examples:</strong><p>ä½¿ç”¨æŒ‡å®šçš„ <code>cancel</code> å‚æ•°åˆå§‹åŒ–resizable :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable({ cancel: <span class="string">".cancel"</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åè®¾ç½®æˆ–è€…è·å– <code>cancel</code> å‚æ•° :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> cancel = $( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"cancel"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"cancel"</span>, <span class="string">".cancel"</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-containment" class="api-item">
+<h3>containment<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Selector'" tppabs="http://api.jquery.com/Types/#Selector">Selector</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Element'" tppabs="http://api.jquery.com/Types/#Element">Element</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>
+ä½¿ç”¨æŒ‡å®šçš„å…ƒç´ å¼ºåˆ¶æ€§é™åˆ¶å¤§å°è°ƒæ•´çš„ç•Œé™. 
+
+</div>
+<strong>å…è®¸ä½¿ç”¨çš„å€¼ï¼š</strong><ul>
+<li>
+<strong>Selector</strong>:resizableå…ƒç´ å°†è¢«é™åˆ¶åœ¨è¯¥é€‰æ‹©å™¨åŒ¹é…çš„ç¬¬ä¸€ä¸ªå…ƒç´ çš„è¾¹ç•Œå†…ã€‚ å¦‚æœæ²¡æœ‰åŒ¹é…çš„å…ƒç´ ï¼Œé‚£ä¹ˆè®¾ç½®å°†ä¸èµ·ä½œç”¨ã€‚</li>
+<li>
+<strong>Element</strong>: resizableå…ƒç´ å°†è¢«é™åˆ¶åœ¨è¿™ä¸ªå…ƒç´ çš„è¾¹ç•Œå†…ã€‚</li>
+<li>
+<strong>String</strong>: å¯èƒ½çš„å€¼ï¼š <code>"parent"</code> å’Œ <code>"document"</code>.</li>
+</ul>
+<strong>Code examples:</strong><p>ä½¿ç”¨æŒ‡å®šçš„ <code>containment</code> å‚æ•°åˆå§‹åŒ–resizable :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable({ containment: <span class="string">"parent"</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åè®¾ç½®æˆ–è€…è·å– <code>containment</code> å‚æ•° :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> containment = $( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"containment"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"containment"</span>, <span class="string">"parent"</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-delay" class="api-item">
+<h3>delay<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>0</code>
+</div>
+<div>è®¾å®šéœ€è¦ç»è¿‡å¤šå°‘æ¯«ç§’ä»¥åè°ƒæ•´æ‰ä¼šå¼€å§‹. å¦‚æœæŒ‡å®šäº†è¯¥å‚æ•°, è°ƒæ•´ä¸ä¼šé©¬ä¸Šå¼€å§‹,é™¤éé¼ æ ‡è°ƒæ•´åŠ¨ä½œå·²ç»æŒç»­äº†æŒ‡å®šçš„æ—¶é—´.è¿™å¯ä»¥é˜²æ­¢è¯¯æ“ä½œå¯¹å…ƒç´ è¿›è¡Œäº†éé¢„æœŸçš„è°ƒæ•´.</div>
+<strong>Code examples:</strong><p>ä½¿ç”¨æŒ‡å®šçš„ <code>delay</code> å‚æ•°åˆå§‹åŒ–resizable :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable({ delay: <span class="number">150</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åè®¾ç½®æˆ–è€…è·å– <code>delay</code> å‚æ•° :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> delay = $( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"delay"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"delay"</span>, <span class="number">150</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-disabled" class="api-item">
+<h3>disabled<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>
+å¦‚æœè®¾ç½®ä¸º <code>true</code> å°†ç¦æ­¢resizableï¼ˆç¼©æ”¾ï¼‰ã€‚</div>
+<strong>Code examples:</strong><p>ä½¿ç”¨æŒ‡å®šçš„ <code>disabled</code> å‚æ•°åˆå§‹åŒ–resizable :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable({ disabled: <span class="literal">true</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åè®¾ç½®æˆ–è€…è·å– <code>disabled</code> å‚æ•° :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> disabled = $( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"disabled"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"disabled"</span>, <span class="literal">true</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-distance" class="api-item">
+<h3>distance<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>1</code>
+</div>
+<div>
+è®¾å®šè°ƒæ•´æ“ä½œéœ€è¦ç§»åŠ¨å¤šå°‘ä¸ªåƒç´ åè°ƒæ•´æ‰ä¼šå¼€å§‹. å¦‚æœæŒ‡å®šäº†è¯¥å‚æ•°, è°ƒæ•´ä¸ä¼šé©¬ä¸Šå¼€å§‹,ç›´åˆ°é¼ æ ‡ç§»åŠ¨äº†æŒ‡å®šçš„åƒç´ å.è¿™å¯ä»¥é˜²æ­¢è¯¯æ“ä½œå¯¹å…ƒç´ è¿›è¡Œäº†éé¢„æœŸçš„è°ƒæ•´.
+</div>
+<strong>Code examples:</strong><p>ä½¿ç”¨æŒ‡å®šçš„ <code>distance</code> å‚æ•°åˆå§‹åŒ–resizable :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable({ distance: <span class="number">30</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åè®¾ç½®æˆ–è€…è·å– <code>distance</code> å‚æ•° :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> distance = $( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"distance"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"distance"</span>, <span class="number">30</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-ghost" class="api-item">
+<h3>ghost<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>å¦‚æœè®¾ç½®ä¸º<code>true</code>, å°†ä¼šåœ¨è°ƒæ•´è¿‡ç¨‹ä¸­çœ‹åˆ°ä¸€ä¸ªåŠé€æ˜çš„è¾…åŠ©å…ƒç´ ã€‚</div>
+<strong>Code examples:</strong><p>ä½¿ç”¨æŒ‡å®šçš„ <code>ghost</code> å‚æ•°åˆå§‹åŒ–resizable :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable({ ghost: <span class="literal">true</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åè®¾ç½®æˆ–è€…è·å– <code>ghost</code> å‚æ•° :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> ghost = $( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"ghost"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"ghost"</span>, <span class="literal">true</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-grid" class="api-item">
+<h3>grid<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Array'" tppabs="http://api.jquery.com/Types/#Array">Array</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>
+è®¾ç½®è°ƒæ•´xå’Œyæ”¹å˜çš„åƒç´ . è°ƒæ•´å¤§å°çš„å…ƒç´ åˆ°ç½‘æ ¼ï¼Œæ¯xå’Œyä¸ªåƒç´ ã€‚æ•°ç»„å€¼: [x, y]ã€‚</div>
+<strong>Code examples:</strong><p>ä½¿ç”¨æŒ‡å®šçš„ <code>grid</code> å‚æ•°åˆå§‹åŒ–resizable :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable({ grid: [ <span class="number">20</span>, <span class="number">10</span> ] });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åè®¾ç½®æˆ–è€…è·å– <code>grid</code> å‚æ•° :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> grid = $( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"grid"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"grid"</span>, [ <span class="number">20</span>, <span class="number">10</span> ] );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-handles" class="api-item">
+<h3>handles<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>"e, s, se"</code>
+</div>
+<div>å“ªä¸ªå¤„ç†ç¨‹åºè¢«ç”¨æ¥resizingï¼ˆç¼©æ”¾å¤§å°ï¼‰ã€‚</div>
+
+<strong>å…è®¸ä½¿ç”¨çš„å€¼ï¼š</strong><ul>
+<li>
+<strong>String</strong>: å¦‚æœæŒ‡å®šä¸€ä¸ªå­—ç¬¦ä¸², åº”è¯¥æ˜¯ä¸‹åˆ—æ¸…å•ä¸­çš„ç»„åˆ:'n, e, s, w, ne, se, sw, nw, all',æ¯é¡¹ä¹‹é—´ä½¿ç”¨é€—å·åˆ†éš”. å¿…è¦çš„æ‰‹æŸ„å°†ç”±æ’ä»¶è‡ªåŠ¨ç”Ÿæˆ.</li>
+<li>
+<strong>Object</strong>: 
+                    <p>
+                    å¦‚æœæŒ‡å®šä¸€ä¸ªå¯¹è±¡, è¦æ”¯æŒä¸‹é¢çš„é”®å€¼: { n, e, s, w, ne, se, sw, nw }. æŒ‡å®šçš„ç”¨æˆ·è°ƒæ•´æ‰‹æŸ„çš„ä»»ä½•å€¼åº”è¯¥æ˜¯ä¸€ä¸ªjQueryé€‰æ‹©å™¨åŒ¹é…çš„å­å…ƒç´ . å¦‚æœè¯¥æ“ä½œæŸ„ä¸æ˜¯resizableçš„ä¸€ä¸ªå­å…ƒç´ , ä½ å¯ä»¥æä¾›ä¸€ä¸ªæœ‰æ•ˆçš„DOMElement æˆ–è€…ç›´æ¥æä¾›ä¸€ä¸ªjQueryå¯¹è±¡.</p>
+                    <p><em>æ³¨æ„: å½“ç”Ÿæˆæ‚¨è‡ªå·±çš„æ‰‹æŸ„ï¼Œæ¯ä¸ªæ‰‹æŸ„å¿…é¡»æœ‰<code>ui-resizable-handle</code> æ ·å¼ç±»ï¼Œä»¥åŠé€‚å½“çš„<code>ui-resizable-{direction}</code>æ ·å¼ç±»ï¼Œä¾‹å¦‚<code>ui-resizable-s</code>ã€‚</em></p>
+                </li>
+</ul>
+<strong>Code examples:</strong><p>ä½¿ç”¨æŒ‡å®šçš„ <code>handles</code> å‚æ•°åˆå§‹åŒ–resizable :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable({ handles: <span class="string">"n, e, s, w"</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åè®¾ç½®æˆ–è€…è·å– <code>handles</code> å‚æ•° :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> handles = $( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"handles"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"handles"</span>, <span class="string">"n, e, s, w"</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-helper" class="api-item">
+<h3>helper<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>
+ä¸ºå¤§å°è°ƒæ•´æ—¶çš„ä»£ç†å…ƒç´ æŒ‡å®šä¸€ä¸ªcssæ ·å¼.å½“è°ƒæ•´å®Œæˆæ—¶,è¿™äº›å…ƒç´ å°†å›åˆ°å®ƒä»¥å‰çš„çŠ¶æ€.
+</div>
+<strong>Code examples:</strong><p>ä½¿ç”¨æŒ‡å®šçš„ <code>helper</code> å‚æ•°åˆå§‹åŒ–resizable :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable({ helper: <span class="string">"resizable-helper"</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åè®¾ç½®æˆ–è€…è·å– <code>helper</code> å‚æ•° :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> helper = $( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"helper"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"helper"</span>, <span class="string">"resizable-helper"</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-maxHeight" class="api-item">
+<h3>maxHeight<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>null</code>
+</div>
+<div>ä¸ºå¤§å°è°ƒæ•´è®¾å®šä¸€ä¸ªæœ€å¤§é«˜åº¦.</div>
+<strong>Code examples:</strong><p>ä½¿ç”¨æŒ‡å®šçš„ <code>maxHeight</code> å‚æ•°åˆå§‹åŒ–resizable :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable({ maxHeight: <span class="number">300</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åè®¾ç½®æˆ–è€…è·å– <code>maxHeight</code> å‚æ•° :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> maxHeight = $( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"maxHeight"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"maxHeight"</span>, <span class="number">300</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-maxWidth" class="api-item">
+<h3>maxWidth<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>null</code>
+</div>
+<div>ä¸ºå¤§å°è°ƒæ•´è®¾å®šä¸€ä¸ªæœ€å¤§å®½åº¦.</div>
+<strong>Code examples:</strong><p>ä½¿ç”¨æŒ‡å®šçš„ <code>maxWidth</code> å‚æ•°åˆå§‹åŒ–resizable :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable({ maxWidth: <span class="number">300</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åè®¾ç½®æˆ–è€…è·å– <code>maxWidth</code> å‚æ•° :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> maxWidth = $( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"maxWidth"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"maxWidth"</span>, <span class="number">300</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-minHeight" class="api-item">
+<h3>minHeight<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>10</code>
+</div>
+<div>ä¸ºå¤§å°è°ƒæ•´è®¾å®šä¸€ä¸ªæœ€å°é«˜åº¦.</div>
+<strong>Code examples:</strong><p>ä½¿ç”¨æŒ‡å®šçš„ <code>minHeight</code> å‚æ•°åˆå§‹åŒ–resizable :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable({ minHeight: <span class="number">150</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åè®¾ç½®æˆ–è€…è·å– <code>minHeight</code> å‚æ•° :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> minHeight = $( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"minHeight"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"minHeight"</span>, <span class="number">150</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+<div id="option-minWidth" class="api-item">
+<h3>minWidth<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>10</code>
+</div>
+<div>ä¸ºå¤§å°è°ƒæ•´è®¾å®šä¸€ä¸ªæœ€å°å®½åº¦.</div>
+<strong>Code examples:</strong><p>ä½¿ç”¨æŒ‡å®šçš„ <code>minWidth</code> å‚æ•°åˆå§‹åŒ–resizable :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable({ minWidth: <span class="number">150</span> });</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åè®¾ç½®æˆ–è€…è·å– <code>minWidth</code> å‚æ•° :</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> minWidth = $( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"minWidth"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"minWidth"</span>, <span class="number">150</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div></section><section id="methods"><header><h2 class="underline">Methods</h2></header><div id="method-destroy"><div class="api-item first-item">
+<h3>destroy()</h3>
+<div>
+        å®Œå…¨ç§»é™¤è°ƒæ•´åŠŸèƒ½. è¿™å°†ä½¿å…ƒç´ è¿”å›åˆ°ä¹‹å‰çš„åˆå§‹åŒ–çŠ¶æ€.
+
+
+    </div>
+<ul><li><div class="null-signature">è¿™ä¸ªæ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ destroy æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable( <span class="string">"destroy"</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+</div></div>
+<div id="method-disable"><div class="api-item">
+<h3>disable()</h3>
+<div>
+        å…³é—­resizable.
+    </div>
+<ul><li><div class="null-signature">è¿™ä¸ªæ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ disable æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable( <span class="string">"disable"</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+</div></div>
+<div id="method-enable"><div class="api-item">
+<h3>enable()</h3>
+<div>
+        æ‰“å¼€resizable.
+    </div>
+<ul><li><div class="null-signature">è¿™ä¸ªæ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ enable æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable( <span class="string">"enable"</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+</div></div>
+<div id="method-option">
+<div class="api-item">
+<h3>option( optionName )<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a></span>
+</h3>
+<div>
+
+é€šè¿‡æŒ‡å®šçš„<code>optionName</code>ï¼Œè·å–å½“å‰å…³è”çš„å€¼ã€‚</div>
+<ul><li>
+<div><strong>optionName</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a>
+</div>
+<div>è¦è·å–å€¼çš„é€‰é¡¹å</div>
+</li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨è¿™ä¸ªæ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="keyword">var</span> isDisabled = $( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"disabled"</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+</div>
+<div class="api-item">
+<h3>option()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#PlainObject'" tppabs="http://api.jquery.com/Types/#PlainObject">PlainObject</a></span>
+</h3>
+<div>
+è·å–ä¸€ä¸ªå¯¹è±¡ï¼Œå®ƒåŒ…å«è¡¨ç¤ºå½“å‰resizableçš„é€‰é¡¹hashçš„é”®/å€¼å¯¹ã€‚
+</div>
+<ul><li><div class="null-signature">è¿™ä¸ªæ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨è¿™ä¸ªæ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="keyword">var</span> options = $( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+</div>
+<div class="api-item">
+<h3>option( optionName, value )</h3>
+<div>é€šè¿‡æŒ‡å®šçš„<code>optionName</code>ï¼Œè®¾ç½®resizableçš„ç›¸å…³é€‰é¡¹å€¼ã€‚</div>
+<ul>
+<li>
+<div><strong>optionName</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a>
+</div>
+<div>è¦è®¾ç½®å€¼çš„é€‰é¡¹åã€‚</div>
+</li>
+<li>
+<div><strong>value</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>è¦è®¾ç½®é€‰é¡¹çš„å€¼ã€‚</div>
+</li>
+</ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨è¿™ä¸ªæ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, <span class="string">"disabled"</span>, <span class="literal">true</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+</div>
+<div class="api-item">
+<h3>option( options )</h3>
+<div>ä¸ºresizableè®¾ç½®ä¸€ä¸ªæˆ–å¤šä¸ªé€‰é¡¹ã€‚</div>
+<ul><li>
+<div><strong>options</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>è®¾ç½®çš„é€‰é¡¹/å€¼å¯¹çš„å¯¹è±¡ã€‚</div>
+</li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨è¿™ä¸ªæ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable( <span class="string">"option"</span>, { disabled: <span class="literal">true</span> } );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+</div>
+</div>
+<div id="method-widget"><div class="api-item">
+<h3>widget()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a></span>
+</h3>
+<div>è¿”å›ä¸€ä¸ª<code>jQuery</code>ï¼Œå®ƒåŒ…å«äº†resizableå…ƒç´ ã€‚
+    </div>
+<ul><li><div class="null-signature">è¿™ä¸ªæ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ widget æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="keyword">var</span> widget = $( <span class="string">".selector"</span> ).resizable( <span class="string">"widget"</span> );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+</div></div></section><section id="events"><header><h2 class="underline">Events</h2></header><div id="event-create" class="api-item first-item">
+<h3>create( event, ui )<span class="returns">Type: <code>resizecreate</code></span>
+</h3>
+<div>
+        æ­¤äº‹ä»¶ä¼šåœ¨resizableåˆ›å»ºæ—¶è§¦å‘ã€‚
+    </div>
+<ul>
+<li>
+<div><strong>event</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Event'" tppabs="http://api.jquery.com/Types/#Event">Event</a>
+</div>
+<div></div>
+</li>
+<li>
+<div><strong>ui</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div></div>
+</li>
+</ul>
+<p><em>æ³¨æ„ï¼š<code>ui</code> å¯¹è±¡æ˜¯ç©ºå¯¹è±¡ï¼ŒåŒ…æ‹¬æ˜¯ä¸ºäº†å’Œå…¶ä»–äº‹ä»¶çš„ä¸€è‡´æ€§ã€‚
+
+</em></p>
+<div>
+<strong>Code examples:</strong><p>ä½¿ç”¨æŒ‡å®šçš„ create å›è°ƒåˆå§‹åŒ–ä¸€ä¸ªresizableï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable({</code></div></div><div class="container"><div class="line"><code>  create: <span class="keyword">function</span>( event, ui ) {}</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>
+ç»‘å®šä¸€ä¸ªäº‹ä»¶ç›‘å¬åˆ°resizecreateäº‹ä»¶ï¼š
+</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).on( <span class="string">"resizecreate"</span>, <span class="keyword">function</span>( event, ui ) {} );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+</div>
+<div id="event-resize" class="api-item">
+<h3>resize( event, ui )<span class="returns">Type: <code>resize</code></span>
+</h3>
+<div>è¿™ä¸ªäº‹ä»¶å°†åœ¨æ‹–åŠ¨æ‰‹æŸ„è¿›è¡Œè°ƒæ•´æ—¶è§¦å‘.</div>
+<ul>
+<li>
+<div><strong>event</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Event'" tppabs="http://api.jquery.com/Types/#Event">Event</a>
+</div>
+<div></div>
+</li>
+<li>
+<div><strong>ui</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div></div>
+<ul>
+<li>
+<div><strong>element</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a>
+</div>
+<div>ä¸€ä¸ªjQueryå¯¹è±¡ä»£è¡¨è¢« resized çš„å…ƒç´ ã€‚</div></li>
+<li>
+<div><strong>helper</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a>
+</div>
+<div>ä¸€ä¸ªjQueryå¯¹è±¡ä»£è¡¨è¢«resizedå…ƒç´ çš„åŠ©æ‰‹ã€‚</div>
+</li>
+<li>
+<div><strong>originalElement</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a>
+</div>
+<div>
+ä¸€ä¸ªjQueryå¯¹è±¡ä»£è¡¨è¢«åŒ…è£¹å‰åŸå…ˆçš„å…ƒç´ ã€‚</div>
+</li>
+<li>
+<div><strong>originalPosition</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>
+resizableå…ƒç´ è¢«resizedï¼ˆç¼©æ”¾ï¼‰å‰çš„CSSçš„positionï¼ˆä½ç½®ï¼‰å¯¹è±¡ï¼Œå¦‚<code>{ left, top }</code> ã€‚</div>
+</li>
+<li>
+<div><strong>originalSize</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>
+resizableå…ƒç´ è¢«resizedï¼ˆç¼©æ”¾ï¼‰å‰çš„å°ºå¯¸å¯¹è±¡ï¼Œå¦‚<code>{ width, height }</code>ã€‚</div>
+</li>
+<li>
+<div><strong>position</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>
+å½“å‰å¯resizableï¼ˆç¼©æ”¾ï¼‰å…ƒç´ çš„CSSçš„positionï¼ˆä½ç½®ï¼‰å¯¹è±¡ï¼Œå¦‚{ top, left }ã€‚</code>
+</div>
+</li>
+<li>
+<div><strong>size</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>
+å½“å‰å¯resizableï¼ˆç¼©æ”¾ï¼‰å…ƒç´ çš„å°ºå¯¸å¯¹è±¡ï¼Œ<code>{ width, height }</code>ã€‚
+</div>
+</li>
+</ul>
+</li>
+</ul>
+<div>
+<strong>Code examples:</strong><p>ä½¿ç”¨æŒ‡å®šçš„ resize å›è°ƒåˆå§‹åŒ–ä¸€ä¸ªresizableï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable({</code></div></div><div class="container"><div class="line"><code>  resize: <span class="keyword">function</span>( event, ui ) {}</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>
+ç»‘å®šä¸€ä¸ªäº‹ä»¶ç›‘å¬åˆ°resizeäº‹ä»¶ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).on( <span class="string">"resize"</span>, <span class="keyword">function</span>( event, ui ) {} );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+</div>
+<div id="event-start" class="api-item">
+<h3>start( event, ui )<span class="returns">Type: <code>resizestart</code></span>
+</h3>
+<div>è¿™ä¸ªäº‹ä»¶å°†åœ¨è°ƒæ•´æ“ä½œå¼€å§‹æ—¶è§¦å‘.</div>
+<ul>
+<li>
+<div><strong>event</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Event'" tppabs="http://api.jquery.com/Types/#Event">Event</a>
+</div>
+<div></div>
+</li>
+<li>
+<div><strong>ui</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div></div>
+<ul>
+<li>
+<div><strong>element</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a>
+</div>
+<div>ä¸€ä¸ªjQueryå¯¹è±¡ä»£è¡¨è¢« resized çš„å…ƒç´ ã€‚</div></li>
+<li>
+<div><strong>helper</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a>
+</div>
+<div>ä¸€ä¸ªjQueryå¯¹è±¡ä»£è¡¨è¢«resizedå…ƒç´ çš„åŠ©æ‰‹ã€‚</div>
+</li>
+<li>
+<div><strong>originalElement</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a>
+</div>
+<div>
+ä¸€ä¸ªjQueryå¯¹è±¡ä»£è¡¨è¢«åŒ…è£¹å‰åŸå…ˆçš„å…ƒç´ ã€‚</div>
+</li>
+<li>
+<div><strong>originalPosition</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>
+resizableå…ƒç´ è¢«resizedï¼ˆç¼©æ”¾ï¼‰å‰çš„CSSçš„positionï¼ˆä½ç½®ï¼‰å¯¹è±¡ï¼Œå¦‚<code>{ left, top }</code> ã€‚</div>
+</li>
+<li>
+<div><strong>originalSize</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>
+resizableå…ƒç´ è¢«resizedï¼ˆç¼©æ”¾ï¼‰å‰çš„å°ºå¯¸å¯¹è±¡ï¼Œå¦‚<code>{ width, height }</code>ã€‚</div>
+</li>
+<li>
+<div><strong>position</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>
+å½“å‰å¯resizableï¼ˆç¼©æ”¾ï¼‰å…ƒç´ çš„CSSçš„positionï¼ˆä½ç½®ï¼‰å¯¹è±¡ï¼Œå¦‚{ top, left }ã€‚</code>
+</div>
+</li>
+<li>
+<div><strong>size</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>
+å½“å‰å¯resizableï¼ˆç¼©æ”¾ï¼‰å…ƒç´ çš„å°ºå¯¸å¯¹è±¡ï¼Œ<code>{ width, height }</code>ã€‚
+</div>
+</li>
+</ul>
+</li>
+</ul>
+<div>
+<strong>Code examples:</strong><p>ä½¿ç”¨æŒ‡å®šçš„ start å›è°ƒåˆå§‹åŒ–ä¸€ä¸ªresizableï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable({</code></div></div><div class="container"><div class="line"><code>  start: <span class="keyword">function</span>( event, ui ) {}</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<p>
+ç»‘å®šä¸€ä¸ªäº‹ä»¶ç›‘å¬åˆ° resizestart äº‹ä»¶ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).on( <span class="string">"resizestart"</span>, <span class="keyword">function</span>( event, ui ) {} );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+</div>
+<div id="event-stop" class="api-item">
+<h3>stop( event, ui )<span class="returns">Type: <code>resizestop</code></span>
+</h3>
+<div>è¿™ä¸ªäº‹ä»¶å°†åœ¨è°ƒæ•´æ“ä½œç»“æŸåè§¦å‘.</div>
+<ul>
+<li>
+<div><strong>event</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Event'" tppabs="http://api.jquery.com/Types/#Event">Event</a>
+</div>
+<div></div>
+</li>
+<li>
+<div><strong>ui</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div></div>
+<ul>
+<li>
+<div><strong>element</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a>
+</div>
+<div>ä¸€ä¸ªjQueryå¯¹è±¡ä»£è¡¨è¢« resized çš„å…ƒç´ ã€‚</div></li>
+<li>
+<div><strong>helper</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a>
+</div>
+<div>ä¸€ä¸ªjQueryå¯¹è±¡ä»£è¡¨è¢«resizedå…ƒç´ çš„åŠ©æ‰‹ã€‚</div>
+</li>
+<li>
+<div><strong>originalElement</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a>
+</div>
+<div>
+ä¸€ä¸ªjQueryå¯¹è±¡ä»£è¡¨è¢«åŒ…è£¹å‰åŸå…ˆçš„å…ƒç´ ã€‚</div>
+</li>
+<li>
+<div><strong>originalPosition</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>
+resizableå…ƒç´ è¢«resizedï¼ˆç¼©æ”¾ï¼‰å‰çš„CSSçš„positionï¼ˆä½ç½®ï¼‰å¯¹è±¡ï¼Œå¦‚<code>{ left, top }</code> ã€‚</div>
+</li>
+<li>
+<div><strong>originalSize</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>
+resizableå…ƒç´ è¢«resizedï¼ˆç¼©æ”¾ï¼‰å‰çš„å°ºå¯¸å¯¹è±¡ï¼Œå¦‚<code>{ width, height }</code>ã€‚</div>
+</li>
+<li>
+<div><strong>position</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>
+å½“å‰å¯resizableï¼ˆç¼©æ”¾ï¼‰å…ƒç´ çš„CSSçš„positionï¼ˆä½ç½®ï¼‰å¯¹è±¡ï¼Œå¦‚{ top, left }ã€‚</code>
+</div>
+</li>
+<li>
+<div><strong>size</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>
+å½“å‰å¯resizableï¼ˆç¼©æ”¾ï¼‰å…ƒç´ çš„å°ºå¯¸å¯¹è±¡ï¼Œ<code>{ width, height }</code>ã€‚
+</div>
+</li>
+</ul>
+</li>
+</ul>
+<div>
+<strong>Code examples:</strong><p>ä½¿ç”¨æŒ‡å®šçš„ stop å›è°ƒåˆå§‹åŒ–ä¸€ä¸ªresizableï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).resizable({</code></div></div><div class="container"><div class="line"><code>  stop: <span class="keyword">function</span>( event, ui ) {}</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<p>
+ç»‘å®šä¸€ä¸ªäº‹ä»¶ç›‘å¬åˆ° resizestop äº‹ä»¶ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).on( <span class="string">"resizestop"</span>, <span class="keyword">function</span>( event, ui ) {} );</code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>
+</div></section><section class="entry-examples" id="entry-examples"><header><h2 class="underline">Example:</h2></header><div class="entry-example" id="example-0">
+<h4><span class="desc">A simple jQuery UI Resizable.</span></h4>
+<div class="syntaxhighlighter xml ">
+    <table>
+        <tbody>
+            <tr>
+                <td class="gutter">
+                    
+                        <div class="line n1">1</div>
+                    
+                        <div class="line n2">2</div>
+                    
+                        <div class="line n3">3</div>
+                    
+                        <div class="line n4">4</div>
+                    
+                        <div class="line n5">5</div>
+                    
+                        <div class="line n6">6</div>
+                    
+                        <div class="line n7">7</div>
+                    
+                        <div class="line n8">8</div>
+                    
+                        <div class="line n9">9</div>
+                    
+                        <div class="line n10">10</div>
+                    
+                        <div class="line n11">11</div>
+                    
+                        <div class="line n12">12</div>
+                    
+                        <div class="line n13">13</div>
+                    
+                        <div class="line n14">14</div>
+                    
+                        <div class="line n15">15</div>
+                    
+                        <div class="line n16">16</div>
+                    
+                        <div class="line n17">17</div>
+                    
+                        <div class="line n18">18</div>
+                    
+                        <div class="line n19">19</div>
+                    
+                        <div class="line n20">20</div>
+                    
+                        <div class="line n21">21</div>
+                    
+                        <div class="line n22">22</div>
+                    
+                        <div class="line n23">23</div>
+                    
+                        <div class="line n24">24</div>
+                    
+                        <div class="line n25">25</div>
+                    
+                </td>
+                <td class="code">
+                    <pre><div class="container"><div class="line"><code><span class="doctype">&lt;!doctype html&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">html</span> <span class="attribute">lang</span>=<span class="value">"en"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">head</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">title</span>&gt;</span>resizable demo<span class="tag">&lt;/<span class="title">title</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">href</span>=<span class="value">"http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css"></span></code></div></div><div class="container"><div class="line"><code>  <span class="id">#resizable</span> <span class="rules">{</span></code></div></div><div class="container"><div class="line"><code>    <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">100</span>px;</span></span></code></div></div><div class="container"><div class="line"><code>    <span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">100</span>px;</span></span></code></div></div><div class="container"><div class="line"><code>    <span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="hexcolor">#ccc</span>;</span></span></code></div></div><div class="container"><div class="line"><code><span class="rule">}</span>    <span class="tag">&lt;/<span class="title">style</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"http://code.jquery.com/jquery-1.9.1.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"http://code.jquery.com/ui/1.10.3/jquery-ui.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">head</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">body</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"resizable"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"></span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">"#resizable"</span> ).resizable();</code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">body</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">html</span>&gt;</span></code></div></div></pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h4>Demo:</h4>
+<div class="demo code-demo"></div>
+</div></section>
+</div></article>    </div><!-- .entry-content -->
+
+</article>
+</div>
+
+
+  </div>
+</div>
+<script type="text/javascript" src="../js/search.js" tppabs="http://www.css88.com/jquery-ui-api/js/search.js"></script>
+<script type="text/javascript" src="../js/gotop.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/gotop.min.js"></script>
+<script type="text/javascript">
+	goToTop.init();
+</script>
+<style>
+    #googlead{position:fixed;bottom:-250px;right:10px;width: 250px}
+.hidden{display: none;}
+</style>
+<div id="googlead">
+    <script type="text/javascript">
+        /*jquery-ui-fixed*/
+        var cpro_id = "u1731049";
+    </script>
+    <script src="../../../cpro.baidustatic.com/cpro/ui/c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+</div>
+<script type="text/javascript">setTimeout(function(){
+  $("#googlead").removeClass("hidden").animate({bottom:10})
+},3000)</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../www.google-analytics.com/analytics.js'/*tpa=http://www.google-analytics.com/analytics.js*/,'ga');
+
+  ga('create', 'UA-3448069-12', 'http://www.css88.com/jquery-ui-api/resizable/css88.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

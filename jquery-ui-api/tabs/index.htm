@@ -1,0 +1,1671 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Tabs Widget | jQuery UI API ä¸­æ–‡æ–‡æ¡£ | jQuery APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery 1.0 - jQuery 2.0)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="jQuery,API,ä¸­æ–‡ç‰ˆ,ä¸­æ–‡æ–‡æ¡£,ä¸­æ–‡æ‰‹å†Œ,chm" />
+<meta name="description" content="jQuery APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery 1.0 - jQuery 2.0)" />
+<link rel="shortcut icon" type="image/x-icon" href="http://www.css88.com/jquery-ui-api/favicon.ico" />
+
+<!--<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />-->
+<link rel="stylesheet" type="text/css" media="screen" href="../cssstyle/main.min.css" tppabs="http://www.css88.com/jquery-ui-api/cssstyle/main.min.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="../cssstyle/style.css" tppabs="http://www.css88.com/jquery-ui-api/cssstyle/style.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="../cssstyle/jquery.css" tppabs="http://www.css88.com/jquery-ui-api/cssstyle/jquery.css" />
+<script type="text/javascript" src="../js/jquery.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/highlight.js" tppabs="http://www.css88.com/jquery-ui-api/js/highlight.js"></script>
+<script type="text/javascript" src="../js/jquery.ba-bbq.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/jquery.ba-bbq.min.js"></script>
+<script type="text/javascript" src="../js/jquery.ba-dotimeout.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/jquery.ba-dotimeout.min.js"></script>
+<script type="text/javascript" src="../js/main.js" tppabs="http://www.css88.com/jquery-ui-api/js/main.js"></script>
+<!--<script type="text/javascript" src="js/main.min.js"></script>-->
+</head>
+
+<body>
+<div id="header_warp">
+    <div class="header-box">
+            <div class="logo">
+                <h1><a href="../index.htm" tppabs="http://www.css88.com/jquery-ui-api/"
+                       title="jQuery UI APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery UI 1.10)">jQuery UI APIä¸­æ–‡æ–‡æ¡£</a></h1>
+            </div>
+            <ul class="header-nav">
+                <!--<li><a href="http://www.css88.com/jquery-ui-api/old.html" class="nav-link" title="jQuery UI APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery UI 1.10)">æ—§ç‰ˆ</a>
+                </li>-->
+                <li><a href="javascript:if(confirm('http://www.css88.com/jqapi-1.9/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/jqapi-1.9/'" tppabs="http://www.css88.com/jqapi-1.9/" class="nav-link" title="é€‚ç”¨jQuery 1.0 â€“ jQuery 1.10.2,jQuery 2.0 â€“ jQuery 2.0.3">jQuery APIä¸­æ–‡æ–‡æ¡£</a>
+                <li><a href="javascript:if(confirm('http://www.css88.com/archives/4737  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/archives/4737'" tppabs="http://www.css88.com/archives/4737" class="nav-link" title="jQuery UI APIä¸­æ–‡æ–‡æ¡£æ›´æ–°ä¿¡æ¯">æ›´æ–°ä¿¡æ¯</a></li>
+
+                <li><a href="javascript:if(confirm('http://www.css88.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/'" tppabs="http://www.css88.com/" class="nav-link">å‰ç«¯å¼€å‘</a></li>
+            </ul>
+            <!--<input type="search" placeholder="æœç´¢API" autosave="searchdoc" results="10" id="search-field" autocomplete="off">-->
+        </div>
+</div>
+<div id="navigation">
+	
+<aside id="categories" class="widget">
+    <h3 class="widget-title">jQuery UI 1.10</h3>
+    <ul>
+    				<li class="cat-item cat-item-2 current-cat"><a href="../category/effects/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/effects/" title="View all posts filed under Effects">Effects</a>
+    </li>
+    	<li class="cat-item cat-item-10"><a href="../category/effects-core/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/effects-core/" title="View all posts filed under Effects Core">Effects Core</a>
+    </li>
+    	<li class="cat-item cat-item-4"><a href="../category/interactions/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/interactions/" title="View all posts filed under Interactions">Interactions</a>
+    </li>
+    	<li class="cat-item cat-item-8"><a href="../category/overrides/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/overrides/" title="View all posts filed under Method Overrides">Method Overrides</a>
+    </li>
+    	<li class="cat-item cat-item-6"><a href="../category/methods/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/methods/" title="View all posts filed under Methods">Methods</a>
+    </li>
+    	<li class="cat-item cat-item-7"><a href="../category/selectors/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/selectors/" title="View all posts filed under Selectors">Selectors</a>
+    </li>
+    	<li class="cat-item cat-item-12"><a href="../category/theming/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/theming/" title="View all posts filed under Theming">Theming</a>
+    </li>
+    	<li class="cat-item cat-item-9"><a href="../category/ui-core/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/ui-core/" title="View all posts filed under UI Core">UI Core</a>
+    </li>
+    	<li class="cat-item cat-item-5"><a href="../category/utilities/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/utilities/" title="View all posts filed under Utilities">Utilities</a>
+    </li>
+    	<li class="cat-item cat-item-3"><a href="../category/widgets/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/widgets/" title="View all posts filed under Widgets">Widgets</a>
+    </li>
+    		</ul>
+  </aside>
+
+
+    <div style=" height:60px;margin-left:20px"><p
+                        style="font-size:12px; line-height:1.5; margin:8px 0">æ‹ç –çº é”™ è¯·å¾®åšä¸Š <a href="javascript:if(confirm('http://weibo.com/148246293  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://weibo.com/148246293'" tppabs="http://weibo.com/148246293"
+                                                                                           target="_blank">@æ„šäººç å¤´</a>ï¼š</p>
+                    <iframe style="vertical-align: middle;" width="163" height="24" frameborder="0"
+                            allowtransparency="true" marginwidth="0" marginheight="0" scrolling="no" border="0"
+                            src="../../../widget.weibo.com/relationship/followbutton.php-language=zh_cn&width=63&height=24            &uid=1477178352&style=2&btn=red&dpc=1" tppabs="http://widget.weibo.com/relationship/followbutton.php?language=zh_cn&width=63&height=24            &uid=1477178352&style=2&btn=red&dpc=1"></iframe>
+                </div>
+        <div id="googleguanggao" style=" margin-top:20px; margin-left:10px">
+            <script type="text/javascript">
+                        /*jquery-ui-left*/
+                        var cpro_id = "u1731043";
+                    </script>
+                    <script src="../../../cpro.baidustatic.com/cpro/ui/c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+        </div></div>
+<div id="content_box">
+  <div id="content">
+	
+<div class="inner" role="main">
+<article id="post-93" class="post-93 post type-post status-publish format-standard hentry category-widgets">
+	<header class="entry-header">
+		<h1 class="entry-title">Tabs Widget</h1>
+		<hr>
+<div id="baidu-banner">
+<script type="text/javascript">
+    /*jquery-ui-banner*/
+    var cpro_id = "u1731052";
+</script>
+<script src="../../../cpro.baidustatic.com/cpro/ui/c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+</div>
+<div class="entry-meta">
+			Categories: <span class="category"><a href="../category/widgets/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/widgets/" title="View all posts in Widgets">Widgets</a></span>		</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<article id="tabs1" class="entry widget"><h2 class="section-title">
+<span>Tabs Widget</span><span class="version-details">version added: 1.0</span>
+</h2>
+<div class="entry-wrapper">
+<p class="desc"><strong>Description: </strong>ä¸€ç§å¤španelï¼ˆé¢æ¿ï¼‰çš„å•å†…å®¹åŒºï¼Œæ¯ä¸ªpanelï¼ˆé¢æ¿ï¼‰ä¸åˆ—è¡¨ä¸­çš„æ ‡é¢˜ç›¸å…³ã€‚</p>
+<section id="quick-nav"><header><h2>QuickNav<a href="#entry-examples">Examples</a>
+</h2></header><div class="quick-nav-section">
+<h3>Options</h3>
+<div><a href="#option-active">active</a></div>
+<div><a href="#option-collapsible">collapsible</a></div>
+<div><a href="#option-disabled">disabled</a></div>
+<div><a href="#option-event">event</a></div>
+<div><a href="#option-heightStyle">heightStyle</a></div>
+<div><a href="#option-hide">hide</a></div>
+<div><a href="#option-show">show</a></div>
+</div>
+<div class="quick-nav-section">
+<h3>Methods</h3>
+<div><a href="#method-destroy">destroy</a></div>
+<div><a href="#method-disable">disable</a></div>
+<div><a href="#method-enable">enable</a></div>
+<div><a href="#method-load">load</a></div>
+<div><a href="#method-option">option</a></div>
+<div><a href="#method-refresh">refresh</a></div>
+<div><a href="#method-widget">widget</a></div>
+</div>
+<div class="quick-nav-section">
+<h3>Events</h3>
+<div><a href="#event-activate">activate</a></div>
+<div><a href="#event-beforeActivate">beforeActivate</a></div>
+<div><a href="#event-beforeLoad">beforeLoad</a></div>
+<div><a href="#event-create">create</a></div>
+<div><a href="#event-load">load</a></div>
+</div></section><div class="longdesc" id="entry-longdesc">
+    <p>é€‰é¡¹å¡ï¼ˆTabsï¼‰é€šå¸¸ç”¨äºæŠŠå†…å®¹åˆ†æˆå¤šä¸ªéƒ¨åˆ†ï¼Œä»¥ä¾¿èŠ‚çœç©ºé—´ï¼Œå°±åƒæŠ˜å é¢æ¿ï¼ˆaccordionï¼‰ä¸€æ ·ã€‚</p>
+    <p>é€‰é¡¹å¡ï¼ˆTabsï¼‰æœ‰ä¸€ç»„å¿…é¡»ä½¿ç”¨çš„ç‰¹å®šæ ‡è®°ï¼Œä»¥ä¾¿é€‰é¡¹å¡èƒ½æ­£å¸¸å·¥ä½œï¼š</p>
+    <ul>
+        <li>é€‰é¡¹å¡ï¼ˆTabsï¼‰å¿…é¡»åœ¨ä¸€ä¸ªæœ‰åºçš„ï¼ˆ<code>&lt;ol&gt;</code>ï¼‰æˆ–æ— åºçš„ï¼ˆ<code>&lt;ul&gt;</code>ï¼‰åˆ—è¡¨ä¸­</li>
+        <li>æ¯ä¸ªé€‰é¡¹å¡çš„ "title" å¿…é¡»åœ¨ä¸€ä¸ªåˆ—è¡¨é¡¹ï¼ˆ<code>&lt;li&gt;</code>ï¼‰çš„å†…éƒ¨ï¼Œä¸”å¿…é¡»ç”¨ä¸€ä¸ªå¸¦æœ‰ <code>href</code> å±æ€§çš„é”šï¼ˆ<code>&lt;a&gt;</code>ï¼‰åŒ…è£¹ã€‚
+        </li>
+        <li>æ¯ä¸ªé€‰é¡¹å¡panelï¼ˆé¢æ¿ï¼‰å¯ä»¥æ˜¯ä»»æ„æœ‰æ•ˆçš„å…ƒç´ ï¼Œä½†æ˜¯å®ƒå¿…é¡»å¸¦æœ‰ä¸€ä¸ª idï¼Œè¯¥ id ä¸ç›¸å…³é€‰é¡¹å¡çš„é”šä¸­çš„å“ˆå¸Œç›¸å¯¹åº”ã€‚</li>
+    </ul>
+    <p>æ¯ä¸ªé€‰é¡¹å¡panelï¼ˆé¢æ¿ï¼‰çš„å†…å®¹å¯ä»¥åœ¨é¡µé¢ä¸­å®šä¹‰å¥½ï¼Œæˆ–è€…å¯ä»¥é€šè¿‡ Ajax åŠ è½½ã€‚è¿™ä¸¤ç§æ–¹å¼éƒ½æ˜¯åŸºäºä¸é€‰é¡¹å¡ç›¸å…³çš„é”šçš„ <code>href</code> ä¸Šè‡ªåŠ¨å¤„ç†çš„ã€‚é»˜è®¤æƒ…å†µä¸‹ï¼Œé€‰é¡¹å¡åœ¨ç‚¹å‡»æ—¶æ¿€æ´»ï¼Œä½†æ˜¯é€šè¿‡ <a href="#option-event"><code>event</code></a> é€‰é¡¹å¯ä»¥æ”¹å˜æˆ–è¦†ç›–äº‹ä»¶ã€‚</p>
+
+		<p>ä¸‹é¢æ˜¯ä¸€äº›æ ·å“æ ‡è®°ï¼š</p>
+
+		<div class="syntaxhighlighter xml nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+						<div class="line n6">6</div>
+
+						<div class="line n7">7</div>
+
+						<div class="line n8">8</div>
+
+						<div class="line n9">9</div>
+
+						<div class="line n10">10</div>
+
+						<div class="line n11">11</div>
+
+						<div class="line n12">12</div>
+
+						<div class="line n13">13</div>
+
+						<div class="line n14">14</div>
+
+						<div class="line n15">15</div>
+
+						<div class="line n16">16</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"tabs"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">ul</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#fragment-1"</span>&gt;</span>One<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#fragment-2"</span>&gt;</span>Two<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#fragment-3"</span>&gt;</span>Three<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"fragment-1"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"fragment-2"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"fragment-3"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+
+		<h3>é”®ç›˜äº¤äº’ï¼ˆKeyboard interactionï¼‰</h3>
+
+    <p>å½“ç„¦ç‚¹åœ¨é€‰é¡¹å¡ä¸Šæ—¶ï¼Œä¸‹é¢çš„é”®ç›˜å‘½ä»¤å¯ç”¨ï¼š</p>
+    <ul>
+        <li>UP/LEFTï¼šç§»åŠ¨ç„¦ç‚¹åˆ°ä¸Šä¸€ä¸ªé€‰é¡¹å¡ã€‚å¦‚æœåœ¨ç¬¬ä¸€ä¸ªé€‰é¡¹å¡ä¸Šï¼Œåˆ™ç§»åŠ¨ç„¦ç‚¹åˆ°æœ€åä¸€ä¸ªé€‰é¡¹å¡ã€‚åœ¨ä¸€ä¸ªçŸ­æš‚çš„å»¶è¿Ÿåæ¿€æ´»è·å¾—ç„¦ç‚¹çš„é€‰é¡¹å¡ã€‚</li>
+        <li>DOWN/RIGHTï¼šç§»åŠ¨ç„¦ç‚¹åˆ°ä¸‹ä¸€ä¸ªé€‰é¡¹å¡ã€‚å¦‚æœåœ¨æœ€åä¸€ä¸ªé€‰é¡¹å¡ä¸Šï¼Œåˆ™ç§»åŠ¨ç„¦ç‚¹åˆ°ç¬¬ä¸€ä¸ªé€‰é¡¹å¡ã€‚åœ¨ä¸€ä¸ªçŸ­æš‚çš„å»¶è¿Ÿåæ¿€æ´»è·å¾—ç„¦ç‚¹çš„é€‰é¡¹å¡ã€‚</li>
+        <li>HOMEï¼šç§»åŠ¨ç„¦ç‚¹åˆ°ç¬¬ä¸€ä¸ªé€‰é¡¹å¡ã€‚åœ¨ä¸€ä¸ªçŸ­æš‚çš„å»¶è¿Ÿåæ¿€æ´»è·å¾—ç„¦ç‚¹çš„é€‰é¡¹å¡ã€‚</li>
+        <li>ENDï¼šç§»åŠ¨ç„¦ç‚¹åˆ°æœ€åä¸€ä¸ªé€‰é¡¹å¡ã€‚åœ¨ä¸€ä¸ªçŸ­æš‚çš„å»¶è¿Ÿåæ¿€æ´»è·å¾—ç„¦ç‚¹çš„é€‰é¡¹å¡ã€‚</li>
+        <li>SPACEï¼šæ¿€æ´»ä¸è·å¾—ç„¦ç‚¹çš„é€‰é¡¹å¡ç›¸å…³çš„panelï¼ˆé¢æ¿ï¼‰ã€‚</li>
+        <li>ENTERï¼šæ¿€æ´»æˆ–åˆ‡æ¢ä¸è·å¾—ç„¦ç‚¹çš„é€‰é¡¹å¡ç›¸å…³çš„panelï¼ˆé¢æ¿ï¼‰ã€‚</li>
+        <li>ALT+PAGE UPï¼šç§»åŠ¨ç„¦ç‚¹åˆ°ä¸Šä¸€ä¸ªé€‰é¡¹å¡ï¼Œå¹¶ç«‹å³æ¿€æ´»ã€‚</li>
+        <li>ALT+PAGE DOWNï¼šç§»åŠ¨ç„¦ç‚¹åˆ°ä¸‹ä¸€ä¸ªé€‰é¡¹å¡ï¼Œå¹¶ç«‹å³æ¿€æ´»ã€‚</li>
+    </ul>
+
+		<p>å½“ç„¦ç‚¹åœ¨panelï¼ˆé¢æ¿ï¼‰ä¸Šæ—¶ï¼Œä¸‹é¢çš„é”®ç›˜å‘½ä»¤å¯ç”¨ï¼š</p>
+    <ul>
+        <li>CTRL+UPï¼šç§»åŠ¨ç„¦ç‚¹åˆ°ç›¸å…³çš„é€‰é¡¹å¡ã€‚</li>
+        <li>ALT+PAGE UPï¼šç§»åŠ¨ç„¦ç‚¹åˆ°ä¸Šä¸€ä¸ªé€‰é¡¹å¡ï¼Œå¹¶ç«‹å³æ¿€æ´»ã€‚</li>
+        <li>ALT+PAGE DOWNï¼šç§»åŠ¨ç„¦ç‚¹åˆ°ä¸‹ä¸€ä¸ªé€‰é¡¹å¡ï¼Œå¹¶ç«‹å³æ¿€æ´»ã€‚</li>
+    </ul>
+
+		<div>
+	<h3 id="theming">ä¸»é¢˜ï¼ˆThemingï¼‰</h3>
+            <p>é€‰é¡¹å¡éƒ¨ä»¶ï¼ˆTabs Widgetï¼‰ä½¿ç”¨ <a href="javascript:if(confirm('http://www.css88.com/theming/css-framework/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/theming/css-framework/'" tppabs="http://www.css88.com/theming/css-framework/">jQuery UI CSS æ¡†æ¶</a> æ¥å®šä¹‰å®ƒçš„å¤–è§‚å’Œæ„Ÿè§‚çš„æ ·å¼ã€‚å¦‚æœéœ€è¦ä½¿ç”¨é€‰é¡¹å¡æŒ‡å®šçš„æ ·å¼ï¼Œåˆ™å¯ä»¥ä½¿ç”¨ä¸‹é¢çš„ CSS class åç§°ï¼š</p>
+</div>
+
+    <ul>
+        <li><code>ui-tabs</code>ï¼šé€‰é¡¹å¡çš„å¤–å±‚å®¹å™¨ã€‚å½“è®¾ç½®äº† <a href="#option-collapsible"><code>collapsible</code></a> é€‰é¡¹æ—¶ï¼Œè¯¥å…ƒç´ ä¼šå¦å¤–å¸¦æœ‰ä¸€ä¸ª
+            <code>ui-tabs-collapsible</code> classã€‚
+            <ul>
+                <li><code>ui-tabs-nav</code>ï¼šé€‰é¡¹å¡åˆ—è¡¨ã€‚
+                    <ul>
+                        <li>å¯¼èˆªä¸­æ¿€æ´»çš„åˆ—è¡¨é¡¹ä¼šå¸¦æœ‰ä¸€ä¸ª <code>ui-tabs-active</code> classã€‚å†…å®¹é€šè¿‡ Ajax è°ƒç”¨åŠ è½½çš„åˆ—è¡¨é¡¹ä¼šå¸¦æœ‰ä¸€ä¸ª <code>ui-tabs-loading</code>
+                            classã€‚
+                            <ul>
+                                <li><code>ui-tabs-anchor</code>ï¼šç”¨äºåˆ‡æ¢panelï¼ˆé¢æ¿ï¼‰çš„é”šã€‚</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><code>ui-tabs-panel</code>ï¼šä¸é€‰é¡¹å¡ç›¸å…³çš„panelï¼ˆé¢æ¿ï¼‰ã€‚åªæœ‰ä¸å…¶å¯¹åº”çš„é€‰é¡¹å¡æ¿€æ´»æ—¶æ‰å¯è§ã€‚</li>
+            </ul>
+        </li>
+    </ul>
+
+		<h3>ä¾èµ–ï¼ˆDependenciesï¼‰</h3>
+    <ul>
+        <li><a href="javascript:if(confirm('http://www.css88.com/category/ui-core/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/category/ui-core/'" tppabs="http://www.css88.com/category/ui-core/">UI æ ¸å¿ƒï¼ˆUI Coreï¼‰</a></li>
+        <li><a href="javascript:if(confirm('http://www.css88.com/jQuery.widget/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/jQuery.widget/'" tppabs="http://www.css88.com/jQuery.widget/">éƒ¨ä»¶åº“ï¼ˆWidget Factoryï¼‰</a></li>
+        <li><a href="javascript:if(confirm('http://www.css88.com/category/effects-core/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/category/effects-core/'" tppabs="http://www.css88.com/category/effects-core/">ç‰¹æ•ˆæ ¸å¿ƒï¼ˆEffects Coreï¼‰</a>ï¼ˆå¯é€‰çš„ï¼›å½“ä¸ <a href="#option-show"><code>show</code></a> å’Œ
+            <a href="#option-hide"><code>hide</code></a> é€‰é¡¹ä¸€èµ·ä½¿ç”¨æ—¶ï¼‰
+        </li>
+    </ul>
+	</div>
+<h3>Additional Notes:</h3>
+<div class="longdesc"><ul><li>
+			è¯¥éƒ¨ä»¶è¦æ±‚ä¸€äº›åŠŸèƒ½æ€§çš„ CSSï¼Œå¦åˆ™å°†æ— æ³•å·¥ä½œã€‚å¦‚æœæ‚¨åˆ›å»ºäº†ä¸€ä¸ªè‡ªå®šä¹‰çš„ä¸»é¢˜ï¼Œè¯·ä½¿ç”¨å°éƒ¨ä»¶æŒ‡å®šçš„ CSS æ–‡ä»¶ä½œä¸ºèµ·ç‚¹ã€‚
+		</li></ul></div>
+<section id="options"><header><h2>Options</h2></header><div id="option-active" class="api-item first-item">
+<h3>active<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Integer'" tppabs="http://api.jquery.com/Types/#Integer">Integer</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>0</code>
+</div>
+<div>
+    å½“å‰æ‰“å¼€å“ªä¸€ä¸ªpanelï¼ˆé¢æ¿ï¼‰ã€‚
+			</div>
+<strong>æ”¯æŒå¤šä¸ªç±»å‹ï¼š</strong>
+    <ul>
+        <li>
+            <strong>Boolean</strong>:è®¾ç½® <code>active</code> ä¸º <code>false</code> å°†æŠ˜å æ‰€æœ‰çš„panelï¼ˆé¢æ¿ï¼‰ã€‚è¿™è¦æ±‚ <a href="#option-collapsible"><code>collapsible</code></a> é€‰é¡¹å¿…é¡»ä¸º <code>true</code>ã€‚
+        </li>
+        <li>
+            <strong>Integer</strong>: æ¿€æ´»æ‰“å¼€çš„panelï¼ˆé¢æ¿ï¼‰ç´¢å¼•ï¼Œä»¥é›¶ä¸ºåŸºç¡€ã€‚è´Ÿå€¼åˆ™è¡¨ç¤ºä»æœ€åä¸€ä¸ªpanelï¼ˆé¢æ¿ï¼‰åé€€é€‰æ‹©panelï¼ˆé¢æ¿ï¼‰ã€‚
+        </li>
+    </ul>
+
+
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>active</code>é€‰é¡¹çš„ Tabï¼ˆé€‰é¡¹å¡ï¼‰ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).tabs({ active: <span class="number">1</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>active</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> active = $( <span class="string">".selector"</span> ).tabs( <span class="string">"option"</span>, <span class="string">"active"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).tabs( <span class="string">"option"</span>, <span class="string">"active"</span>, <span class="number">1</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-collapsible" class="api-item">
+<h3>collapsible<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>å½“è®¾ç½®ä¸º <code>true</code>æ—¶ï¼Œæ¿€æ´»çš„panelï¼ˆé¢æ¿ï¼‰å¯ä»¥è¢«å…³é—­ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>collapsible</code>é€‰é¡¹çš„ Tabï¼ˆé€‰é¡¹å¡ï¼‰ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).tabs({ collapsible: <span class="literal">true</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>collapsible</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> collapsible = $( <span class="string">".selector"</span> ).tabs( <span class="string">"option"</span>, <span class="string">"collapsible"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).tabs( <span class="string">"option"</span>, <span class="string">"collapsible"</span>, <span class="literal">true</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-disabled" class="api-item">
+<h3>disabled<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Array'" tppabs="http://api.jquery.com/Types/#Array">Array</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>å“ªäº›æ ‡ç­¾è¢«ç¦ç”¨ã€‚</div>
+<strong>æ”¯æŒå¤šä¸ªç±»å‹ï¼š</strong><ul>
+<li>
+<strong>Boolean</strong>: å¯ç”¨æˆ–ç¦ç”¨æ‰€æœ‰é€‰é¡¹å¡ã€‚</li>
+<li>
+<strong>Array</strong>:
+    ä¸€ä¸ªæ•°ç»„ã€‚åŒ…å«ä»é›¶å¼€å§‹è®¡æ•°çš„åº”è¯¥ç¦ç”¨é€‰é¡¹å¡çš„ç´¢å¼•ï¼Œä¾‹å¦‚ï¼Œ<code>[ 0, 2 ]</code>å°†ç¦ç”¨ç¬¬ä¸€å’Œç¬¬ä¸‰ä¸ªé€‰é¡¹å¡ã€‚</li>
+</ul>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>disabled</code>é€‰é¡¹çš„ Tabï¼ˆé€‰é¡¹å¡ï¼‰ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).tabs({ disabled: [ <span class="number">0</span>, <span class="number">2</span> ] });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>disabled</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> disabled = $( <span class="string">".selector"</span> ).tabs( <span class="string">"option"</span>, <span class="string">"disabled"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).tabs( <span class="string">"option"</span>, <span class="string">"disabled"</span>, [ <span class="number">0</span>, <span class="number">2</span> ] );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-event" class="api-item">
+<h3>event<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>"click"</code>
+</div>
+<div>
+    æ¿€æ´»é€‰é¡¹å¡çš„äº‹ä»¶ç±»å‹ã€‚
+    è¦æ‚¬åœï¼ˆhoverï¼‰æ¿€æ´»é€‰é¡¹å¡ï¼Œç”¨<code>"mouseover"</code>ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>event</code>é€‰é¡¹çš„ Tabï¼ˆé€‰é¡¹å¡ï¼‰ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).tabs({ event: <span class="string">"mouseover"</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>event</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> event = $( <span class="string">".selector"</span> ).tabs( <span class="string">"option"</span>, <span class="string">"event"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).tabs( <span class="string">"option"</span>, <span class="string">"event"</span>, <span class="string">"mouseover"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-heightStyle" class="api-item">
+<h3>heightStyle<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>"content"</code>
+</div>
+<div>       æ§åˆ¶Tabï¼ˆé€‰é¡¹å¡ï¼‰éƒ¨ä»¶å’Œæ¯ä¸ªpanelï¼ˆé¢æ¿ï¼‰çš„é«˜åº¦ã€‚
+å¯èƒ½çš„å€¼ï¼š
+    <ul>
+            <li>
+                <code>"auto"</code>: æ‰€æœ‰çš„panelï¼ˆé¢æ¿ï¼‰å°†ä¼šè¢«è®¾ç½®ä¸ºæœ€é«˜çš„panelï¼ˆé¢æ¿ï¼‰çš„é«˜åº¦ã€‚
+            </li>
+            <li>
+                <code>"fill"</code>: åŸºäº tabs çš„çˆ¶å…ƒç´ çš„é«˜åº¦ï¼Œæ‰©å±•åˆ°å¯ç”¨çš„é«˜åº¦ã€‚
+            </li>
+            <li>
+                <code>"content"</code>: æ¯ä¸ªpanelï¼ˆé¢æ¿ï¼‰çš„é«˜åº¦å–å†³äºå®ƒçš„å†…å®¹ã€‚
+            </li>
+        </ul>
+
+			</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>heightStyle</code>é€‰é¡¹çš„ Tabï¼ˆé€‰é¡¹å¡ï¼‰ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).tabs({ heightStyle: <span class="string">"fill"</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>heightStyle</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> heightStyle = $( <span class="string">".selector"</span> ).tabs( <span class="string">"option"</span>, <span class="string">"heightStyle"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).tabs( <span class="string">"option"</span>, <span class="string">"heightStyle"</span>, <span class="string">"fill"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-hide" class="api-item">
+<h3>hide<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>null</code>
+</div>
+<div>
+panelï¼ˆé¢æ¿ï¼‰éšè—æ—¶çš„åŠ¨ç”»æ•ˆæœã€‚</div>
+<strong>æ”¯æŒå¤šä¸ªç±»å‹ï¼š</strong>
+    <ul>
+            <li>
+                <strong>Boolean</strong>:
+                å½“è®¾ç½®ä¸º<code>false</code>ï¼Œ
+                å°†ä¸ä½¿ç”¨åŠ¨ç”»æ•ˆæœï¼Œè¯¥panelï¼ˆé¢æ¿ï¼‰ä¼šç«‹å³è¢«éšè—ã€‚
+                å¦‚æœè®¾ç½®ä¸º<code>true</code>ï¼Œ
+                è¯¥panelï¼ˆé¢æ¿ï¼‰å°†ä¼šä»¥é»˜è®¤çš„æŒç»­æ—¶é—´å’Œé»˜è®¤çš„æ•ˆæœæ·¡å‡ºã€‚
+            </li>
+            <li>
+                <strong>Number</strong>:
+                è¯¥panelï¼ˆé¢æ¿ï¼‰å°†ä»¥æŒ‡å®šçš„æ—¶é—´å’Œé»˜è®¤çš„æ•ˆæœæ·¡å‡ºã€‚
+            </li>
+            <li>
+                <strong>String</strong>:
+                è¯¥panelï¼ˆé¢æ¿ï¼‰å°†ä½¿ç”¨æŒ‡å®šçš„æ•ˆæœè¢«éšè—ã€‚
+                è¯¥å€¼å¯ä»¥æ˜¯ä¸€ä¸ªjQueryå†…ç½®çš„åŠ¨ç”»æ–¹æ³•çš„åç§°ï¼Œ
+                å¦‚<code>"slideUp"</code>ï¼Œ
+                æˆ–ä¸€ä¸ª <a href="javascript:if(confirm('http://www.css88.com/category/effects/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/category/effects/'" tppabs="http://www.css88.com/category/effects/">jQuery UI æ•ˆæœ</a>çš„åç§°ï¼Œ
+                å¦‚<code>"fold"</code>ã€‚
+                åœ¨è¿™ä¸¤ç§æƒ…å†µä¸‹ï¼Œå°†ä½¿ç”¨é»˜è®¤æŒç»­æ—¶é—´å’Œé»˜è®¤çš„åŠ¨ç”»æ•ˆæœã€‚
+            </li>
+            <li>
+                <strong>Object</strong>: å¦‚æœè¯¥å€¼æ˜¯ä¸€ä¸ªå¯¹è±¡ï¼Œ
+                é‚£ä¹ˆ <code>effect</code>, <code>delay</code>, <code>duration</code>, å’Œ<code>easing</code>å¯èƒ½è¦æä¾›ã€‚
+                &nbsp;å¦‚æœ <code>effect</code> å±æ€§åŒ…å«ä¸€ä¸ªjQueryæ–¹æ³•çš„åç§°ï¼Œ
+                é‚£ä¹ˆè¯¥æ–¹æ³•å°†è¢«ä½¿ç”¨;
+
+                å¦åˆ™å®ƒè¢«å‡å®šä¸ºæ˜¯ä¸€ä¸ªjQuery UIçš„æ•ˆæœçš„åç§°ã€‚
+                å½“ä½¿ç”¨jQuery UI æ”¯æŒé¢å¤–è®¾ç½® çš„æ•ˆæœ
+                ï¼Œ
+                ä½ å¯ä»¥åœ¨å¯¹è±¡ä¸­åŒ…å«é‚£äº›è®¾ç½®
+                å¹¶ä¸”å®ƒä»¬å°†è¢«ä¼ é€’åˆ°çš„æ•ˆæœã€‚å¦‚æœ<code>duration</code>æŒç»­æ—¶é—´æˆ–<code>easing</code>å±æ€§è¢«çœç•¥ï¼Œ
+                é‚£ä¹ˆé»˜è®¤å€¼å°†è¢«ä½¿ç”¨ã€‚
+                å¦‚æœ<code>effect</code>è¢«çœç•¥ï¼Œ
+                é‚£ä¹ˆ<code>"fadeOut"</code> å°†è¢«ä½¿ç”¨ã€‚å¦‚æœ<code>delay</code>è¢«çœç•¥ï¼Œ
+                é‚£ä¹ˆå°†ä¸ä½¿ç”¨å»¶è¿Ÿã€‚
+            </li>
+        </ul>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>hide</code>é€‰é¡¹çš„ Tabï¼ˆé€‰é¡¹å¡ï¼‰ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).tabs({ hide: { effect: <span class="string">"explode"</span>, duration: <span class="number">1000</span> } });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>hide</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> hide = $( <span class="string">".selector"</span> ).tabs( <span class="string">"option"</span>, <span class="string">"hide"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).tabs( <span class="string">"option"</span>, <span class="string">"hide"</span>, { effect: <span class="string">"explode"</span>, duration: <span class="number">1000</span> } );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-show" class="api-item">
+<h3>show<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>null</code>
+</div>
+<div>panelï¼ˆé¢æ¿ï¼‰æ˜¾ç¤ºæ—¶çš„åŠ¨ç”»æ•ˆæœã€‚</div>
+<strong>æ”¯æŒå¤šä¸ªç±»å‹ï¼š</strong><ul>
+            <li>
+                <strong>Boolean</strong>:
+                å½“è®¾ç½®ä¸º<code>false</code>ï¼Œ
+                å°†ä¸ä½¿ç”¨åŠ¨ç”»æ•ˆæœï¼Œè¯¥panelï¼ˆé¢æ¿ï¼‰ä¼šç«‹å³è¢«éšè—ã€‚
+                å¦‚æœè®¾ç½®ä¸º<code>true</code>ï¼Œ
+                è¯¥panelï¼ˆé¢æ¿ï¼‰å°†ä¼šä»¥é»˜è®¤çš„æŒç»­æ—¶é—´å’Œé»˜è®¤çš„æ•ˆæœæ·¡å‡ºã€‚
+            </li>
+            <li>
+                <strong>Number</strong>:
+                è¯¥panelï¼ˆé¢æ¿ï¼‰å°†ä»¥æŒ‡å®šçš„æ—¶é—´å’Œé»˜è®¤çš„æ•ˆæœæ·¡å‡ºã€‚
+            </li>
+            <li>
+                <strong>String</strong>:
+                è¯¥panelï¼ˆé¢æ¿ï¼‰å°†ä½¿ç”¨æŒ‡å®šçš„æ•ˆæœè¢«éšè—ã€‚
+                è¯¥å€¼å¯ä»¥æ˜¯ä¸€ä¸ªjQueryå†…ç½®çš„åŠ¨ç”»æ–¹æ³•çš„åç§°ï¼Œ
+                å¦‚<code>"slideUp"</code>ï¼Œ
+                æˆ–ä¸€ä¸ª <a href="javascript:if(confirm('http://www.css88.com/category/effects/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/category/effects/'" tppabs="http://www.css88.com/category/effects/">jQuery UI æ•ˆæœ</a>çš„åç§°ï¼Œ
+                å¦‚<code>"fold"</code>ã€‚
+                åœ¨è¿™ä¸¤ç§æƒ…å†µä¸‹ï¼Œå°†ä½¿ç”¨é»˜è®¤æŒç»­æ—¶é—´å’Œé»˜è®¤çš„åŠ¨ç”»æ•ˆæœã€‚
+            </li>
+            <li>
+                <strong>Object</strong>: å¦‚æœè¯¥å€¼æ˜¯ä¸€ä¸ªå¯¹è±¡ï¼Œ
+                é‚£ä¹ˆ <code>effect</code>, <code>delay</code>, <code>duration</code>, å’Œ<code>easing</code>å¯èƒ½è¦æä¾›ã€‚
+                &nbsp;å¦‚æœ <code>effect</code> å±æ€§åŒ…å«ä¸€ä¸ªjQueryæ–¹æ³•çš„åç§°ï¼Œ
+                é‚£ä¹ˆè¯¥æ–¹æ³•å°†è¢«ä½¿ç”¨;
+
+                å¦åˆ™å®ƒè¢«å‡å®šä¸ºæ˜¯ä¸€ä¸ªjQuery UIçš„æ•ˆæœçš„åç§°ã€‚
+                å½“ä½¿ç”¨jQuery UI æ”¯æŒé¢å¤–è®¾ç½® çš„æ•ˆæœ
+                ï¼Œ
+                ä½ å¯ä»¥åœ¨å¯¹è±¡ä¸­åŒ…å«é‚£äº›è®¾ç½®
+                å¹¶ä¸”å®ƒä»¬å°†è¢«ä¼ é€’åˆ°çš„æ•ˆæœã€‚å¦‚æœ<code>duration</code>æŒç»­æ—¶é—´æˆ–<code>easing</code>å±æ€§è¢«çœç•¥ï¼Œ
+                é‚£ä¹ˆé»˜è®¤å€¼å°†è¢«ä½¿ç”¨ã€‚
+                å¦‚æœ<code>effect</code>è¢«çœç•¥ï¼Œ
+                é‚£ä¹ˆ<code>"fadeOut"</code> å°†è¢«ä½¿ç”¨ã€‚å¦‚æœ<code>delay</code>è¢«çœç•¥ï¼Œ
+                é‚£ä¹ˆå°†ä¸ä½¿ç”¨å»¶è¿Ÿã€‚
+            </li>
+        </ul>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>show</code>é€‰é¡¹çš„ Tabï¼ˆé€‰é¡¹å¡ï¼‰ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).tabs({ show: { effect: <span class="string">"blind"</span>, duration: <span class="number">800</span> } });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>show</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> show = $( <span class="string">".selector"</span> ).tabs( <span class="string">"option"</span>, <span class="string">"show"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).tabs( <span class="string">"option"</span>, <span class="string">"show"</span>, { effect: <span class="string">"blind"</span>, duration: <span class="number">800</span> } );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div></section><section id="methods"><header><h2>Methods</h2></header><div id="method-destroy"><div class="api-item first-item">
+<h3>destroy()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div> å®Œå…¨ç§»é™¤  Tabï¼ˆé€‰é¡¹å¡ï¼‰ åŠŸèƒ½. è¿™å°†ä½¿å…ƒç´ è¿”å›åˆ°ä¹‹å‰çš„åˆå§‹åŒ–çŠ¶æ€ã€‚
+	</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ destroy æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).tabs( <span class="string">"destroy"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div>
+<div id="method-disable">
+<div class="api-item">
+<h3>disable()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>ç¦ç”¨å…¨éƒ¨çš„ tabsï¼ˆé€‰é¡¹å¡ï¼‰ã€‚</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨è¯¥æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).tabs( <span class="string">"disable"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div class="api-item">
+<h3>disable( index )<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>  ç¦ç”¨æŸä¸ª tabsï¼ˆé€‰é¡¹å¡ï¼‰ã€‚é€‰å®šçš„é€‰é¡¹å¡ä¸èƒ½è¢«ç¦ç”¨ã€‚
+Â è¦ä¸€æ¬¡ç¦ç”¨å¤šä¸ªé€‰é¡¹å¡ï¼Œ
+è®¾ç½®<a href="#option-disabled"><code>disabled</code></a> é€‰é¡¹ï¼š <code>$( "#tabs" ).tabs( "option", "disabled", [ 1, 2, 3 ] )</code>.
+				</div>
+<ul><li>
+<div><strong>index</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a>
+</div>
+<div>å“ªä¸ª tabsï¼ˆé€‰é¡¹å¡ï¼‰è¢«ç¦ç”¨ã€‚</div>
+</li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨è¯¥æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).tabs( <span class="string">"disable"</span>, <span class="number">1</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+</div>
+<div id="method-enable">
+<div class="api-item">
+<h3>enable()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>å¯ç”¨å…¨éƒ¨çš„ tabsï¼ˆé€‰é¡¹å¡ï¼‰ã€‚</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨è¯¥æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).tabs( <span class="string">"enable"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div class="api-item">
+<h3>enable( index )<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>
+    å¯ç”¨æŸä¸ª tabsï¼ˆé€‰é¡¹å¡ï¼‰ã€‚
+    Â è¦ä¸€æ¬¡è¦å¯å¤šä¸ªé€‰é¡¹å¡ï¼Œå¯ä»¥é‡ç½®disabledå±æ€§ï¼Œå¦‚ï¼š <code>$( "#example" ).tabs( "option", "disabled", [] );</code>.</div>
+<ul><li>
+<div><strong>index</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a>
+</div>
+<div>Which tab to enable.</div>
+</li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨è¯¥æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).tabs( <span class="string">"enable"</span>, <span class="number">1</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+</div>
+<div id="method-load"><div class="api-item">
+<h3>load( index )<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>åŠ è½½è¿œç¨‹é€‰é¡¹å¡çš„é¢æ¿å†…å®¹ã€‚</div>
+<ul><li>
+<div><strong>index</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a>
+</div>
+<div>å“ªä¸ªtabséœ€è¦åŠ è½½</div>
+</li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ load æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).tabs( <span class="string">"load"</span>, <span class="number">1</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div>
+<div id="method-option">
+<div class="api-item">
+<h3>option( optionName )<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a></span>
+</h3>
+<div>è·å–å½“å‰ä¸æŒ‡å®šçš„ <code>optionName</code> å…³è”çš„å€¼ã€‚</div>
+<ul><li>
+<div><strong>optionName</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a>
+</div>
+<div>è¦è·å–å€¼çš„é€‰é¡¹çš„åç§°ã€‚</div>
+</li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨è¯¥æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="keyword">var</span> isDisabled = $( <span class="string">".selector"</span> ).tabs( <span class="string">"option"</span>, <span class="string">"disabled"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div class="api-item">
+<h3>option()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#PlainObject'" tppabs="http://api.jquery.com/Types/#PlainObject">PlainObject</a></span>
+</h3>
+<div>è·å–ä¸€ä¸ªåŒ…å«é”®/å€¼å¯¹çš„å¯¹è±¡ï¼Œé”®/å€¼å¯¹è¡¨ç¤ºå½“å‰ tabs é€‰é¡¹å“ˆå¸Œã€‚</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨è¯¥æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="keyword">var</span> options = $( <span class="string">".selector"</span> ).tabs( <span class="string">"option"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div class="api-item">
+<h3>option( optionName, value )<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>è®¾ç½®ä¸æŒ‡å®šçš„ <code>optionName</code> å…³è”çš„ tabs é€‰é¡¹çš„å€¼ã€‚</div>
+<ul>
+<li>
+<div><strong>optionName</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a>
+</div>
+<div>è¦è®¾ç½®çš„é€‰é¡¹çš„åç§°ã€‚</div>
+</li>
+<li>
+<div><strong>value</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>è¦ä¸ºé€‰é¡¹è®¾ç½®çš„å€¼ã€‚</div>
+</li>
+</ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨è¯¥æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).tabs( <span class="string">"option"</span>, <span class="string">"disabled"</span>, <span class="literal">true</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div class="api-item">
+<h3>option( options )<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>ä¸º  tabsï¼ˆé€‰é¡¹å¡ï¼‰ è®¾ç½®ä¸€ä¸ªæˆ–å¤šä¸ªé€‰é¡¹ã€‚</div>
+<ul><li>
+<div><strong>options</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>è¦è®¾ç½®çš„ option-value å¯¹ã€‚</div>
+</li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨è¯¥æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).tabs( <span class="string">"option"</span>, { disabled: <span class="literal">true</span> } );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+</div>
+<div id="method-refresh"><div class="api-item">
+<h3>refresh()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+
+    <div>
+        å¤„ç†ä»»ä½•åœ¨ DOM ä¸­ç›´æ¥æ·»åŠ æˆ–ç§»é™¤çš„æ ‡é¢˜å’Œé¢æ¿ï¼Œå¹¶é‡æ–°è®¡ç®— tabsï¼ˆé€‰é¡¹å¡ï¼‰ çš„é«˜åº¦ã€‚ç»“æœå–å†³äºå†…å®¹å’Œ <a href="#option-heightStyle"><code>heightStyle</code></a> é€‰é¡¹ã€‚</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ refresh æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).tabs( <span class="string">"refresh"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div>
+<div id="method-widget"><div class="api-item">
+<h3>widget()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a></span>
+</h3>
+<div>     è¿”å›ä¸€ä¸ªåŒ…å« tabsï¼ˆé€‰é¡¹å¡ï¼‰ çš„ <code>jQuery</code> å¯¹è±¡ã€‚
+	</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ widget æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="keyword">var</span> widget = $( <span class="string">".selector"</span> ).tabs( <span class="string">"widget"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div></section><section id="events"><header><h2>Events</h2></header><div id="event-activate" class="api-item first-item">
+<h3>activate( event, ui )<span class="returns">Type: <code>tabsactivate</code></span>
+</h3>
+<div>
+    <p>
+                é¢æ¿è¢«æ¿€æ´»åè§¦å‘ï¼ˆåœ¨åŠ¨ç”»å®Œæˆä¹‹åï¼‰ã€‚å¦‚æœ tabsï¼ˆé€‰é¡¹å¡ï¼‰ ä¹‹å‰æ˜¯å…³é—­çš„ï¼Œåˆ™ <code>ui.oldTab</code> å’Œ <code>ui.oldPanel</code> å°†æ˜¯ç©ºçš„ jQuery
+                å¯¹è±¡ã€‚å¦‚æœ tabsï¼ˆé€‰é¡¹å¡ï¼‰ æ­£åœ¨æŠ˜å ï¼Œåˆ™ <code>ui.newTab</code> å’Œ <code>ui.newPanel</code> å°†æ˜¯ç©ºçš„ jQuery å¯¹è±¡ã€‚</p>
+
+    <div class="warning">
+                <strong>æ³¨æ„ï¼š</strong>
+                ç”±äº <code>activate</code> äº‹ä»¶åªæœ‰åœ¨é¢æ¿æ¿€æ´»æ—¶æ‰èƒ½è§¦å‘ï¼Œå½“åˆ›å»º tabsï¼ˆé€‰é¡¹å¡ï¼‰  éƒ¨ä»¶æ—¶ï¼Œæœ€åˆçš„é¢æ¿ä¸ä¼šè§¦å‘è¯¥äº‹ä»¶ã€‚å¦‚æœæ‚¨éœ€è¦ä¸€ä¸ªç”¨äºéƒ¨ä»¶åˆ›å»ºçš„é’©ï¼Œè¯·ä½¿ç”¨ <a href="#event-create"><code>create</code></a> äº‹ä»¶ã€‚
+            </div>
+
+    <ul>
+        <li>
+            <div><strong>event</strong></div>
+            <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Event'" tppabs="http://api.jquery.com/Types/#Event">Event</a>
+            </div>
+            <div></div>
+        </li>
+        <li>
+            <div><strong>ui</strong></div>
+            <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+            </div>
+            <div></div>
+            <ul>
+                <li>
+                    <div><strong>newTab</strong></div>
+                    <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a>
+                    </div>
+                    <div>åˆšè¢«æ¿€æ´»çš„é€‰é¡¹å¡ã€‚</div>
+                </li>
+                <li>
+                    <div><strong>oldTab</strong></div>
+                    <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a>
+                    </div>
+                    <div>åˆšè¢«å–æ¶ˆæ¿€æ´»çš„é€‰é¡¹å¡ã€‚</div>
+                </li>
+                <li>
+                    <div><strong>newPanel</strong></div>
+                    <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a>
+                    </div>
+                    <div>åˆšè¢«æ¿€æ´»çš„é¢æ¿ã€‚</div>
+                </li>
+                <li>
+                    <div><strong>oldPanel</strong></div>
+                    <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a>
+                    </div>
+                    <div>åˆšè¢«å–æ¶ˆæ¿€æ´»çš„é¢æ¿ã€‚</div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+<div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š activate  å›è°ƒçš„ Tabï¼ˆé€‰é¡¹å¡é¢æ¿ï¼‰ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).tabs({</code></div></div><div class="container"><div class="line"><code>  activate: <span class="keyword">function</span>( event, ui ) {}</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>ç»‘å®šä¸€ä¸ªäº‹ä»¶ç›‘å¬å™¨åˆ°  tabsactivate äº‹ä»¶ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).on( <span class="string">"tabsactivate"</span>, <span class="keyword">function</span>( event, ui ) {} );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div id="event-beforeActivate" class="api-item">
+<h3>beforeActivate( event, ui )<span class="returns">Type: <code>tabsbeforeactivate</code></span>
+</h3>
+    <div>
+        tabsï¼ˆé€‰é¡¹å¡ï¼‰è¢«æ¿€æ´»å‰ç›´æ¥è§¦å‘ã€‚å¯ä»¥å–æ¶ˆä»¥é˜²æ­¢tabsï¼ˆé€‰é¡¹å¡ï¼‰è¢«æ¿€æ´»ã€‚å¦‚æœ tabsï¼ˆé€‰é¡¹å¡ï¼‰ å½“å‰æ˜¯å…³é—­çš„ï¼Œåˆ™ <code>ui.oldTab</code> å’Œ <code>ui.oldPanel</code> å°†æ˜¯ç©ºçš„ jQuery å¯¹è±¡ã€‚å¦‚æœ accordion æ­£åœ¨æŠ˜å ï¼Œåˆ™ <code>ui.newTab</code> å’Œ <code>ui.newPanel</code> å°†æ˜¯ç©ºçš„ jQuery å¯¹è±¡ã€‚
+
+
+        </div>
+    <ul>
+           <li>
+               <div><strong>event</strong></div>
+               <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Event'" tppabs="http://api.jquery.com/Types/#Event">Event</a>
+               </div>
+               <div></div>
+           </li>
+           <li>
+               <div><strong>ui</strong></div>
+               <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+               </div>
+               <div></div>
+               <ul>
+                   <li>
+                       <div><strong>newTab</strong></div>
+                       <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a>
+                       </div>
+                       <div>åˆšè¢«æ¿€æ´»çš„é€‰é¡¹å¡ã€‚</div>
+                   </li>
+                   <li>
+                       <div><strong>oldTab</strong></div>
+                       <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a>
+                       </div>
+                       <div>åˆšè¢«å–æ¶ˆæ¿€æ´»çš„é€‰é¡¹å¡ã€‚</div>
+                   </li>
+                   <li>
+                       <div><strong>newPanel</strong></div>
+                       <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a>
+                       </div>
+                       <div>åˆšè¢«æ¿€æ´»çš„é¢æ¿ã€‚</div>
+                   </li>
+                   <li>
+                       <div><strong>oldPanel</strong></div>
+                       <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a>
+                       </div>
+                       <div>åˆšè¢«å–æ¶ˆæ¿€æ´»çš„é¢æ¿ã€‚</div>
+                   </li>
+               </ul>
+           </li>
+       </ul>
+<div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š beforeActivate  å›è°ƒçš„ Tabï¼ˆé€‰é¡¹å¡é¢æ¿ï¼‰ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).tabs({</code></div></div><div class="container"><div class="line"><code>  beforeActivate: <span class="keyword">function</span>( event, ui ) {}</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>ç»‘å®šä¸€ä¸ªäº‹ä»¶ç›‘å¬å™¨åˆ°  tabsbeforeactivate äº‹ä»¶ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).on( <span class="string">"tabsbeforeactivate"</span>, <span class="keyword">function</span>( event, ui ) {} );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div id="event-beforeLoad" class="api-item">
+<h3>beforeLoad( event, ui )<span class="returns">Type: <code>tabsbeforeload</code></span>
+</h3>
+<div>
+				<p>
+                    åœ¨ä¸€ä¸ªè¿œç¨‹é€‰é¡¹å¡è¢«åŠ è½½ä¹‹å‰ï¼Œ<a href="#event-beforeActivate"><code>beforeActivate</code></a>äº‹ä»¶ä¹‹åï¼Œè§¦å‘è¯¥äº‹ä»¶ã€‚å¯ä»¥å–æ¶ˆï¼Œä»¥é˜²æ­¢ tabsï¼ˆé€‰é¡¹å¡ï¼‰é¢æ¿åŠ è½½å†…å®¹;è™½ç„¶é¢æ¿ä»ç„¶ä¼šè¢«æ¿€æ´»ã€‚
+                    è¯¥äº‹ä»¶è¢«è§¦å‘Ajaxè¯·æ±‚å‘é€ä¹‹å‰ï¼Œè¿™æ ·å¯ä»¥ä½¿ç”¨<code>ui.jqXHR</code> å’Œ <code>ui.ajaxSettings</code>ä¿®æ”¹ã€‚</p>
+				<p><em>æ³¨æ„ï¼š
+                    è™½ç„¶<code>ui.ajaxSettings</code>è¢«æä¾›ï¼Œå¹¶ä¸”å¯ä»¥è¢«ä¿®æ”¹ï¼Œ
+                    å…¶ä¸­çš„ä¸€äº›è®¾ç½®å·²ç»é€šè¿‡jQueryå¤„ç†ã€‚
+                    ä¾‹å¦‚ï¼Œ<a href="javascript:if(confirm('http://api.jquery.com/jQuery.ajaxPrefilter/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/jQuery.ajaxPrefilter/'" tppabs="http://api.jquery.com/jQuery.ajaxPrefilter/">prefilters</a>å·²ç»è¢«åº”ç”¨ï¼Œ<code>data</code>å·²è¢«å¤„ç†ï¼Œè¿˜æœ‰<code>type</code>å·²ç»ç¡®å®šã€‚
+                    ï¼Œ
+                    å› ä¸º<code>beforeSend</code>ä½œä¸º<a href="javascript:if(confirm('http://api.jquery.com/jQuery.ajax/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/jQuery.ajax/'" tppabs="http://api.jquery.com/jQuery.ajax/"><code>jQuery.ajax()</code></a>çš„å›è°ƒï¼Œ<code>beforeLoad</code> äº‹ä»¶åŒæ—¶æ˜¯å‘ç”Ÿçš„ï¼Œå› æ­¤å…·æœ‰ç›¸åŒçš„é™åˆ¶ã€‚
+
+
+                    </em></p>
+			</div>
+    <ul>
+        <li>
+            <div><strong>event</strong></div>
+            <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Event'" tppabs="http://api.jquery.com/Types/#Event">Event</a>
+            </div>
+            <div></div>
+        </li>
+        <li>
+            <div><strong>ui</strong></div>
+            <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+            </div>
+            <div></div>
+            <ul>
+                <li>
+                    <div><strong>tab</strong></div>
+                    <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a>
+                    </div>
+                    <div>æ­£åœ¨åŠ è½½çš„é€‰é¡¹å¡ã€‚</div>
+                </li>
+                <li>
+                    <div><strong>panel</strong></div>
+                    <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a>
+                    </div>
+                    <div>å°†Ajaxå“åº”å¡«å……çš„é¢æ¿ã€‚</div>
+                </li>
+                <li>
+                    <div><strong>jqXHR</strong></div>
+                    <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jqXHR'" tppabs="http://api.jquery.com/Types/#jqXHR">jqXHR</a>
+                    </div>
+                    <div>è¢«è¯·æ±‚å†…å®¹çš„ <code>jqXHR</code> å¯¹è±¡ã€‚</div>
+                </li>
+                <li>
+                    <div><strong>ajaxSettings</strong></div>
+                    <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+                    </div>
+                    <div>ç”¨äºç”±<a
+                                                href="javascript:if(confirm('http://api.jquery.com/jQuery.ajax/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/jQuery.ajax/'" tppabs="http://api.jquery.com/jQuery.ajax/"><code>jQuery.ajax</code></a>è¯·æ±‚å†…å®¹çš„è®¾ç½®ã€‚
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+<div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š beforeLoad  å›è°ƒçš„ Tabï¼ˆé€‰é¡¹å¡é¢æ¿ï¼‰ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).tabs({</code></div></div><div class="container"><div class="line"><code>  beforeLoad: <span class="keyword">function</span>( event, ui ) {}</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>ç»‘å®šä¸€ä¸ªäº‹ä»¶ç›‘å¬å™¨åˆ°  tabsbeforeload äº‹ä»¶ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).on( <span class="string">"tabsbeforeload"</span>, <span class="keyword">function</span>( event, ui ) {} );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div id="event-create" class="api-item">
+<h3>create( event, ui )<span class="returns">Type: <code>tabscreate</code></span>
+</h3>
+
+    <div>å½“åˆ›å»º tabsï¼ˆé€‰é¡¹å¡) æ—¶è§¦å‘ã€‚å¦‚æœ  tabsï¼ˆé€‰é¡¹å¡)  æ˜¯å…³é—­çš„ï¼Œ<code>ui.tab</code> å’Œ <code>ui.panel</code> å°†æ˜¯ç©ºçš„ jQuery å¯¹è±¡ã€‚
+     </div>
+<ul>
+<li>
+<div><strong>event</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Event'" tppabs="http://api.jquery.com/Types/#Event">Event</a>
+</div>
+<div></div>
+</li>
+<li>
+<div><strong>ui</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div></div>
+<ul>
+<li>
+<div><strong>tab</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a>
+</div>
+<div>æ¿€æ´»çš„é€‰é¡¹å¡</div>
+</li>
+<li>
+<div><strong>panel</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a>
+</div>
+<div>æ¿€æ´»çš„é¢æ¿ã€‚</div>
+</li>
+</ul>
+</li>
+</ul>
+<div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š create  å›è°ƒçš„ Tabï¼ˆé€‰é¡¹å¡é¢æ¿ï¼‰ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).tabs({</code></div></div><div class="container"><div class="line"><code>  create: <span class="keyword">function</span>( event, ui ) {}</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>ç»‘å®šä¸€ä¸ªäº‹ä»¶ç›‘å¬å™¨åˆ°  tabscreate äº‹ä»¶ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).on( <span class="string">"tabscreate"</span>, <span class="keyword">function</span>( event, ui ) {} );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div id="event-load" class="api-item">
+<h3>load( event, ui )<span class="returns">Type: <code>tabsload</code></span>
+</h3>
+<div>è¿œç¨‹é€‰é¡¹å¡åŠ è½½åè§¦å‘è¯¥äº‹ä»¶ã€‚</div>
+<ul>
+<li>
+<div><strong>event</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Event'" tppabs="http://api.jquery.com/Types/#Event">Event</a>
+</div>
+<div></div>
+</li>
+<li>
+<div><strong>ui</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div></div>
+<ul>
+<li>
+<div><strong>tab</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a>
+</div>
+<div>åˆšåŠ è½½çš„é€‰é¡¹å¡ã€‚</div>
+</li>
+<li>
+<div><strong>panel</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a>
+</div>
+<div>åˆšåˆšå¡«å……çš„Ajaxå“åº”çš„é¢æ¿ã€‚</div>
+</li>
+</ul>
+</li>
+</ul>
+<div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š load  å›è°ƒçš„ Tabï¼ˆé€‰é¡¹å¡é¢æ¿ï¼‰ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).tabs({</code></div></div><div class="container"><div class="line"><code>  load: <span class="keyword">function</span>( event, ui ) {}</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>ç»‘å®šä¸€ä¸ªäº‹ä»¶ç›‘å¬å™¨åˆ°  tabsload äº‹ä»¶ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).on( <span class="string">"tabsload"</span>, <span class="keyword">function</span>( event, ui ) {} );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></section><section class="entry-examples" id="entry-examples"><header><h2>Example:</h2></header><div class="entry-example" id="example-0">
+<h4><span class="desc">ä¸€ä¸ªç®€å•çš„ jQuery UI é€‰é¡¹å¡ï¼ˆTabsï¼‰ã€‚</span></h4>
+<div class="syntaxhighlighter xml ">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+						<div class="line n6">6</div>
+
+						<div class="line n7">7</div>
+
+						<div class="line n8">8</div>
+
+						<div class="line n9">9</div>
+
+						<div class="line n10">10</div>
+
+						<div class="line n11">11</div>
+
+						<div class="line n12">12</div>
+
+						<div class="line n13">13</div>
+
+						<div class="line n14">14</div>
+
+						<div class="line n15">15</div>
+
+						<div class="line n16">16</div>
+
+						<div class="line n17">17</div>
+
+						<div class="line n18">18</div>
+
+						<div class="line n19">19</div>
+
+						<div class="line n20">20</div>
+
+						<div class="line n21">21</div>
+
+						<div class="line n22">22</div>
+
+						<div class="line n23">23</div>
+
+						<div class="line n24">24</div>
+
+						<div class="line n25">25</div>
+
+						<div class="line n26">26</div>
+
+						<div class="line n27">27</div>
+
+						<div class="line n28">28</div>
+
+						<div class="line n29">29</div>
+
+						<div class="line n30">30</div>
+
+						<div class="line n31">31</div>
+
+						<div class="line n32">32</div>
+
+						<div class="line n33">33</div>
+
+						<div class="line n34">34</div>
+
+						<div class="line n35">35</div>
+
+						<div class="line n36">36</div>
+
+						<div class="line n37">37</div>
+
+						<div class="line n38">38</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="doctype">&lt;!doctype html&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">html</span> <span class="attribute">lang</span>=<span class="value">"en"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">head</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">title</span>&gt;</span>tabs demo<span class="tag">&lt;/<span class="title">title</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">href</span>=<span class="value">"//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"//code.jquery.com/jquery-1.10.2.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"//code.jquery.com/ui/1.10.4/jquery-ui.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">head</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">body</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"tabs"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">ul</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#fragment-1"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span>&gt;</span>One<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#fragment-2"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span>&gt;</span>Two<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>    <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#fragment-3"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span>&gt;</span>Three<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"fragment-1"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>    <span class="tag">&lt;<span class="title">p</span>&gt;</span>First tab is active by default:<span class="tag">&lt;/<span class="title">p</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>    <span class="tag">&lt;<span class="title">pre</span>&gt;</span><span class="tag">&lt;<span class="title">code</span>&gt;</span>$( "#tabs" ).tabs(); <span class="tag">&lt;/<span class="title">code</span>&gt;</span><span class="tag">&lt;/<span class="title">pre</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"fragment-2"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</code></div></div><div class="container"><div class="line"><code>    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"fragment-3"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</code></div></div><div class="container"><div class="line"><code>    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</code></div></div><div class="container"><div class="line"><code>    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"></span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">"#tabs"</span> ).tabs();</code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">body</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">html</span>&gt;</span></code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<h4>Demo:</h4>
+<div class="demo code-demo"></div>
+</div></section>
+</div></article>	</div><!-- .entry-content -->
+
+</article>
+</div>
+
+
+  </div>
+</div>
+<script type="text/javascript" src="../js/search.js" tppabs="http://www.css88.com/jquery-ui-api/js/search.js"></script>
+<script type="text/javascript" src="../js/gotop.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/gotop.min.js"></script>
+<script type="text/javascript">
+	goToTop.init();
+</script>
+<style>
+    #googlead{position:fixed;bottom:-250px;right:10px;width: 250px}
+.hidden{display: none;}
+</style>
+<div id="googlead">
+    <script type="text/javascript">
+        /*jquery-ui-fixed*/
+        var cpro_id = "u1731049";
+    </script>
+    <script src="../../../cpro.baidustatic.com/cpro/ui/c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+</div>
+<script type="text/javascript">setTimeout(function(){
+  $("#googlead").removeClass("hidden").animate({bottom:10})
+},3000)</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../www.google-analytics.com/analytics.js'/*tpa=http://www.google-analytics.com/analytics.js*/,'ga');
+
+  ga('create', 'UA-3448069-12', 'http://www.css88.com/jquery-ui-api/tabs/css88.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

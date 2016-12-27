@@ -435,7 +435,6 @@
         text-align: center;
         padding: 5px 0px 5px;
         color: #666;
-        border-bottom: 2px dotted #eee;
     }
     .currentname:hover{
         color: chocolate;
@@ -444,7 +443,7 @@
     .currenttags{
         width: 90%;
         margin: 0 auto;
-        margin-top: 5px;
+        margin-top: 15px;
         margin-bottom: 10px;
         text-align: center;
     }
@@ -516,7 +515,7 @@
     .blog_right_allgroupby .currenttags_{
         width: 90%;
         margin: 0 auto;
-        margin-top: 10px;
+        margin-top: 15px;
         padding-bottom: 5px;
     }
     .blog_right_allgroupby .currenttag{

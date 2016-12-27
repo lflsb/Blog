@@ -1,0 +1,1738 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Spinner Widget | jQuery UI API ä¸­æ–‡æ–‡æ¡£ | jQuery APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery 1.0 - jQuery 2.0)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="jQuery,API,ä¸­æ–‡ç‰ˆ,ä¸­æ–‡æ–‡æ¡£,ä¸­æ–‡æ‰‹å†Œ,chm" />
+<meta name="description" content="jQuery APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery 1.0 - jQuery 2.0)" />
+<link rel="shortcut icon" type="image/x-icon" href="http://www.css88.com/jquery-ui-api/favicon.ico" />
+
+<!--<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />-->
+<link rel="stylesheet" type="text/css" media="screen" href="../cssstyle/main.min.css" tppabs="http://www.css88.com/jquery-ui-api/cssstyle/main.min.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="../cssstyle/style.css" tppabs="http://www.css88.com/jquery-ui-api/cssstyle/style.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="../cssstyle/jquery.css" tppabs="http://www.css88.com/jquery-ui-api/cssstyle/jquery.css" />
+<script type="text/javascript" src="../js/jquery.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/highlight.js" tppabs="http://www.css88.com/jquery-ui-api/js/highlight.js"></script>
+<script type="text/javascript" src="../js/jquery.ba-bbq.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/jquery.ba-bbq.min.js"></script>
+<script type="text/javascript" src="../js/jquery.ba-dotimeout.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/jquery.ba-dotimeout.min.js"></script>
+<script type="text/javascript" src="../js/main.js" tppabs="http://www.css88.com/jquery-ui-api/js/main.js"></script>
+<!--<script type="text/javascript" src="js/main.min.js"></script>-->
+</head>
+
+<body>
+<div id="header_warp">
+    <div class="header-box">
+            <div class="logo">
+                <h1><a href="../index.htm" tppabs="http://www.css88.com/jquery-ui-api/"
+                       title="jQuery UI APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery UI 1.10)">jQuery UI APIä¸­æ–‡æ–‡æ¡£</a></h1>
+            </div>
+            <ul class="header-nav">
+                <!--<li><a href="http://www.css88.com/jquery-ui-api/old.html" class="nav-link" title="jQuery UI APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery UI 1.10)">æ—§ç‰ˆ</a>
+                </li>-->
+                <li><a href="javascript:if(confirm('http://www.css88.com/jqapi-1.9/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/jqapi-1.9/'" tppabs="http://www.css88.com/jqapi-1.9/" class="nav-link" title="é€‚ç”¨jQuery 1.0 â€“ jQuery 1.10.2,jQuery 2.0 â€“ jQuery 2.0.3">jQuery APIä¸­æ–‡æ–‡æ¡£</a>
+                <li><a href="javascript:if(confirm('http://www.css88.com/archives/4737  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/archives/4737'" tppabs="http://www.css88.com/archives/4737" class="nav-link" title="jQuery UI APIä¸­æ–‡æ–‡æ¡£æ›´æ–°ä¿¡æ¯">æ›´æ–°ä¿¡æ¯</a></li>
+
+                <li><a href="javascript:if(confirm('http://www.css88.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/'" tppabs="http://www.css88.com/" class="nav-link">å‰ç«¯å¼€å‘</a></li>
+            </ul>
+            <!--<input type="search" placeholder="æœç´¢API" autosave="searchdoc" results="10" id="search-field" autocomplete="off">-->
+        </div>
+</div>
+<div id="navigation">
+	
+<aside id="categories" class="widget">
+    <h3 class="widget-title">jQuery UI 1.10</h3>
+    <ul>
+    				<li class="cat-item cat-item-2 current-cat"><a href="../category/effects/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/effects/" title="View all posts filed under Effects">Effects</a>
+    </li>
+    	<li class="cat-item cat-item-10"><a href="../category/effects-core/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/effects-core/" title="View all posts filed under Effects Core">Effects Core</a>
+    </li>
+    	<li class="cat-item cat-item-4"><a href="../category/interactions/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/interactions/" title="View all posts filed under Interactions">Interactions</a>
+    </li>
+    	<li class="cat-item cat-item-8"><a href="../category/overrides/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/overrides/" title="View all posts filed under Method Overrides">Method Overrides</a>
+    </li>
+    	<li class="cat-item cat-item-6"><a href="../category/methods/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/methods/" title="View all posts filed under Methods">Methods</a>
+    </li>
+    	<li class="cat-item cat-item-7"><a href="../category/selectors/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/selectors/" title="View all posts filed under Selectors">Selectors</a>
+    </li>
+    	<li class="cat-item cat-item-12"><a href="../category/theming/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/theming/" title="View all posts filed under Theming">Theming</a>
+    </li>
+    	<li class="cat-item cat-item-9"><a href="../category/ui-core/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/ui-core/" title="View all posts filed under UI Core">UI Core</a>
+    </li>
+    	<li class="cat-item cat-item-5"><a href="../category/utilities/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/utilities/" title="View all posts filed under Utilities">Utilities</a>
+    </li>
+    	<li class="cat-item cat-item-3"><a href="../category/widgets/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/widgets/" title="View all posts filed under Widgets">Widgets</a>
+    </li>
+    		</ul>
+  </aside>
+
+
+    <div style=" height:60px;margin-left:20px"><p
+                        style="font-size:12px; line-height:1.5; margin:8px 0">æ‹ç –çº é”™ è¯·å¾®åšä¸Š <a href="javascript:if(confirm('http://weibo.com/148246293  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://weibo.com/148246293'" tppabs="http://weibo.com/148246293"
+                                                                                           target="_blank">@æ„šäººç å¤´</a>ï¼š</p>
+                    <iframe style="vertical-align: middle;" width="163" height="24" frameborder="0"
+                            allowtransparency="true" marginwidth="0" marginheight="0" scrolling="no" border="0"
+                            src="../../../widget.weibo.com/relationship/followbutton.php-language=zh_cn&width=63&height=24            &uid=1477178352&style=2&btn=red&dpc=1" tppabs="http://widget.weibo.com/relationship/followbutton.php?language=zh_cn&width=63&height=24            &uid=1477178352&style=2&btn=red&dpc=1"></iframe>
+                </div>
+        <div id="googleguanggao" style=" margin-top:20px; margin-left:10px">
+            <script type="text/javascript">
+                        /*jquery-ui-left*/
+                        var cpro_id = "u1731043";
+                    </script>
+                    <script src="../../../cpro.baidustatic.com/cpro/ui/c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+        </div></div>
+<div id="content_box">
+  <div id="content">
+	
+<div class="inner" role="main">
+<article id="post-87" class="post-87 post type-post status-publish format-standard hentry category-widgets">
+	<header class="entry-header">
+		<h1 class="entry-title">Spinner Widget</h1>
+		<hr>
+<div id="baidu-banner">
+<script type="text/javascript">
+    /*jquery-ui-banner*/
+    var cpro_id = "u1731052";
+</script>
+<script src="../../../cpro.baidustatic.com/cpro/ui/c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+</div>
+<div class="entry-meta">
+			Categories: <span class="category"><a href="../category/widgets/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/widgets/" title="View all posts in Widgets">Widgets</a></span>		</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<article id="spinner1" class="entry widget"><h2 class="section-title">
+<span>Spinner Widget</span><span class="version-details">version added: 1.9</span>
+</h2>
+<div class="entry-wrapper">
+<p class="desc"><strong>Description: </strong>
+    é€šè¿‡å‘ä¸Š/å‘ä¸‹æŒ‰é’®å’Œç®­å¤´æŒ‰é”®æ“ä½œï¼Œå¢å¼ºæ–‡æœ¬è¾“å…¥æ¡†çš„æ•°å€¼è¾“å…¥åŠŸèƒ½ã€‚
+	</p>
+<section id="quick-nav"><header><h2>QuickNav<a href="#entry-examples">Examples</a>
+</h2></header><div class="quick-nav-section">
+<h3>Options</h3>
+<div><a href="#option-culture">culture</a></div>
+<div><a href="#option-disabled">disabled</a></div>
+<div><a href="#option-icons">icons</a></div>
+<div><a href="#option-incremental">incremental</a></div>
+<div><a href="#option-max">max</a></div>
+<div><a href="#option-min">min</a></div>
+<div><a href="#option-numberFormat">numberFormat</a></div>
+<div><a href="#option-page">page</a></div>
+<div><a href="#option-step">step</a></div>
+</div>
+<div class="quick-nav-section">
+<h3>Methods</h3>
+<div><a href="#method-destroy">destroy</a></div>
+<div><a href="#method-disable">disable</a></div>
+<div><a href="#method-enable">enable</a></div>
+<div><a href="#method-option">option</a></div>
+<div><a href="#method-pageDown">pageDown</a></div>
+<div><a href="#method-pageUp">pageUp</a></div>
+<div><a href="#method-stepDown">stepDown</a></div>
+<div><a href="#method-stepUp">stepUp</a></div>
+<div><a href="#method-value">value</a></div>
+<div><a href="#method-widget">widget</a></div>
+<br><h3>Extension Points</h3>
+<div><a href="#method-_buttonHtml">_buttonHtml</a></div>
+<div><a href="#method-_uiSpinnerHtml">_uiSpinnerHtml</a></div>
+</div>
+<div class="quick-nav-section">
+<h3>Events</h3>
+<div><a href="#event-change">change</a></div>
+<div><a href="#event-create">create</a></div>
+<div><a href="#event-spin">spin</a></div>
+<div><a href="#event-start">start</a></div>
+<div><a href="#event-stop">stop</a></div>
+</div></section><div class="longdesc" id="entry-longdesc">
+    <p>spinnerï¼ˆå¾®è°ƒç»„ä»¶ï¼‰ï¼Œæˆ–æ•°æ­¥è¿›æ§ä»¶ï¼ˆnumber stepper widgetï¼‰ï¼Œæ˜¯ç”¨äºå¤„ç†å„ç§æ•°å­—è¾“å…¥çš„å®Œç¾æ§ä»¶ã€‚å®ƒå…è®¸ç”¨æˆ·ç›´æ¥è¾“å…¥ä¸€ä¸ªå€¼ï¼Œæˆ–é€šè¿‡é”®ç›˜ã€é¼ æ ‡ã€æ»šè½®å¾®è°ƒæ”¹å˜ä¸€ä¸ªå·²æœ‰çš„å€¼ã€‚å½“ä¸å…¨çƒåŒ–ï¼ˆGlobalizeï¼‰ç»“åˆæ—¶ï¼Œæ‚¨ç”šè‡³å¯ä»¥å¾®è°ƒæ˜¾ç¤ºä¸åŒåœ°åŒºçš„è´§å¸å’Œæ—¥æœŸã€‚</p>
+
+    <p>spinnerï¼ˆå¾®è°ƒç»„ä»¶ï¼‰ä½¿ç”¨ä¸¤ä¸ªæŒ‰é’®å°†æ–‡æœ¬è¾“å…¥è¦†ç›–ä¸ºå½“å‰å€¼çš„é€’å¢å€¼å’Œé€’å‡å€¼ã€‚spinnerï¼ˆå¾®è°ƒç»„ä»¶ï¼‰å¢åŠ äº†æŒ‰é”®äº‹ä»¶ï¼Œä»¥ä¾¿å¯ä»¥ç”¨é”®ç›˜å®Œæˆç›¸åŒçš„é€’å¢å’Œé€’å‡ã€‚spinnerï¼ˆå¾®è°ƒç»„ä»¶ï¼‰ä»£è¡¨ <a href="javascript:if(confirm('https://github.com/jquery/globalize  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://github.com/jquery/globalize'" tppabs="https://github.com/jquery/globalize" target="_blank">å…¨çƒåŒ–ï¼ˆGlobalizeï¼‰</a>çš„æ•°å­—æ ¼å¼å’Œè§£æã€‚</p>
+
+		<h3>é”®ç›˜äº¤äº’ï¼ˆKeyboard interactionï¼‰</h3>
+    <ul>
+        <li>UPï¼šå¯¹å€¼å¢åŠ ä¸€æ­¥ã€‚</li>
+        <li>DOWNï¼šå¯¹å€¼å‡å°‘ä¸€æ­¥ã€‚</li>
+        <li>PAGE UPï¼šå¯¹å€¼å¢åŠ ä¸€é¡µã€‚</li>
+        <li>PAGE DOWNï¼šå¯¹å€¼å‡å°‘ä¸€é¡µã€‚</li>
+    </ul>
+    <p>ç”¨é¼ æ ‡ç‚¹å‡»å¾®è°ƒæŒ‰é’®åï¼Œç„¦ç‚¹ä»åœç•™åœ¨æ–‡æœ¬åŸŸä¸­ã€‚</p>
+    <p>å½“spinnerï¼ˆå¾®è°ƒç»„ä»¶ï¼‰ä¸æ˜¯åªè¯»ï¼ˆ<code>&lt;input readonly&gt;</code>ï¼‰æ—¶ï¼Œç”¨æˆ·å¯ä»¥è¾“å…¥å€¼ï¼Œè¿™å¯èƒ½ä¼šäº§ç”Ÿæ— æ•ˆçš„å€¼ï¼ˆå°äºæœ€å°å€¼ï¼Œå¤§äºæœ€å¤§å€¼ï¼Œå¢å‡é”™é…ï¼Œéæ•°å­—è¾“å…¥ï¼‰ã€‚å½“å¢å‡æ—¶ï¼Œä¸ç®¡é€šè¿‡ç¼–ç¨‹æ–¹å¼è¿˜æ˜¯å¾®è°ƒæŒ‰é’®æ–¹å¼ï¼Œå€¼éƒ½ä¼šè¢«å¼ºåˆ¶ä¸ºä¸€ä¸ªæœ‰æ•ˆå€¼ï¼ˆå¦‚éœ€äº†è§£è¯¦æƒ…ï¼Œè¯·æŸ¥çœ‹ <a href="#method-stepUp"><code>stepUp()</code></a> å’Œ <a href="#method-stepDown"><code>stepDown()</code></a> çš„æè¿°ã€‚</p>
+
+		<div>
+	<h3 id="theming">ä¸»é¢˜ï¼ˆThemingï¼‰</h3>
+            <p>spinnerï¼ˆå¾®è°ƒç»„ä»¶ï¼‰ä½¿ç”¨ <a href="javascript:if(confirm('http://www.css88.com/theming/css-framework/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/theming/css-framework/'" tppabs="http://www.css88.com/theming/css-framework/">jQuery UI CSS æ¡†æ¶</a> æ¥å®šä¹‰å®ƒçš„å¤–è§‚å’Œæ„Ÿè§‚çš„æ ·å¼ã€‚å¦‚æœéœ€è¦ä½¿ç”¨spinnerï¼ˆå¾®è°ƒç»„ä»¶ï¼‰æŒ‡å®šçš„æ ·å¼ï¼Œåˆ™å¯ä»¥ä½¿ç”¨ä¸‹é¢çš„ CSS class åç§°ï¼š</p>
+</div>
+
+    <ul>
+        <li><code>ui-spinner</code>ï¼šspinnerï¼ˆå¾®è°ƒç»„ä»¶ï¼‰çš„å¤–å±‚å®¹å™¨ã€‚
+            <ul>
+                <li><code>ui-spinner-input</code>ï¼šspinnerï¼ˆå¾®è°ƒç»„ä»¶ï¼‰å®ä¾‹åŒ–çš„ <code>&lt;input&gt;</code> å…ƒç´ ã€‚</li>
+                <li><code>ui-spinner-button</code>ï¼šç”¨äºé€’å¢æˆ–é€’å‡spinnerï¼ˆå¾®è°ƒç»„ä»¶ï¼‰å€¼çš„æŒ‰é’®æ§ä»¶ã€‚å‘ä¸ŠæŒ‰é’®ä¼šå¦å¤–å¸¦æœ‰ä¸€ä¸ª <code>ui-spinner-up</code>
+                    classï¼Œå‘ä¸‹æŒ‰é’®ä¼šå¦å¤–å¸¦æœ‰ä¸€ä¸ª <code>ui-spinner-down</code> classã€‚
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+		<h3>ä¾èµ–ï¼ˆDependenciesï¼‰</h3>
+		<ul>
+			<li><a href="javascript:if(confirm('http://www.css88.com/category/ui-core/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/category/ui-core/'" tppabs="http://www.css88.com/category/ui-core/">UI æ ¸å¿ƒï¼ˆUI Coreï¼‰</a></li>
+			<li><a href="javascript:if(confirm('http://www.css88.com/jQuery.widget/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/jQuery.widget/'" tppabs="http://www.css88.com/jQuery.widget/">éƒ¨ä»¶åº“ï¼ˆWidget Factoryï¼‰</a></li>
+			<li><a href="javascript:if(confirm('http://www.css88.com/button/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/button/'" tppabs="http://www.css88.com/button/">æŒ‰é’®éƒ¨ä»¶ï¼ˆButton Widgetï¼‰</a></li>
+            <li><a href="javascript:if(confirm('https://github.com/jquery/globalize  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://github.com/jquery/globalize'" tppabs="https://github.com/jquery/globalize" target="_blank">å…¨çƒåŒ–ï¼ˆGlobalizeï¼‰</a>ï¼ˆå¤–éƒ¨çš„ï¼Œå¯é€‰çš„ï¼›å½“ä¸ <a href="#option-culture"><code>culture</code></a> å’Œ <a href="#option-numberFormat"><code>numberFormat</code></a> é€‰é¡¹ä¸€èµ·ä½¿ç”¨æ—¶ï¼‰</li>
+
+		</ul>
+	</div>
+<h3>Additional Notes:</h3>
+<div class="longdesc">
+    <ul>
+        <li>è¯¥éƒ¨ä»¶è¦æ±‚ä¸€äº›åŠŸèƒ½æ€§çš„ CSSï¼Œå¦åˆ™å°†æ— æ³•å·¥ä½œã€‚å¦‚æœæ‚¨åˆ›å»ºäº†ä¸€ä¸ªè‡ªå®šä¹‰çš„ä¸»é¢˜ï¼Œè¯·ä½¿ç”¨å°éƒ¨ä»¶æŒ‡å®šçš„ CSS æ–‡ä»¶ä½œä¸ºèµ·ç‚¹ã€‚</li>
+        <li>è¯¥éƒ¨ä»¶ä»¥ç¼–ç¨‹æ–¹å¼æ“ä½œå…ƒç´ çš„å€¼ï¼Œå› æ­¤å½“å…ƒç´ çš„å€¼æ”¹å˜æ—¶ä¸ä¼šè§¦å‘åŸç”Ÿçš„ <code>change</code> äº‹ä»¶ã€‚</li>
+        <li>ä¸æ”¯æŒåœ¨ <code>&lt;input type="number"&gt;</code> ä¸Šåˆ›å»ºé€‰æ‹©å™¨ï¼Œå› ä¸ºä¼šé€ æˆä¸æœ¬åœ°spinnerï¼ˆå¾®è°ƒç»„ä»¶ï¼‰çš„ UI å†²çªã€‚</li>
+    </ul>
+</div>
+<section id="options"><header><h2>Options</h2></header><div id="option-culture" class="api-item first-item">
+<h3>culture<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>null</code>
+</div>
+<div>
+    è®¾ç½®<code>culture</code>é€‰é¡¹ ç”¨äºè§£æå’Œæ ¼å¼åŒ–å€¼ã€‚
+    å¦‚æœä¸º<code>null</code>ï¼Œåœ¨<code>Globalize</code>ä¸‹å½“å‰è®¾ç½®çš„cultureå°†è¢«ä½¿ç”¨ï¼Œ
+    å¯ä¾›çš„<code>culture</code>ï¼Œè¯·æŸ¥çœ‹<a href="javascript:if(confirm('https://github.com/jquery/globalize  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://github.com/jquery/globalize'" tppabs="https://github.com/jquery/globalize">Globalize æ–‡æ¡£</a>ã€‚
+    åªæœ‰å½“<a href="#option-numberFormat"><code>numberFormat</code></a>é€‰é¡¹è®¾ç½®äº†ï¼Œæ‰ä¼šæœ‰å…³è”ã€‚
+    éœ€è¦å¼•ç”¨<a href="javascript:if(confirm('https://github.com/jquery/globalize  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://github.com/jquery/globalize'" tppabs="https://github.com/jquery/globalize">Globalize</a>ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š  <code>culture</code>é€‰é¡¹çš„ spinnerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner({ culture: <span class="string">"fr"</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>culture</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> culture = $( <span class="string">".selector"</span> ).spinner( <span class="string">"option"</span>, <span class="string">"culture"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner( <span class="string">"option"</span>, <span class="string">"culture"</span>, <span class="string">"fr"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-disabled" class="api-item">
+<h3>disabled<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>
+    å¦‚æœè®¾ç½®ä¸º <code>true</code>ï¼Œåˆ™ç¦ç”¨è¯¥ spinnerï¼ˆå¾®è°ƒç»„ä»¶ï¼‰ã€‚
+</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š  <code>disabled</code>é€‰é¡¹çš„ spinnerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner({ disabled: <span class="literal">true</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>disabled</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> disabled = $( <span class="string">".selector"</span> ).spinner( <span class="string">"option"</span>, <span class="string">"disabled"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner( <span class="string">"option"</span>, <span class="string">"disabled"</span>, <span class="literal">true</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-icons" class="api-item">
+<h3>icons<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>{ down: "ui-icon-triangle-1-s", up: "ui-icon-triangle-1-n" }</code>
+</div>
+    <div> æ ‡é¢˜è¦ä½¿ç”¨çš„å›¾æ ‡ï¼Œä¸ <a href="javascript:if(confirm('http://www.css88.com/theming/icons/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/theming/icons/'" tppabs="http://www.css88.com/theming/icons/">jQuery UI CSS æ¡†æ¶æä¾›çš„å›¾æ ‡ï¼ˆIconsï¼‰</a> åŒ¹é…ã€‚è®¾ç½®ä¸º false åˆ™ä¸æ˜¾ç¤ºå›¾æ ‡ã€‚
+
+        <ul>
+            <li>up (string, default: "ui-icon-triangle-1-n")</li>
+            <li>down (string, default: "ui-icon-triangle-1-s")</li>
+        </ul>
+    </div>
+
+
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š  <code>icons</code>é€‰é¡¹çš„ spinnerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner({ icons: { down: <span class="string">"custom-down-icon"</span>, up: <span class="string">"custom-up-icon"</span> } });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>icons</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> icons = $( <span class="string">".selector"</span> ).spinner( <span class="string">"option"</span>, <span class="string">"icons"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner( <span class="string">"option"</span>, <span class="string">"icons"</span>, { down: <span class="string">"custom-down-icon"</span>, up: <span class="string">"custom-up-icon"</span> } );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-incremental" class="api-item">
+<h3>incremental<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Function'" tppabs="http://api.jquery.com/Types/#Function">Function</a>( <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Integer'" tppabs="http://api.jquery.com/Types/#Integer">Integer</a> count )</span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>true</code>
+</div>
+<div>
+    å½“æŒ‰ä½spinnerï¼ˆå¾®è°ƒç»„ä»¶ï¼‰æŒ‰é’®ä¸æ”¾æ—¶ï¼Œæ§åˆ¶çš„æ­¥æ•°ã€‚</div>
+<strong>æ”¯æŒå¤šä¸ªç±»å‹ï¼š</strong><ul>
+<li>
+<strong>Boolean</strong>:å¦‚æœè®¾ç½®ä¸º<code>true</code>ï¼Œå½“æŒ‰ä½spinnerï¼ˆå¾®è°ƒç»„ä»¶ï¼‰æŒ‰é’®ä¸æ”¾æ—¶ï¼Œæ•°å€¼ä¼šæ ¹æ®<a href="#option-step"><code>step</code></a>é€‰é¡¹çš„å€¼ä¸æ–­çš„å¢åŠ æˆ–å‡å°‘ã€‚
+å½“è®¾ç½®ä¸º<code>false</code>æ—¶ï¼Œæ‰€æœ‰æ­¥éª¤éƒ½æ˜¯ç›¸ç­‰çš„ï¼Œï¼ˆç”±<a href="#option-step"><code>step</code></a>é€‰é¡¹æ‰€å®šä¹‰ï¼‰ï¼ˆæ„šäººç å¤´æ³¨ï¼šç‚¹ä¸€ä¸‹ï¼Œæ•°å€¼ä¼šæ ¹æ®<a href="#option-step"><code>step</code></a>é€‰é¡¹çš„å€¼å¢åŠ æˆ–å‡å°‘ä¸€æ­¥ï¼‰ã€‚</li>
+<li>
+<strong>Function</strong>: æ¥æ”¶ä¸€ä¸ªå‚æ•°ï¼š
+å·²å‘ç”Ÿçš„è‡ªæ—‹æ•°ã€‚
+å¿…é¡»è¿”å›åœ¨å½“å‰å‘ç”Ÿçš„å¾®è°ƒçš„æ­¥æ•°ã€‚</li>
+</ul>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š  <code>incremental</code>é€‰é¡¹çš„ spinnerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner({ incremental: <span class="literal">false</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>incremental</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> incremental = $( <span class="string">".selector"</span> ).spinner( <span class="string">"option"</span>, <span class="string">"incremental"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner( <span class="string">"option"</span>, <span class="string">"incremental"</span>, <span class="literal">false</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-max" class="api-item">
+<h3>max<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>null</code>
+</div>
+    <div>
+        å…è®¸çš„æœ€å¤§å€¼ã€‚
+        å¦‚æœå…ƒç´ çš„<code>max</code>å±æ€§å­˜åœ¨ï¼Œè¯¥é€‰é¡¹æœªæ˜ç¡®è®¾ç½®ï¼Œé‚£ä¹ˆè¯¥å…ƒç´ çš„<code>max</code>å±æ€§å°±è¢«ç”¨ä½œè¯¥é€‰é¡¹çš„å€¼ã€‚
+        å¦‚æœä¸º<code>null</code>ï¼Œè¡¨ç¤ºæ²¡æœ‰ä¸Šé™ã€‚
+    </div>
+    <strong>æ”¯æŒå¤šä¸ªç±»å‹ï¼š</strong>
+    <ul>
+        <li>
+            <strong>Number</strong>: æœ€å¤§å€¼ã€‚
+        </li>
+        <li>
+            <strong>String</strong>:
+            å¦‚æœåº”ç”¨åŒ…å«äº†<a href="javascript:if(confirm('https://github.com/jquery/globalize  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://github.com/jquery/globalize'" tppabs="https://github.com/jquery/globalize">Globalize</a>ï¼Œ
+            <code>max</code>é€‰é¡¹å¯ä»¥ä¼ é€’å¯ä»¥è¢«
+            <a href="#opiton-numberFormat"><code>numberFormat</code></a>å’Œ<a href="#option-culture"><code>culture</code></a>é€‰é¡¹è§£æçš„
+            å­—ç¬¦ä¸²ã€‚
+            å¦åˆ™æ±‚åŠ©åŸç”Ÿçš„<code>parseFloat()</code>å°†æ–¹æ³•ã€‚
+        </li>
+    </ul>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š  <code>max</code>é€‰é¡¹çš„ spinnerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner({ max: <span class="number">50</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>max</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> max = $( <span class="string">".selector"</span> ).spinner( <span class="string">"option"</span>, <span class="string">"max"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner( <span class="string">"option"</span>, <span class="string">"max"</span>, <span class="number">50</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-min" class="api-item">
+<h3>min<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>null</code>
+</div>
+    <div>
+            å…è®¸çš„æœ€å°å€¼ã€‚
+            å¦‚æœå…ƒç´ çš„<code>min</code>å±æ€§å­˜åœ¨ï¼Œè¯¥é€‰é¡¹æœªæ˜ç¡®è®¾ç½®ï¼Œé‚£ä¹ˆè¯¥å…ƒç´ çš„<code>min</code>å±æ€§å°±è¢«ç”¨ä½œè¯¥é€‰é¡¹çš„å€¼ã€‚
+            å¦‚æœä¸º<code>null</code>ï¼Œè¡¨ç¤ºæ²¡æœ‰ä¸‹é™ã€‚
+        </div>
+        <strong>æ”¯æŒå¤šä¸ªç±»å‹ï¼š</strong>
+        <ul>
+            <li>
+                <strong>Number</strong>: æœ€å°å€¼ã€‚
+            </li>
+            <li>
+                <strong>String</strong>:
+                å¦‚æœåº”ç”¨åŒ…å«äº†<a href="javascript:if(confirm('https://github.com/jquery/globalize  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://github.com/jquery/globalize'" tppabs="https://github.com/jquery/globalize">Globalize</a>ï¼Œ
+                <code>max</code>é€‰é¡¹å¯ä»¥ä¼ é€’å¯ä»¥è¢«
+                <a href="#opiton-numberFormat"><code>numberFormat</code></a>å’Œ<a href="#option-culture"><code>culture</code></a>é€‰é¡¹è§£æçš„
+                å­—ç¬¦ä¸²ã€‚
+                å¦åˆ™ä½¿ç”¨åŸç”Ÿçš„<code>parseFloat()</code>æ–¹æ³•è§£æã€‚
+            </li>
+        </ul>
+
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š  <code>min</code>é€‰é¡¹çš„ spinnerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner({ min: <span class="number">0</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>min</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> min = $( <span class="string">".selector"</span> ).spinner( <span class="string">"option"</span>, <span class="string">"min"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner( <span class="string">"option"</span>, <span class="string">"min"</span>, <span class="number">0</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-numberFormat" class="api-item">
+<h3>numberFormat<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>null</code>
+</div>
+<div>
+    é€šè¿‡<a href="javascript:if(confirm('https://github.com/jquery/globalize  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://github.com/jquery/globalize'" tppabs="https://github.com/jquery/globalize"><code>Globalize</code></a>æ ¼å¼åŒ–æ•°å­—ï¼Œ å¦‚æœæœ‰æ•ˆçš„è¯ã€‚
+    æœ€å¸¸è§çš„ç”¨äº<code>"n"</code>ç”¨ä½œåè¿›åˆ¶æ•°
+    å’Œ<code>"C"</code>ç”¨ä½œè´§å¸å€¼ã€‚
+    ä¹Ÿçœ‹åˆ°äº†<a href="#option-culture"><code>culture</code></a>é€‰æ‹©ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š  <code>numberFormat</code>é€‰é¡¹çš„ spinnerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner({ numberFormat: <span class="string">"n"</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>numberFormat</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> numberFormat = $( <span class="string">".selector"</span> ).spinner( <span class="string">"option"</span>, <span class="string">"numberFormat"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner( <span class="string">"option"</span>, <span class="string">"numberFormat"</span>, <span class="string">"n"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-page" class="api-item">
+<h3>page<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>10</code>
+</div>
+<div>
+å½“é€šè¿‡<a href="#method-pageUp"><code>pageUp</code></a>/<a href="#method-pageDown"><code>pageDown</code></a>çš„æ–¹æ³•è¿›è¡Œåˆ†é¡µæ—¶ï¼Œé‡‡å–çš„æ­¥æ•°ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š  <code>page</code>é€‰é¡¹çš„ spinnerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner({ page: <span class="number">5</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>page</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> page = $( <span class="string">".selector"</span> ).spinner( <span class="string">"option"</span>, <span class="string">"page"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner( <span class="string">"option"</span>, <span class="string">"page"</span>, <span class="number">5</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-step" class="api-item">
+<h3>step<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>1</code>
+</div>
+<div>
+    é€šè¿‡æŒ‰é’®æˆ–<a href="#method-stepUp"><code>stepUp()</code></a>/<a href="#method-stepDown"><code>stepDown()</code></a>æ–¹æ³•å¾®è°ƒæ—¶ï¼Œé‡‡å–çš„æ­¥æ•°ã€‚
+    å¦‚æœå…ƒç´ çš„<code>step</code>å±æ€§å­˜åœ¨ï¼Œå¹¶ä¸”è¯¥é€‰é¡¹æœªæ˜ç¡®è®¾ç½®ï¼Œé‚£ä¹ˆå…ƒç´ çš„<code>step</code>å±æ€§å€¼å°†ä½œä¸ºè¯¥é€‰é¡¹çš„å€¼ä½¿ç”¨ã€‚</div>
+<strong>æ”¯æŒå¤šä¸ªç±»å‹ï¼š</strong><ul>
+<li>
+<strong>Number</strong>: æ­¥æ•°</li>
+<li>
+<strong>String</strong>:
+    å¦‚æœåº”ç”¨åŒ…å«äº†<a href="javascript:if(confirm('https://github.com/jquery/globalize  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://github.com/jquery/globalize'" tppabs="https://github.com/jquery/globalize">Globalize</a>ï¼Œ
+                    <code>max</code>é€‰é¡¹å¯ä»¥ä¼ é€’å¯ä»¥è¢«
+                    <a href="#opiton-numberFormat"><code>numberFormat</code></a>å’Œ<a href="#option-culture"><code>culture</code></a>é€‰é¡¹è§£æçš„
+                    å­—ç¬¦ä¸²ã€‚
+    å¦åˆ™ä½¿ç”¨åŸç”Ÿçš„<code>parseFloat()</code>æ–¹æ³•è§£æã€‚
+
+    </li>
+</ul>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š  <code>step</code>é€‰é¡¹çš„ spinnerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner({ step: <span class="number">2</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>step</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> step = $( <span class="string">".selector"</span> ).spinner( <span class="string">"option"</span>, <span class="string">"step"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner( <span class="string">"option"</span>, <span class="string">"step"</span>, <span class="number">2</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div></section><section id="methods"><header><h2>Methods</h2></header><div id="method-destroy"><div class="api-item first-item">
+<h3>destroy()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div> å®Œå…¨ç§»é™¤ spinneråŠŸèƒ½ã€‚è¿™ä¼šæŠŠå…ƒç´ è¿”å›åˆ°å®ƒçš„é¢„åˆå§‹åŒ–çŠ¶æ€ã€‚
+	</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ destroy æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner( <span class="string">"destroy"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div>
+<div id="method-disable"><div class="api-item">
+<h3>disable()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>
+    ç¦ç”¨ spinner.
+	</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ disable æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner( <span class="string">"disable"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div>
+<div id="method-enable"><div class="api-item">
+<h3>enable()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>
+		å¯ç”¨ spinner.
+	</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ enable æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner( <span class="string">"enable"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div>
+<div id="method-option">
+<div class="api-item">
+<h3>option( optionName )<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a></span>
+</h3>
+<div>è·å–å½“å‰ä¸æŒ‡å®šçš„ <code>optionName</code> å…³è”çš„å€¼ã€‚</div>
+<ul><li>
+<div><strong>optionName</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a>
+</div>
+<div>è¦è·å–å€¼çš„é€‰é¡¹çš„åç§°ã€‚</div>
+</li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨è¯¥æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="keyword">var</span> isDisabled = $( <span class="string">".selector"</span> ).spinner( <span class="string">"option"</span>, <span class="string">"disabled"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div class="api-item">
+<h3>option()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#PlainObject'" tppabs="http://api.jquery.com/Types/#PlainObject">PlainObject</a></span>
+</h3>
+<div>è·å–ä¸€ä¸ªåŒ…å«é”®/å€¼å¯¹çš„å¯¹è±¡ï¼Œé”®/å€¼å¯¹è¡¨ç¤ºå½“å‰ spinner é€‰é¡¹å“ˆå¸Œã€‚</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨è¯¥æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="keyword">var</span> options = $( <span class="string">".selector"</span> ).spinner( <span class="string">"option"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div class="api-item">
+<h3>option( optionName, value )<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>è®¾ç½®ä¸æŒ‡å®šçš„ <code>optionName</code> å…³è”çš„ spinner é€‰é¡¹çš„å€¼ã€‚</div>
+<ul>
+<li>
+<div><strong>optionName</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a>
+</div>
+<div>è¦è®¾ç½®çš„é€‰é¡¹çš„åç§°ã€‚</div>
+</li>
+<li>
+<div><strong>value</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>è¦ä¸ºé€‰é¡¹è®¾ç½®çš„å€¼ã€‚</div>
+</li>
+</ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨è¯¥æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner( <span class="string">"option"</span>, <span class="string">"disabled"</span>, <span class="literal">true</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div class="api-item">
+<h3>option( options )<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>ä¸º spinner è®¾ç½®ä¸€ä¸ªæˆ–å¤šä¸ªé€‰é¡¹ã€‚</div>
+<ul><li>
+<div><strong>options</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>è¦è®¾ç½®çš„ option-value å¯¹ã€‚</div>
+</li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨è¯¥æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner( <span class="string">"option"</span>, { disabled: <span class="literal">true</span> } );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+</div>
+<div id="method-pageDown"><div class="api-item">
+<h3>pageDown(  [pages ] )<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>
+    <p>
+        é€šè¿‡æŒ‡å®šé¡µæ•°é€’å‡å€¼ï¼Œ
+        é¡µæ•°ç”±<a href="#option-page"><code>page</code></a>é€‰é¡¹å®šä¹‰ã€‚
+        å¦‚æœæ²¡æœ‰å‚æ•°ï¼Œ
+        å•é¡µé€’å‡ã€‚
+    </p>
+
+    <p>
+        å¦‚æœè¿”å›å€¼å¤§äº<a href="#option-max"><code>max</code></a>é€‰é¡¹å®šä¹‰çš„å€¼ï¼Œå°äº<a href="#option-min"><code>min</code></a>é€‰é¡¹å®šä¹‰çš„å€¼ï¼Œæˆ–è¿”å›çš„ç»“æœæ­¥æ•°ä¸åŒ¹é…ï¼Œ
+        é‚£ä¹ˆè¯¥å€¼å°†è¢«è°ƒæ•´åˆ°æœ€æ¥è¿‘çš„æœ‰æ•ˆå€¼ã€‚</p>
+
+    <p>è°ƒç”¨<code>pageDown()</code>å°†å¼•èµ·<a href="#event-start"><code>start</code></a>, <a
+            href="#event-spin"><code>spin</code></a>, å’Œ <a href="#event-stop"><code>stop</code></a> äº‹ä»¶è¢«è§¦å‘ã€‚</p>
+			</div>
+<ul><li>
+<div><strong>pages</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a>
+</div>
+<div>é€’å‡çš„é¡µæ•°ï¼Œé»˜è®¤æ˜¯1.</div>
+</li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ pageDown æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner( <span class="string">"pageDown"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div>
+<div id="method-pageUp"><div class="api-item">
+<h3>pageUp(  [pages ] )<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>
+    <p>
+            é€šè¿‡æŒ‡å®šé¡µæ•°é€’å¢å€¼ï¼Œ
+            é¡µæ•°ç”±<a href="#option-page"><code>page</code></a>é€‰é¡¹å®šä¹‰ã€‚
+            å¦‚æœæ²¡æœ‰å‚æ•°ï¼Œ
+            å•é¡µé€’å¢ã€‚
+        </p>
+
+        <p>
+            å¦‚æœè¿”å›å€¼å¤§äº<a href="#option-max"><code>max</code></a>é€‰é¡¹å®šä¹‰çš„å€¼ï¼Œå°äº<a href="#option-min"><code>min</code></a>é€‰é¡¹å®šä¹‰çš„å€¼ï¼Œæˆ–è¿”å›çš„ç»“æœæ­¥æ•°ä¸åŒ¹é…ï¼Œ
+            é‚£ä¹ˆè¯¥å€¼å°†è¢«è°ƒæ•´åˆ°æœ€æ¥è¿‘çš„æœ‰æ•ˆå€¼ã€‚</p>
+
+        <p>è°ƒç”¨<code>pageUp()</code>å°†å¼•èµ·<a href="#event-start"><code>start</code></a>, <a
+                href="#event-spin"><code>spin</code></a>, å’Œ <a href="#event-stop"><code>stop</code></a> äº‹ä»¶è¢«è§¦å‘ã€‚</p>
+
+
+
+			</div>
+<ul><li>
+<div><strong>pages</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a>
+</div>
+<div>é€’å¢çš„é¡µæ•°ï¼Œé»˜è®¤æ˜¯1.</div>
+</li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ pageUp æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner( <span class="string">"pageUp"</span>, <span class="number">10</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div>
+<div id="method-stepDown"><div class="api-item">
+<h3>stepDown(  [steps ] )<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>
+    <p>
+            é€šè¿‡æŒ‡å®šæ­¥æ•°é€’å‡å€¼ï¼Œ
+        æ­¥æ•°ç”±<a href="#option-step"><code>step</code></a>é€‰é¡¹å®šä¹‰ã€‚
+            å¦‚æœæ²¡æœ‰å‚æ•°ï¼Œ
+            å•æ­¥é€’å‡ã€‚
+        </p>
+
+        <p>
+            å¦‚æœè¿”å›å€¼å¤§äº<a href="#option-max"><code>max</code></a>é€‰é¡¹å®šä¹‰çš„å€¼ï¼Œå°äº<a href="#option-min"><code>min</code></a>é€‰é¡¹å®šä¹‰çš„å€¼ï¼Œæˆ–è¿”å›çš„ç»“æœæ­¥æ•°ä¸åŒ¹é…ï¼Œ
+            é‚£ä¹ˆè¯¥å€¼å°†è¢«è°ƒæ•´åˆ°æœ€æ¥è¿‘çš„æœ‰æ•ˆå€¼ã€‚</p>
+
+        <p>è°ƒç”¨<code>stepDown()</code>å°†å¼•èµ·<a href="#event-start"><code>start</code></a>, <a
+                href="#event-spin"><code>spin</code></a>, å’Œ <a href="#event-stop"><code>stop</code></a> äº‹ä»¶è¢«è§¦å‘ã€‚</p>
+
+
+			</div>
+<ul><li>
+<div><strong>steps</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a>
+</div>
+<div>é€’å‡çš„æ­¥æ•°ï¼Œé»˜è®¤æ˜¯1.</div>
+</li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ stepDown æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner( <span class="string">"stepDown"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div>
+<div id="method-stepUp"><div class="api-item">
+<h3>stepUp(  [steps ] )<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>   <p>
+            é€šè¿‡æŒ‡å®šæ­¥æ•°é€’å¢å€¼ï¼Œ
+    æ­¥æ•°ç”±<a href="#option-step"><code>step</code></a>é€‰é¡¹å®šä¹‰ã€‚
+            å¦‚æœæ²¡æœ‰å‚æ•°ï¼Œ
+            å•æ­¥é€’å¢ã€‚
+        </p>
+
+        <p>
+            å¦‚æœè¿”å›å€¼å¤§äº<a href="#option-max"><code>max</code></a>é€‰é¡¹å®šä¹‰çš„å€¼ï¼Œå°äº<a href="#option-min"><code>min</code></a>é€‰é¡¹å®šä¹‰çš„å€¼ï¼Œæˆ–è¿”å›çš„ç»“æœæ­¥æ•°ä¸åŒ¹é…ï¼Œ
+            é‚£ä¹ˆè¯¥å€¼å°†è¢«è°ƒæ•´åˆ°æœ€æ¥è¿‘çš„æœ‰æ•ˆå€¼ã€‚</p>
+
+        <p>è°ƒç”¨<code>pageUp()</code>å°†å¼•èµ·<a href="#event-start"><code>start</code></a>, <a
+                href="#event-spin"><code>spin</code></a>, å’Œ <a href="#event-stop"><code>stop</code></a> äº‹ä»¶è¢«è§¦å‘ã€‚</p>
+
+
+			</div>
+<ul><li>
+<div><strong>steps</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a>
+</div>
+<div>é€’å¢çš„æ­¥æ•°ï¼Œé»˜è®¤æ˜¯1.</div>
+</li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ stepUp æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner( <span class="string">"stepUp"</span>, <span class="number">5</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div>
+<div id="method-value">
+<div class="api-item">
+<h3>value()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a></span>
+</h3>
+<div>è·å–å½“å‰æ•°å€¼ï¼Œè¿™ä¸ªå€¼æ˜¯åŸºäº<a href="#option-numberFormat"><code>numberFormat</code></a> å’Œ <a href="#option-culture"><code>culture</code></a>é€‰é¡¹è§£æçš„ã€‚</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨è¯¥æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="keyword">var</span> value = $( <span class="string">".selector"</span> ).spinner( <span class="string">"value"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div class="api-item">
+<h3>value( value )<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+    <div>è®¾ç½®å½“å‰å€¼</div>
+<ul><li>
+<div><strong>value</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a>
+</div>
+<div>ç”¨æ¥è®¾ç½®çš„å€¼ã€‚ å¦‚æœä¼ é€’çš„æ˜¯ä¸€ä¸ªå­—ç¬¦ä¸²ï¼Œé‚£ä¹ˆ è¿™ä¸ªå€¼æ˜¯åŸºäº<a href="#option-numberFormat"><code>numberFormat</code></a> å’Œ <a href="#option-culture"><code>culture</code></a>é€‰é¡¹è§£æçš„ã€‚</div>
+</li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨è¯¥æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner( <span class="string">"value"</span>, <span class="number">50</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+</div>
+<div id="method-widget"><div class="api-item">
+<h3>widget()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a></span>
+</h3>
+<div>    è¿”å›åŒ…å«ç”Ÿæˆç»„ä»¶åŒ…è£¹å…ƒç´  çš„ä¸€ä¸ª<code>jQuery</code>å¯¹è±¡ã€‚
+	</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ widget æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="keyword">var</span> widget = $( <span class="string">".selector"</span> ).spinner( <span class="string">"widget"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div></section><section id="extension-points"><header><h2>æ‰©å±•ç‚¹ï¼ˆExtension Pointsï¼‰</h2></header>
+    <p>
+        spinnerï¼ˆå¾®è°ƒç»„ä»¶ï¼‰æ˜¯<a href="../jQuery.widget/index.htm" tppabs="http://www.css88.com/jquery-ui-api/jQuery.widget/">widget factory</a>æ„å»ºçš„ï¼Œå¹¶ä¸”å¯ä»¥æ‰©å±•ã€‚
+        å½“æ‰©å±•éƒ¨ä»¶æ—¶ï¼Œ
+        ä½ å¿…é¡»è¦†ç›–æˆ–æ·»åŠ æ–°çš„è¡Œä¸ºåˆ°ç°æœ‰çš„æ–¹æ³•ã€‚
+
+        ä¸‹åˆ—æ–¹æ³•è¢«æä¾›ä½œä¸ºæ‰©å±•ç‚¹
+        ç”¨ç›¸åŒçš„APIç¨³å®šæ€§å¦‚ä¸Šæ‰€åˆ—çš„<a href="#methods">plugin methods</a>ã€‚
+
+
+        æœ‰å…³å°éƒ¨ä»¶æ‰©å±•çš„æ›´å¤šä¿¡æ¯ï¼Œ
+        è¯·å‚é˜…<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/extending-widgets/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/extending-widgets/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/extending-widgets/">ä½¿ç”¨Widget Factory æ‰©å±•å°éƒ¨ä»¶</a>ã€‚
+    			</p>
+
+<hr>
+<div id="method-_buttonHtml"><div class="api-item first-item">
+<h3>_buttonHtml()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div>   è¿™ä¸ªæ–¹æ³•è¿”å›çš„HTMLç”¨äºspinnerï¼ˆå¾®è°ƒç»„ä»¶ï¼‰çš„é€’å¢å’Œé€’å‡æŒ‰é’®ã€‚
+    æ¯ä¸ªæŒ‰é’®éƒ½å¿…é¡»ç»™å®šä¸€ä¸ª<code>ui-spinner-button</code>çš„ç±»å
+    ç”¨äºç›¸å…³è”çš„äº‹ä»¶å·¥ä½œã€‚
+			</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>
+    ä½¿ç”¨<code>&lt;button&gt;</code>å…ƒç´ 
+    ä½œä¸ºé€’å¢å’Œé€’å‡æŒ‰é’®ã€‚</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+						<div class="line n6">6</div>
+
+						<div class="line n7">7</div>
+
+						<div class="line n8">8</div>
+
+						<div class="line n9">9</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>_buttonHtml: <span class="keyword">function</span>() {</code></div></div><div class="container"><div class="line"><code>  <span class="keyword">return</span> <span class="string">""</span> +</code></div></div><div class="container"><div class="line"><code>    <span class="string">"&lt;button class='ui-spinner-button ui-spinner-up'&gt;"</span> +</code></div></div><div class="container"><div class="line"><code>      <span class="string">"&lt;span class='ui-icon "</span> + <span class="keyword">this</span>.options.icons.up + <span class="string">"'&gt;&amp;#9650;&lt;/span&gt;"</span> +</code></div></div><div class="container"><div class="line"><code>    <span class="string">"&lt;/button&gt;"</span> +</code></div></div><div class="container"><div class="line"><code>    <span class="string">"&lt;button class='ui-spinner-button ui-spinner-down'&gt;"</span> +</code></div></div><div class="container"><div class="line"><code>      <span class="string">"&lt;span class='ui-icon "</span> + <span class="keyword">this</span>.options.icons.down + <span class="string">"'&gt;&amp;#9660;&lt;/span&gt;"</span> +</code></div></div><div class="container"><div class="line"><code>    <span class="string">"&lt;/button&gt;"</span>;</code></div></div><div class="container"><div class="line"><code>}</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div>
+<div id="method-_uiSpinnerHtml"><div class="api-item">
+<h3>_uiSpinnerHtml()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div>      è¿™ä¸ªæ–¹æ³•è¿”å›çš„HTMLç”¨äºåŒ…è£¹ spinnerï¼ˆå¾®è°ƒç»„ä»¶ï¼‰<code>&lt;input&gt;</code>å…ƒç´ ã€‚
+			</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>
+   ç”¨æ²¡æœ‰åœ†è§’çš„<code>&lt;div&gt;</code> åŒ…è£¹ spinnerï¼ˆå¾®è°ƒç»„ä»¶ï¼‰ã€‚</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>_uiSpinnerHtml: <span class="keyword">function</span>() {</code></div></div><div class="container"><div class="line"><code>  <span class="keyword">return</span> <span class="string">"&lt;div class='ui-spinner ui-widget ui-widget-content'&gt;&lt;/div&gt;"</span>;</code></div></div><div class="container"><div class="line"><code>}</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div></section><section id="events"><header><h2>Events</h2></header><div id="event-change" class="api-item first-item">
+<h3>change( event, ui )<span class="returns">Type: <code>spinchange</code></span>
+</h3>
+<div>
+    å½“spinnerå¾®è°ƒå™¨çš„å€¼æ”¹å˜å¹¶ä¸”è¾“å…¥å…ƒç´ ï¼ˆinputï¼‰å¤±å»ç„¦ç‚¹æ—¶ï¼Œè¯¥äº‹ä»¶è§¦å‘ã€‚
+			</div>
+<ul>
+<li>
+<div><strong>event</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Event'" tppabs="http://api.jquery.com/Types/#Event">Event</a>
+</div>
+<div></div>
+</li>
+<li>
+<div><strong>ui</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div></div>
+</li>
+</ul>
+<p><em>æ³¨æ„ï¼š<code>ui</code> å¯¹è±¡æ˜¯ç©ºçš„ï¼Œè¿™é‡ŒåŒ…å«å®ƒæ˜¯ä¸ºäº†ä¸å…¶ä»–äº‹ä»¶ä¿æŒä¸€è‡´æ€§ã€‚</em></p>
+<div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š  change  å›è°ƒçš„ spinnerï¼ˆå¾®è°ƒå™¨ï¼‰ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner({</code></div></div><div class="container"><div class="line"><code>  change: <span class="keyword">function</span>( event, ui ) {}</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>ç»‘å®šä¸€ä¸ªäº‹ä»¶ç›‘å¬å™¨åˆ°  spinchange äº‹ä»¶ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).on( <span class="string">"spinchange"</span>, <span class="keyword">function</span>( event, ui ) {} );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div id="event-create" class="api-item">
+<h3>create( event, ui )<span class="returns">Type: <code>spincreate</code></span>
+</h3>
+<div>
+    å½“spinnerå¾®è°ƒå™¨åˆ›å»ºçš„æ—¶å€™ï¼Œè¯¥æ—¶é—´è§¦å‘ã€‚
+	</div>
+<ul>
+<li>
+<div><strong>event</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Event'" tppabs="http://api.jquery.com/Types/#Event">Event</a>
+</div>
+<div></div>
+</li>
+<li>
+<div><strong>ui</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div></div>
+</li>
+</ul>
+<p><em>æ³¨æ„ï¼š<code>ui</code> å¯¹è±¡æ˜¯ç©ºçš„ï¼Œè¿™é‡ŒåŒ…å«å®ƒæ˜¯ä¸ºäº†ä¸å…¶ä»–äº‹ä»¶ä¿æŒä¸€è‡´æ€§ã€‚</em></p>
+<div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š  create  å›è°ƒçš„ spinnerï¼ˆå¾®è°ƒå™¨ï¼‰ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner({</code></div></div><div class="container"><div class="line"><code>  create: <span class="keyword">function</span>( event, ui ) {}</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>ç»‘å®šä¸€ä¸ªäº‹ä»¶ç›‘å¬å™¨åˆ°  spincreate äº‹ä»¶ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).on( <span class="string">"spincreate"</span>, <span class="keyword">function</span>( event, ui ) {} );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div id="event-spin" class="api-item">
+<h3>spin( event, ui )<span class="returns">Type: <code>spin</code></span>
+</h3>
+<div> åœ¨é€’å¢/é€’å‡çš„æ—¶å€™ï¼Œè¯¥äº‹ä»¶è§¦å‘ï¼ˆç”¨ å½“å‰å€¼å’Œ<code>ui.value</code>æ¯”è¾ƒæ¥
+ç¡®å®šçš„å¾®è°ƒçš„æ–¹å‘ï¼‰ã€‚
+				<p>å¯ä»¥å–æ¶ˆï¼Œä»¥é˜²æ­¢è¢«æ›´æ–°å€¼ã€‚</p>
+			</div>
+<ul>
+<li>
+<div><strong>event</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Event'" tppabs="http://api.jquery.com/Types/#Event">Event</a>
+</div>
+<div></div>
+</li>
+<li>
+<div><strong>ui</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div></div>
+<ul><li>
+<div><strong>value</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a>
+</div>
+<div>è¦è®¾ç½®çš„æ–°å€¼ï¼Œé™¤éè¯¥äº‹ä»¶è¢«å–æ¶ˆã€‚/div>
+</li></ul>
+</li>
+</ul>
+<div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š  spin  å›è°ƒçš„ spinnerï¼ˆå¾®è°ƒå™¨ï¼‰ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner({</code></div></div><div class="container"><div class="line"><code>  spin: <span class="keyword">function</span>( event, ui ) {}</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>ç»‘å®šä¸€ä¸ªäº‹ä»¶ç›‘å¬å™¨åˆ°  spin äº‹ä»¶ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).on( <span class="string">"spin"</span>, <span class="keyword">function</span>( event, ui ) {} );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div id="event-start" class="api-item">
+<h3>start( event, ui )<span class="returns">Type: <code>spinstart</code></span>
+</h3>
+<div>å¾®è°ƒå¼€å§‹ä¹‹å‰ï¼Œè§¦å‘è¯¥äº‹ä»¶ã€‚å¯ä»¥å–æ¶ˆï¼Œä»¥é˜²æ­¢å¾®è°ƒã€‚
+			</div>
+<ul>
+<li>
+<div><strong>event</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Event'" tppabs="http://api.jquery.com/Types/#Event">Event</a>
+</div>
+<div></div>
+</li>
+<li>
+<div><strong>ui</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div></div>
+</li>
+</ul>
+<p><em>æ³¨æ„ï¼š<code>ui</code> å¯¹è±¡æ˜¯ç©ºçš„ï¼Œè¿™é‡ŒåŒ…å«å®ƒæ˜¯ä¸ºäº†ä¸å…¶ä»–äº‹ä»¶ä¿æŒä¸€è‡´æ€§ã€‚</em></p>
+<div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š  start  å›è°ƒçš„ spinnerï¼ˆå¾®è°ƒå™¨ï¼‰ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner({</code></div></div><div class="container"><div class="line"><code>  start: <span class="keyword">function</span>( event, ui ) {}</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>ç»‘å®šä¸€ä¸ªäº‹ä»¶ç›‘å¬å™¨åˆ°  spinstart äº‹ä»¶ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).on( <span class="string">"spinstart"</span>, <span class="keyword">function</span>( event, ui ) {} );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div id="event-stop" class="api-item">
+<h3>stop( event, ui )<span class="returns">Type: <code>spinstop</code></span>
+</h3>
+<div>å¾®è°ƒç»“æŸåï¼Œè§¦å‘è¯¥äº‹ä»¶ã€‚</div>
+<ul>
+<li>
+<div><strong>event</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Event'" tppabs="http://api.jquery.com/Types/#Event">Event</a>
+</div>
+<div></div>
+</li>
+<li>
+<div><strong>ui</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div></div>
+</li>
+</ul>
+<p><em>æ³¨æ„ï¼š<code>ui</code> å¯¹è±¡æ˜¯ç©ºçš„ï¼Œè¿™é‡ŒåŒ…å«å®ƒæ˜¯ä¸ºäº†ä¸å…¶ä»–äº‹ä»¶ä¿æŒä¸€è‡´æ€§ã€‚</em></p>
+<div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š  stop  å›è°ƒçš„ spinnerï¼ˆå¾®è°ƒå™¨ï¼‰ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).spinner({</code></div></div><div class="container"><div class="line"><code>  stop: <span class="keyword">function</span>( event, ui ) {}</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>ç»‘å®šä¸€ä¸ªäº‹ä»¶ç›‘å¬å™¨åˆ°  spinstop äº‹ä»¶ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).on( <span class="string">"spinstop"</span>, <span class="keyword">function</span>( event, ui ) {} );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></section><section class="entry-examples" id="entry-examples"><header><h2>Example:</h2></header><div class="entry-example" id="example-0">
+<h4><span class="desc">æ™®é€šçš„æ•°å­—å¾®è°ƒå™¨ã€‚</span></h4>
+<div class="syntaxhighlighter xml ">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+						<div class="line n6">6</div>
+
+						<div class="line n7">7</div>
+
+						<div class="line n8">8</div>
+
+						<div class="line n9">9</div>
+
+						<div class="line n10">10</div>
+
+						<div class="line n11">11</div>
+
+						<div class="line n12">12</div>
+
+						<div class="line n13">13</div>
+
+						<div class="line n14">14</div>
+
+						<div class="line n15">15</div>
+
+						<div class="line n16">16</div>
+
+						<div class="line n17">17</div>
+
+						<div class="line n18">18</div>
+
+						<div class="line n19">19</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="doctype">&lt;!doctype html&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">html</span> <span class="attribute">lang</span>=<span class="value">"en"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">head</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">title</span>&gt;</span>spinner demo<span class="tag">&lt;/<span class="title">title</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">href</span>=<span class="value">"//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"//code.jquery.com/jquery-1.10.2.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"//code.jquery.com/ui/1.10.4/jquery-ui.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">head</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">body</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">input</span> <span class="attribute">id</span>=<span class="value">"spinner"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"></span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">"#spinner"</span> ).spinner();</code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">body</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">html</span>&gt;</span></code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<h4>Demo:</h4>
+<div class="demo code-demo" data-height="50"></div>
+</div></section>
+</div></article>	</div><!-- .entry-content -->
+
+</article>
+</div>
+
+
+  </div>
+</div>
+<script type="text/javascript" src="../js/search.js" tppabs="http://www.css88.com/jquery-ui-api/js/search.js"></script>
+<script type="text/javascript" src="../js/gotop.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/gotop.min.js"></script>
+<script type="text/javascript">
+	goToTop.init();
+</script>
+<style>
+    #googlead{position:fixed;bottom:-250px;right:10px;width: 250px}
+.hidden{display: none;}
+</style>
+<div id="googlead">
+    <script type="text/javascript">
+        /*jquery-ui-fixed*/
+        var cpro_id = "u1731049";
+    </script>
+    <script src="../../../cpro.baidustatic.com/cpro/ui/c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+</div>
+<script type="text/javascript">setTimeout(function(){
+  $("#googlead").removeClass("hidden").animate({bottom:10})
+},3000)</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../www.google-analytics.com/analytics.js'/*tpa=http://www.google-analytics.com/analytics.js*/,'ga');
+
+  ga('create', 'UA-3448069-12', 'http://www.css88.com/jquery-ui-api/spinner/css88.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

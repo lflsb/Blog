@@ -1,0 +1,3591 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Datepicker Widget | jQuery UI API ä¸­æ–‡æ–‡æ¡£ | jQuery APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery 1.0 - jQuery 2.0)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="jQuery,API,ä¸­æ–‡ç‰ˆ,ä¸­æ–‡æ–‡æ¡£,ä¸­æ–‡æ‰‹å†Œ,chm" />
+<meta name="description" content="jQuery APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery 1.0 - jQuery 2.0)" />
+<link rel="shortcut icon" type="image/x-icon" href="http://www.css88.com/jquery-ui-api/favicon.ico" />
+
+<!--<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />-->
+<link rel="stylesheet" type="text/css" media="screen" href="../cssstyle/main.min.css" tppabs="http://www.css88.com/jquery-ui-api/cssstyle/main.min.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="../cssstyle/style.css" tppabs="http://www.css88.com/jquery-ui-api/cssstyle/style.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="../cssstyle/jquery.css" tppabs="http://www.css88.com/jquery-ui-api/cssstyle/jquery.css" />
+<script type="text/javascript" src="../js/jquery.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/highlight.js" tppabs="http://www.css88.com/jquery-ui-api/js/highlight.js"></script>
+<script type="text/javascript" src="../js/jquery.ba-bbq.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/jquery.ba-bbq.min.js"></script>
+<script type="text/javascript" src="../js/jquery.ba-dotimeout.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/jquery.ba-dotimeout.min.js"></script>
+<script type="text/javascript" src="../js/main.js" tppabs="http://www.css88.com/jquery-ui-api/js/main.js"></script>
+<!--<script type="text/javascript" src="js/main.min.js"></script>-->
+</head>
+
+<body>
+<div id="header_warp">
+    <div class="header-box">
+            <div class="logo">
+                <h1><a href="../index.htm" tppabs="http://www.css88.com/jquery-ui-api/"
+                       title="jQuery UI APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery UI 1.10)">jQuery UI APIä¸­æ–‡æ–‡æ¡£</a></h1>
+            </div>
+            <ul class="header-nav">
+                <!--<li><a href="http://www.css88.com/jquery-ui-api/old.html" class="nav-link" title="jQuery UI APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery UI 1.10)">æ—§ç‰ˆ</a>
+                </li>-->
+                <li><a href="javascript:if(confirm('http://www.css88.com/jqapi-1.9/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/jqapi-1.9/'" tppabs="http://www.css88.com/jqapi-1.9/" class="nav-link" title="é€‚ç”¨jQuery 1.0 â€“ jQuery 1.10.2,jQuery 2.0 â€“ jQuery 2.0.3">jQuery APIä¸­æ–‡æ–‡æ¡£</a>
+                <li><a href="javascript:if(confirm('http://www.css88.com/archives/4737  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/archives/4737'" tppabs="http://www.css88.com/archives/4737" class="nav-link" title="jQuery UI APIä¸­æ–‡æ–‡æ¡£æ›´æ–°ä¿¡æ¯">æ›´æ–°ä¿¡æ¯</a></li>
+
+                <li><a href="javascript:if(confirm('http://www.css88.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/'" tppabs="http://www.css88.com/" class="nav-link">å‰ç«¯å¼€å‘</a></li>
+            </ul>
+            <!--<input type="search" placeholder="æœç´¢API" autosave="searchdoc" results="10" id="search-field" autocomplete="off">-->
+        </div>
+</div>
+<div id="navigation">
+	
+<aside id="categories" class="widget">
+    <h3 class="widget-title">jQuery UI 1.10</h3>
+    <ul>
+    				<li class="cat-item cat-item-2 current-cat"><a href="../category/effects/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/effects/" title="View all posts filed under Effects">Effects</a>
+    </li>
+    	<li class="cat-item cat-item-10"><a href="../category/effects-core/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/effects-core/" title="View all posts filed under Effects Core">Effects Core</a>
+    </li>
+    	<li class="cat-item cat-item-4"><a href="../category/interactions/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/interactions/" title="View all posts filed under Interactions">Interactions</a>
+    </li>
+    	<li class="cat-item cat-item-8"><a href="../category/overrides/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/overrides/" title="View all posts filed under Method Overrides">Method Overrides</a>
+    </li>
+    	<li class="cat-item cat-item-6"><a href="../category/methods/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/methods/" title="View all posts filed under Methods">Methods</a>
+    </li>
+    	<li class="cat-item cat-item-7"><a href="../category/selectors/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/selectors/" title="View all posts filed under Selectors">Selectors</a>
+    </li>
+    	<li class="cat-item cat-item-12"><a href="../category/theming/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/theming/" title="View all posts filed under Theming">Theming</a>
+    </li>
+    	<li class="cat-item cat-item-9"><a href="../category/ui-core/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/ui-core/" title="View all posts filed under UI Core">UI Core</a>
+    </li>
+    	<li class="cat-item cat-item-5"><a href="../category/utilities/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/utilities/" title="View all posts filed under Utilities">Utilities</a>
+    </li>
+    	<li class="cat-item cat-item-3"><a href="../category/widgets/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/widgets/" title="View all posts filed under Widgets">Widgets</a>
+    </li>
+    		</ul>
+  </aside>
+
+
+    <div style=" height:60px;margin-left:20px"><p
+                        style="font-size:12px; line-height:1.5; margin:8px 0">æ‹ç –çº é”™ è¯·å¾®åšä¸Š <a href="javascript:if(confirm('http://weibo.com/148246293  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://weibo.com/148246293'" tppabs="http://weibo.com/148246293"
+                                                                                           target="_blank">@æ„šäººç å¤´</a>ï¼š</p>
+                    <iframe style="vertical-align: middle;" width="163" height="24" frameborder="0"
+                            allowtransparency="true" marginwidth="0" marginheight="0" scrolling="no" border="0"
+                            src="../../../widget.weibo.com/relationship/followbutton.php-language=zh_cn&width=63&height=24            &uid=1477178352&style=2&btn=red&dpc=1" tppabs="http://widget.weibo.com/relationship/followbutton.php?language=zh_cn&width=63&height=24            &uid=1477178352&style=2&btn=red&dpc=1"></iframe>
+                </div>
+        <div id="googleguanggao" style=" margin-top:20px; margin-left:10px">
+            <script type="text/javascript">
+                        /*jquery-ui-left*/
+                        var cpro_id = "u1731043";
+                    </script>
+                    <script src="../../../cpro.baidustatic.com/cpro/ui/c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+        </div></div>
+<div id="content_box">
+  <div id="content">
+	
+<div class="inner" role="main">
+<article id="post-21" class="post-21 post type-post status-publish format-standard hentry category-widgets">
+	<header class="entry-header">
+		<h1 class="entry-title">Datepicker Widget</h1>
+		<hr>
+<div id="baidu-banner">
+<script type="text/javascript">
+    /*jquery-ui-banner*/
+    var cpro_id = "u1731052";
+</script>
+<script src="../../../cpro.baidustatic.com/cpro/ui/c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+</div>
+<div class="entry-meta">
+			Categories: <span class="category"><a href="../category/widgets/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/widgets/" title="View all posts in Widgets">Widgets</a></span>		</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<article id="datepicker1" class="entry widget"><h2 class="section-title">
+<span>Datepicker Widget</span><span class="version-details">version added: 1.0</span>
+</h2>
+<div class="entry-wrapper">
+<p class="desc"><strong>Description: </strong>ä»å¼¹å‡ºæ¡†æˆ–å†…è”æ—¥å†é€‰æ‹©ä¸€ä¸ªæ—¥æœŸã€‚</p>
+<section id="quick-nav"><header><h2>QuickNav<a href="#entry-examples">Examples</a>
+</h2></header><div class="quick-nav-section">
+<h3>Options</h3>
+<div><a href="#option-altField">altField</a></div>
+<div><a href="#option-altFormat">altFormat</a></div>
+<div><a href="#option-appendText">appendText</a></div>
+<div><a href="#option-autoSize">autoSize</a></div>
+<div><a href="#option-beforeShow">beforeShow</a></div>
+<div><a href="#option-beforeShowDay">beforeShowDay</a></div>
+<div><a href="#option-buttonImage">buttonImage</a></div>
+<div><a href="#option-buttonImageOnly">buttonImageOnly</a></div>
+<div><a href="#option-buttonText">buttonText</a></div>
+<div><a href="#option-calculateWeek">calculateWeek</a></div>
+<div><a href="#option-changeMonth">changeMonth</a></div>
+<div><a href="#option-changeYear">changeYear</a></div>
+<div><a href="#option-closeText">closeText</a></div>
+<div><a href="#option-constrainInput">constrainInput</a></div>
+<div><a href="#option-currentText">currentText</a></div>
+<div><a href="#option-dateFormat">dateFormat</a></div>
+<div><a href="#option-dayNames">dayNames</a></div>
+<div><a href="#option-dayNamesMin">dayNamesMin</a></div>
+<div><a href="#option-dayNamesShort">dayNamesShort</a></div>
+<div><a href="#option-defaultDate">defaultDate</a></div>
+<div><a href="#option-duration">duration</a></div>
+<div><a href="#option-firstDay">firstDay</a></div>
+<div><a href="#option-gotoCurrent">gotoCurrent</a></div>
+<div><a href="#option-hideIfNoPrevNext">hideIfNoPrevNext</a></div>
+<div><a href="#option-isRTL">isRTL</a></div>
+<div><a href="#option-maxDate">maxDate</a></div>
+<div><a href="#option-minDate">minDate</a></div>
+<div><a href="#option-monthNames">monthNames</a></div>
+<div><a href="#option-monthNamesShort">monthNamesShort</a></div>
+<div><a href="#option-navigationAsDateFormat">navigationAsDateFormat</a></div>
+<div><a href="#option-nextText">nextText</a></div>
+<div><a href="#option-numberOfMonths">numberOfMonths</a></div>
+<div><a href="#option-onChangeMonthYear">onChangeMonthYear</a></div>
+<div><a href="#option-onClose">onClose</a></div>
+<div><a href="#option-onSelect">onSelect</a></div>
+<div><a href="#option-prevText">prevText</a></div>
+<div><a href="#option-selectOtherMonths">selectOtherMonths</a></div>
+<div><a href="#option-shortYearCutoff">shortYearCutoff</a></div>
+<div><a href="#option-showAnim">showAnim</a></div>
+<div><a href="#option-showButtonPanel">showButtonPanel</a></div>
+<div><a href="#option-showCurrentAtPos">showCurrentAtPos</a></div>
+<div><a href="#option-showMonthAfterYear">showMonthAfterYear</a></div>
+<div><a href="#option-showOn">showOn</a></div>
+<div><a href="#option-showOptions">showOptions</a></div>
+<div><a href="#option-showOtherMonths">showOtherMonths</a></div>
+<div><a href="#option-showWeek">showWeek</a></div>
+<div><a href="#option-stepMonths">stepMonths</a></div>
+<div><a href="#option-weekHeader">weekHeader</a></div>
+<div><a href="#option-yearRange">yearRange</a></div>
+<div><a href="#option-yearSuffix">yearSuffix</a></div>
+</div>
+<div class="quick-nav-section">
+<h3>Methods</h3>
+<div><a href="#method-destroy">destroy</a></div>
+<div><a href="#method-dialog">dialog</a></div>
+<div><a href="#method-getDate">getDate</a></div>
+<div><a href="#method-hide">hide</a></div>
+<div><a href="#method-isDisabled">isDisabled</a></div>
+<div><a href="#method-option">option</a></div>
+<div><a href="#method-refresh">refresh</a></div>
+<div><a href="#method-setDate">setDate</a></div>
+<div><a href="#method-show">show</a></div>
+<div><a href="#method-widget">widget</a></div>
+</div>
+<div class="quick-nav-section"><h3>Events</h3></div></section><div class="longdesc" id="entry-longdesc">
+        <p>jQuery UI æ—¥æœŸé€‰æ‹©å™¨ï¼ˆDatepickerï¼‰æ˜¯å‘é¡µé¢æ·»åŠ æ—¥æœŸé€‰æ‹©åŠŸèƒ½çš„é«˜åº¦å¯é…ç½®æ’ä»¶ã€‚æ‚¨å¯ä»¥è‡ªå®šä¹‰æ—¥æœŸæ ¼å¼å’Œè¯­è¨€ï¼Œé™åˆ¶å¯é€‰æ‹©çš„æ—¥æœŸèŒƒå›´ï¼Œæ·»åŠ æŒ‰é’®å’Œå…¶ä»–å¯¼èˆªé€‰é¡¹ã€‚</p>
+        <p>é»˜è®¤æƒ…å†µä¸‹ï¼Œå½“ç›¸å…³çš„æ–‡æœ¬åŸŸè·å¾—ç„¦ç‚¹æ—¶ï¼Œåœ¨ä¸€ä¸ªå°çš„è¦†ç›–å±‚æ‰“å¼€æ—¥æœŸé€‰æ‹©å™¨ã€‚å¯¹äºä¸€ä¸ªå†…è”çš„æ—¥å†ï¼Œåªéœ€ç®€å•åœ°å°†æ—¥æœŸé€‰æ‹©å™¨é™„åŠ åˆ° div æˆ–è€… span ä¸Šã€‚</p>
+
+		<h3>é”®ç›˜äº¤äº’</h3>
+        <p>å½“æ—¥æœŸé€‰æ‹©å™¨æ‰“å¼€æ—¶ï¼Œä¸‹é¢çš„é”®ç›˜å‘½ä»¤å¯ç”¨ï¼š</p>
+        <ul>
+            <li>PAGE UPï¼šç§»åˆ°ä¸Šä¸€ä¸ªæœˆã€‚</li>
+            <li>PAGE DOWNï¼šç§»åˆ°ä¸‹ä¸€ä¸ªæœˆã€‚</li>
+            <li>CTRL+PAGE UPï¼šç§»åˆ°ä¸Šä¸€å¹´ã€‚</li>
+            <li>CTRL+PAGE DOWNï¼šç§»åˆ°ä¸‹ä¸€å¹´ã€‚</li>
+            <li>CTRL+HOMEï¼šç§»åˆ°å½“å‰æœˆä»½ã€‚å¦‚æœæ—¥æœŸé€‰æ‹©å™¨æ˜¯å…³é—­çš„åˆ™æ‰“å¼€ã€‚</li>
+            <li>CTRL+LEFTï¼šç§»åˆ°ä¸Šä¸€å¤©ã€‚</li>
+            <li>CTRL+RIGHTï¼šç§»åˆ°ä¸‹ä¸€å¤©ã€‚</li>
+            <li>CTRL+UPï¼šç§»åˆ°ä¸Šä¸€å‘¨ã€‚</li>
+            <li>CTRL+DOWNï¼šç§»åˆ°ä¸‹ä¸€å‘¨ã€‚</li>
+            <li>ENTERï¼šé€‰æ‹©èšç„¦çš„æ—¥æœŸã€‚</li>
+            <li>CTRL+ENDï¼šå…³é—­æ—¥æœŸé€‰æ‹©å™¨ï¼Œå¹¶æ¸…é™¤æ—¥æœŸã€‚</li>
+            <li>ESCAPEï¼šå…³é—­æ—¥æœŸé€‰æ‹©å™¨ï¼Œä¸åšä»»ä½•é€‰æ‹©ã€‚</li>
+        </ul>
+
+		<h3 id="utility-functions">å®ç”¨åŠŸèƒ½</h3>
+
+		<h4 id="utility-setDefaults">$.datepicker.setDefaults( settings )</h4>
+        <p>ä¸ºæ‰€æœ‰çš„æ—¥æœŸé€‰æ‹©å™¨æ”¹å˜é»˜è®¤è®¾ç½®ã€‚</p>
+        <p>ä½¿ç”¨ <a href="#method-option"><code>option()</code></a> æ–¹æ³•æ¥æ”¹å˜ä¸ªåˆ«å®ä¾‹çš„è®¾ç½®ã€‚</p>
+		<div>
+			<strong>Code examples:</strong>
+            <p>è®¾ç½®æ‰€æœ‰çš„æ—¥æœŸé€‰æ‹©å™¨åœ¨è·å¾—ç„¦ç‚¹æ—¶æˆ–ç‚¹å‡»å›¾æ ‡æ—¶æ‰“å¼€ã€‚</p>
+			<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+						<div class="line n6">6</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$.datepicker.setDefaults({</code></div></div><div class="container"><div class="line"><code>  showOn: <span class="string">"both"</span>,</code></div></div><div class="container"><div class="line"><code>  buttonImageOnly: <span class="literal">true</span>,</code></div></div><div class="container"><div class="line"><code>  buttonImage: <span class="string">"calendar.gif"</span>,</code></div></div><div class="container"><div class="line"><code>  buttonText: <span class="string">"Calendar"</span></code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+            <p>è®¾ç½®æ‰€æœ‰çš„æ—¥æœŸé€‰æ‹©å™¨éƒ½æœ‰æ³•è¯­æ–‡æœ¬ã€‚</p>
+			<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$.datepicker.setDefaults( $.datepicker.regional[ <span class="string">"fr"</span> ] );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+		</div>
+
+		<h4 id="utility-formatDate">$.datepicker.formatDate( format, date, settings )</h4>
+        <p>æ ¼å¼åŒ–æ—¥æœŸä¸ºä¸€ä¸ªå¸¦æœ‰æŒ‡å®šæ ¼å¼çš„å­—ç¬¦ä¸²å€¼ã€‚</p>
+        <p>æ ¼å¼å¯ä»¥æ˜¯ä¸‹åˆ—ç»„åˆï¼š</p>
+        <ul>
+            <li>d - ä¸€æœˆä¸­çš„ç¬¬å‡ å¤©ï¼ˆæ²¡æœ‰å‰å¯¼é›¶ï¼‰</li>
+            <li>dd - ä¸€æœˆä¸­çš„ç¬¬å‡ å¤©ï¼ˆä¸¤ä½æ•°ï¼‰</li>
+            <li>o - ä¸€å¹´ä¸­çš„ç¬¬å‡ å¤©ï¼ˆæ²¡æœ‰å‰å¯¼é›¶ï¼‰</li>
+            <li>oo - ä¸€å¹´ä¸­çš„ç¬¬å‡ å¤©ï¼ˆä¸‰ä½æ•°ï¼‰</li>
+            <li>D - å¤©çš„çŸ­åç§°</li>
+            <li>DD - å¤©çš„é•¿åç§°</li>
+            <li>m - ä¸€å¹´ä¸­çš„ç¬¬å‡ æœˆï¼ˆæ²¡æœ‰å‰å¯¼é›¶ï¼‰</li>
+            <li>mm - ä¸€å¹´ä¸­çš„ç¬¬å‡ æœˆï¼ˆä¸¤ä½æ•°ï¼‰</li>
+            <li>M - æœˆçš„çŸ­åç§°</li>
+            <li>MM - æœˆçš„é•¿åç§°</li>
+            <li>y - å¹´ï¼ˆä¸¤ä½æ•°ï¼‰</li>
+            <li>yy - å¹´ï¼ˆå››ä½æ•°ï¼‰</li>
+            <li>@ - Unix æ—¶é—´æˆ³ï¼ˆms since 01/01/1970ï¼‰</li>
+            <li> ! - Windows é’Ÿè¡¨ï¼ˆ100ns since 01/01/0001ï¼‰</li>
+            <li>'...' - æ–‡æœ¬</li>
+            <li>'' - å•å¼•å·</li>
+            <li>å…¶ä»– - æ–‡æœ¬</li>
+        </ul>
+
+        <p>ä¹Ÿæœ‰ä¸€äº› <code>$.datepicker</code> é¢„å®šä¹‰çš„æ ‡å‡†æ—¥æœŸæ ¼å¼ï¼š</p>
+        <ul>
+            <li>ATOM - 'yy-mm-dd' ï¼ˆä¸ RFC 3339/ISO 8601 ç›¸åŒï¼‰</li>
+            <li>COOKIE - 'D, dd M yy'</li>
+            <li>ISO_8601 - 'yy-mm-dd'</li>
+            <li>RFC_822 - 'D, d M y' ï¼ˆå‚ç…§ RFC 822ï¼‰</li>
+            <li>RFC_850 - 'DD, dd-M-y' ï¼ˆå‚ç…§ RFC 850ï¼‰</li>
+            <li>RFC_1036 - 'D, d M y' ï¼ˆå‚ç…§ RFC 1036ï¼‰</li>
+            <li>RFC_1123 - 'D, d M yy' ï¼ˆå‚ç…§ RFC 1123ï¼‰</li>
+            <li>RFC_2822 - 'D, d M yy' ï¼ˆå‚ç…§ RFC 2822ï¼‰</li>
+            <li>RSS - 'D, d M y' ï¼ˆä¸ RFC 822 ç›¸åŒï¼‰</li>
+            <li>TICKS - '!'</li>
+            <li>TIMESTAMP - '@'</li>
+            <li>W3C - 'yy-mm-dd' ï¼ˆä¸ ISO 8601 ç›¸åŒï¼‰</li>
+        </ul>
+		<div>
+			<strong>Code examples:</strong>
+            <p>ä»¥ ISO æ ¼å¼æ˜¾ç¤ºæ—¥æœŸã€‚äº§ç”Ÿ "2007-01-26"ã€‚</p>
+			<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$.datepicker.formatDate( <span class="string">"yy-mm-dd"</span>, <span class="keyword">new</span> Date( <span class="number">2007</span>, <span class="number">1</span> - <span class="number">1</span>, <span class="number">26</span> ) );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+            <p>ä»¥æ‰©å±•æ³•è¯­æ ¼å¼æ˜¾ç¤ºæ—¥æœŸã€‚äº§ç”Ÿ "Samedi, Juillet 14, 2007"ã€‚</p>
+
+			<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+						<div class="line n6">6</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$.datepicker.formatDate( <span class="string">"DD, MM d, yy"</span>, <span class="keyword">new</span> Date( <span class="number">2007</span>, <span class="number">7</span> - <span class="number">1</span>, <span class="number">14</span> ), {</code></div></div><div class="container"><div class="line"><code>  dayNamesShort: $.datepicker.regional[ <span class="string">"fr"</span> ].dayNamesShort,</code></div></div><div class="container"><div class="line"><code>  dayNames: $.datepicker.regional[ <span class="string">"fr"</span> ].dayNames,</code></div></div><div class="container"><div class="line"><code>  monthNamesShort: $.datepicker.regional[ <span class="string">"fr"</span> ].monthNamesShort,</code></div></div><div class="container"><div class="line"><code>  monthNames: $.datepicker.regional[ <span class="string">"fr"</span> ].monthNames</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+		</div>
+
+		<h4 id="utility-parseDate">$.datepicker.parseDate( format, value, settings )</h4>
+        <p>ä»ä¸€ä¸ªæŒ‡å®šæ ¼å¼çš„å­—ç¬¦ä¸²å€¼ä¸­æå–æ—¥æœŸã€‚</p>
+        <p>æ ¼å¼å¯ä»¥æ˜¯ä¸‹åˆ—ç»„åˆï¼š</p>
+        <ul> <li>d - ä¸€æœˆä¸­çš„ç¬¬å‡ å¤©ï¼ˆæ²¡æœ‰å‰å¯¼é›¶ï¼‰</li> <li>dd - ä¸€æœˆä¸­çš„ç¬¬å‡ å¤©ï¼ˆä¸¤ä½æ•°ï¼‰</li> <li>o - ä¸€å¹´ä¸­çš„ç¬¬å‡ å¤©ï¼ˆæ²¡æœ‰å‰å¯¼é›¶ï¼‰</li> <li>oo - ä¸€å¹´ä¸­çš„ç¬¬å‡ å¤©ï¼ˆä¸‰ä½æ•°ï¼‰</li> <li>D - æ˜ŸæœŸå‡ çš„çŸ­åç§°</li> <li>DD - æ˜ŸæœŸå‡ çš„é•¿åç§°</li> <li>m - ä¸€å¹´ä¸­çš„ç¬¬å‡ æœˆï¼ˆæ²¡æœ‰å‰å¯¼é›¶ï¼‰</li> <li>mm - ä¸€å¹´ä¸­çš„ç¬¬å‡ æœˆï¼ˆä¸¤ä½æ•°ï¼‰</li> <li>M - æœˆçš„çŸ­åç§°</li> <li>MM - æœˆçš„é•¿åç§°</li> <li>y - å¹´ï¼ˆä¸¤ä½æ•°ï¼‰</li> <li>yy - å¹´ï¼ˆå››ä½æ•°ï¼‰</li> <li>@ - Unix æ—¶é—´æˆ³ï¼ˆms since 01/01/1970ï¼‰</li> <li> ! - Windows é’Ÿè¡¨ï¼ˆ100ns since 01/01/0001ï¼‰</li> <li>'...' - æ–‡æœ¬</li> <li>'' - å•å¼•å·</li> <li>å…¶ä»– - æ–‡æœ¬</li> </ul>
+        <p>ä¸€äº›å¯èƒ½è¢«æŠ›å‡ºçš„å¼‚å¸¸ï¼š</p>
+        <ul> <li>'Invalid arguments' - å¦‚æœæ ¼å¼æˆ–å€¼ä¸ºç©ºåˆ™æŠ›å‡ºæ­¤å¼‚å¸¸ã€‚</li> <li>'Missing number at position nn' - å¦‚æœæ ¼å¼æ˜¾ç¤ºä¸€ä¸ªæœªæ‰¾åˆ°çš„æ•°å€¼åˆ™æŠ›å‡ºæ­¤å¼‚å¸¸ã€‚</li> <li>'Unknown name at position nn' - å¦‚æœæ ¼å¼æ˜¾ç¤ºä¸€ä¸ªæœªæ‰¾åˆ°çš„æ˜ŸæœŸå‡ åç§°æˆ–æœˆä»½åç§°åˆ™æŠ›å‡ºæ­¤å¼‚å¸¸ã€‚</li> <li>'Unexpected literal at position nn' - å¦‚æœæ ¼å¼æ˜¾ç¤ºä¸€ä¸ªæœªæ‰¾åˆ°çš„æ–‡æœ¬å€¼åˆ™æŠ›å‡ºæ­¤å¼‚å¸¸ã€‚</li> <li>'Invalid date' - å¦‚æœæ—¥æœŸæ— æ•ˆåˆ™æŠ›å‡ºæ­¤å¼‚å¸¸ï¼Œæ¯”å¦‚ '31/02/2007'ã€‚</li> </ul>
+		<div>
+			<strong>Code examples:</strong>
+            <p>æå–ä¸€ä¸ª ISO æ ¼å¼çš„æ—¥æœŸã€‚</p>
+			<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$.datepicker.parseDate( <span class="string">"yy-mm-dd"</span>, <span class="string">"2007-01-26"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+            <p>æå–ä¸€ä¸ªæ‰©å±•æ³•è¯­æ ¼å¼çš„æ—¥æœŸã€‚</p>
+			<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+						<div class="line n6">6</div>
+
+						<div class="line n7">7</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$.datepicker.parseDate( <span class="string">"DD, MM d, yy"</span>, <span class="string">"Samedi, Juillet 14, 2007"</span>, {</code></div></div><div class="container"><div class="line"><code>  shortYearCuroff: <span class="number">20</span>,</code></div></div><div class="container"><div class="line"><code>  dayNamesShort: $.datepicker.regional[ <span class="string">"fr"</span> ].dayNamesShort,</code></div></div><div class="container"><div class="line"><code>  dayNames: $.datepicker.regional[ <span class="string">"fr"</span> ].dayNames,</code></div></div><div class="container"><div class="line"><code>  monthNamesShort: $.datepicker.regional[ <span class="string">"fr"</span> ].monthNamesShort,</code></div></div><div class="container"><div class="line"><code>  monthNames: $.datepicker.regional[ <span class="string">"fr"</span> ].monthNames</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+		</div>
+
+		<h4 id="utility-iso8601Week">$.datepicker.iso8601Week( date )</h4>
+        <p>ç¡®å®šä¸€ä¸ªç»™å®šçš„æ—¥æœŸåœ¨ä¸€å¹´ä¸­çš„ç¬¬å‡ å‘¨ï¼š1 åˆ° 53ã€‚</p>
+        <p>è¯¥å‡½æ•°ä½¿ç”¨ ISO 8601 å®šä¹‰ä¸€å‘¨ï¼šä¸€å‘¨ä»æ˜ŸæœŸä¸€å¼€å§‹ï¼Œæ¯ä¸€å¹´çš„ç¬¬ä¸€å‘¨åŒ…å« 1 æœˆ 4 æ—¥ã€‚è¿™æ„å‘³ç€ä¸Šä¸€å¹´è‡³å¤šæœ‰ä¸‰å¤©å¯èƒ½åŒ…å«åœ¨å½“å¹´çš„ç¬¬ä¸€å‘¨ä¸­ï¼Œå½“å¹´è‡³å¤šæœ‰ä¸‰å¤©å¯èƒ½åŒ…å«åœ¨ä¸Šä¸€å¹´çš„æœ€åä¸€å‘¨ä¸­ã€‚</p>
+        <p>è¯¥å‡½æ•°æ˜¯ <a href="#option-calculateWeek"><code>calculateWeek</code></a> é€‰é¡¹çš„é»˜è®¤å®ç°ã€‚</p>
+		<div>
+			<strong>Code examples:</strong>
+            <p>æŸ¥æ‰¾æ—¥æœŸåœ¨ä¸€å¹´ä¸­çš„ç¬¬å‡ å‘¨ã€‚</p>
+			<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$.datepicker.iso8601Week( <span class="keyword">new</span> Date( <span class="number">2007</span>, <span class="number">1</span> - <span class="number">1</span>, <span class="number">26</span> ) );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+		</div>
+
+		<h4 id="utility-noWeekends">$.datepicker.noWeekends</h4>
+        <p>è®¾ç½®å¦‚ beforeShowDay å‡½æ•°ï¼Œé˜²æ­¢é€‰æ‹©å‘¨æœ«ã€‚</p>
+        <p>æˆ‘ä»¬å¯ä»¥åœ¨ <a href="#option-beforeShowDay"><code>beforeShowDay</code></a> é€‰é¡¹ä¸­æä¾› <code>noWeekends()</code> å‡½æ•°ï¼Œç”¨æ¥è®¡ç®—æ‰€æœ‰å·¥ä½œæ—¥ï¼Œæä¾›ä¸€ä¸ª <code>true</code>/<code>false</code> å€¼çš„æ•°ç»„ï¼Œç”¨æ¥æŒ‡ç¤ºæ—¥æœŸæ˜¯å¦å¯é€‰æ‹©ã€‚</p>
+		<div>
+			<strong>Code examples:</strong>
+            <p>è®¾ç½® DatePickerï¼Œè®©å‘¨æœ«ä¸å¯é€‰ã€‚</p>
+			<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">"#datepicker"</span> ).datepicker({</code></div></div><div class="container"><div class="line"><code>  beforeShowDay: $.datepicker.noWeekends</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+		</div>
+
+		<h3>å±€é™</h3>
+        <p>æ—¥æœŸé€‰æ‹©å™¨æä¾›äº†è¿åˆä¸åŒçš„è¯­è¨€å’Œæ—¥æœŸæ ¼å¼æœ¬åœ°åŒ–å†…å®¹çš„æ”¯æŒã€‚æ¯ä¸ªæœ¬åœ°åŒ–åŒ…å«åœ¨åç§°åè¿½åŠ è¯­è¨€ä»£ç çš„æ–‡ä»¶ä¸­ï¼Œä¾‹å¦‚æ³•è¯­ä¸º <code>jquery.ui.datepicker-fr.js</code>ã€‚æ‰€éœ€çš„æœ¬åœ°åŒ–æ–‡ä»¶éœ€è¦åŒ…å«åœ¨ä¸»è¦çš„æ—¥æœŸé€‰æ‹©å™¨ä»£ç åé¢ã€‚æ¯ä¸ªæœ¬åœ°åŒ–æ–‡ä»¶æ·»åŠ äº†å®ƒè‡ªå·±çš„è®¾ç½®åˆ°å¯ç”¨çš„æœ¬åœ°åŒ–é›†åˆä¸­ï¼Œæ‰€æœ‰å®ä¾‹è‡ªåŠ¨åº”ç”¨è¿™äº›è®¾ç½®ä¸ºé»˜è®¤è®¾ç½®ã€‚</p>
+
+        <p><code>$.datepicker.regional</code> å±æ€§ä¿å­˜äº†ä¸€ä¸ªæœ¬åœ°åŒ–æ•°ç»„ï¼Œä»¥è¯­è¨€ä»£ç ä½œä¸ºå‰ç½®ï¼Œé»˜è®¤å‰ç½®ä¸º <code>""</code>ï¼Œè¡¨ç¤ºè‹±è¯­ã€‚æ¯ä¸ªæ¡ç›®æ˜¯ä¸€ä¸ªå¸¦æœ‰ä¸‹åˆ—å±æ€§çš„å¯¹è±¡ï¼š<code>closeText</code> ã€ <code>prevText</code> ã€ <code>nextText</code> ã€ <code>currentText</code> ã€ <code>monthNames</code> ã€ <code>monthNamesShort</code> ã€ <code>dayNames</code> ã€ <code>dayNamesShort</code> ã€ <code>dayNamesMin</code> ã€ <code>weekHeader</code> ã€ <code>dateFormat</code> ã€ <code>firstDay</code> ã€ <code>isRTL</code> ã€ <code>showMonthAfterYear</code>
+            å’Œ <code>yearSuffix</code>ã€‚</p>
+        <p>æ‚¨å¯ä»¥é€šè¿‡ä¸‹é¢ä»£ç æ¢å¤é»˜è®¤çš„æœ¬åœ°åŒ–ï¼š</p>
+
+
+		<code>$.datepicker.setDefaults( $.datepicker.regional[ "" ] );</code>
+        <p>æ‚¨å¯ä»¥é€šè¿‡ä¸‹é¢ä»£ç è¦†ç›–ä¸€ä¸ªç‰¹å®šåœ°ç‚¹çš„æ—¥æœŸé€‰æ‹©å™¨ï¼š</p>
+		<code>$( selector ).datepicker( $.datepicker.regional[ "fr" ] );</code>
+
+		<div>
+	<h3 id="theming">ä¸»é¢˜</h3>
+            <p>æ—¥æœŸé€‰æ‹©å™¨éƒ¨ä»¶ï¼ˆDatepicker Widgetï¼‰ä½¿ç”¨ <a href="javascript:if(confirm('http://www.css88.com/theming/css-framework/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/theming/css-framework/'" tppabs="http://www.css88.com/theming/css-framework/">jQuery UI CSS æ¡†æ¶</a> æ¥å®šä¹‰å®ƒçš„å¤–è§‚å’Œæ„Ÿè§‚çš„æ ·å¼ã€‚å¦‚æœéœ€è¦ä½¿ç”¨æ—¥æœŸé€‰æ‹©å™¨æŒ‡å®šçš„æ ·å¼ï¼Œåˆ™å¯ä»¥ä½¿ç”¨ä¸‹é¢çš„ CSS class åç§°ï¼š</p>
+</div>
+        <ul>
+            <li><code>ui-datepicker</code>ï¼šæ—¥æœŸé€‰æ‹©å™¨çš„å¤–å±‚å®¹å™¨ã€‚å¦‚æœæ—¥æœŸé€‰æ‹©å™¨æ˜¯å†…è”çš„ï¼Œè¯¥å…ƒç´ ä¼šå¦å¤–å¸¦æœ‰ä¸€ä¸ª <code>ui-datepicker-inline</code>
+                classã€‚å¦‚æœè®¾ç½®äº† <a href="#option-isRTL"><code>isRTL</code></a> é€‰é¡¹ï¼Œè¯¥å…ƒç´ ä¼šå¦å¤–å¸¦æœ‰ä¸€ä¸ª <code>ui-datepicker-rtl</code>
+                classã€‚
+                <ul>
+                    <li><code>ui-datepicker-header</code>ï¼šæ—¥æœŸé€‰æ‹©å™¨çš„å¤´éƒ¨å®¹å™¨ã€‚
+                        <ul>
+                            <li><code>ui-datepicker-prev</code>ï¼šç”¨äºé€‰æ‹©ä¸Šä¸€æœˆçš„æ§ä»¶ã€‚</li>
+                            <li><code>ui-datepicker-next</code>ï¼šç”¨äºé€‰æ‹©ä¸‹ä¸€æœˆçš„æ§ä»¶ã€‚</li>
+                            <li><code>ui-datepicker-title</code>ï¼šæ—¥æœŸé€‰æ‹©å™¨åŒ…å«æœˆå’Œå¹´çš„æ ‡é¢˜å®¹å™¨ã€‚
+                                <ul>
+                                    <li><code>ui-datepicker-month</code>ï¼šæœˆçš„æ–‡æœ¬æ˜¾ç¤ºï¼Œå¦‚æœè®¾ç½®äº† <a
+                                            href="#option-changeMonth"><code>changeMonth</code></a> é€‰é¡¹åˆ™æ˜¾ç¤º <code>&lt;select&gt;</code>
+                                        å…ƒç´ ã€‚
+                                    </li>
+                                    <li><code>ui-datepicker-year</code>ï¼šå¹´çš„æ–‡æœ¬æ˜¾ç¤ºï¼Œå¦‚æœè®¾ç½®äº† <a href="#option-changeYear"><code>changeYear</code></a>
+                                        é€‰é¡¹åˆ™æ˜¾ç¤º <code>&lt;select&gt;</code> å…ƒç´ ã€‚
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><code>ui-datepicker-calendar</code>ï¼šåŒ…å«æ—¥å†çš„è¡¨æ ¼ã€‚
+                        <ul>
+                            <li><code>ui-datepicker-week-end</code>ï¼šå‘¨æœ«çš„å•å…ƒæ ¼ã€‚: Cells containing weekend days.</li>
+                            <li><code>ui-datepicker-other-month</code>ï¼šå‘ç”Ÿåœ¨æŸæœˆä½†ä¸æ˜¯å½“å‰æœˆå¤©æ•°çš„å•å…ƒæ ¼ã€‚</li>
+                            <li><code>ui-datepicker-unselectable</code>ï¼šç”¨æˆ·ä¸å¯é€‰æ‹©çš„å•å…ƒæ ¼ã€‚</li>
+                            <li><code>ui-datepicker-current-day</code>ï¼šå·²é€‰ä¸­æ—¥æœŸçš„å•å…ƒæ ¼ã€‚</li>
+                            <li><code>ui-datepicker-today</code>ï¼šå½“å¤©æ—¥æœŸçš„å•å…ƒæ ¼ã€‚</li>
+                        </ul>
+                    </li>
+                    <li><code>ui-datepicker-buttonpane</code>ï¼šå½“è®¾ç½® <a href="#option-showButtonPanel"><code>showButtonPanel</code></a>
+                        é€‰é¡¹æ—¶ä½¿ç”¨æŒ‰é’®é¢æ¿ï¼ˆbuttonpaneï¼‰ã€‚
+                        <ul>
+                            <li><code>ui-datepicker-current</code>ï¼šç”¨äºé€‰æ‹©å½“å¤©æ—¥æœŸçš„æŒ‰é’®ã€‚</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+
+        <p>å¦‚æœ <a href="#option-numberOfMonths"><code>numberOfMonths</code></a> é€‰é¡¹ç”¨äºæ˜¾ç¤ºå¤šä¸ªæœˆä»½ï¼Œåˆ™ä½¿ç”¨ä¸€äº›é¢å¤–çš„ classï¼š</p>
+
+        <ul>
+            <li><code>ui-datepicker-multi</code>ï¼šä¸€ä¸ªå¤šæœˆä»½æ—¥æœŸé€‰æ‹©å™¨çš„æœ€å¤–å±‚å®¹å™¨ã€‚è¯¥å…ƒç´ ä¼šæ ¹æ®è¦æ˜¾ç¤ºçš„æœˆä»½ä¸ªæ•°å¦å¤–å¸¦æœ‰ <code>ui-datepicker-multi-2</code>ã€<code>ui-datepicker-multi-3</code>
+                æˆ– <code>ui-datepicker-multi-4</code> class åç§°ã€‚
+                <ul>
+                    <li><code>ui-datepicker-group</code>ï¼šåˆ†ç»„å†…å•ç‹¬çš„é€‰æ‹©å™¨ã€‚è¯¥å…ƒç´ ä¼šæ ¹æ®å®ƒåœ¨åˆ†ç»„ä¸­çš„ä½ç½®å¦å¤–å¸¦æœ‰
+                        <code>ui-datepicker-group-first</code>ã€<code>ui-datepicker-group-middle</code> æˆ– <code>ui-datepicker-group-last</code>
+                        class åç§°ã€‚
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+		<h3>ä¾èµ–</h3>
+        <ul>
+            <li><a href="javascript:if(confirm('http://www.css88.com/category/ui-core/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/category/ui-core/'" tppabs="http://www.css88.com/category/ui-core/">UI æ ¸å¿ƒï¼ˆUI Coreï¼‰</a></li>
+            <li><a href="javascript:if(confirm('http://www.css88.com/category/effects-core/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/category/effects-core/'" tppabs="http://www.css88.com/category/effects-core/">ç‰¹æ•ˆæ ¸å¿ƒï¼ˆEffects Coreï¼‰</a>ï¼ˆå¯é€‰çš„ï¼›å½“ä¸ <a href="#option-showAnim"><code>showAnim</code></a> é€‰é¡¹ä¸€èµ·ä½¿ç”¨æ—¶ï¼‰</li>
+        </ul>
+	</div>
+<h3>å…¶ä»–æ³¨æ„äº‹é¡¹ï¼š</h3>
+<div class="longdesc"><ul>
+<li>
+			è¯¥éƒ¨ä»¶è¦æ±‚ä¸€äº›åŠŸèƒ½æ€§çš„ CSSï¼Œå¦åˆ™å°†æ— æ³•å·¥ä½œã€‚å¦‚æœæ‚¨åˆ›å»ºäº†ä¸€ä¸ªè‡ªå®šä¹‰çš„ä¸»é¢˜ï¼Œè¯·ä½¿ç”¨å°éƒ¨ä»¶æŒ‡å®šçš„ CSS æ–‡ä»¶ä½œä¸ºèµ·ç‚¹ã€‚
+		</li>
+<li>
+    è¯¥éƒ¨ä»¶ä»¥ç¼–ç¨‹æ–¹å¼æ“ä½œå…ƒç´ çš„å€¼ï¼Œå› æ­¤å½“å…ƒç´ çš„å€¼æ”¹å˜æ—¶ä¸ä¼šè§¦å‘åŸç”Ÿçš„ <code>change</code> äº‹ä»¶ã€‚
+
+		</li>
+    <li>ä¸æ”¯æŒåœ¨ <code>&lt;input type="date"&gt;</code> ä¸Šåˆ›å»ºæ—¥æœŸé€‰æ‹©å™¨ï¼Œå› ä¸ºä¼šé€ æˆä¸æœ¬åœ°é€‰æ‹©å™¨çš„ UI å†²çªã€‚</li>
+</ul></div>
+<section id="options"><header><h2>Options</h2></header><div id="option-altField" class="api-item first-item">
+<h3>altField<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Selector'" tppabs="http://api.jquery.com/Types/#Selector">Selector</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Element'" tppabs="http://api.jquery.com/Types/#Element">Element</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>""</code>
+</div>
+<div>
+    ä¸€ä¸ªinputå…ƒç´  ï¼Œä½¿ç”¨é€‰æ‹©å™¨ é€‰æ‹©çš„å¦ä¸€ä¸ªåœ°æ–¹æ›´æ–°datepickeré€‰æ‹©çš„æ—¥æœŸ. ä½¿ç”¨ <a href="#option-altFormat"><code>altFormat</code></a> æŒ‡å®šçš„è¿™ä¸€åŒºåŸŸè®¾ç½®å¦‚ä¸‹æ”¹å˜æ ¼å¼çš„æ—¥æœŸ(ä½¿ç”¨inputæœ€ç›´è§‚). å¦‚æœæ²¡æœ‰ä»£æ›¿çš„åŒºåŸŸåˆ™ä½¿ç”¨ç©ºç™½.
+   </div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>altField</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ altField: <span class="string">"#actualDate"</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>altField</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> altField = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"altField"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"altField"</span>, <span class="string">"#actualDate"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-altFormat" class="api-item">
+<h3>altFormat<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>""</code>
+</div>
+<div>
+    <a href="#option-dateFormat"><code>dateFormat</code></a> è¢«  <a href="#option-altField"><code>altField</code></a> é¡¹æ‰€ä½¿ç”¨ã€‚
+    å®ƒçš„ç›®çš„æ˜¯å…è®¸é€‰æ‹©ä¸€ç§æ—¥æœŸæ ¼å¼æ˜¾ç¤ºç»™ç”¨æˆ·ä»¥ä¾›é€‰æ‹©ï¼Œè€Œå®é™…çš„æ ¼å¼åˆ™æ˜¯æ¥è‡ªåå°ã€‚
+    å¯¹äºå¯èƒ½çš„æ ¼å¼çš„å®Œæ•´åˆ—è¡¨ï¼Œè¯·å‚é˜… <a href="#utility-formatDate"><code>formatDate</code></a> å‡½æ•°ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>altFormat</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ altFormat: <span class="string">"yy-mm-dd"</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>altFormat</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> altFormat = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"altFormat"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"altFormat"</span>, <span class="string">"yy-mm-dd"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-appendText" class="api-item">
+<h3>appendText<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>""</code>
+</div>
+<div>
+    æ˜¾ç¤ºæ¯ä¸ªæ—¥æœŸå­—æ®µåé¢çš„æ–‡æœ¬ï¼Œ
+    ä¾‹å¦‚ï¼Œä»¥æ˜¾ç¤ºæ‰€éœ€çš„æ ¼å¼ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>appendText</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ appendText: <span class="string">"(yyyy-mm-dd)"</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>appendText</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> appendText = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"appendText"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"appendText"</span>, <span class="string">"(yyyy-mm-dd)"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-autoSize" class="api-item">
+<h3>autoSize<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>
+    å¦‚æœè®¾ç½®ä¸º<code>true</code>ï¼Œå°†è‡ªåŠ¨è°ƒæ•´è¾“å…¥å­—æ®µï¼Œä»¥é€‚åº”æ—¥æœŸåœ¨å½“å‰çš„<a href="#option-dateFormat"><code>dateFormat</code></a>ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>autoSize</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ autoSize: <span class="literal">true</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>autoSize</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> autoSize = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"autoSize"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"autoSize"</span>, <span class="literal">true</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-beforeShow" class="api-item">
+<h3>beforeShow<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Function'" tppabs="http://api.jquery.com/Types/#Function">Function</a>( <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Element'" tppabs="http://api.jquery.com/Types/#Element">Element</a> input, <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a> inst )</span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>null</code>
+</div>
+<div>
+    ä¸€ä¸ªå‡½æ•°ï¼Œå®ƒæ¥å—ä¸€ä¸ªè¾“å…¥å­—æ®µå’Œå½“å‰çš„datepickerå®ä¾‹ï¼Œ
+    å¹¶è¿”å›ä¸€ä¸ªé€‰é¡¹å¯¹è±¡æ¥ä¿®æ”¹datepickerã€‚åªåœ¨datepickeræ˜¾ç¤ºä¹‹å‰è¢«è°ƒç”¨ã€‚</div>
+</div>
+<div id="option-beforeShowDay" class="api-item">
+<h3>beforeShowDay<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Function'" tppabs="http://api.jquery.com/Types/#Function">Function</a>( <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Date'" tppabs="http://api.jquery.com/Types/#Date">Date</a> date )</span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>null</code>
+</div>
+<div>ä¸€ä¸ªå‡½æ•°ï¼Œå®ƒæ¥å—ä¸€ä¸ªæ—¥æœŸä½œä¸ºå‚æ•° å¹¶ä¸” å¿…é¡»è¿”å›ä¸€ä¸ªæ•°ç»„ï¼š
+				<ul>
+					<li>
+<code>[0]</code>: <code>true</code>/<code>false</code> è¡¨ç¤ºè¿™ä¸ªæ—¥æœŸæ˜¯å¦å¯é€‰</li>
+					<li>
+<code>[1]</code>:
+                        ä¸€ä¸ª CSS class å æ·»åŠ åˆ°æ—¥æœŸçš„å•å…ƒæ ¼
+                        æˆ–é»˜è®¤æè¿°ä¸º<code>""</code>ã€‚</li>
+					<li>
+<code>[2]</code>:ä¸€ä¸ªå¯é€‰çš„æ—¥æœŸå¼¹å‡ºæç¤º</li>
+				</ul>
+
+    è¯¥å‡½æ•°åœ¨datepicker æ¯ä¸€å¤©æ˜¾ç¤ºä¹‹å‰è¢«è°ƒç”¨ã€‚</div>
+</div>
+<div id="option-buttonImage" class="api-item">
+<h3>buttonImage<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>""</code>
+</div>
+<div>
+
+   å½“<a href="#option-showOn"><code>showOn</code></a>é€‰é¡¹è®¾ç½®ä¸º<code>"button"</code>æˆ–<code>"both"</code>æ—¶ï¼Œ ç”¨äºæ˜¾ç¤ºdatepickerçš„å›¾ç‰‡urlåœ°å€ã€‚
+    å¦‚æœè®¾ç½®ï¼Œ<a href="#option-buttonText"><code>buttonText</code></a>é€‰é¡¹å°†æˆä¸º<code>alt</code>å€¼ï¼Œè€Œä¸æ˜¯ç›´æ¥æ˜¾ç¤ºã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>buttonImage</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ buttonImage: <span class="string">"/images/datepicker.gif"</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>buttonImage</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> buttonImage = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"buttonImage"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"buttonImage"</span>, <span class="string">"/images/datepicker.gif"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-buttonImageOnly" class="api-item">
+<h3>buttonImageOnly<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>
+
+    æ— è®ºæ˜¯æŒ‰é’® å›¾åƒ  å¿…é¡»è‡ªè¡Œæä¾›  è€Œä¸æ˜¯ é‡Œé¢ä¸€ä¸ªæŒ‰é’®å…ƒç´ ã€‚
+    æ­¤é€‰é¡¹ä»…å½“<a href="#option-buttonImage"><code>buttonImage</code></a>é€‰é¡¹ä¹Ÿè¢«è®¾ç½®æ—¶æ‰èµ·ä½œç”¨ã€‚
+
+    </div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>buttonImageOnly</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ buttonImageOnly: <span class="literal">true</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>buttonImageOnly</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> buttonImageOnly = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"buttonImageOnly"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"buttonImageOnly"</span>, <span class="literal">true</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-buttonText" class="api-item">
+<h3>buttonText<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>"..."</code>
+</div>
+<div>æ˜¾ç¤ºåœ¨è§¦å‘æŒ‰é’®ä¸Šçš„æ–‡æœ¬ã€‚å’Œ<a href="#option-showOn"><code>showOn</code></a>è®¾ç½®ä¸º  <code>"button"</code> æˆ– <code>"both"</code>æ—¶ç»“åˆä½¿ç”¨ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>buttonText</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ buttonText: <span class="string">"Choose"</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>buttonText</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> buttonText = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"buttonText"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"buttonText"</span>, <span class="string">"Choose"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-calculateWeek" class="api-item">
+<h3>calculateWeek<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Function'" tppabs="http://api.jquery.com/Types/#Function">Function</a>()</span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>jQuery.datepicker.iso8601Week</code>
+</div>
+<div>
+    ä¸€ä¸ªå‡½æ•°æ¥è®¡ç®—å½“å‰å‘¨æ˜¯ä¸€å¹´ä¸­çš„ç¬¬å‡ å‘¨ã€‚
+    é»˜è®¤å®ç°ä½¿ç”¨ISO8601çš„å®šä¹‰ï¼šçš„å®šä¹‰æ‰§è¡Œ: æ¯å‘¨ä»å‘¨ä¸€å¼€å§‹ï¼›æ¯å¹´çš„ç¬¬ä¸€ä¸ªæ˜ŸæœŸåŒ…å«è¿™å¹´çš„ç¬¬ä¸€ä¸ªæ˜ŸæœŸå››ã€‚æ„šäººç å¤´æ³¨ï¼šè¿™æ„å‘³ç€ä»Šå¹´çš„ç¬¬ä¸€å‘¨ä¸­å¯èƒ½ä¼šåŒ…å«å»å¹´çš„3å¤©,å¹¶ä¸”ä»Šå¹´çš„3å¤©å¯èƒ½ä¼šè¢«åŒ…å«è¿›å»å¹´çš„æœ€åä¸€å‘¨ä¸­ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>calculateWeek</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ calculateWeek: myWeekCalc });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>calculateWeek</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> calculateWeek = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"calculateWeek"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"calculateWeek"</span>, myWeekCalc );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-changeMonth" class="api-item">
+<h3>changeMonth<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>
+    å…è®¸ä½ å°†æœˆä»½ä¿®æ”¹ä¸ºä¸€ä¸ªä¸‹æ‹‰èœå•ã€‚ ä½ å¯ä»¥å°†å‚æ•°è®¾ç½®ä¸ºfalseæ¥ç¦ç”¨æ­¤åŠŸèƒ½ï¼Œä¹Ÿå°±æ˜¯æ˜¾ç¤ºä¸ºæ–‡å­—ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>changeMonth</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ changeMonth: <span class="literal">true</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>changeMonth</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> changeMonth = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"changeMonth"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"changeMonth"</span>, <span class="literal">true</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-changeYear" class="api-item">
+<h3>changeYear<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>
+    å…è®¸ä½ å°†å¹´ä»½ä¿®æ”¹ä¸ºä¸€ä¸ªä¸‹æ‹‰èœå•ã€‚ ä½ å¯ä»¥å°†å‚æ•°è®¾ç½®ä¸ºfalseæ¥ç¦ç”¨æ­¤åŠŸèƒ½ï¼Œä¹Ÿå°±æ˜¯æ˜¾ç¤ºä¸ºæ–‡å­—ã€‚ä½¿ç”¨<a href="#option-yearRange"><code>yearRange</code></a>é€‰é¡¹æ¥æ§åˆ¶å“ªäº›å¹´æ˜¯å¯ä¾›é€‰æ‹©ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>changeYear</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ changeYear: <span class="literal">true</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>changeYear</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> changeYear = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"changeYear"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"changeYear"</span>, <span class="literal">true</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-closeText" class="api-item">
+<h3>closeText<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>"Done"</code>
+</div>
+<div>å…³é—­è¿æ¥æ˜¾ç¤ºçš„æ–‡å­—ã€‚ä½¿ç”¨<a href="#option-showButtonPanel"><code>showButtonPanel</code></a>é€‰é¡¹ä»¥æ˜¾ç¤ºæ­¤æŒ‰é’®ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>closeText</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ closeText: <span class="string">"Close"</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>closeText</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> closeText = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"closeText"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"closeText"</span>, <span class="string">"Close"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-constrainInput" class="api-item">
+<h3>constrainInput<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>true</code>
+</div>
+<div>
+    å½“å€¼ä¸º<code>true</code>æ—¶ï¼Œåœ¨è¾“å…¥æ çš„è¾“å…¥è¢«é™åˆ¶ä¸ºå½“å‰çš„æ—¥æœŸæ ¼å¼<a href="#option-dateFormat"><code>dateFormat</code></a>é€‰é¡¹å…è®¸çš„å­—ç¬¦ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>constrainInput</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ constrainInput: <span class="literal">false</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>constrainInput</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> constrainInput = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"constrainInput"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"constrainInput"</span>, <span class="literal">false</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-currentText" class="api-item">
+<h3>currentText<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>"Today"</code>
+</div>
+<div>
+
+    å½“å‰æ—¥æœŸé“¾æ¥ä»¥æ–‡æœ¬å½¢å¼æ˜¾ç¤ºã€‚ä½¿ç”¨ <a href="#option-showButtonPanel"><code>showButtonPanel</code></a>é€‰é¡¹ä»¥æ˜¾ç¤ºæ­¤æŒ‰é’®ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>currentText</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ currentText: <span class="string">"Now"</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>currentText</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> currentText = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"currentText"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"currentText"</span>, <span class="string">"Now"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-dateFormat" class="api-item">
+<h3>dateFormat<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>"mm/dd/yy"</code>
+</div>
+<div>
+    æè¿°å’Œæ˜¾ç¤ºæ—¥æœŸçš„æ ¼å¼ã€‚  å¯¹äºå¯èƒ½çš„æ ¼å¼çš„å®Œæ•´åˆ—è¡¨ï¼Œè¯·å‚é˜…<code><a href="#utility-formatDate"><code>formatDate</code></a></code>å‡½æ•°ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>dateFormat</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ dateFormat: <span class="string">"yy-mm-dd"</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>dateFormat</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> dateFormat = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"dateFormat"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"dateFormat"</span>, <span class="string">"yy-mm-dd"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-dayNames" class="api-item">
+<h3>dayNames<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Array'" tppabs="http://api.jquery.com/Types/#Array">Array</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>[ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ]</code>
+</div>
+<div>
+    æ—¥æœŸé•¿çš„åå­—çš„åˆ—è¡¨ï¼Œä»æ˜ŸæœŸæ—¥(Sunday)å¼€å§‹ï¼Œä¾ç…§ <a href="#option-dateFormat"><code>dateFormat</code></a>çš„è®¾ç½®è¿›è¡Œä½¿ç”¨ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>dayNames</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ dayNames: [ <span class="string">"Dimanche"</span>, <span class="string">"Lundi"</span>, <span class="string">"Mardi"</span>, <span class="string">"Mercredi"</span>, <span class="string">"Jeudi"</span>, <span class="string">"Vendredi"</span>, <span class="string">"Samedi"</span> ] });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>dayNames</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> dayNames = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"dayNames"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"dayNames"</span>, [ <span class="string">"Dimanche"</span>, <span class="string">"Lundi"</span>, <span class="string">"Mardi"</span>, <span class="string">"Mercredi"</span>, <span class="string">"Jeudi"</span>, <span class="string">"Vendredi"</span>, <span class="string">"Samedi"</span> ] );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-dayNamesMin" class="api-item">
+<h3>dayNamesMin<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Array'" tppabs="http://api.jquery.com/Types/#Array">Array</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>[ "Su", "Mo", "Tu", "We", "Th", "Fr", "Sa" ]</code>
+</div>
+<div>æ—¥æœŸæœ€å°åŒ–ç®€ç§°çš„åˆ—è¡¨, ä»å‘¨æ—¥å¼€å§‹(Sunday), ç”¨åœ¨datepickeræ¯åˆ—çš„å¤´éƒ¨.ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>dayNamesMin</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ dayNamesMin: [ <span class="string">"Di"</span>, <span class="string">"Lu"</span>, <span class="string">"Ma"</span>, <span class="string">"Me"</span>, <span class="string">"Je"</span>, <span class="string">"Ve"</span>, <span class="string">"Sa"</span> ] });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>dayNamesMin</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> dayNamesMin = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"dayNamesMin"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"dayNamesMin"</span>, [ <span class="string">"Di"</span>, <span class="string">"Lu"</span>, <span class="string">"Ma"</span>, <span class="string">"Me"</span>, <span class="string">"Je"</span>, <span class="string">"Ve"</span>, <span class="string">"Sa"</span> ] );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-dayNamesShort" class="api-item">
+<h3>dayNamesShort<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Array'" tppabs="http://api.jquery.com/Types/#Array">Array</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>[ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ]</code>
+</div>
+<div>æ—¥æœŸåç§°çš„ç®€å†™çš„åˆ—è¡¨, ä»å‘¨æ—¥å¼€å§‹(Sunday), ä¾ç…§<a href="#option-dateFormat"><code>dateFormat</code></a>çš„è®¾ç½®ä½¿ç”¨ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>dayNamesShort</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ dayNamesShort: [ <span class="string">"Dim"</span>, <span class="string">"Lun"</span>, <span class="string">"Mar"</span>, <span class="string">"Mer"</span>, <span class="string">"Jeu"</span>, <span class="string">"Ven"</span>, <span class="string">"Sam"</span> ] });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>dayNamesShort</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> dayNamesShort = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"dayNamesShort"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"dayNamesShort"</span>, [ <span class="string">"Dim"</span>, <span class="string">"Lun"</span>, <span class="string">"Mar"</span>, <span class="string">"Mer"</span>, <span class="string">"Jeu"</span>, <span class="string">"Ven"</span>, <span class="string">"Sam"</span> ] );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-defaultDate" class="api-item">
+<h3>defaultDate<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Date'" tppabs="http://api.jquery.com/Types/#Date">Date</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>null</code>
+</div>
+<div>
+    å¦‚æœè¯¥å­—æ®µä¸ºç©ºæ—¶è®¾ç½®ç¬¬ä¸€æ¬¡æ‰“å¼€æ—¶æ˜¾ç¤ºçš„æ—¥æœŸã€‚
+    é€šè¿‡Dateå¯¹è±¡æˆ–å­—ç¬¦ä¸²åœ¨å½“å‰ <a href="#option-dateFormat"><code>dateFormat</code></a>ä¸­æŒ‡å®šä»»ä½•ä¸€ä¸ªå®é™…çš„æ—¥æœŸï¼Œ
+    æˆ–è€…ä¸€ä¸ªå’Œä»Šå¤©å¯¹æ¯”çš„æ•°å­—ï¼ˆä¾‹å¦‚ +7ï¼‰  æˆ–è€…ä¸€ä¸ªè¿ç»­çš„å­—ç¬¦ä¸²å€¼('y' è¡¨ç¤ºå¹´, 'm' è¡¨ç¤ºæœˆ, 'w'è¡¨ç¤ºå‘¨, 'd'è¡¨ç¤ºæ—¥, ä¾‹å¦‚. '+1m +7d'), æˆ–è€…ä¸ºç©ºåˆ™æ˜¯ä»Šå¤©.</div>
+<strong>æ”¯æŒå¤šä¸ªç±»å‹ï¼š</strong><ul>
+<li>
+<strong>Date</strong>: ä¸€ä¸ªåŒ…å«é»˜è®¤æ—¥æœŸçš„dateå¯¹è±¡ã€‚</li>
+<li>
+<strong>Number</strong>: ä¸€ä¸ªå’Œä»Šå¤©å¯¹æ¯”çš„æ•°å­—ã€‚ä¾‹å¦‚ <code>2</code> è¡¨ç¤ºä»ä»Šå¤©å¼€å§‹çš„ç¬¬äºŒå¤©ï¼Œï¼ˆæ„šäººç å¤´æ³¨ï¼šå³ï¼šåå¤©ï¼‰ï¼Œ <code>-1</code> è¡¨ç¤ºæ˜¨å¤©ã€‚</li>
+<li>
+<strong>String</strong>:
+    ä¸€ä¸ªç”±<a href="#option-dateFormat"><code>dateFormat</code></a>é€‰é¡¹å®šä¹‰æ ¼å¼çš„å­—ç¬¦ä¸² ï¼Œ
+    æˆ–ç›¸å¯¹æ—¥æœŸã€‚
+    Â ç›¸å¯¹æ—¥æœŸå¿…é¡»åŒ…å«å€¼å’ŒæœŸé—´å¯¹;
+    æœ‰æ•ˆæœŸé—´ä¸ºï¼š<code>"y"</code>è¡¨ç¤ºå‡ å¹´ï¼Œ
+    <code>"m"</code> è¡¨ç¤ºå‡ æœˆï¼Œ
+    <code>"w"</code>è¡¨ç¤ºå‡ å‘¨ï¼Œå’Œ<code>"d"</code>è¡¨ç¤ºå‡ å¤©ã€‚
+    ä¾‹å¦‚ï¼Œ
+    <code>"+1m +7d"</code>è¡¨ç¤ºä»ä»Šå¤©å¼€å§‹çš„ä¸€ä¸ªæœˆåŠ ä¸ƒå¤©ã€‚</li>
+</ul>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>defaultDate</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ defaultDate: +<span class="number">7</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>defaultDate</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> defaultDate = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"defaultDate"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"defaultDate"</span>, +<span class="number">7</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-duration" class="api-item">
+<h3>duration<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#'" tppabs="http://api.jquery.com/Types/#"></a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>"normal"</code>
+</div>
+<div>è®¾ç½®datepickerå±•å¼€åŠ¨ç”»çš„æ˜¾ç¤ºæ—¶é—´ï¼Œå¯ä»¥æ˜¯ä¸€ä¸ªæ¯«ç§’å€¼, ä¹Ÿå¯ä»¥ä½¿ç”¨ä»¥ä¸‹çš„ä¸‰ç§å­—ç¬¦å€¼æ¥è¡¨ç¤º("slow", "normal", "fast"), æˆ–è€…ä¸º ''åˆ™é©¬ä¸Šæ˜¾ç¤ºã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>duration</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ duration: <span class="string">"slow"</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>duration</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> duration = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"duration"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"duration"</span>, <span class="string">"slow"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-firstDay" class="api-item">
+<h3>firstDay<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Integer'" tppabs="http://api.jquery.com/Types/#Integer">Integer</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>0</code>
+</div>
+<div>è®¾ç½®ä¸€å‘¨ä¸­çš„ç¬¬ä¸€å¤©:å‘¨æ—¥æ˜¯ <code>0</code>, å‘¨ä¸€æ˜¯ <code>1</code>, ä»¥æ­¤ç±»æ¨ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>firstDay</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ firstDay: <span class="number">1</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>firstDay</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> firstDay = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"firstDay"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"firstDay"</span>, <span class="number">1</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-gotoCurrent" class="api-item">
+<h3>gotoCurrent<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>
+    å¦‚æœè®¾ç½®ä¸º<code>true</code>, å½“å‰æ—¥çš„é“¾æ¥å°†ç§»åŠ¨åˆ°å½“å‰é€‰ä¸­çš„æ—¥æœŸï¼Œè€Œä¸æ˜¯â€‹â€‹ä»Šå¤©ã€‚
+
+    </div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>gotoCurrent</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ gotoCurrent: <span class="literal">true</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>gotoCurrent</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> gotoCurrent = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"gotoCurrent"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"gotoCurrent"</span>, <span class="literal">true</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-hideIfNoPrevNext" class="api-item">
+<h3>hideIfNoPrevNext<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>
+    é€šå¸¸å½“å‰ä¸€ä¸ªå’Œä¸‹ä¸€ä¸ªé“¾æ¥è¢«ç¦ç”¨æ—¶ä¸é€‚ç”¨ (å‚çœ‹ <a href="#option-minDate"><code>minDate</code></a> å’Œ <a href="#option-maxDate"><code>maxDate</code></a>). ä½ å¯ä»¥é€šè¿‡è®¾ç½®æ­¤å±æ€§ä¸º<code>true</code>å®Œå…¨çš„éšè—ä»–ä»¬.
+
+    </div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>hideIfNoPrevNext</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ hideIfNoPrevNext: <span class="literal">true</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>hideIfNoPrevNext</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> hideIfNoPrevNext = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"hideIfNoPrevNext"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"hideIfNoPrevNext"</span>, <span class="literal">true</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-isRTL" class="api-item">
+<h3>isRTL<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>å½“å‰è¯­è¨€æè¿°æ˜¯å¦ä¸ºè‡ªå³å‘å·¦çš„ã€‚ï¼ˆæ„šäººç å¤´æ³¨ï¼šä¾‹å¦‚é˜¿æ‹‰ä¼¯è¯­ï¼‰</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>isRTL</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ isRTL: <span class="literal">true</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>isRTL</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> isRTL = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"isRTL"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"isRTL"</span>, <span class="literal">true</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-maxDate" class="api-item">
+<h3>maxDate<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Date'" tppabs="http://api.jquery.com/Types/#Date">Date</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>null</code>
+</div>
+<div>
+    æœ€å¤§çš„å¯é€‰æ—¥æœŸã€‚å½“è®¾ç½®ä¸º<code>null</code>æ—¶ï¼Œæ²¡æœ‰ä¸Šé™ã€‚</div>
+<strong>æ”¯æŒå¤šä¸ªç±»å‹ï¼š</strong>
+
+    <ul>
+        <li>
+            <strong>Date</strong>: ä¸€ä¸ªåŒ…å«é»˜è®¤æ—¥æœŸçš„dateå¯¹è±¡ã€‚
+        </li>
+        <li>
+            <strong>Number</strong>: ä¸€ä¸ªå’Œä»Šå¤©å¯¹æ¯”çš„æ•°å­—ã€‚ä¾‹å¦‚ <code>2</code> è¡¨ç¤ºä»ä»Šå¤©å¼€å§‹çš„ç¬¬äºŒå¤©ï¼Œï¼ˆæ„šäººç å¤´æ³¨ï¼šå³ï¼šåå¤©ï¼‰ï¼Œ <code>-1</code> è¡¨ç¤ºæ˜¨å¤©ã€‚
+        </li>
+        <li>
+            <strong>String</strong>:
+            ä¸€ä¸ªç”±<a href="#option-dateFormat"><code>dateFormat</code></a>é€‰é¡¹å®šä¹‰æ ¼å¼çš„å­—ç¬¦ä¸² ï¼Œ
+            æˆ–ç›¸å¯¹æ—¥æœŸã€‚
+            &nbsp;ç›¸å¯¹æ—¥æœŸå¿…é¡»åŒ…å«å€¼å’ŒæœŸé—´å¯¹;
+            æœ‰æ•ˆæœŸé—´ä¸ºï¼š<code>"y"</code>è¡¨ç¤ºå‡ å¹´ï¼Œ
+            <code>"m"</code> è¡¨ç¤ºå‡ æœˆï¼Œ
+            <code>"w"</code>è¡¨ç¤ºå‡ å‘¨ï¼Œå’Œ<code>"d"</code>è¡¨ç¤ºå‡ å¤©ã€‚
+            ä¾‹å¦‚ï¼Œ
+            <code>"+1m +7d"</code>è¡¨ç¤ºä»ä»Šå¤©å¼€å§‹çš„ä¸€ä¸ªæœˆåŠ ä¸ƒå¤©ã€‚
+        </li>
+    </ul>
+
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>maxDate</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ maxDate: <span class="string">"+1m +1w"</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>maxDate</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> maxDate = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"maxDate"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"maxDate"</span>, <span class="string">"+1m +1w"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-minDate" class="api-item">
+<h3>minDate<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Date'" tppabs="http://api.jquery.com/Types/#Date">Date</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>null</code>
+</div>
+<div>
+    æœ€å°çš„å¯é€‰æ—¥æœŸã€‚å½“è®¾ç½®ä¸º<code>null</code>æ—¶ï¼Œæ²¡æœ‰ä¸‹é™ã€‚</div>
+<strong>æ”¯æŒå¤šä¸ªç±»å‹ï¼š</strong>
+    <ul>
+            <li>
+                <strong>Date</strong>: ä¸€ä¸ªåŒ…å«é»˜è®¤æ—¥æœŸçš„dateå¯¹è±¡ã€‚
+            </li>
+            <li>
+                <strong>Number</strong>: ä¸€ä¸ªå’Œä»Šå¤©å¯¹æ¯”çš„æ•°å­—ã€‚ä¾‹å¦‚ <code>2</code> è¡¨ç¤ºä»ä»Šå¤©å¼€å§‹çš„ç¬¬äºŒå¤©ï¼Œï¼ˆæ„šäººç å¤´æ³¨ï¼šå³ï¼šåå¤©ï¼‰ï¼Œ <code>-1</code> è¡¨ç¤ºæ˜¨å¤©ã€‚
+            </li>
+            <li>
+                <strong>String</strong>:
+                ä¸€ä¸ªç”±<a href="#option-dateFormat"><code>dateFormat</code></a>é€‰é¡¹å®šä¹‰æ ¼å¼çš„å­—ç¬¦ä¸² ï¼Œ
+                æˆ–ç›¸å¯¹æ—¥æœŸã€‚
+                &nbsp;ç›¸å¯¹æ—¥æœŸå¿…é¡»åŒ…å«å€¼å’ŒæœŸé—´å¯¹;
+                æœ‰æ•ˆæœŸé—´ä¸ºï¼š<code>"y"</code>è¡¨ç¤ºå‡ å¹´ï¼Œ
+                <code>"m"</code> è¡¨ç¤ºå‡ æœˆï¼Œ
+                <code>"w"</code>è¡¨ç¤ºå‡ å‘¨ï¼Œå’Œ<code>"d"</code>è¡¨ç¤ºå‡ å¤©ã€‚
+                ä¾‹å¦‚ï¼Œ
+                <code>"+1m +7d"</code>è¡¨ç¤ºä»ä»Šå¤©å¼€å§‹çš„ä¸€ä¸ªæœˆåŠ ä¸ƒå¤©ã€‚
+            </li>
+        </ul>
+
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>minDate</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ minDate: <span class="keyword">new</span> Date(<span class="number">2007</span>, <span class="number">1</span> - <span class="number">1</span>, <span class="number">1</span>) });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>minDate</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> minDate = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"minDate"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"minDate"</span>, <span class="keyword">new</span> Date(<span class="number">2007</span>, <span class="number">1</span> - <span class="number">1</span>, <span class="number">1</span>) );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-monthNames" class="api-item">
+<h3>monthNames<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Array'" tppabs="http://api.jquery.com/Types/#Array">Array</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>[ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ]</code>
+</div>
+<div>
+    æœˆä»½çš„å®Œå…¨åç§°åˆ—è¡¨ï¼Œä¾ç…§ <a href="#option-dateFormat"><code>dateFormat</code></a>çš„è®¾ç½®è¿›è¡Œä½¿ç”¨ã€‚
+
+    </div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>monthNames</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ monthNames: [ <span class="string">"Januar"</span>, <span class="string">"Februar"</span>, <span class="string">"Marts"</span>, <span class="string">"April"</span>, <span class="string">"Maj"</span>, <span class="string">"Juni"</span>, <span class="string">"Juli"</span>, <span class="string">"August"</span>, <span class="string">"September"</span>, <span class="string">"Oktober"</span>, <span class="string">"November"</span>, <span class="string">"December"</span> ] });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>monthNames</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> monthNames = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"monthNames"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"monthNames"</span>, [ <span class="string">"Januar"</span>, <span class="string">"Februar"</span>, <span class="string">"Marts"</span>, <span class="string">"April"</span>, <span class="string">"Maj"</span>, <span class="string">"Juni"</span>, <span class="string">"Juli"</span>, <span class="string">"August"</span>, <span class="string">"September"</span>, <span class="string">"Oktober"</span>, <span class="string">"November"</span>, <span class="string">"December"</span> ] );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-monthNamesShort" class="api-item">
+<h3>monthNamesShort<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Array'" tppabs="http://api.jquery.com/Types/#Array">Array</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>[ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ]</code>
+</div>
+<div>
+    æœˆä»½ç®€å†™åç§°çš„åˆ—è¡¨ï¼Œä¾ç…§ <a href="#option-dateFormat"><code>dateFormat</code></a>çš„è®¾ç½®è¿›è¡Œä½¿ç”¨ã€‚
+</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>monthNamesShort</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ monthNamesShort: [ <span class="string">"Jan"</span>, <span class="string">"Feb"</span>, <span class="string">"Mar"</span>, <span class="string">"Apr"</span>, <span class="string">"Maj"</span>, <span class="string">"Jun"</span>, <span class="string">"Jul"</span>, <span class="string">"Aug"</span>, <span class="string">"Sep"</span>, <span class="string">"Okt"</span>, <span class="string">"Nov"</span>, <span class="string">"Dec"</span> ] });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>monthNamesShort</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> monthNamesShort = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"monthNamesShort"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"monthNamesShort"</span>, [ <span class="string">"Jan"</span>, <span class="string">"Feb"</span>, <span class="string">"Mar"</span>, <span class="string">"Apr"</span>, <span class="string">"Maj"</span>, <span class="string">"Jun"</span>, <span class="string">"Jul"</span>, <span class="string">"Aug"</span>, <span class="string">"Sep"</span>, <span class="string">"Okt"</span>, <span class="string">"Nov"</span>, <span class="string">"Dec"</span> ] );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-navigationAsDateFormat" class="api-item">
+<h3>navigationAsDateFormat<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>
+    ç¡®å®šæ˜¯<a href="#option-prevText"><code>prevText</code></a> å’Œ <a href="#option-nextText"><code>nextText</code></a>é€‰é¡¹æ˜¯å¦åº”è¯¥è¢«è§£æä¸º<code><a href="#utility-formatDate"><code>formatDate</code></a></code>å‡½æ•°çš„æ—¥æœŸï¼Œè®©ä»–ä»¬èƒ½å¤Ÿæ˜¾ç¤ºç›®æ ‡çš„æœˆä»½åç§°.
+
+    </div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>navigationAsDateFormat</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ navigationAsDateFormat: <span class="literal">true</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>navigationAsDateFormat</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> navigationAsDateFormat = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"navigationAsDateFormat"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"navigationAsDateFormat"</span>, <span class="literal">true</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-nextText" class="api-item">
+<h3>nextText<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>"Next"</code>
+</div>
+<div>ä¸‹ä¸ªæœˆé“¾æ¥æ˜¾ç¤ºçš„æ–‡å­— ã€‚ä½¿ç”¨æ ‡å‡†ThemeRolleræ ·å¼ï¼Œ è¿™ä¸ªå€¼è¢«æ›¿æ¢ä¸ºä¸€ä¸ªå›¾æ ‡ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>nextText</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ nextText: <span class="string">"Later"</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>nextText</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> nextText = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"nextText"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"nextText"</span>, <span class="string">"Later"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-numberOfMonths" class="api-item">
+<h3>numberOfMonths<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Array'" tppabs="http://api.jquery.com/Types/#Array">Array</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>1</code>
+</div>
+<div>è®¾ç½®ä¸€æ¬¡æ˜¾ç¤ºå‡ ä¸ªæœˆ. </div>
+<strong>æ”¯æŒå¤šä¸ªç±»å‹ï¼š</strong><ul>
+<li>
+<strong>Number</strong>: ä¸€è¡Œæ˜¾ç¤ºçš„æœˆä»½æ•°</li>
+<li>
+<strong>Array</strong>: ä¸€ä¸ªæ•°ç»„å®šä¹‰çš„æ˜¾ç¤ºè¡Œæ•°å’Œåˆ—æ•°ã€‚</li>
+</ul>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>numberOfMonths</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ numberOfMonths: [ <span class="number">2</span>, <span class="number">3</span> ] });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>numberOfMonths</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> numberOfMonths = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"numberOfMonths"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"numberOfMonths"</span>, [ <span class="number">2</span>, <span class="number">3</span> ] );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-onChangeMonthYear" class="api-item">
+<h3>onChangeMonthYear<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Function'" tppabs="http://api.jquery.com/Types/#Function">Function</a>( <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Integer'" tppabs="http://api.jquery.com/Types/#Integer">Integer</a> year, <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Integer'" tppabs="http://api.jquery.com/Types/#Integer">Integer</a> month, <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a> inst )</span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>null</code>
+</div>
+<div>
+    å½“datepickerç§»åŠ¨åˆ°ä¸€ä¸ªæ–°çš„æœˆä»½ å¹¶/æˆ– å¹´ä»½æ—¶è°ƒç”¨ã€‚
+    è¯¥å‡½æ•°æ¥æ”¶é€‰å®šçš„å¹´ä»½ï¼Œ
+    æœˆä»½ï¼ˆ1-12ï¼‰ï¼Œ
+    Â å’Œdatepickerå®ä¾‹ä½œä¸ºå‚æ•°ã€‚
+    <code>this</code>æŒ‡å‘ç›¸å…³è”çš„è¾“å…¥åŸŸã€‚</div>
+</div>
+<div id="option-onClose" class="api-item">
+<h3>onClose<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Function'" tppabs="http://api.jquery.com/Types/#Function">Function</a>( <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a> dateText, <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a> inst )</span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>null</code>
+</div>
+<div>
+    å½“datepickerå…³é—­æ—¶è°ƒç”¨ï¼Œç¡®å®šä¸€ä¸ªæ—¥æœŸæ˜¯å¦è¢«é€‰ä¸­ã€‚
+    Â è¯¥å‡½æ•°æ¥æ”¶æ‰€é€‰æ—¥æœŸçš„æ–‡æœ¬ï¼ˆ<code>""</code>å¦‚æœæ²¡æœ‰ï¼‰å’Œdatepickerå®ä¾‹ä½œä¸ºå‚æ•°ã€‚
+        <code>this</code>æŒ‡å‘ç›¸å…³è”çš„è¾“å…¥åŸŸã€‚
+    </div>
+</div>
+<div id="option-onSelect" class="api-item">
+<h3>onSelect<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Function'" tppabs="http://api.jquery.com/Types/#Function">Function</a>( <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a> dateText, <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a> inst )</span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>null</code>
+</div>
+<div>
+    å½“é€‰æ‹©datepickerè°ƒç”¨ã€‚
+    Â è¯¥å‡½æ•°æ¥æ”¶æ‰€é€‰æ—¥æœŸçš„æ–‡æœ¬å’Œdatepickerå®ä¾‹ä½œä¸ºå‚æ•°ã€‚<code>this</code>æŒ‡å‘ç›¸å…³è”çš„è¾“å…¥åŸŸã€‚</div>
+</div>
+<div id="option-prevText" class="api-item">
+<h3>prevText<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>"Prev"</code>
+</div>
+<div>ä¸Šä¸ªæœˆé“¾æ¥æ˜¾ç¤ºçš„æ–‡å­— ã€‚ä½¿ç”¨æ ‡å‡†ThemeRolleræ ·å¼ï¼Œ è¿™ä¸ªå€¼è¢«æ›¿æ¢ä¸ºä¸€ä¸ªå›¾æ ‡ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>prevText</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ prevText: <span class="string">"Earlier"</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>prevText</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> prevText = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"prevText"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"prevText"</span>, <span class="string">"Earlier"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-selectOtherMonths" class="api-item">
+<h3>selectOtherMonths<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>
+    æ˜¾ç¤ºåœ¨å½“å‰æœˆä»½çš„ä¹‹å‰æˆ–ä¹‹åçš„æ—¥æœŸæ˜¯å¦å¯ä»¥è¢«é€‰æ‹©ã€‚ï¼ˆæ„šäººç å¤´æ³¨ï¼šæ¯”å¦‚2014å¹´4æœˆ1æ—¥æ˜¯å‘¨äºŒï¼Œå¦‚æœ<a href="#option-showOtherMonths"><code>showOtherMonths</code></a>é€‰é¡¹è®¾ç½®ä¸º<code>true</code>ï¼Œé‚£ä¹ˆ2014å¹´3æœˆ31æ—¥ï¼Œ2014å¹´3æœˆ30æ—¥ä¼šä»¥ç°è‰²çš„å½¢å¼æ˜¾ç¤ºåœ¨4æœˆä»½çš„é¢æ¿ä¸Šï¼Œè¿™ä¸ªé€‰é¡¹è¡¨ç¤ºåœ¨4æœˆä»½çš„é¢æ¿ä¸Šæ˜¯å¦å¯ä»¥é€‰æ‹©2014å¹´3æœˆ31æ—¥ï¼Œ2014å¹´3æœˆ30æ—¥è¿™ä¸¤ä¸ªæ—¥æœŸã€‚5æœˆä¹Ÿæ˜¯ä¸€æ ·çš„ã€‚ï¼‰
+
+    è¿™é€‰é¡¹ä»…é€‚ç”¨äº å¦‚æœ<a href="#option-showOtherMonths"><code>showOtherMonths</code></a>é€‰é¡¹è®¾ç½®ä¸º<code>true</code>çš„æ—¶å€™ã€‚
+
+    </div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>selectOtherMonths</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ selectOtherMonths: <span class="literal">true</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>selectOtherMonths</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> selectOtherMonths = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"selectOtherMonths"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"selectOtherMonths"</span>, <span class="literal">true</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-shortYearCutoff" class="api-item">
+<h3>shortYearCutoff<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>"+10"</code>
+</div>
+<div>è®¾ç½®ä¸€ä¸ªå®šä¹‰æ—¥æœŸæ‰€å¤„å®é™…çš„æˆªæ–­å¹´ä»½å€¼(ä¸<a href="#option-dateFormat"><code>dateFormat</code></a>ä¸­çš„ 'y'å…±åŒä½¿ç”¨). å¦‚æœæ˜¯ä¸€ä¸ªæ•°å€¼ (0-99)é‚£ä¹ˆå°†ç›´æ¥ä½¿ç”¨è¿™äº›å€¼. å¦‚æœæä¾›çš„æ˜¯ä¸€ä¸ªå­—ç¬¦ä¸²å€¼é‚£ä¹ˆå®ƒå°†è¢«è½¬æ¢ä¸ºæ•°å€¼æ·»åŠ åˆ°å½“å‰å¹´. ä¸€æ—¦æˆªæ–­å¹´å¼€å§‹è®¡ç®—, ä»»ä½•è¾“å…¥çš„æ—¥æœŸçš„å¹´ä»½å°äºæˆ–è€…ç­‰äºå®ƒçš„è¯å°†è¢«åˆ¤å®šä¸ºåœ¨æœ¬ä¸–çºª,å¤§äºä»–çš„å°†è¢«åˆ¤å®šä¸ºåœ¨ä¸Šä¸ªä¸–çºª.
+    </div>
+<strong>æ”¯æŒå¤šä¸ªç±»å‹ï¼š</strong><ul>
+<li>
+<strong>Number</strong>: ä¸€ä¸ª <code>0</code> åˆ° <code>99</code>çš„å€¼è¡¨ç¤ºæˆªæ–­å¹´ä»½å€¼</li>
+<li>
+<strong>String</strong>: ä»æœ¬å¹´ä»½å¼€å§‹çš„ç›¸å¯¹å¹´æ•°ï¼Œä¾‹å¦‚, <code>"+3"</code> or <code>"-5"</code>.</li>
+</ul>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>shortYearCutoff</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ shortYearCutoff: <span class="number">50</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>shortYearCutoff</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> shortYearCutoff = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"shortYearCutoff"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"shortYearCutoff"</span>, <span class="number">50</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-showAnim" class="api-item">
+<h3>showAnim<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>"show"</code>
+</div>
+<div>è®¾ç½®æ˜¾ç¤º/éšè—datepickerçš„åŠ¨ç”»åç§°. ä½¿ç”¨ <code>"show"</code> (é»˜è®¤), <code>"slideDown"</code>ï¼Œ <code>"fadeIn"</code>, æˆ–å…¶ä»–ä»»ä½•<a href="javascript:if(confirm('http://www.css88.com/category/effects/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/category/effects/'" tppabs="http://www.css88.com/category/effects/">jQuery UI effects</a>çš„æ˜¾ç¤º/éšè—æ•ˆæœã€‚ è®¾ç½®ä¸ºç©ºå­—ç¬¦ä¸²å¯ä»¥ç¦ç”¨åŠ¨ç”»ï¼Œå³ç›´æ¥æ˜¾ç¤ºæˆ–è€…éšè—ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>showAnim</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ showAnim: <span class="string">"fold"</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>showAnim</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> showAnim = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"showAnim"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"showAnim"</span>, <span class="string">"fold"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-showButtonPanel" class="api-item">
+<h3>showButtonPanel<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>
+    æ˜¯å¦æ˜¾ç¤ºæ—¥å†ä¸‹æ–¹çš„æŒ‰é’®é¢æ¿ã€‚
+    æŒ‰é’®é¢æ¿åŒ…å«ä¸¤ä¸ªæŒ‰é’®ï¼Œ
+    ä¸€ä¸ªä»Šå¤©æŒ‰é’®é“¾æ¥åˆ°å½“å‰æ—¥æœŸï¼Œ
+    Â å’Œä¸€ä¸ªå®ŒæˆæŒ‰é’®å…³é—­datepickerã€‚
+    è¯¥æŒ‰é’®çš„æ–‡æœ¬å¯ä»¥ä½¿ç”¨<a href="#option-currentText"><code>currentText</code></a> å’Œ <a href="#option-closeText"><code>closeText</code></a>é€‰é¡¹åˆ†åˆ«è¿›è¡Œå®šåˆ¶ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>showButtonPanel</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ showButtonPanel: <span class="literal">true</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>showButtonPanel</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> showButtonPanel = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"showButtonPanel"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"showButtonPanel"</span>, <span class="literal">true</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-showCurrentAtPos" class="api-item">
+<h3>showCurrentAtPos<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>0</code>
+</div>
+<div>é€šè¿‡<a href="#option-numberOfMonths"><code>numberOfMonths</code></a>é€‰é¡¹è®¾ç½®å¤šæœˆä»½æ˜¾ç¤ºçš„æƒ…å†µä¸‹ï¼Œå½“å‰æœˆä»½æ˜¾ç¤ºçš„ä½ç½®ã€‚ï¼ˆæ„šäººç å¤´æ³¨ï¼šè‡ªé¡¶éƒ¨/å·¦è¾¹å¼€å§‹ç¬¬nä½ï¼Œä»¥0å¼€å§‹è®¡æ•°ã€‚ï¼‰</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>showCurrentAtPos</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ showCurrentAtPos: <span class="number">3</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>showCurrentAtPos</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> showCurrentAtPos = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"showCurrentAtPos"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"showCurrentAtPos"</span>, <span class="number">3</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-showMonthAfterYear" class="api-item">
+<h3>showMonthAfterYear<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>
+    æ˜¯å¦åœ¨é¢æ¿çš„å¤´éƒ¨å¹´ä»½åé¢æ˜¾ç¤ºæœˆä»½ã€‚
+    </div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>showMonthAfterYear</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ showMonthAfterYear: <span class="literal">true</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>showMonthAfterYear</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> showMonthAfterYear = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"showMonthAfterYear"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"showMonthAfterYear"</span>, <span class="literal">true</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-showOn" class="api-item">
+<h3>showOn<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>"focus"</code>
+</div>
+<div>
+    è®¾ç½®è§¦å‘datepickerè‡ªåŠ¨å‡ºç°çš„äº‹ä»¶åç§°,æ˜¯focus (<code>"focus"</code>)è¿˜æ˜¯clicked (<code>"button"</code>)æˆ–è€…ä»»ä½•äº‹ä»¶(<code>"both"</code>)ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>showOn</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ showOn: <span class="string">"both"</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>showOn</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> showOn = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"showOn"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"showOn"</span>, <span class="string">"both"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-showOptions" class="api-item">
+<h3>showOptions<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>{}</code>
+</div>
+<div>
+    å¦‚æœæƒ³<a href="#option-showAnim"><code>showAnim</code></a>é€‰é¡¹æ¥ä½¿ç”¨jQuery UI effectsåŠ¨ç”»æ•ˆæœ, ä½ å¯ä»¥ä¸ºåŠ¨ç”»æä¾›ä¸€äº›é¢å¤–çš„è®¾ç½®.
+
+   </div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>showOptions</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ showOptions: { direction: <span class="string">"up"</span> } });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>showOptions</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> showOptions = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"showOptions"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"showOptions"</span>, { direction: <span class="string">"up"</span> } );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-showOtherMonths" class="api-item">
+<h3>showOtherMonths<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>
+    æ˜¯å¦åœ¨å½“å‰æœˆä»½é¢æ¿æ˜¾ç¤ºä¸Šã€ä¸‹ä¸¤ä¸ªæœˆçš„ä¸€äº›æ—¥æœŸæ•°ï¼ˆä¸å¯é€‰ï¼‰ã€‚ æƒ³è¦è®©è¿™äº›æ—¥æœŸå¯é€‰ï¼Œè¯·ä½¿ç”¨<a href="#option-selectOtherMonths"><code>selectOtherMonths</code></a>é€‰é¡¹ã€‚
+</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>showOtherMonths</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ showOtherMonths: <span class="literal">true</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>showOtherMonths</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> showOtherMonths = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"showOtherMonths"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"showOtherMonths"</span>, <span class="literal">true</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-showWeek" class="api-item">
+<h3>showWeek<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>false</code>
+</div>
+<div>
+    å¦‚æœä¸º<code>true</code>ï¼Œé¢æ¿å°†å¢åŠ ä¸€åˆ—ï¼Œæ˜¾ç¤ºä¸€å¹´ä¸­çš„å“ªä¸€å‘¨ã€‚
+    Â è¯¥<a href="#option-calculateWeek"><code>calculateWeek</code></a>é€‰é¡¹å†³å®šä¸€å¹´ä¸­çš„å“ªä¸€å‘¨æ˜¯å¦‚ä½•è®¡ç®—çš„ã€‚
+    æ‚¨å¯ä»¥æ”¹å˜ <a href="#option-firstDay"><code>firstDay</code></a>é€‰é¡¹ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>showWeek</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ showWeek: <span class="literal">true</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>showWeek</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> showWeek = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"showWeek"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"showWeek"</span>, <span class="literal">true</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-stepMonths" class="api-item">
+<h3>stepMonths<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number'" tppabs="http://api.jquery.com/Types/#Number">Number</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>1</code>
+</div>
+<div>
+    å½“ç‚¹å‡»ä¸Š/ä¸‹ä¸€æœˆé“¾æ¥æ—¶ï¼Œä¸€æ¬¡ç¿»å‡ ä¸ªæœˆã€‚ </div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>stepMonths</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ stepMonths: <span class="number">3</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>stepMonths</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> stepMonths = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"stepMonths"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"stepMonths"</span>, <span class="number">3</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-weekHeader" class="api-item">
+<h3>weekHeader<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>"Wk"</code>
+</div>
+<div>
+    æœ¬å¹´åº¦å“ªä¸€å‘¨ åˆ—çš„æ ‡é¢˜æ˜¾ç¤ºæ–‡æœ¬ã€‚
+    ä½¿ç”¨<a href="#option-showWeek"><code>showWeek</code></a>é€‰é¡¹ä»¥æ˜¾ç¤ºæ­¤åˆ—ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>weekHeader</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ weekHeader: <span class="string">"W"</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>weekHeader</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> weekHeader = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"weekHeader"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"weekHeader"</span>, <span class="string">"W"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-yearRange" class="api-item">
+<h3>yearRange<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>"c-10:c+10"</code>
+</div>
+<div>
+    æ§åˆ¶å¹´ä»½çš„ä¸‹æ‹‰åˆ—è¡¨ä¸­æ˜¾ç¤ºçš„å¹´ä»½æ•°é‡ï¼Œå¯ä»¥æ˜¯ç›¸å¯¹å½“å‰å¹´(-nn:+nn)ï¼Œç›¸å¯¹äºé€‰æ‹©å¹´ä»½(-nn:+nn)ï¼Œä¹Ÿå¯ä»¥æ˜¯ç»å¯¹å€¼(<code>"nnnn:nnnn"</code>)ï¼Œæˆ–è¿™äº›æ ¼å¼çš„ç»„åˆ (<code>"nnnn:-nn"</code>)ã€‚
+    è¯·æ³¨æ„ï¼Œæ­¤é€‰é¡¹ä»…å½±å“ä¸‹æ‹‰åˆ—è¡¨ä¸­çš„æ˜¾ç¤ºï¼Œ
+    ä½¿ç”¨<a href="#option-minDate"><code>minDate</code></a> å’Œ/æˆ– <a href="#option-maxDate"><code>maxDate</code></a>é€‰é¡¹é™åˆ¶å“ªäº›æ—¥æœŸå¯ä»¥é€‰æ‹©ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>yearRange</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ yearRange: <span class="string">"2002:2012"</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>yearRange</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> yearRange = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"yearRange"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"yearRange"</span>, <span class="string">"2002:2012"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+<div id="option-yearSuffix" class="api-item">
+<h3>yearSuffix<span class="option-type"><strong>Type: </strong><a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a></span>
+</h3>
+<div class="default">
+<strong>Default: </strong><code>""</code>
+</div>
+<div>
+    æ˜¾ç¤ºåœ¨æœˆä»½å¤´éƒ¨ä¸­å¹´ä»½åé¢çš„æ–‡æœ¬ã€‚</div>
+<strong>Code examples:</strong><p>åˆå§‹åŒ–å¸¦æœ‰æŒ‡å®š <code>yearSuffix</code> é€‰é¡¹çš„ datepickerï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker({ yearSuffix: <span class="string">"CE"</span> });</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>åœ¨åˆå§‹åŒ–åï¼Œè·å–æˆ–è®¾ç½®<code>yearSuffix</code> é€‰é¡¹ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="comment">// getter</span></code></div></div><div class="container"><div class="line"><code><span class="keyword">var</span> yearSuffix = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"yearSuffix"</span> );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// setter</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"yearSuffix"</span>, <span class="string">"CE"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div></section><section id="methods"><header><h2>Methods</h2></header><div id="method-destroy"><div class="api-item first-item">
+<h3>destroy()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>
+    å®Œå…¨ç§»é™¤datepickeråŠŸèƒ½. è¿™å°†ä½¿å…ƒç´ è¿”å›åˆ°ä¹‹å‰çš„åˆå§‹åŒ–çŠ¶æ€.
+
+	</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ destroy æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"destroy"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div>
+<div id="method-dialog"><div class="api-item">
+<h3>dialog( date [, onSelect ] [, settings ] [, pos ] )<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>åœ¨ä¸€ä¸ª"dialog"ä¸­æ‰“å¼€ä¸€ä¸ªdatepickerã€‚</div>
+<ul>
+<li>
+<div><strong>date</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Date'" tppabs="http://api.jquery.com/Types/#Date">Date</a>
+</div>
+<div>åˆå§‹åŒ–çš„æ—¥æœŸã€‚</div>
+</li>
+<li>
+<div><strong>onSelect</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Function'" tppabs="http://api.jquery.com/Types/#Function">Function</a>()</div>
+<div>
+    å½“ä¸€ä¸ªæ—¥æœŸè¢«é€‰ä¸­æ—¶çš„å›è°ƒå‡½æ•°. è¿™ä¸ªå‡½æ•°æ¥æ”¶æ—¥æœŸæ–‡æœ¬ å’Œdatepickerå®ä¾‹ä½œä¸ºå‚æ•°ã€‚</div>
+</li>
+<li>
+<div><strong>settings</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Options'" tppabs="http://api.jquery.com/Types/#Options">Options</a>
+</div>
+<div>æ–°çš„datepickerçš„é€‰é¡¹ã€‚</div>
+</li>
+<li>
+<div><strong>pos</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Number%5B2%5D%20or%20MouseEvent'" tppabs="http://api.jquery.com/Types/#Number%5B2%5D%20or%20MouseEvent">Number[2] or MouseEvent</a>
+</div>
+<div>
+    dialogå¯¹è¯æ¡†çš„top/leftçš„<code>[x, y]</code>åæ ‡ï¼Œæˆ–è€…ä¸€ä¸ªé¼ æ ‡äº‹ä»¶<code>MouseEvent</code>çš„åæ ‡ã€‚å¦‚æœä¸æä¾›æ­¤å‚æ•°dialogå°†æ˜¾ç¤ºåœ¨å±å¹•æ­£ä¸­ã€‚
+    </div>
+</li>
+</ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ dialog æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"dialog"</span>, <span class="string">"10/12/2012"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div>
+<div id="method-getDate"><div class="api-item">
+<h3>getDate()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Date'" tppabs="http://api.jquery.com/Types/#Date">Date</a></span>
+</h3>
+<div>
+    è¿”å›ä¸€ä¸ªdatepickerä¸­å½“å‰æ—¥æœŸ, å¦‚æœæ²¡æœ‰æ—¥æœŸè¢«é€‰ä¸­çš„è¯é‚£ä¹ˆè¿”å›<code>null</code>ã€‚</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ getDate æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="keyword">var</span> currentDate = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"getDate"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div>
+<div id="method-hide"><div class="api-item">
+<h3>hide()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>å…³é—­å…ˆå‰æ‰“å¼€çš„date pickerã€‚</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ hide æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"hide"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div>
+<div id="method-isDisabled"><div class="api-item">
+<h3>isDisabled()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Boolean'" tppabs="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
+</h3>
+<div>ç¡®å®šä¸€ä¸ªdatepickeræ˜¯å¦å·²ç¦ç”¨.</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ isDisabled æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="keyword">var</span> isDisabled = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"isDisabled"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div>
+<div id="method-option">
+<div class="api-item">
+<h3>option( optionName )<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a></span>
+</h3>
+<div>è·å–å½“å‰ä¸æŒ‡å®šçš„ <code>optionName</code> å…³è”çš„å€¼ã€‚</div>
+<ul><li>
+<div><strong>optionName</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a>
+</div>
+<div>è¦è·å–å€¼çš„é€‰é¡¹çš„åç§°ã€‚</div>
+</li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨è¯¥æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="keyword">var</span> isDisabled = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"disabled"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div class="api-item">
+<h3>option()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#PlainObject'" tppabs="http://api.jquery.com/Types/#PlainObject">PlainObject</a></span>
+</h3>
+<div>è·å–ä¸€ä¸ªåŒ…å«é”®/å€¼å¯¹çš„å¯¹è±¡ï¼Œé”®/å€¼å¯¹è¡¨ç¤ºå½“å‰ datepicker é€‰é¡¹å“ˆå¸Œã€‚</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨è¯¥æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="keyword">var</span> options = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div class="api-item">
+<h3>option( optionName, value )<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>è®¾ç½®ä¸æŒ‡å®šçš„ <code>optionName</code> å…³è”çš„ datepicker é€‰é¡¹çš„å€¼ã€‚</div>
+<ul>
+<li>
+<div><strong>optionName</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a>
+</div>
+<div>è¦è®¾ç½®çš„é€‰é¡¹çš„åç§°ã€‚</div>
+</li>
+<li>
+<div><strong>value</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>è¦ä¸ºé€‰é¡¹è®¾ç½®çš„å€¼ã€‚</div>
+</li>
+</ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨è¯¥æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, <span class="string">"disabled"</span>, <span class="literal">true</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+<div class="api-item">
+<h3>option( options )<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>ä¸º datepicker è®¾ç½®ä¸€ä¸ªæˆ–å¤šä¸ªé€‰é¡¹ã€‚</div>
+<ul><li>
+<div><strong>options</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Object'" tppabs="http://api.jquery.com/Types/#Object">Object</a>
+</div>
+<div>è¦è®¾ç½®çš„ option-value å¯¹ã€‚</div>
+</li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨è¯¥æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"option"</span>, { disabled: <span class="literal">true</span> } );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div>
+</div>
+<div id="method-refresh"><div class="api-item">
+<h3>refresh()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>
+åœ¨ä½œå‡ºä¸€äº›å¤–éƒ¨ä¿®æ”¹åï¼Œé‡ç»˜æ—¥æœŸé€‰æ‹©å™¨ã€‚</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ refresh æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"refresh"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div>
+<div id="method-setDate"><div class="api-item">
+<h3>setDate( date )<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>
+    ä¸ºdatepickerè®¾ç½®æ—¥æœŸã€‚
+    æ–°çš„æ—¥æœŸå¯èƒ½æ˜¯ä¸€ä¸ª<code>Date</code>å¯¹è±¡æˆ–å½“å‰<a href="#option-dateFormat">date format</a> çš„å­—ç¬¦ä¸²ï¼ˆä¾‹å¦‚ï¼Œ<code>"01/26/2009"</code>ï¼‰ï¼Œ
+    ä¸€ä¸ªä»ä»Šå¤©å¼€å§‹çš„å¤©æ•°ï¼ˆä¾‹å¦‚ï¼Œ<code>+7</code>ï¼‰
+    æˆ–å€¼å’Œå‘¨æœŸçš„å­—ç¬¦ä¸² <code>"y"</code> è¡¨ç¤ºå¹´æ•°, <code>"m"</code>  è¡¨ç¤ºæœˆä»½æ•°, <code>"w"</code> è¡¨ç¤ºå‘¨æ•°, <code>"d"</code>è¡¨ç¤ºå¤©æ•°,ä¾‹å¦‚ï¼Œ <code>"+1m +7d"</code>)ï¼Œ
+    Â æˆ–è€…ä¸º<code>null</code>æ¥æ¸…é™¤é€‰å®šçš„æ—¥æœŸã€‚</div>
+<ul><li>
+<div><strong>date</strong></div>
+<div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a> or <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Date'" tppabs="http://api.jquery.com/Types/#Date">Date</a>
+</div>
+<div>æ–°çš„æ—¥æœŸã€‚</div>
+</li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ setDate æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"setDate"</span>, <span class="string">"10/12/2012"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div>
+<div id="method-show"><div class="api-item">
+<h3>show()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="javascript:if(confirm('http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/'" tppabs="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
+</h3>
+<div>æ˜¾ç¤ºæ—¥æœŸdatepickeræ’ä»¶ã€‚ å¦‚æœdatepickerè¢«ç»‘å®šåˆ°inputå…ƒç´ ï¼Œ è¦æ˜¾ç¤ºdatepickerçš„inputå…ƒç´ å¿…é¡»æ˜¯å¯è§çš„ã€‚  </div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ show æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code>$( <span class="string">".selector"</span> ).datepicker( <span class="string">"show"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div>
+<div id="method-widget"><div class="api-item">
+<h3>widget()<span class="returns">Returns: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#jQuery'" tppabs="http://api.jquery.com/Types/#jQuery">jQuery</a></span>
+</h3>
+<div> è¿”å›ä¸€ä¸ªåŒ…å« datepicker çš„  <code>jQuery</code> å¯¹è±¡ã€‚
+	</div>
+<ul><li><div class="null-signature">è¯¥æ–¹æ³•ä¸æ¥å—ä»»ä½•å‚æ•°ã€‚</div></li></ul>
+<div>
+<strong>Code examples:</strong><p>è°ƒç”¨ widget æ–¹æ³•ï¼š</p>
+<div class="syntaxhighlighter javascript nogutter">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="keyword">var</span> widget = $( <span class="string">".selector"</span> ).datepicker( <span class="string">"widget"</span> );</code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+</div>
+</div></div></section><section class="entry-examples" id="entry-examples"><header><h2>Example:</h2></header><div class="entry-example" id="example-0">
+<h4><span class="desc">ä¸€ä¸ªç®€å•çš„ jQuery UI Datepicker.</span></h4>
+<div class="syntaxhighlighter xml ">
+	<table>
+		<tbody>
+			<tr>
+				<td class="gutter">
+
+						<div class="line n1">1</div>
+
+						<div class="line n2">2</div>
+
+						<div class="line n3">3</div>
+
+						<div class="line n4">4</div>
+
+						<div class="line n5">5</div>
+
+						<div class="line n6">6</div>
+
+						<div class="line n7">7</div>
+
+						<div class="line n8">8</div>
+
+						<div class="line n9">9</div>
+
+						<div class="line n10">10</div>
+
+						<div class="line n11">11</div>
+
+						<div class="line n12">12</div>
+
+						<div class="line n13">13</div>
+
+						<div class="line n14">14</div>
+
+						<div class="line n15">15</div>
+
+						<div class="line n16">16</div>
+
+						<div class="line n17">17</div>
+
+						<div class="line n18">18</div>
+
+						<div class="line n19">19</div>
+
+				</td>
+				<td class="code">
+					<pre><div class="container"><div class="line"><code><span class="doctype">&lt;!doctype html&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">html</span> <span class="attribute">lang</span>=<span class="value">"en"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">head</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"utf-8"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">title</span>&gt;</span>datepicker demo<span class="tag">&lt;/<span class="title">title</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">href</span>=<span class="value">"//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css"</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"//code.jquery.com/jquery-1.10.2.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code>  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"//code.jquery.com/ui/1.10.4/jquery-ui.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">head</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">body</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"datepicker"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;<span class="title">script</span>&gt;</span><span class="javascript"></span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">"#datepicker"</span> ).datepicker();</code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">body</span>&gt;</span></code></div></div><div class="container"><div class="line"><code><span class="tag">&lt;/<span class="title">html</span>&gt;</span></code></div></div></pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<h4>Demo:</h4>
+<div class="demo code-demo" data-height="300"></div>
+</div></section>
+</div></article>	</div><!-- .entry-content -->
+
+</article>
+</div>
+
+
+  </div>
+</div>
+<script type="text/javascript" src="../js/search.js" tppabs="http://www.css88.com/jquery-ui-api/js/search.js"></script>
+<script type="text/javascript" src="../js/gotop.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/gotop.min.js"></script>
+<script type="text/javascript">
+	goToTop.init();
+</script>
+<style>
+    #googlead{position:fixed;bottom:-250px;right:10px;width: 250px}
+.hidden{display: none;}
+</style>
+<div id="googlead">
+    <script type="text/javascript">
+        /*jquery-ui-fixed*/
+        var cpro_id = "u1731049";
+    </script>
+    <script src="../../../cpro.baidustatic.com/cpro/ui/c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+</div>
+<script type="text/javascript">setTimeout(function(){
+  $("#googlead").removeClass("hidden").animate({bottom:10})
+},3000)</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../www.google-analytics.com/analytics.js'/*tpa=http://www.google-analytics.com/analytics.js*/,'ga');
+
+  ga('create', 'UA-3448069-12', 'http://www.css88.com/jquery-ui-api/datepicker/css88.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

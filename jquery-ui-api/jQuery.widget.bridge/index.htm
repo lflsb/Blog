@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Widget Plugin Bridge | jQuery UI API ä¸­æ–‡æ–‡æ¡£ | jQuery APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery 1.0 - jQuery 2.0)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="jQuery,API,ä¸­æ–‡ç‰ˆ,ä¸­æ–‡æ–‡æ¡£,ä¸­æ–‡æ‰‹å†Œ,chm" />
+<meta name="description" content="jQuery APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery 1.0 - jQuery 2.0)" />
+<link rel="shortcut icon" type="image/x-icon" href="http://www.css88.com/jquery-ui-api/favicon.ico" />
+
+<!--<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />-->
+<link rel="stylesheet" type="text/css" media="screen" href="../cssstyle/main.min.css" tppabs="http://www.css88.com/jquery-ui-api/cssstyle/main.min.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="../cssstyle/style.css" tppabs="http://www.css88.com/jquery-ui-api/cssstyle/style.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="../cssstyle/jquery.css" tppabs="http://www.css88.com/jquery-ui-api/cssstyle/jquery.css" />
+<script type="text/javascript" src="../js/jquery.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/highlight.js" tppabs="http://www.css88.com/jquery-ui-api/js/highlight.js"></script>
+<script type="text/javascript" src="../js/jquery.ba-bbq.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/jquery.ba-bbq.min.js"></script>
+<script type="text/javascript" src="../js/jquery.ba-dotimeout.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/jquery.ba-dotimeout.min.js"></script>
+<script type="text/javascript" src="../js/main.js" tppabs="http://www.css88.com/jquery-ui-api/js/main.js"></script>
+<!--<script type="text/javascript" src="js/main.min.js"></script>-->
+</head>
+
+<body>
+<div id="header_warp">
+    <div class="header-box">
+            <div class="logo">
+                <h1><a href="../index.htm" tppabs="http://www.css88.com/jquery-ui-api/"
+                       title="jQuery UI APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery UI 1.10)">jQuery UI APIä¸­æ–‡æ–‡æ¡£</a></h1>
+            </div>
+            <ul class="header-nav">
+                <!--<li><a href="http://www.css88.com/jquery-ui-api/old.html" class="nav-link" title="jQuery UI APIä¸­æ–‡æ–‡æ¡£(é€‚ç”¨jQuery UI 1.10)">æ—§ç‰ˆ</a>
+                </li>-->
+                <li><a href="javascript:if(confirm('http://www.css88.com/jqapi-1.9/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/jqapi-1.9/'" tppabs="http://www.css88.com/jqapi-1.9/" class="nav-link" title="é€‚ç”¨jQuery 1.0 â€“ jQuery 1.10.2,jQuery 2.0 â€“ jQuery 2.0.3">jQuery APIä¸­æ–‡æ–‡æ¡£</a>
+                <li><a href="javascript:if(confirm('http://www.css88.com/archives/4737  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/archives/4737'" tppabs="http://www.css88.com/archives/4737" class="nav-link" title="jQuery UI APIä¸­æ–‡æ–‡æ¡£æ›´æ–°ä¿¡æ¯">æ›´æ–°ä¿¡æ¯</a></li>
+
+                <li><a href="javascript:if(confirm('http://www.css88.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/'" tppabs="http://www.css88.com/" class="nav-link">å‰ç«¯å¼€å‘</a></li>
+            </ul>
+            <!--<input type="search" placeholder="æœç´¢API" autosave="searchdoc" results="10" id="search-field" autocomplete="off">-->
+        </div>
+</div>
+<div id="navigation">
+	
+<aside id="categories" class="widget">
+    <h3 class="widget-title">jQuery UI 1.10</h3>
+    <ul>
+    				<li class="cat-item cat-item-2 current-cat"><a href="../category/effects/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/effects/" title="View all posts filed under Effects">Effects</a>
+    </li>
+    	<li class="cat-item cat-item-10"><a href="../category/effects-core/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/effects-core/" title="View all posts filed under Effects Core">Effects Core</a>
+    </li>
+    	<li class="cat-item cat-item-4"><a href="../category/interactions/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/interactions/" title="View all posts filed under Interactions">Interactions</a>
+    </li>
+    	<li class="cat-item cat-item-8"><a href="../category/overrides/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/overrides/" title="View all posts filed under Method Overrides">Method Overrides</a>
+    </li>
+    	<li class="cat-item cat-item-6"><a href="../category/methods/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/methods/" title="View all posts filed under Methods">Methods</a>
+    </li>
+    	<li class="cat-item cat-item-7"><a href="../category/selectors/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/selectors/" title="View all posts filed under Selectors">Selectors</a>
+    </li>
+    	<li class="cat-item cat-item-12"><a href="../category/theming/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/theming/" title="View all posts filed under Theming">Theming</a>
+    </li>
+    	<li class="cat-item cat-item-9"><a href="../category/ui-core/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/ui-core/" title="View all posts filed under UI Core">UI Core</a>
+    </li>
+    	<li class="cat-item cat-item-5"><a href="../category/utilities/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/utilities/" title="View all posts filed under Utilities">Utilities</a>
+    </li>
+    	<li class="cat-item cat-item-3"><a href="../category/widgets/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/widgets/" title="View all posts filed under Widgets">Widgets</a>
+    </li>
+    		</ul>
+  </aside>
+
+
+    <div style=" height:60px;margin-left:20px"><p
+                        style="font-size:12px; line-height:1.5; margin:8px 0">æ‹ç –çº é”™ è¯·å¾®åšä¸Š <a href="javascript:if(confirm('http://weibo.com/148246293  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://weibo.com/148246293'" tppabs="http://weibo.com/148246293"
+                                                                                           target="_blank">@æ„šäººç å¤´</a>ï¼š</p>
+                    <iframe style="vertical-align: middle;" width="163" height="24" frameborder="0"
+                            allowtransparency="true" marginwidth="0" marginheight="0" scrolling="no" border="0"
+                            src="../../../widget.weibo.com/relationship/followbutton.php-language=zh_cn&width=63&height=24            &uid=1477178352&style=2&btn=red&dpc=1" tppabs="http://widget.weibo.com/relationship/followbutton.php?language=zh_cn&width=63&height=24            &uid=1477178352&style=2&btn=red&dpc=1"></iframe>
+                </div>
+        <div id="googleguanggao" style=" margin-top:20px; margin-left:10px">
+            <script type="text/javascript">
+                        /*jquery-ui-left*/
+                        var cpro_id = "u1731043";
+                    </script>
+                    <script src="../../../cpro.baidustatic.com/cpro/ui/c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+        </div></div>
+<div id="content_box">
+  <div id="content">
+	
+<div class="inner" role="main">
+    <article id="post-733" class="post-733 post type-post status-publish format-standard hentry category-utilities category-widgets">
+    	<header class="entry-header">
+    		<h1 class="entry-title">Widget Plugin Bridge</h1>
+    		<hr>
+<div id="baidu-banner">
+<script type="text/javascript">
+    /*jquery-ui-banner*/
+    var cpro_id = "u1731052";
+</script>
+<script src="../../../cpro.baidustatic.com/cpro/ui/c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+</div>
+<div class="entry-meta">
+    			Categories: <span class="category"><a href="../category/utilities/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/utilities/" title="View all posts in Utilities">Utilities</a></span><span class="category-divider"> | </span><span class="category"><a href="../category/widgets/index.htm" tppabs="http://www.css88.com/jquery-ui-api/category/widgets/" title="View all posts in Widgets">Widgets</a></span>		</div><!-- .entry-meta -->
+    			</header><!-- .entry-header -->
+
+    	<div class="entry-content">
+    		<article id="jQuery-widget-bridge1" class="entry method"><h2 class="section-title"><span class="name">jQuery.widget.bridge( name, constructor )</span></h2>
+    <div class="entry-wrapper">
+    <p class="desc"><strong>Description: </strong>
+        <code>jQuery.widget.bridge()</code> æ–¹æ³•æ˜¯ <a href="javascript:if(confirm('http://www.css88.com/jQuery.widget/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/jQuery.widget/'" tppabs="http://www.css88.com/jQuery.widget/">jQuery éƒ¨ä»¶åº“ï¼ˆWidget Factoryï¼‰</a> çš„ä¸€éƒ¨åˆ†ã€‚å®ƒæ‰®æ¼”ç€ç”± <code>$.widget()</code> åˆ›å»ºçš„å¯¹è±¡å’Œ jQuery API ä¹‹é—´çš„ä¸­ä»‹ã€‚</p>
+    <ul class="signatures"><li class="signature">
+    <h4 class="name"><a id="jQuery-widget-bridge-name-constructor" href="#jQuery-widget-bridge-name-constructor"><span class="icon-link"></span>jQuery.widget.bridge( name, constructor )</a></h4>
+    <ul>
+    <li>
+    <div><strong>name</strong></div>
+    <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#String'" tppabs="http://api.jquery.com/Types/#String">String</a>
+    </div>
+    <div>è¦åˆ›å»ºçš„æ’ä»¶åç§°ã€‚</div>
+    </li>
+    <li>
+    <div><strong>constructor</strong></div>
+    <div>Type: <a href="javascript:if(confirm('http://api.jquery.com/Types/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://api.jquery.com/Types/#Function'" tppabs="http://api.jquery.com/Types/#Function">Function</a>()</div>
+    <div>å½“æ’ä»¶è¢«è°ƒç”¨æ—¶è¦å®ä¾‹åŒ–çš„å¯¹è±¡ã€‚</div>
+    </li>
+    </ul>
+    </li></ul>
+    <div class="longdesc" id="entry-longdesc">
+    			<p><code>$.widget.bridge()</code> åšå¦‚ä¸‹äº‹æƒ…ï¼š</p>
+        <ul>
+            <li>è¿æ¥ä¸€ä¸ªå¸¸è§„çš„ JavaScript æ„é€ å‡½æ•°åˆ° jQuery APIã€‚</li>
+            <li>è‡ªåŠ¨åˆ›å»ºå¯¹è±¡å®ä¾‹ï¼Œå¹¶å­˜å‚¨åœ¨å…ƒç´ çš„ <code>$.data</code> ç¼“å­˜å†…ã€‚</li>
+            <li>å…è®¸è°ƒç”¨å…¬æœ‰æ–¹æ³•ã€‚</li>
+            <li>é˜²æ­¢è°ƒç”¨ç§æœ‰æ–¹æ³•ã€‚</li>
+            <li>é˜²æ­¢åœ¨æœªåˆå§‹åŒ–çš„å¯¹è±¡ä¸Šè°ƒç”¨æ–¹æ³•ã€‚</li>
+            <li>é˜²æ­¢å¤šä¸ªåˆå§‹åŒ–ã€‚</li>
+        </ul>
+
+
+        <p>jQuery UI å°éƒ¨ä»¶ä½¿ç”¨ <code>$.widget( "foo.bar", {} );</code> è¯­æ³•å®šä¹‰ä¸€ä¸ªå¯¹è±¡æ¥åˆ›å»ºã€‚ç»™å‡ºä¸€ä¸ªå¸¦æœ‰äº”ä¸ª <code>.foo</code>ï¼Œ<code>$( ".foo" ).bar();</code> çš„ DOM ç»“æ„å°†åˆ›å»º "bar" å¯¹è±¡çš„äº”ä¸ªå®ä¾‹ã€‚<code>$.widget.bridge()</code> åŸºäº "bar" å¯¹è±¡å’Œä¸€ä¸ªå…¬å…±çš„ API åœ¨åº“å†…å·¥ä½œã€‚å› æ­¤ï¼Œæ‚¨å¯ä»¥é€šè¿‡ç¼–å†™ <code>$( ".foo" ).bar()</code> æ¥åˆ›å»ºå®ä¾‹ï¼Œé€šè¿‡ç¼–å†™ <code>$( ".foo" ).bar( "baz" )</code> æ¥è°ƒç”¨æ–¹æ³•ã€‚</p>
+        <p>å¦‚æœæ‚¨åªæƒ³ä¸€æ¬¡æ€§åˆå§‹åŒ–å¹¶è°ƒç”¨æ–¹æ³•ï¼Œé‚£ä¹ˆæ‚¨æ‰€ä¼ é€’ç»™ <code>jQuery.widget.bridge()</code> çš„å¯¹è±¡å¯ä»¥å¾ˆå°ï¼š</p>
+    			<div class="syntaxhighlighter javascript nogutter">
+    	<table>
+    		<tbody>
+    			<tr>
+    				<td class="gutter">
+
+    						<div class="line n1">1</div>
+
+    						<div class="line n2">2</div>
+
+    						<div class="line n3">3</div>
+
+    						<div class="line n4">4</div>
+
+    						<div class="line n5">5</div>
+
+    						<div class="line n6">6</div>
+
+    						<div class="line n7">7</div>
+
+    						<div class="line n8">8</div>
+
+    						<div class="line n9">9</div>
+
+    						<div class="line n10">10</div>
+
+    						<div class="line n11">11</div>
+
+    						<div class="line n12">12</div>
+
+    						<div class="line n13">13</div>
+
+    				</td>
+    				<td class="code">
+    					<pre><div class="container"><div class="line"><code><span class="keyword">var</span> Highlighter = <span class="keyword">function</span>( options, element ) {</code></div></div><div class="container"><div class="line"><code>  <span class="keyword">this</span>.options = options;</code></div></div><div class="container"><div class="line"><code>  <span class="keyword">this</span>.element = $( element );</code></div></div><div class="container"><div class="line"><code>  <span class="keyword">this</span>._set( <span class="number">800</span> );</code></div></div><div class="container"><div class="line"><code>};</code></div></div><div class="container"><div class="line"><code>Highlighter.prototype = {</code></div></div><div class="container"><div class="line"><code>  toggle: <span class="keyword">function</span>() {</code></div></div><div class="container"><div class="line"><code>    <span class="keyword">this</span>._set( <span class="keyword">this</span>.element.css( <span class="string">"font-weight"</span>) === <span class="number">400</span> ? <span class="number">800</span> : <span class="number">400</span> );</code></div></div><div class="container"><div class="line"><code>  },</code></div></div><div class="container"><div class="line"><code>  _set: <span class="keyword">function</span>(value) {</code></div></div><div class="container"><div class="line"><code>    <span class="keyword">this</span>.element.css( <span class="string">"font-weight"</span>, value );</code></div></div><div class="container"><div class="line"><code>  }</code></div></div><div class="container"><div class="line"><code>};</code></div></div></pre>
+    				</td>
+    			</tr>
+    		</tbody>
+    	</table>
+    </div>
+
+        <p>åœ¨è¿™é‡Œï¼Œæ‚¨éœ€è¦çš„åªæ˜¯ä¸€ä¸ªæ„é€ å‡½æ•°ï¼Œæ¥æ”¶ä¸¤ä¸ªå‚æ•°ï¼š</p>
+        <ul> <li><code>options</code>ï¼šä¸€ä¸ªé…ç½®é€‰é¡¹çš„å¯¹è±¡</li> <li><code>element</code>ï¼šè¯¥å®ä¾‹åœ¨å…¶ä¸Šåˆ›å»ºçš„ DOM å…ƒç´ </li> </ul>
+        <p>ç„¶åæ‚¨å¯ä»¥ä½¿ç”¨æ¡¥ï¼ˆbridgeï¼‰æŠŠè¯¥å¯¹è±¡ä½œä¸ºä¸€ä¸ª jQuery æ’ä»¶ï¼Œä¸”å¯ä»¥åœ¨ä»»æ„çš„ jQuery å¯¹è±¡ä¸Šä½¿ç”¨å®ƒï¼š</p>
+    			<div class="syntaxhighlighter javascript nogutter">
+    	<table>
+    		<tbody>
+    			<tr>
+    				<td class="gutter">
+
+    						<div class="line n1">1</div>
+
+    						<div class="line n2">2</div>
+
+    						<div class="line n3">3</div>
+
+    						<div class="line n4">4</div>
+
+    						<div class="line n5">5</div>
+
+    						<div class="line n6">6</div>
+
+    						<div class="line n7">7</div>
+
+    						<div class="line n8">8</div>
+
+    				</td>
+    				<td class="code">
+    					<pre><div class="container"><div class="line"><code><span class="comment">// Hook up the plugin</span></code></div></div><div class="container"><div class="line"><code>$.widget.bridge( <span class="string">"colorToggle"</span>, Highlighter );</code></div></div><div class="container"><div class="line"><code> </code></div></div><div class="container"><div class="line"><code><span class="comment">// Initialize it on divs</span></code></div></div><div class="container"><div class="line"><code>$( <span class="string">"div"</span> ).colorToggle().click(<span class="keyword">function</span>() {</code></div></div><div class="container"><div class="line"><code>  <span class="comment">// Call the public method on click</span></code></div></div><div class="container"><div class="line"><code>  $( <span class="keyword">this</span> ).colorToggle( <span class="string">"toggle"</span> );</code></div></div><div class="container"><div class="line"><code>});</code></div></div></pre>
+    				</td>
+    			</tr>
+    		</tbody>
+    	</table>
+    </div>
+
+        <p>ä¸ºäº†ä½¿ç”¨æ¡¥ï¼ˆbridgeï¼‰çš„æ‰€æœ‰ç‰¹æ€§ï¼Œæ‚¨çš„å¯¹è±¡åŸå‹éœ€è¦æœ‰ä¸€ä¸ª <code>_init()</code> æ–¹æ³•ã€‚è¯¥æ–¹æ³•åœ¨è°ƒç”¨æ’ä»¶ä¸”å®ä¾‹å·²å­˜åœ¨æ—¶è°ƒç”¨ã€‚åœ¨è¿™ç§æƒ…å†µä¸‹ï¼Œæ‚¨è¿˜éœ€è¦æœ‰ä¸€ä¸ª <code>option()</code> æ–¹æ³•ã€‚è¯¥æ–¹æ³•å°†ä¼šä»¥é€‰é¡¹ä½œä¸ºç¬¬ä¸€ä¸ªå‚æ•°è¢«è°ƒç”¨ã€‚å¦‚æœæ²¡æœ‰é€‰é¡¹ï¼Œåˆ™å‚æ•°ä¸ºä¸€ä¸ªç©ºå¯¹è±¡ã€‚å¦‚éœ€äº†è§£ <code>option</code> æ–¹æ³•çš„ä½¿ç”¨ï¼Œè¯·æŸ¥çœ‹ <a href="javascript:if(confirm('http://www.css88.com/jQuery.widget/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÒ»¸öÓò»òÂ·¾¶Íâ²¿±»ÉèÖÃÎªËüµÄÆôÊ¼µØÖ·µÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.css88.com/jQuery.widget/#jQuery-Widget2'" tppabs="http://www.css88.com/jQuery.widget/#jQuery-Widget2"><code>$.Widget</code></a>ã€‚</p>
+        <p>æ¡¥ï¼ˆbridgeï¼‰æœ‰ä¸€ä¸ªå¯é€‰çš„å±æ€§ï¼Œå¦‚æœå­˜åœ¨ï¼šå¦‚æœå¯¹è±¡åŸå‹æœ‰ä¸€ä¸ª <code>widgetFullName</code> å±æ€§ï¼Œåˆ™è¯¥å±æ€§å°†è¢«ä½œä¸ºå­˜å‚¨å’Œæ£€ç´¢å®ä¾‹çš„é”®ã€‚å¦åˆ™ï¼Œå°†ä½¿ç”¨ name å‚æ•°ã€‚</p>
+
+
+    		</div>
+    </div></article>	</div><!-- .entry-content -->
+
+    </article>
+</div>
+
+
+  </div>
+</div>
+<script type="text/javascript" src="../js/search.js" tppabs="http://www.css88.com/jquery-ui-api/js/search.js"></script>
+<script type="text/javascript" src="../js/gotop.min.js" tppabs="http://www.css88.com/jquery-ui-api/js/gotop.min.js"></script>
+<script type="text/javascript">
+	goToTop.init();
+</script>
+<style>
+    #googlead{position:fixed;bottom:-250px;right:10px;width: 250px}
+.hidden{display: none;}
+</style>
+<div id="googlead">
+    <script type="text/javascript">
+        /*jquery-ui-fixed*/
+        var cpro_id = "u1731049";
+    </script>
+    <script src="../../../cpro.baidustatic.com/cpro/ui/c.js" tppabs="http://cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+</div>
+<script type="text/javascript">setTimeout(function(){
+  $("#googlead").removeClass("hidden").animate({bottom:10})
+},3000)</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../www.google-analytics.com/analytics.js'/*tpa=http://www.google-analytics.com/analytics.js*/,'ga');
+
+  ga('create', 'UA-3448069-12', 'http://www.css88.com/jquery-ui-api/jQuery.widget.bridge/css88.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

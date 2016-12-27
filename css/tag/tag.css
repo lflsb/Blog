@@ -10,7 +10,7 @@
         width: 250px;
         margin: 0 auto;
         margin-top: 100px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         transition: 0.3s linear;
         background: linear-gradient(0, #108b96 2px, #108b96 2px) no-repeat, 
                     linear-gradient(-90deg, #108b96 2px, #108b96 2px) no-repeat, 
@@ -41,8 +41,6 @@
     }
 
     .tags_content{
-        padding-top: 25px;
-        padding-bottom: 50px;
         width: 60%;
         margin: 0 auto;
         text-align: center;
@@ -69,8 +67,7 @@
 
     .tags_single{
         font-size: 16px;
-        
-        padding: 50px 0px;
+        padding: 20px 0px;
         margin: 0 20px;
         line-height: 60px;
     }
