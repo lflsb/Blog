@@ -149,20 +149,24 @@ body{
 .index_main{
     margin: 60px auto;
     width: 1200px;
-    overflow: auto;
+    overflow: visible;
 }
 
 .index_main_header{
     text-align: center;
     padding: 25px 0px;
 }
-.index_main_header:hover{
+.index_main_header_i{
+    color: #d6d6d6;
+}
+.index_main_header_i:hover{
     cursor: pointer;
 }
 .index_main_header a{
     text-decoration: none;
     font-family: "PingFang SC","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Microsoft Yahei","微软雅黑",STHeiti,"华文细黑",sans-serif;
-    color: #666;
+    color: #888;
+    padding: 0px 20px;
     /*Mozilla内核*/
     -moz-transition:color 0.3s ease-in-out;
     /*Webkit内核*/
@@ -175,12 +179,37 @@ body{
 }
 .index_main_header a:hover{
     text-decoration: none;
-    color: blueviolet;s
+    color: blueviolet;
 }
-.index_main_header span{
+.index_main_displaypanelouter{
+    height: 500px;
+    perspective: 3000px;
+    overflow: visible;
+}
+
+.index_main_displaypanel{
+    width: 1200px;
+    position: absolute;
+    height: 500px;
+    border-radius: 10px;
+    background-color: darkgray;
+    line-height: 450px;
     text-align: center;
-    padding: 0px 20px;
+    font-size: 50px;
+    
+    
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    
+    -moz-transition:transform .1s cubic-bezier(.25,.46,.45,.94);
+    /*Webkit内核*/
+    -webkit-transition:-webkit-transform .1s cubic-bezier(.25,.46,.45,.94);
+    /*Opera*/
+    -o-transition:transform .1s cubic-bezier(.25,.46,.45,.94);
+    /*W3C 标准*/
+    transition:transform .1s cubic-bezier(.25,.46,.45,.94);
 }
+
 
 
 
