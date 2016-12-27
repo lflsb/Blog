@@ -2,9 +2,9 @@ body{
     background-color: #f7f7f7 ;
 }
 .b-navibar{
+    box-shadow: 0px 0px 30px #e3e3e3 inset;
 }
 .b-navibar-main{
-    width:1200px;
     margin: 0 auto;
 }
 
@@ -146,42 +146,52 @@ body{
     float: left;
 }
 
-.index_main{
-    margin: 60px auto;
-    width: 1200px;
-    overflow: auto;
+/***********导航栏右边样式结束*****************/
+.b-content{
+    margin: 0 auto;
+    margin-top: 60px;
 }
 
-.index_main_header{
-    text-align: center;
-    padding: 25px 0px;
-}
-.index_main_header:hover{
-    cursor: pointer;
-}
-.index_main_header a{
-    text-decoration: none;
-    font-family: "PingFang SC","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Microsoft Yahei","微软雅黑",STHeiti,"华文细黑",sans-serif;
-    color: #666;
-    /*Mozilla内核*/
-    -moz-transition:color 0.3s ease-in-out;
-    /*Webkit内核*/
-    -webkit-transition:color 0.3s ease-in-out;
-    /*Opera*/
-    -o-transition:color 0.3s ease-in-out;
-    /*W3C 标准*/
-    transition:color 0.2s ease-in-out;
-    
-}
-.index_main_header a:hover{
-    text-decoration: none;
-    color: blueviolet;s
-}
-.index_main_header span{
-    text-align: center;
-    padding: 0px 20px;
+.b-header{
+    background-color: #f1f1f1;
+    height: 550px;
 }
 
+
+.b-blog{
+    background-color: #eee;
+    height: 550px;
+}
+
+
+.b-share{
+    background-color: #ddd;
+    height: 550px;
+}
+
+
+.b-leftword{
+    background-color: #ccc;
+    height: 550px;
+}
+
+
+.b-introduce{
+    background-color: #bbb;
+    height: 550px;
+}
+
+
+.b-friendlink{
+    background-color: #ccc;
+    height: 550px;
+}
+
+
+.b-contact{
+    background-color: #ddd;
+    height: 550px;
+}
 
 
 .b-bottom{
@@ -190,9 +200,52 @@ body{
     width: 100%;
 }
 
+.b-inner{
+    float: left;
+}
+.b-inner .b-i-l{
+    margin-left: 100px;
+    margin-top: 75px;
+    float: left;
+    line-height: 400px;
+    text-align: center;
+}
+.b-inner .b-i-l span{
+    font-size: 23px;
+	font-family: "Arial","YouYuan","黑体","宋体",sans-serif;
+    display:inline-block;
+    line-height:1.4em;
+    vertical-align:middle;
+}
+.b-inner .b-i-r span{
+    font-size: 20px;
+	font-family: "Arial","YouYuan","黑体","宋体",sans-serif;
+    display:inline-block;
+    line-height:1.4em;
+    vertical-align:middle;
+}
+
+.b-inner .b-i-r{
+    margin-top: 75px;
+    line-height: 400px;
+    float: left;
+    text-align: center;
+}
+.b-inner .b-i-l i{
+    font-weight: 100;
+    font-size: 250px;
+}
+.b-inner .b-i-r i{
+    font-size: 250px;
+}
+
+.bb-inner{
+    
+}
+
 .bb-inner .bb-i-l{
     margin: 0 auto;
-    line-height: 100px;
+    line-height: 150px;
     text-align: center;
     
 }
