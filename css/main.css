@@ -1,6 +1,11 @@
 body{
     background-color: #f7f7f7 ;
 }
+
+iframe{
+    z-index: 20;
+}
+
 .b-navibar{
 }
 .b-navibar-main{
@@ -190,30 +195,211 @@ body{
 .index_main_displaypanel{
     position: absolute;
     border-radius: 10px;
-    background-color: darkgray;
     text-align: center;
-    box-shadow: 0px 0px 20px #ddd;
     
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     
-    -moz-transition:transform .1s cubic-bezier(.25,.46,.45,.94);
+    -moz-transition:transform .1s cubic-bezier(.25,.46,.45,.94),box-shadow 0.3s ease-in-out;
     /*Webkit内核*/
-    -webkit-transition:-webkit-transform .1s cubic-bezier(.25,.46,.45,.94);
+    -webkit-transition:-webkit-transform .1s cubic-bezier(.25,.46,.45,.94),box-shadow 0.3s ease-in-out;
     /*Opera*/
-    -o-transition:transform .1s cubic-bezier(.25,.46,.45,.94);
+    -o-transition:transform .1s cubic-bezier(.25,.46,.45,.94),box-shadow 0.3s ease-in-out;
     /*W3C 标准*/
-    transition:transform .1s cubic-bezier(.25,.46,.45,.94);
+    transition:transform .1s cubic-bezier(.25,.46,.45,.94),box-shadow 0.3s ease-in-out;
+}
+
+
+.index_main_displaypanel:hover{
+    box-shadow: 0px 0px 50px #aaa;
 }
 
 .index_main_displaypanel_a{
     width: 1200px;
     height: 500px;
     display: block;
-    background-image: url(../images/index_display/1.jpg);
     background-size:contain;
     border-radius: 10px;
+    /*Mozilla内核*/
+    -moz-transition:all 0.3s ease-in-out;
+    /*Webkit内核*/
+    -webkit-transition:opacity 0.3s ease-in-out;
+    /*Opera*/
+    -o-transition:opacity 0.3s ease-in-out;
+    /*W3C 标准*/
+    transition:all 0.3s ease-in-out;
 }
+.index_main_displaypanel_a:hover{
+    text-decoration: none;
+}
+
+.index_main_displaypanel_a img{
+    position: absolute;
+    left: 0px;
+    width: 1200px;
+    height: 500px;
+    border-radius: 10px;
+    /*Mozilla内核*/
+    -moz-transition:opacity 2s ease-in-out;
+    /*Webkit内核*/
+    -webkit-transition:opacity 2s ease-in-out;
+    /*Opera*/
+    -o-transition:opacity 2s ease-in-out;
+    /*W3C 标准*/
+    transition:opacity 2s linear;
+}
+
+.img_hide{
+    opacity: 0;
+}
+
+.index_main_displaypanel_little{
+    margin-top: 50px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+.index_main_displaypanel_little_line{
+    height: 100%;
+    border-left: 1px solid #ddd;
+    float: left;
+    
+}
+.index_main_displaypanel_little_inner{
+    width: 298.75px;
+    height: 100%;
+    float: left;
+    /*Mozilla内核*/
+    -moz-transition:box-shadow 0.5s ease;
+    /*Webkit内核*/
+    -webkit-transition:box-shadow 0.5s ease;
+    /*Opera*/
+    -o-transition:box-shadow 0.5s ease;
+    /*W3C 标准*/
+    transition:box-shadow 0.5s ease;
+    
+}
+.index_main_displaypanel_little_inner_left{
+    border-radius: 10px 0px 0px 10px; 
+}
+.index_main_displaypanel_little_inner_right{
+    border-radius: 0px 10px 10px 0px; 
+}
+.index_main_displaypanel_little_inner:hover{
+    box-shadow: 0px 0px 60px #f1f1f1 inset;
+}
+
+.index_main_formal_little_inner_top{
+    height: 59px;
+    border-radius: 10px 10px 0px 00px; 
+    border-bottom: 1px solid #ddd;
+}
+.index_main_formal_little_inner_top span{
+    font-size: 18px;
+    color: #666;
+    font-family: "PingFang SC","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","幼圆",STHeiti,"华文细黑",sans-serif;
+    line-height: 59px;
+    margin-left: 30px;
+    
+}
+
+.index_main_formal_little_line{
+    height: 390px;
+    border-left: 1px solid #ddd;
+    float: left;
+    
+}
+.index_main_formal_little_inner{
+    width: 298.75px;
+    height: 390px;
+    float: left;
+    /*Mozilla内核*/
+    -moz-transition:box-shadow 0.5s ease;
+    /*Webkit内核*/
+    -webkit-transition:box-shadow 0.5s ease;
+    /*Opera*/
+    -o-transition:box-shadow 0.5s ease;
+    /*W3C 标准*/
+    transition:box-shadow 0.5s ease;
+    
+}
+.index_main_formal_little_inner_left{
+    border-radius: 0px 0px 0px 10px; 
+}
+.index_main_formal_little_inner_right{
+    border-radius: 0px 0px 10px 0px; 
+}
+.index_main_formal_little_inner:hover{
+    box-shadow: 0px 0px 60px #f1f1f1 inset;
+}
+
+
+
+.index_main_blogrecommend{
+    margin-top: 50px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+.index_main_articlerecommend{
+    margin-top: 50px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    
+}
+.index_main_objectrecommend{
+    margin-top: 50px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    
+}
+.index_main_blogby{
+    margin-top: 50px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    
+}
+.index_main_systeminformation{
+    margin-top: 50px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    
+}
+.index_main_system{
+    margin-top: 50px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    
+}
+.index_main_messageleave{
+    margin-top: 50px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    
+}
+.index_main_friendlink{
+    margin-top: 50px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    
+}
+
 
 .b-bottom{
     border-top: 1px solid #ddd;
@@ -221,25 +407,32 @@ body{
     width: 100%;
 }
 .index_main_panelbottom{
-    position: absolute;
     width: 1200px;
-    top: 450px;
-    margin: 0 auto;
+    padding-top: 460px;
+    position: absolute;
 }
 .index_main_panelbottom i{
-    color: #f1f1f1;
+    font-size: 12px;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 5px;
     /*Mozilla内核*/
-    -moz-transition:color 0.3s linear;
+    -moz-transition:text-shadow 0.3s ease,color 0.3s ease;
     /*Webkit内核*/
-    -webkit-transition:color 0.3s linear;
+    -webkit-transition:text-shadow 0.3s ease,color 0.3s ease;
     /*Opera*/
-    -o-transition:color 0.3s linear;
+    -o-transition:text-shadow 0.3s ease,color 0.3s ease;
     /*W3C 标准*/
-    transition:color 0.2s linear;
-    border-radius: 10px;
+    transition:text-shadow 0.3s ease,color 0.3s ease;
+    color: rgba(200,200,200,.6);
 }
+.i_active{
+    text-shadow: 0px 0px 3px #fff;
+}
+/*
+.i_active{
+    border: 3px solid rgba(255,255,255,0.9);
+}
+*/
 
 .bb-inner .bb-i-l{
     margin: 0 auto;
