@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'originalbyfnkfrsh';
+    src: url('Originalbyfnkfrsh.woff2') format('woff2'),
+         url('Originalbyfnkfrsh.eot') format('eot'),
+         url('Originalbyfnkfrsh.svg') format('svg'),
+         url('Originalbyfnkfrsh.ttf') format('ttf'),
+         url('Originalbyfnkfrsh.woff') format('woff'),
+         url('Originalbyfnkfrsh.otf') format('otf'),
+         url('Originalbyfnkfrsh.dfont') format('dfont');
+    font-weight: normal;
+    font-style: normal;
+
+}

@@ -75,7 +75,7 @@ $(function () {
     setInterval(function () {
         val = $(".i_active").attr("id").charAt(2);
         if (val == len) {
-            
+
             $(".i_active").css("text-shadow", "0px 0px 0px rgba(255,255,255,0)");
             $(".i_active").removeClass("i_active");
             $("#i_1").css("text-shadow", "0px 0px 3px #fff");
@@ -85,9 +85,9 @@ $(function () {
             $("#img_1").toggleClass("img_hide");
             $("#img_1").toggleClass("img_show");
             //val = 0;
-            
+
         } else {
-            
+
             var next = $(".img_show").next();
             var next2 = $(".i_active").next();
 
@@ -99,45 +99,51 @@ $(function () {
             $(".img_show").toggleClass("img_show");
             next.toggleClass("img_hide");
             next.toggleClass("img_show");
-            
+
             val = $(".i_active").attr("id").charAt(2);
-            
+
         }
 
-    }, 5000);
+    }, 7000);
 
 
+    var little_panel = $(".index_main_displaypanel_little_inner");
+    little_panel.hover(function () {
+        $(this).children(".index_main_displaypanel_little_iheader").toggleClass("index_main_displaypanel_little_iheader_");
+        $(this).children(".index_main_displaypanel_little_ibottom").toggleClass("index_main_displaypanel_little_ibottom_");
 
-    //    
-    //    $(document).mousemove(function (e) {
-    //
-    //        var x = e.pageX;
-    //        var y = e.pageY;
+        $(this).children("img").toggleClass("index_main_displaypanel_little_inner_img_", 1000, "ease");
+    });
+
+
+    var friendlinkinner = $(".index_main_friendlink").children(".friendlink_firstpanel").children(".index_main_formal_little_inner");
+    friendlinkinner.children(".index_main_friendlink_left").children("p").click(function () {
+        $(this).parent().parent().children(".index_main_friendlink_right").addClass("index_main_friendlink_right_");
+        $(this).parent().addClass("index_main_friendlink_left_");
+
+    });
+    //    $(document).mousemove(function(e){
+    //        alert(e.pageX+"    "e.pageY);
+    ////        $(this).removeClass("index_main_friendlink_right_"); $(this).parent().children(".index_main_friendlink_left").removeClass("index_main_friendlink_left_");
     //        
-    // 
-    //        if (x >= o_left && x <= o_left + o_width && y >= o_top && y <= o_top + o_height) {
-    //            
-    //            var x____ = x - o_left;
-    //            var x___ = x____ / o_width;
-    //            var x__ = x___.toFixed(2) * 8;
-    //            
-    //            var x_ = -4 + x__;
-    //            
-    //            var y____ = y - o_top;
-    //            var y___ = y____ / o_height;
-    //            var y__ = y___.toFixed(2) * 6;
-    //            
-    //            
-    //            var y_ = 3 - ((y - o_top) / o_height).toFixed(2) * 6;
-    //            $(".index_main_displaypanel").css("transform", "rotateY(" + x_ + "deg) rotatex(" + y_ + "deg)");
-    //            $(".index_main_displaypanel").css("-webkit-transform", "rotateY(" + x_ + "deg) rotatex(" + y_ + "deg)");
-    //            $(".index_main_displaypanelouter").css("cursor", "pointer");
-    //        } else {
-    //            $(".index_main_displaypanel").css("transform", " rotateY(0deg) rotatex(0deg)");
-    //            $(".index_main_displaypanel").css("-webkit-transform", " rotateY(0deg) rotatex(0deg)");
-    //
-    //        }
-    //
     //    });
+
+    friendlinkinner.children(".index_main_friendlink_right").children("i").click(function () {
+        $(this).parent().removeClass("index_main_friendlink_right_");
+        $(this).parent().parent().children(".index_main_friendlink_left").removeClass("index_main_friendlink_left_");
+
+    });
+    
+    var friend_botton_left = $(".friend_botton_left");
+    friend_botton_left.click(function(){
+        $(this).parent().children(".friendlink_firstpanel").removeClass("friendlink_firstpanel_");
+    });
+    
+    var friend_botton_right = $(".friend_botton_right");
+    friend_botton_right.click(function(){
+        $(this).parent().children(".friendlink_firstpanel").addClass("friendlink_firstpanel_");
+    });
+    
+
 
 });

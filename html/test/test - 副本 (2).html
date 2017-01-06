@@ -11,17 +11,6 @@
             left: calc(50% - 2em);
         }
         
-        .wrapper::after {
-            content: "";
-            background: #fff;
-            border-radius: 50%;
-            width: 3em;
-            height: 3em;
-            position: absolute;
-            top: 0.5em;
-            left: 0.5em;
-        }
-        
         .dial-container {
             position: absolute;
             top: 0;
@@ -56,27 +45,6 @@
             border-radius: 4em 0 0 4em;
             transform-origin: 2em 2em;
         }
-        
-        .marker {
-            background: red;
-            border-radius: 50%;
-            height: 0.5em;
-            width: 0.5em;
-            position: absolute;
-            top: 0;
-            left: calc(50% - 0.25em);
-        }
-        
-        .end {
-            animation: rotate-marker 4s infinite linear;
-            transform-origin: 50% 2em;
-        }
-        
-        @keyframes rotate-marker {
-            100% {
-                transform: rotateZ(360deg);
-            }
-        }
         /* First animation moves 180 degrees in the first 2 seconds */
         
         @keyframes rotate-bg-1 {
@@ -104,11 +72,11 @@
         <div class="dial-container container1">
             <div class="wedge"></div>
         </div>
+<!--
         <div class="dial-container container2">
             <div class="wedge"></div>
         </div>
-        <div class="marker"></div>
-        <div class="marker end"></div>
+-->
     </div>
 </body> 
 </html>

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'peace_sans';
+    src: url('peace_sans.woff2') format('woff2'),
+         url('peace_sans.eot') format('eot'),
+         url('peace_sans.svg') format('svg'),
+         url('peace_sans.ttf') format('ttf'),
+         url('peace_sans.woff') format('woff'),
+         url('peace_sans.otf') format('otf'),
+         url('peace_sans.dfont') format('dfont');
+    font-weight: normal;
+    font-style: normal;
+
+}
